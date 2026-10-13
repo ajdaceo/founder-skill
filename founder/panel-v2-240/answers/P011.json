@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "trust",
+  "reason": "Being able to look at the set in person and pay on collection takes most of the risk away, and the bend and crack report plus the fit guarantee covers what I'd normally worry about. £240 for four refurbished 17s is a fair price if the set matches my car.",
+  "objection": "Could they be cracked or bent? A photo or report is only as good as the seller, and he's new with no reviews, so I'd want to see it with my own eyes before handing over anything.",
+  "would_change_my_mind": "If the listing didn't show the exact PCD, offset and size, or the seller wouldn't let me check the wheels properly on collection, I'd walk.",
+  "price_too_cheap": 100,
+  "price_cheap": 180,
+  "price_expensive": 280,
+  "price_too_expensive": 380
+}

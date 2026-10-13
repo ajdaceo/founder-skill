@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I check how long a seller's been on the platform and read their reviews, and this one has neither. Used sets on Marketplace and eBay are about the same money and at least I can see the seller's history.",
+  "objection": "New seller, no reviews. Anyone can say they repair cracks and bends, and I can't tell if the refinish will hold up or if it's a bent wheel under fresh paint. Tyres not included makes it dearer than it looks.",
+  "would_change_my_mind": "A few real reviews or a seller history I can check, or a price around £180 with tyres included so I'm not gambling on an unknown.",
+  "price_too_cheap": 120,
+  "price_cheap": 190,
+  "price_expensive": 280,
+  "price_too_expensive": 350
+}

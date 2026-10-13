@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "£240 for refurbished alloys with no tyres is more than I'd pay when I can usually pick up a decent used set on Marketplace for £120-180 and haggle. The viewing and fit guarantee are good, but a new seller with no reviews isn't enough to get me to pay full price.",
+  "objection": "Tyres aren't included, so the real cost is £240 plus four tyres, and I can't haggle on a set priced for new-seller buyers. Are the tyres any good?",
+  "would_change_my_mind": "A set with decent tyres (4mm+ tread) included at £240, or the wheels alone at around £170-180.",
+  "price_too_cheap": 90,
+  "price_cheap": 150,
+  "price_expensive": 220,
+  "price_too_expensive": 280
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "£240 isn't a bargain to me, I can usually find a decent used set on Marketplace or eBay for £150-200 and haggle it down. The checks and fit guarantee are nice, but I'd only pay this if the set matched my car and I'd already seen nothing cheaper.",
+  "objection": "Will they actually fit my car, and is a refurbished set from a seller with no reviews really worth more than the used sets I can haggle for?",
+  "would_change_my_mind": "A set listed for my exact car at about £180-200, or a seller willing to haggle down to that after I've seen the set in person.",
+  "price_too_cheap": 100,
+  "price_cheap": 160,
+  "price_expensive": 230,
+  "price_too_expensive": 300
+}

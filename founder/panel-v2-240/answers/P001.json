@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "trust",
+  "reason": "I'd only go because I can see the actual set, check the bare wheel photos and pay on collection, and the fit refund covers my worry about PCD and offset. £240 for four is a lot less than new, so if they have my fitment I'd go and look.",
+  "objection": "Refurbished paint might peel or the wheel might fail again, and it's a brand new seller with no reviews, so I only have their photos to go on until I see them in person.",
+  "would_change_my_mind": "If they didn't have my exact fitment in stock, or the wheels looked rough or had any hairline crack or bend when I checked them in person, I'd walk away.",
+  "price_too_cheap": 100,
+  "price_cheap": 200,
+  "price_expensive": 300,
+  "price_too_expensive": 400
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I like that I can see the actual set and pay on collection, but it's a brand new seller with no reviews and nothing says the refinish won't peel in a few months. £240 is a lot on my money to risk on that.",
+  "objection": "Refurbished paint can peel or the wheel can fail again, and a 7-day return doesn't cover that. There's no guarantee on the finish and no reviews to show it lasts.",
+  "would_change_my_mind": "A written guarantee on the finish (say 12 months against peeling or flaking) and a few real reviews or photos of customers' wheels after some months.",
+  "price_too_cheap": 100,
+  "price_cheap": 170,
+  "price_expensive": 260,
+  "price_too_expensive": 340
+}

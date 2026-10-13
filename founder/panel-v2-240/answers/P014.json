@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "£240 is almost a month of spare cash on my wage, and I can usually find a used set on Marketplace for £120-150 if I'm patient and haggle. I'd look at it, but I'd rather chase a cheaper one than commit to a new seller.",
+  "objection": "Could they be cracked or bent? A new seller with no reviews saying they've checked is just their word, and a balancer report is easy to fake.",
+  "would_change_my_mind": "A price nearer £160-180 for a set that I can check myself in person, ideally with a bend and crack check done in front of me.",
+  "price_too_cheap": 90,
+  "price_cheap": 150,
+  "price_expensive": 200,
+  "price_too_expensive": 260
+}
