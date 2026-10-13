@@ -1,0 +1,44 @@
+{
+ "business": "GCC Stage 1 alloys - free set (first set only), sold \u00a3260",
+ "unit": "refurbished set of 4",
+ "price": 260,
+ "variable": [
+  {
+   "label": "Stock bought",
+   "cost": 0
+  },
+  {
+   "label": "DIY refurb supplies (est.)",
+   "cost": 80
+  }
+ ],
+ "fixed_monthly": [
+  {
+   "label": "Storage/space (home)",
+   "cost": 0
+  }
+ ],
+ "startup": [
+  {
+   "label": "Kit: compressor/tools/PPE (ESTIMATE, not researched)",
+   "cost": 100
+  }
+ ],
+ "days_per_month": 30,
+ "capacity_per_day": 0.5,
+ "plan_per_day": 0.2667,
+ "ramp_per_day": [
+  0.0667,
+  0.1,
+  0.1333,
+  0.1667,
+  0.2,
+  0.2333,
+  0.2667,
+  0.2667,
+  0.2667,
+  0.2667,
+  0.2667,
+  0.2667
+ ]
+}
