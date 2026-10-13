@@ -9,3 +9,4 @@
 ## Update (founder correction)
 - No opening cash. "Tons" was a typo/misread; founder starts with nothing but the saved £800/month plan and some alloy wheels already owned for free (quantity, sizes, condition not yet stated).
 - Plan: Stage 1 (alloys) first, roughly 3 months of heavy work, saving and overtime, until profit comfortably covers several cars plus repairs and problems. Founder's own target: an extra £1,000 a MONTH from alloys (corrected from "a week") before looking at cars. Claude view: plausible but untested (about 8 sets a month at £130).
+- Founder says (answering how many free rims they have): "starting from scratch with everything". Unclear whether the earlier "rims already for free" still stands. Treat stock, refurb kit and seller accounts as all to be bought/created until confirmed.
