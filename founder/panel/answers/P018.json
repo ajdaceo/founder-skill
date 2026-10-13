@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "£300 is over a tenth of my monthly money, and it's a new seller with no reviews who wants me to collect and pay cash or transfer. On Marketplace I can find used sets for £150-200 from people with history, so I'd just keep haggling there.",
+  "objection": "Are the tyres any good? It doesn't say whether tyres are included or what condition they're in, and there are no reviews, so I'd be paying cash to a stranger and trusting him that the wheels aren't bent or cracked.",
+  "would_change_my_mind": "A price nearer £200 with tyres included and their tread depth stated, plus proof from real customers or photos of the actual set, and a chance to inspect them before paying.",
+  "price_too_cheap": 100,
+  "price_cheap": 180,
+  "price_expensive": 250,
+  "price_too_expensive": 330
+}
