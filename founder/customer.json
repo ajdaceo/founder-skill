@@ -1,0 +1,35 @@
+{
+  "business": "Good Car Club (GCC) - Stage 1: refurbished used alloy wheels, sold locally in north Kent",
+  "target": "Car owners in north Kent (Bexleyheath, Dartford, Medway) who want better-looking wheels or need a replacement wheel set without paying new prices",
+  "where": "Bexleyheath to Gillingham, north Kent; sold via Facebook Marketplace / eBay / Gumtree, collection from home",
+  "age": [19, 50],
+  "segments": [
+    {"name": "Young enthusiast on a budget", "share": 0.40, "income": [14000, 30000]},
+    {"name": "Everyday driver replacing damaged or ugly wheels", "share": 0.40, "income": [22000, 45000]},
+    {"name": "Hobbyist or modifier who knows wheels", "share": 0.20, "income": [28000, 60000]}
+  ],
+  "behaviours": [
+    {"name": "Deal hunter", "share": 0.25, "how": "Compares every Marketplace and eBay listing and haggles hard."},
+    {"name": "Needs a fit guarantee", "share": 0.20, "how": "Worried about PCD, offset and size; will ask to check the fit."},
+    {"name": "Looks-driven", "share": 0.15, "how": "Cares how the wheels look in photos; buys the nicest set."},
+    {"name": "Reads seller profile", "share": 0.15, "how": "Checks reviews and how long the seller has been on the platform."},
+    {"name": "Wants tyres included", "share": 0.10, "how": "Only interested if the tyres are good, to avoid extra cost."},
+    {"name": "Knowledgeable hobbyist", "share": 0.10, "how": "Knows brands and spots hidden damage like cracks or bends."},
+    {"name": "Impulse buyer", "share": 0.05, "how": "Buys quickly if the price feels like a bargain."}
+  ],
+  "objections": [
+    "Will they actually fit my car?",
+    "Could they be cracked or bent?",
+    "New seller with no reviews",
+    "Refurbished wheels might peel or fail again",
+    "Cheaper used sets on Marketplace and eBay",
+    "Are the tyres any good?",
+    "I do not want to travel to collect"
+  ],
+  "habits": [
+    "you scroll Facebook Marketplace most evenings",
+    "you drive your car to work every day",
+    "you watch car videos online",
+    "you have kerbed your wheels more than once"
+  ]
+}
