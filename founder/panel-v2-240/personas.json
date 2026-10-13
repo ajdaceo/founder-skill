@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Noor",
+  "age": 22,
+  "segment": "Everyday driver replacing damaged or ugly wheels",
+  "income": 37000,
+  "behaviour": "Needs a fit guarantee",
+  "behaviour_how": "Worried about PCD, offset and size; will ask to check the fit.",
+  "objection": "Refurbished wheels might peel or fail again",
+  "habit": "you scroll Facebook Marketplace most evenings"
+ },
+ {
+  "id": "P002",
+  "name": "Fatima",
+  "age": 40,
+  "segment": "Young enthusiast on a budget",
+  "income": 21000,
+  "behaviour": "Reads seller profile",
+  "behaviour_how": "Checks reviews and how long the seller has been on the platform.",
+  "objection": "I do not want to travel to collect",
+  "habit": "you have kerbed your wheels more than once"
+ },
+ {
+  "id": "P003",
+  "name": "Arjun",
+  "age": 48,
+  "segment": "Everyday driver replacing damaged or ugly wheels",
+  "income": 29000,
+  "behaviour": "Deal hunter",
+  "behaviour_how": "Compares every Marketplace and eBay listing and haggles hard.",
+  "objection": "I do not want to travel to collect",
+  "habit": "you drive your car to work every day"
+ },
+ {
+  "id": "P004",
+  "name": "Omar",
+  "age": 25,
+  "segment": "Hobbyist or modifier who knows wheels",
+  "income": 51000,
+  "behaviour": "Looks-driven",
+  "behaviour_how": "Cares how the wheels look in photos; buys the nicest set.",
+  "objection": "Will they actually fit my car?",
+  "habit": "you watch car videos online"
+ },
+ {
+  "id": "P005",
+  "name": "Lena",
+  "age": 42,
+  "segment": "Everyday driver replacing damaged or ugly wheels",
+  "income": 24000,
+  "behaviour": "Looks-driven",
+  "behaviour_how": "Cares how the wheels look in photos; buys the nicest set.",
+  "objection": "I do not want to travel to collect",
+  "habit": "you watch car videos online"
+ },
+ {
+  "id": "P006",
+  "name": "Tess",
+  "age": 22,
+  "segment": "Young enthusiast on a budget",
+  "income": 22000,
+  "behaviour": "Deal hunter",
+  "behaviour_how": "Compares every Marketplace and eBay listing and haggles hard.",
+  "objection": "Could they be cracked or bent?",
+  "habit": "you watch car videos online"
+ },
+ {
+  "id": "P007",
+  "name": "Darius",
+  "age": 35,
+  "segment": "Everyday driver replacing damaged or ugly wheels",
+  "income": 34000,
+  "behaviour": "Knowledgeable hobbyist",
+  "behaviour_how": "Knows brands and spots hidden damage like cracks or bends.",
+  "objection": "Cheaper used sets on Marketplace and eBay",
+  "habit": "you scroll Facebook Marketplace most evenings"
+ },
+ {
+  "id": "P008",
+  "name": "Selin",
+  "age": 48,
+  "segment": "Young enthusiast on a budget",
+  "income": 25000,
+  "behaviour": "Knowledgeable hobbyist",
+  "behaviour_how": "Knows brands and spots hidden damage like cracks or bends.",
+  "objection": "Cheaper used sets on Marketplace and eBay",
+  "habit": "you drive your car to work every day"
+ },
+ {
+  "id": "P009",
+  "name": "Finn",
+  "age": 31,
+  "segment": "Hobbyist or modifier who knows wheels",
+  "income": 42000,
+  "behaviour": "Needs a fit guarantee",
+  "behaviour_how": "Worried about PCD, offset and size; will ask to check the fit.",
+  "objection": "New seller with no reviews",
+  "habit": "you scroll Facebook Marketplace most evenings"
+ },
+ {
+  "id": "P010",
+  "name": "Rosa",
+  "age": 37,
+  "segment": "Young enthusiast on a budget",
+  "income": 20000,
+  "behaviour": "Reads seller profile",
+  "behaviour_how": "Checks reviews and how long the seller has been on the platform.",
+  "objection": "Could they be cracked or bent?",
+  "habit": "you watch car videos online"
+ },
+ {
+  "id": "P011",
+  "name": "Yusuf",
+  "age": 47,
+  "segment": "Hobbyist or modifier who knows wheels",
+  "income": 49000,
+  "behaviour": "Needs a fit guarantee",
+  "behaviour_how": "Worried about PCD, offset and size; will ask to check the fit.",
+  "objection": "Could they be cracked or bent?",
+  "habit": "you have kerbed your wheels more than once"
+ },
+ {
+  "id": "P012",
+  "name": "Quinn",
+  "age": 23,
+  "segment": "Hobbyist or modifier who knows wheels",
+  "income": 41000,
+  "behaviour": "Wants tyres included",
+  "behaviour_how": "Only interested if the tyres are good, to avoid extra cost.",
+  "objection": "New seller with no reviews",
+  "habit": "you have kerbed your wheels more than once"
+ },
+ {
+  "id": "P013",
+  "name": "Wes",
+  "age": 39,
+  "segment": "Young enthusiast on a budget",
+  "income": 21000,
+  "behaviour": "Wants tyres included",
+  "behaviour_how": "Only interested if the tyres are good, to avoid extra cost.",
+  "objection": "Are the tyres any good?",
+  "habit": "you drive your car to work every day"
+ },
+ {
+  "id": "P014",
+  "name": "Sara",
+  "age": 22,
+  "segment": "Young enthusiast on a budget",
+  "income": 27000,
+  "behaviour": "Deal hunter",
+  "behaviour_how": "Compares every Marketplace and eBay listing and haggles hard.",
+  "objection": "Could they be cracked or bent?",
+  "habit": "you watch car videos online"
+ },
+ {
+  "id": "P015",
+  "name": "Ezra",
+  "age": 26,
+  "segment": "Everyday driver replacing damaged or ugly wheels",
+  "income": 25000,
+  "behaviour": "Deal hunter",
+  "behaviour_how": "Compares every Marketplace and eBay listing and haggles hard.",
+  "objection": "Will they actually fit my car?",
+  "habit": "you watch car videos online"
+ },
+ {
+  "id": "P016",
+  "name": "Noah",
+  "age": 20,
+  "segment": "Everyday driver replacing damaged or ugly wheels",
+  "income": 31000,
+  "behaviour": "Reads seller profile",
+  "behaviour_how": "Checks reviews and how long the seller has been on the platform.",
+  "objection": "Cheaper used sets on Marketplace and eBay",
+  "habit": "you have kerbed your wheels more than once"
+ },
+ {
+  "id": "P017",
+  "name": "Grace",
+  "age": 46,
+  "segment": "Young enthusiast on a budget",
+  "income": 15000,
+  "behaviour": "Needs a fit guarantee",
+  "behaviour_how": "Worried about PCD, offset and size; will ask to check the fit.",
+  "objection": "Cheaper used sets on Marketplace and eBay",
+  "habit": "you scroll Facebook Marketplace most evenings"
+ },
+ {
+  "id": "P018",
+  "name": "Diego",
+  "age": 27,
+  "segment": "Everyday driver replacing damaged or ugly wheels",
+  "income": 24000,
+  "behaviour": "Deal hunter",
+  "behaviour_how": "Compares every Marketplace and eBay listing and haggles hard.",
+  "objection": "Are the tyres any good?",
+  "habit": "you scroll Facebook Marketplace most evenings"
+ },
+ {
+  "id": "P019",
+  "name": "Zara",
+  "age": 32,
+  "segment": "Young enthusiast on a budget",
+  "income": 19000,
+  "behaviour": "Impulse buyer",
+  "behaviour_how": "Buys quickly if the price feels like a bargain.",
+  "objection": "New seller with no reviews",
+  "habit": "you scroll Facebook Marketplace most evenings"
+ },
+ {
+  "id": "P020",
+  "name": "Isla",
+  "age": 43,
+  "segment": "Everyday driver replacing damaged or ugly wheels",
+  "income": 23000,
+  "behaviour": "Looks-driven",
+  "behaviour_how": "Cares how the wheels look in photos; buys the nicest set.",
+  "objection": "Refurbished wheels might peel or fail again",
+  "habit": "you drive your car to work every day"
+ }
+]
