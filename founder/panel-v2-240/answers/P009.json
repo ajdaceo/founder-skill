@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I already know wheels and I'm not short of options on Marketplace, so a brand new seller with no reviews doesn't get me over the line. The in-person check and fit guarantee help, but I'd want to see the set before I believe any of it.",
+  "objection": "New seller, no reviews. Photos and a balancer report can be faked, and a refund promise from someone with no track record is just words. I also don't need a set right now unless it's my exact PCD and offset.",
+  "would_change_my_mind": "Seeing the set in person first with the bend and crack check done in front of me, in my exact PCD and offset, or a few real reviews from local buyers.",
+  "price_too_cheap": 120,
+  "price_cheap": 180,
+  "price_expensive": 280,
+  "price_too_expensive": 350
+}

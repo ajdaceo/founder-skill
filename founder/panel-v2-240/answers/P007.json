@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "price",
+  "reason": "£240 for a refurbished set where I can check it in person and only pay on collection is fair, and it beats the dodgy used sets I keep seeing on Marketplace. I know what to look for, so being able to inspect it first is what makes it worth a drive.",
+  "objection": "New seller with no reviews, and 'as available' stock means they may not have my fitment. I'd want to see the bare wheel photos and check for hairline cracks and bends myself, because a good-looking refinish can hide a repaired crack.",
+  "would_change_my_mind": "If the set in the listing turned out not to be my PCD and offset, or I saw filler or fresh paint over a weld or crack when I checked it, I'd walk away.",
+  "price_too_cheap": 120,
+  "price_cheap": 190,
+  "price_expensive": 280,
+  "price_too_expensive": 340
+}

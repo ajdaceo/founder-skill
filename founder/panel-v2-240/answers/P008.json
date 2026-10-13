@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "My wheels are fine and I'm on a tight budget, so I'm not buying a set this month. If I ever did want wheels I'd hunt Marketplace and eBay, where I can find decent used sets for well under £240 and I know how to spot a bend or crack myself.",
+  "objection": "£240 is more than I'd pay on Marketplace for a used set I can check myself, and a new seller with no reviews means I'd be taking their word that the refinishing isn't hiding anything.",
+  "would_change_my_mind": "A set that fits my car at around £160-180, plus a few reviews or photos of past sets I could judge for myself.",
+  "price_too_cheap": 100,
+  "price_cheap": 160,
+  "price_expensive": 240,
+  "price_too_expensive": 320
+}

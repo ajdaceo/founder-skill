@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "My wheels are fine right now and I'd rather put spare cash into the car than a set I don't need this week. £240 is okay for refurbed 17s but I can usually find a set on Marketplace for £150-200 and haggle it down.",
+  "objection": "New seller with no reviews, so I can't tell if the crack check is real. Refinished wheels can still be bent or have hidden cracks, and I'd be spending money I don't have to spare.",
+  "would_change_my_mind": "A set in my exact fitment for about £180 that I can check in person with a clear balancer report, or a few real reviews from local buyers.",
+  "price_too_cheap": 100,
+  "price_cheap": 170,
+  "price_expensive": 260,
+  "price_too_expensive": 340
+}

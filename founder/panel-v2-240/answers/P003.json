@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "I'd have to drive out to Bexleyheath or Gillingham to look at them and collect, and I can only do that by taking time off from the daily commute. Plus I'd just haggle down a used set on Marketplace nearer to me for well under £240.",
+  "objection": "I do not want to travel to collect. A new seller with no reviews, and £240 is a lot when I can find decent secondhand sets for £120-150 and knock more off.",
+  "would_change_my_mind": "Delivery or collection close to me, and a price nearer £160-180 for my exact fitment.",
+  "price_too_cheap": 90,
+  "price_cheap": 150,
+  "price_expensive": 200,
+  "price_too_expensive": 260
+}

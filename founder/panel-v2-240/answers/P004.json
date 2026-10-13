@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "price",
+  "reason": "£240 for four 17s that I can see in person before paying is low risk, and the before and after photos show me the finish. If the design is decent and fits my car I'd go and look.",
+  "objection": "Will they actually fit my car, and will they look as good in person as in the photos? It's a new seller with no reviews, and a stock Ford or VW design might not be the nice set I'm after.",
+  "would_change_my_mind": "Seeing a set in a style I actually like, confirmed for my exact car's PCD and offset, with clear photos of the finish.",
+  "price_too_cheap": 120,
+  "price_cheap": 200,
+  "price_expensive": 320,
+  "price_too_expensive": 450
+}
