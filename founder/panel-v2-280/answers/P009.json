@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "I know wheels, and I can usually find a decent used set on Marketplace for £150-200 and get it refinished myself. £280 for a seller nobody has vouched for feels like paying a refurb premium on faith. Viewing first and paying on collection is fair, but it doesn't make the price any lower.",
+  "objection": "New seller, no reviews, and I can't tell if the refurb is proper or just paint over a bend. The photos could be of any set. Also, 'as available' means they might not have my PCD and offset anyway.",
+  "would_change_my_mind": "A set that matches my car's exact PCD and offset, around £220, that I can see in person with the balancer report and tread depth shown. A few real buyers vouching for the seller would also help.",
+  "price_too_cheap": 120,
+  "price_cheap": 190,
+  "price_expensive": 280,
+  "price_too_expensive": 360
+}

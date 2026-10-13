@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "£280 is more than I'd pay when I can pick up decent used 17s on Marketplace or eBay for £150-200 and check them myself. The checks and the fit guarantee are nice, but I already know how to spot cracks and bends.",
+  "objection": "It's a new seller with no reviews asking more than the used market, and I'm on a tight budget. I'd be paying for a refurb job I can judge myself.",
+  "would_change_my_mind": "A price around £200 for a set in my fitment, or seeing the set in person first with the bare wheel and balancer report as stated, which would let me judge it myself.",
+  "price_too_cheap": 120,
+  "price_cheap": 180,
+  "price_expensive": 240,
+  "price_too_expensive": 300
+}

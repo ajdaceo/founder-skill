@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I check the seller's profile and reviews first, and this one is brand new with nothing behind it. The in-person check is good, but I'd be driving out to look at wheels from someone I can't vouch for, and on my wage I'm not spending £280 on a maybe.",
+  "objection": "Could they be cracked or bent? A photo or a balancer report is only the seller's word, and with no reviews I have no one to tell me they're straight.",
+  "would_change_my_mind": "A few real reviews from local buyers, or a mate who's bought from them, plus being able to get the wheels checked on a balancer or by a tyre shop before handing over money.",
+  "price_too_cheap": 120,
+  "price_cheap": 200,
+  "price_expensive": 320,
+  "price_too_expensive": 400
+}

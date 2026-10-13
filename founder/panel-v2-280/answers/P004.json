@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Fit guarantee and checking the set in person before paying takes away my main worry, and £280 for a refurbished set with before and after photos is decent money. I'd only go if the design actually looks good on my car.",
+  "objection": "Will they actually fit my car, and will the finish look as good in person as in the photos? New seller with no reviews, so I'd want to see them first.",
+  "would_change_my_mind": "If the set in the listing was a boring stock design or the photos looked rough, I'd walk. A nicer style or a seller with a few reviews would make it easy.",
+  "price_too_cheap": 120,
+  "price_cheap": 220,
+  "price_expensive": 350,
+  "price_too_expensive": 480
+}

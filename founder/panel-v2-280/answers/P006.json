@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "£280 is over a week and a half of my take-home, and I can usually find a decent used set on Marketplace for £150-200 if I'm patient and haggle. The checks and in-person viewing are good, but I'd rather save the money.",
+  "objection": "Refurbished means repaired and repainted, so how do I know they're not cracked or bent underneath? A new seller with no reviews and just a photo or a balancer report isn't enough for me to spend £280 when I can get cheaper.",
+  "would_change_my_mind": "Dropping to about £200 a set, or letting me see them on a balancer in person and haggle on the day.",
+  "price_too_cheap": 90,
+  "price_cheap": 160,
+  "price_expensive": 230,
+  "price_too_expensive": 300
+}

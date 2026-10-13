@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "£280 for four refurbished wheels is not far off what I can find on Marketplace or eBay if I haggle, and I'd have to drive out to Bexleyheath or Gillingham to collect, which I can't be bothered with. A new seller with no reviews doesn't make me rush either.",
+  "objection": "I do not want to travel to collect, and for £280 I can usually haggle a set down locally or on eBay with delivery.",
+  "would_change_my_mind": "Delivery to my door, or a price nearer £200 for a set that fits my car.",
+  "price_too_cheap": 120,
+  "price_cheap": 190,
+  "price_expensive": 260,
+  "price_too_expensive": 340
+}
