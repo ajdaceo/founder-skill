@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I check how long a seller has been around and read their reviews, and this one has none. I can get used sets on Marketplace or eBay for less, so I'd need a reason to pick a brand new seller at £280.",
+  "objection": "New seller with no reviews and no track record, and £280 is more than the used sets I can find already. Checking in person and paying on collection helps, but I'd still be going out to Bexleyheath to look at a set that might not fit my car.",
+  "would_change_my_mind": "A few real reviews or a seller profile with some history, or the price at about £220 with tyres included.",
+  "price_too_cheap": 120,
+  "price_cheap": 190,
+  "price_expensive": 260,
+  "price_too_expensive": 340
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "£280 is a lot on my money when I can find used sets on Marketplace for £150-200 and haggle them down. The check-in-person and refund terms are good, but a new seller with no reviews doesn't beat a cheap set I can negotiate.",
+  "objection": "Could they be cracked or bent? The photos and balancer report are the seller's own, and with no reviews I'd want to see it myself before believing it. And for £280 I could get a decent used set for much less.",
+  "would_change_my_mind": "Around £200 a set for my exact fitment, with the chance to see it spun on a balancer at collection and haggle in person.",
+  "price_too_cheap": 120,
+  "price_cheap": 180,
+  "price_expensive": 250,
+  "price_too_expensive": 320
+}

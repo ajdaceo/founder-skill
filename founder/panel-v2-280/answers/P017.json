@@ -1,0 +1,13 @@
+{
+  "id": "P017",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "The fit guarantee and checking them in person are good, but £280 is a lot on my money and I'd just keep scrolling Marketplace where used sets go for less. Tyres aren't included either, so the real cost is higher.",
+  "objection": "I can get a used set on Marketplace or eBay for £150-200 and haggle. £280 plus tyres is too much for me, and it's a new seller with no reviews.",
+  "would_change_my_mind": "Around £200 a set with decent tyres included, or a few real reviews from local buyers.",
+  "price_too_cheap": 100,
+  "price_cheap": 180,
+  "price_expensive": 250,
+  "price_too_expensive": 320
+}

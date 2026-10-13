@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "I can find used 17s on Marketplace and eBay for £150-220 a set and haggle that down, so £280 from a seller I've never heard of feels like new-ish money. The check-in-person and refund bits are good, but I'd still shop around first.",
+  "objection": "Will they actually fit my car, and why pay £280 when I can pick up a decent set for under £200 and knock the price down?",
+  "would_change_my_mind": "Around £200-220 a set for my exact fitment, with tyres thrown in or a few reviews from locals.",
+  "price_too_cheap": 120,
+  "price_cheap": 180,
+  "price_expensive": 250,
+  "price_too_expensive": 320
+}

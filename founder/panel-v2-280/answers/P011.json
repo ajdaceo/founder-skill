@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "trust",
+  "reason": "I'd go and look at them first. If the bend and crack report is in the listing and they check out in person, £280 for four 17s is a fair deal and the fit refund covers my PCD and offset worry. I wouldn't pay a penny before I've seen them on the day.",
+  "objection": "Could they be cracked or bent? A new seller with no reviews and a photo can hide a lot, and a repaired kerb mark can hide a weak spot.",
+  "would_change_my_mind": "If I couldn't check the set in person and have it on a balancer or hold it up to a straight edge before paying, it'd be a no.",
+  "price_too_cheap": 120,
+  "price_cheap": 220,
+  "price_expensive": 320,
+  "price_too_expensive": 400
+}

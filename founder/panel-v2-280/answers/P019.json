@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Four wheels for £280 is a fair deal and I like that I can look at them first and pay on collection, but that's still a big chunk of my money for something I'd be buying for looks. I'd scroll on and save it unless my own wheels were actually wrecked.",
+  "objection": "New seller with no reviews, and £280 is a lot when I'm on a tight budget. Plus tyres aren't included, so the real cost is higher.",
+  "would_change_my_mind": "A price nearer £200 including tyres, or a few reviews from local people I can check.",
+  "price_too_cheap": 120,
+  "price_cheap": 190,
+  "price_expensive": 280,
+  "price_too_expensive": 360
+}
