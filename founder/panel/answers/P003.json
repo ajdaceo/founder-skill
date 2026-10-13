@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "£300 for four refurbished wheels from a seller with no reviews isn't a deal I'd jump on when I can haggle on Marketplace and eBay. I'd rather see the wheels and have proof before I hand over money.",
+  "objection": "New seller, no reviews, and I'd be paying cash or bank transfer up front for second-hand wheels I can't inspect. If they turn out bent or cracked I'm stuck, and the return only counts if they're unmarked, which is easy for them to dispute.",
+  "would_change_my_mind": "Seeing the exact set in person first, or real reviews, at around £220 to £240 with a pay-on-collection option.",
+  "price_too_cheap": 120,
+  "price_cheap": 200,
+  "price_expensive": 280,
+  "price_too_expensive": 350
+}

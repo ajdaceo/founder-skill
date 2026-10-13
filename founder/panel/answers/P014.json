@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "£300 is a lot of my money to hand to a new seller with no reviews, when I can haggle a used set on Marketplace for less. I'd rather take a punt on a known seller than on someone nobody has vouched for.",
+  "objection": "Could they be cracked or bent? 'Checked' means nothing without proof, and a repaired and refinished wheel could be hiding a weld or a bend. There are no reviews and it's a new seller.",
+  "would_change_my_mind": "Seeing the wheels in person, with a chance to check them on a spinning rig or have a tyre fitter look them over before paying, plus a price nearer £200 or a few reviews from real buyers.",
+  "price_too_cheap": 120,
+  "price_cheap": 200,
+  "price_expensive": 300,
+  "price_too_expensive": 400
+}

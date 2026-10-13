@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I know what to look for on a wheel, and a new seller with no reviews telling me 'checked for bends and cracks' is just their word. I can get used sets on Marketplace or eBay for less and inspect them myself.",
+  "objection": "No reviews, and I can't see how the repair was done. Hidden cracks or a bend under the refinish would cost me, and £300 is a big part of my budget for something I can't verify.",
+  "would_change_my_mind": "Letting me inspect the actual set in person before paying, with photos of the repairs and a straightened-and-crack-tested check I can see, or a price nearer £200.",
+  "price_too_cheap": 120,
+  "price_cheap": 200,
+  "price_expensive": 280,
+  "price_too_expensive": 380
+}

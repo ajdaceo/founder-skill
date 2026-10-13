@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "No tyres mentioned, so I'd be paying £300 and then still need four tyres on top. Brand new seller with no reviews and I'd be handing over cash for wheels I can't judge myself.",
+  "objection": "Are the tyres any good? It says nothing about tyres, so I'd have extra cost on top, and there are no reviews to tell me this seller is straight.",
+  "would_change_my_mind": "Tyres with decent tread included in the £300, plus a few real reviews or seeing the wheels in person before paying.",
+  "price_too_cheap": 120,
+  "price_cheap": 200,
+  "price_expensive": 300,
+  "price_too_expensive": 380
+}

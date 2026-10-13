@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A new seller with no reviews and no photos of the actual wheels, and I can pick up refurbished sets on Marketplace or eBay all day for less. I'd message them to haggle, but I wouldn't hand over cash on a first look.",
+  "objection": "No reviews, so I've no idea if these are properly repaired or just painted over a bend. And £300 isn't far off what I can haggle a decent used set down to on Marketplace.",
+  "would_change_my_mind": "Seeing the actual set in person before paying, with a fitment check on my car and the price down to about £220-£240.",
+  "price_too_cheap": 120,
+  "price_cheap": 200,
+  "price_expensive": 280,
+  "price_too_expensive": 350
+}

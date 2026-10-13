@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "£300 for four 17s sounds fine, but it's a new seller with no reviews and nothing says tyres are included, so I'd be paying extra on top. I'd rather buy from someone with proof of their work.",
+  "objection": "New seller with no reviews, and no mention of tyres. If I have to buy tyres on top, the saving is gone, and I can't tell how good the refinishing is.",
+  "would_change_my_mind": "Photos of previous sets and real reviews, plus tyres with good tread included in the £300, or a chance to see the wheels in person before paying.",
+  "price_too_cheap": 150,
+  "price_cheap": 220,
+  "price_expensive": 350,
+  "price_too_expensive": 450
+}

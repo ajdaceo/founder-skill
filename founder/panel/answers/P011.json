@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "A brand new seller with no reviews, taking cash or bank transfer, selling me used wheels I can't see. I've kerbed wheels myself and I know a hairline crack or a bend doesn't always show, and 'checked' means nothing without proof.",
+  "objection": "Could they be cracked or bent? Who checked them, how, and what do I do when I find a buckle after a few hundred miles and the seller is a stranger with no track record?",
+  "would_change_my_mind": "Let me inspect the set in person and see them on a balancing machine or with a written bend and crack check before paying, with pay-on-collection, plus a few real reviews or photos of previous sets. A return that still covers wheels I've had tyres fitted to would help too.",
+  "price_too_cheap": 150,
+  "price_cheap": 250,
+  "price_expensive": 350,
+  "price_too_expensive": 450
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "They look like a decent price, but I don't know this seller and there are no reviews. I'd be handing over £300 in cash or a bank transfer to a stranger for wheels I drive on every day.",
+  "objection": "Refurbished wheels might peel or fail again, and with a new seller and no reviews I have nothing to go on. The 7-day return only covers wheels returned unmarked, so once they're fitted I couldn't really send them back.",
+  "would_change_my_mind": "Photos of the actual set I'd get, a few real reviews from local customers, and a written guarantee against peeling or cracking for at least 12 months. Paying by card, or seeing them in person before I pay, would help too.",
+  "price_too_cheap": 120,
+  "price_cheap": 220,
+  "price_expensive": 350,
+  "price_too_expensive": 450
+}

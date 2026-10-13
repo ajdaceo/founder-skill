@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "£300 is a lot on my money and I'd be handing it to a brand new seller with no reviews and no history. I can get used sets cheaper on Marketplace and eBay where I can at least see the seller's feedback.",
+  "objection": "New seller, no reviews. If the wheels turn out bent or the repair is dodgy after I've paid cash, I've got nothing to go on and a 7-day return only works if I don't mark them.",
+  "would_change_my_mind": "Real reviews or photos of finished sets from other local customers, a few months on the platform, and a price nearer £200-£220 a set.",
+  "price_too_cheap": 120,
+  "price_cheap": 190,
+  "price_expensive": 260,
+  "price_too_expensive": 330
+}

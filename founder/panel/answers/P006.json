@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "£300 for four wheels from a seller with no reviews is a lot of my money to hand over to a stranger. I can find used sets on Marketplace for less and haggle them down, and I'd have to trust that nobody's bent or cracked these.",
+  "objection": "Could they be cracked or bent? 'We checked them ourselves' means nothing from a brand new seller with no reviews, and a 7-day return only if they're unmarked is easy for them to wriggle out of.",
+  "would_change_my_mind": "Seeing the wheels in person first, with a proper check on a balancing machine, and a price nearer £220 to £240 I could haggle down.",
+  "price_too_cheap": 120,
+  "price_cheap": 200,
+  "price_expensive": 280,
+  "price_too_expensive": 350
+}
