@@ -1,9 +1,16 @@
 # Owner actions
 
-## 1. Approve research network access (one click, £0)
-Approve the `capital-research` environment when prompted. It lets this session read five Atlassian sites (Marketplace, public feature tracker, two community forums, developer docs). Without it I can only see search-engine summaries, which do not show install counts, prices or vote totals.
+## 1. Network access (blocks all real research and both tests)
+Approval prompts sent from the session have closed unanswered three times, so please set it directly: cloud environment menu in the session title bar, then Edit, then Network access. Either choose a broader access level, or add the hosts needed under Allowed domains (keep "Allow package managers" ticked). Guide: https://code.claude.com/docs/en/cloud-environments#network-access
+A broader level is the practical choice: test 1 reads hundreds of NHS and council sites, which cannot be listed one by one.
 
-QuarterReady's launch is suspended on your instruction; the steps below are kept only for reference.
+## 2. Validation costs and approvals (only when you want test 1 to start)
+- A domain and a mailbox, about £15. This is a cost; nothing is bought until you say so.
+- Approve the outreach email text before anything is sent. Sends go to limited companies only, in small numbers, with an opt-out.
+- A payment link for pre-orders (Stripe or similar, in your name).
+
+## Reference: suspended QuarterReady launch steps
+
 
 ---
 

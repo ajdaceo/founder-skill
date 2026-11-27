@@ -19,13 +19,19 @@ Mark every claim EVIDENCE (with source) or ASSUMPTION.
 ## Product 1: QuarterReady MTD workbook: SUSPENDED
 Preserved in `products/mtd-workbook/` and `site/`. No launch, no further development. Do not work on it.
 
-## Discovery status
-- Six research threads done; comparison in `research/2026-11-27-opportunity-comparison.md`.
-- No product selected. Lead direction: Atlassian Cloud apps that fill Data Center migration gaps. Specific gap unproven.
-- Blocker: cannot read Marketplace, tracker or forum pages from this environment (network policy). Requested a research environment allowing five Atlassian hosts; awaiting owner approval. See OWNER_ACTIONS.md.
+## Discovery status (updated 14:18 UTC cycle)
+- Round 1 (utilities, marketplace apps, mandates): nothing qualified. `research/2026-11-27-opportunity-comparison.md`.
+- Round 2 (owner's revised method): shortlist and validation plan in `research/2026-11-27-round2-comparison.md`; thread reports in `research/round2/`.
+- No product selected. Next step is validation, not building.
+- Atlassian: parked on current evidence; data pull not done (no network access).
 
 ## Backlog
-1. [blocked: network access] Pull Marketplace API and tracker data; rank gaps by legacy installs and votes against existing Cloud apps.
-2. Done 12:45 UTC: search-only checks on CPSC eFiling (rejected), EU CRA kit (parked), Atlassian vendor costs (unresolved). Search summaries are exhausted as a method; further cycles add little until page access exists.
-   Cycle cadence reduced to once a day until the blocker clears, to avoid spending usage on empty cycles.
-3. Select a product only if it passes every gate with cited evidence; otherwise widen the search.
+1. Test 1 prep (no approval needed): choose the software category from search evidence; draft league-table format and vendor email.
+2. Test 2 prep: build the late-payment calculator logic and tests (test asset only).
+3. [blocked: owner] Network access to public-sector sites; domain and mailbox (about £15); approval of outreach text; payment link.
+4. Run test 1, then test 2. A fail is a stop. Record results with evidence.
+
+## Standing rules learned
+- Fixed prices and rule-based fulfilment; the agent never negotiates.
+- Email only limited companies and LLPs; never sole traders or partnerships; opt-out in every message.
+- Disclose AI operation; name the owner as the human contact.
