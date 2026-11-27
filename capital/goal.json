@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-27T22:20:00Z",
+  "updated_utc": "2026-11-27T22:35:00Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -30,9 +30,9 @@
   },
   "current_priority": "Independent opportunity screen (research/2026-11-27-reassessment.md), finish by 2026-11-29, then one experiment",
   "next_actions": [
-    "Extend CRP website check to 50 NHS/public-sector SME suppliers (needs a fresh session with Full network)",
-    "On approval: choose mailbox provider with API, write offer email, intake form, CRP calculator and template",
-    "Send batch 1 (50) once mailbox and payment exist"
+    "FIRST: test network (curl gov.uk). If reachable: cd capital && python3 ops/crp_scan.py research/e3-prospects-nhs-food-framework.csv research/e3-scan-results.csv --limit 50; then manually verify every no_site and a sample of no_crp rows; write research/2026-11-27-e3-supplier-scan.md with counts and verdict",
+    "Verdict rule (owner's terms): in-scope (NHS Supply Chain framework => Evergreen Level 1 CRP required for tenders since Apr 2026), lacking a current CRP, realistic buyer (SME limited company with contact route). E3 proceeds if >=40% of 50 lack a current CRP; feasibility already confirmed (self-certified, director sign-off, no accreditation)",
+    "If verdict passes: send OWNER ACTION asking for the \u00a325 setup approval with a mailbox provider proposal"
   ],
   "blocked_actions": [
     {
@@ -51,7 +51,7 @@
     "Employment-contract clauses",
     "Remove Gmail/Calendar/Docs from scheduled task"
   ],
-  "last_verified_progress": "2026-11-27 22:20: Default environment set to Full by owner (takes effect in new sessions); 3 NHS-linked SME suppliers checked, 2 lack a published CRP; E3 proposed.",
+  "last_verified_progress": "2026-11-27 22:35: 80 SME prospects extracted from NHS Supply Chain Fresh & Food to Go framework award (FTS 026675-2024); 3 sites checked directly (Raynor has CRP; Tiffin, Ribble Farm Fare do not); search shows larger non-SME framework members (Creamline, PFD Carlisle) do publish CRPs; feasibility confirmed: CRP is self-certified with director sign-off, no third-party verification or accreditation required.",
   "next_checkpoint": "2026-11-28T00:36Z scheduled run (verify multi-action behaviour in cycles.log)",
   "programme": {
     "start": "2026-11-27",
