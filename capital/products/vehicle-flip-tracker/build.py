@@ -14,7 +14,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 ROWS = 300  # vehicle rows
 COST_ROWS = 1500
 NAVY = "1F2A44"
@@ -88,7 +88,8 @@ def build(example: bool) -> Workbook:
         ("2. Cost Log: every extra cost (parts, labour, MOT, valeting, transport, adverts). Use the same Stock ID as the vehicle. Totals flow into the Vehicles sheet automatically.", False),
         ("3. When a vehicle sells, enter the sale date, sale price and any selling fees, and set Status to Sold.", False),
         ("4. Dashboard: profit, average days to sell, money tied up in stock, best and worst deals, and month-by-month results for the year you pick.", False),
-        ("5. Tax Year: takings and profit by UK tax year (6 April to 5 April), to make your records easier to keep.", False),
+        ("5. Deal Analyser: before you bid, enter comparable adverts and your expected costs; it works out the most you should pay to hit your target profit.", False),
+        ("6. Tax Year: takings and profit by UK tax year (6 April to 5 April), to make your records easier to keep.", False),
         ("", False),
         ("Tips", True),
         ("Give every vehicle a short Stock ID (e.g. V001) and use it in the Cost Log. Logged costs only count when the IDs match exactly.", False),
@@ -294,11 +295,51 @@ def build(example: bool) -> Workbook:
     t["A12"] = "The £1,000 trading allowance and Self Assessment rules: https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income"
     t["A12"].font = Font(name="Arial", size=9, color="5A6475")
 
+    add_deal_analyser(wb, example)
     if example:
         add_example(v, cl)
     wb.properties.title = "UK Vehicle Flipping Profit Tracker"
     wb.properties.creator = "CAPITAL"
     return wb
+
+
+def add_deal_analyser(wb, example):
+    a = wb.create_sheet("Deal Analyser", 3)
+    a.sheet_view.showGridLines = False
+    title(a, "Deal Analyser", "Work out your maximum bid before you buy. Yellow = your input.")
+    a.column_dimensions["A"].width, a.column_dimensions["B"].width, a.column_dimensions["C"].width = 44, 14, 60
+    rows = [
+        ("Comparable advert 1 (asking price)", 3495 if example else None, "Similar age, mileage and spec, ideally local"),
+        ("Comparable advert 2", 3250 if example else None, ""),
+        ("Comparable advert 3", 3600 if example else None, ""),
+        ("Comparable advert 4", 2995 if example else None, ""),
+        ("Comparable advert 5", None, "Leave blank if you have fewer"),
+        ("Average of comparables", "=IFERROR(AVERAGE(B4:B8),0)", "Calculated"),
+        ("Expected sale discount vs adverts", 0.05 if example else 0.05, "Buyers usually negotiate; 5% = sell 5% under the average asking price"),
+        ("Expected sale price", "=B9*(1-B10)", "Calculated"),
+        ("Selling fees (adverts, marketplace)", 0 if example else None, ""),
+        ("Parts estimate", 120 if example else None, ""),
+        ("Labour estimate", 80 if example else None, ""),
+        ("MOT / service estimate", 60 if example else None, ""),
+        ("Valeting", 45 if example else None, ""),
+        ("Transport / collection", 0 if example else None, ""),
+        ("Buyer's premium (%)", 0.08 if example else 0, "Auction percentage on top of the hammer price; 0 for private sales"),
+        ("Buyer's fixed fees (£)", 75 if example else 0, "Auction or online bidding fixed fee"),
+        ("Target profit (£)", 400 if example else None, "What the deal must make for you"),
+        ("Total costs before purchase", "=N(B12)+N(B13)+N(B14)+N(B15)+N(B16)+N(B17)", "Calculated"),
+        ("MAXIMUM BID / OFFER", "=MAX(0,(B11-B21-N(B19)-N(B20))/(1+N(B18)))", "Bid at or below this to hit your target profit"),
+        ("Profit if you pay the maximum", "=IF(B22=0,0,B11-B21-B22*(1+N(B18))-N(B19))", "Check: should equal the target"),
+    ]
+    for i, (label, val, note) in enumerate(rows, start=4):
+        a.cell(row=i, column=1, value=label).font = Font(name="Arial", size=10, bold=label.isupper())
+        c = a.cell(row=i, column=2, value=val)
+        c.border = BORDER
+        calc = isinstance(val, str) and val.startswith("=")
+        c.fill = PatternFill("solid", fgColor=LIGHT if calc else INPUT)
+        c.number_format = PCT if "%" in label or "discount" in label else GBP
+        a.cell(row=i, column=3, value=note).font = Font(name="Arial", size=9, color="5A6475")
+    a["B22"].font = Font(name="Arial", bold=True, size=14, color=ACCENT)
+    a["A22"].font = Font(name="Arial", bold=True, size=12, color=NAVY)
 
 
 EXAMPLE_VEHICLES = [

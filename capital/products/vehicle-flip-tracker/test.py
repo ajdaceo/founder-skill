@@ -54,6 +54,15 @@ for r in range(5, 11):
         eq("tax year takings", t.cell(row=r, column=5).value, 12650)
         eq("tax year profit", t.cell(row=r, column=7).value, 1876.62)
 
+da = wb["Deal Analyser"]
+avg = (3495 + 3250 + 3600 + 2995) / 4
+sale = avg * 0.95
+costs = 0 + 120 + 80 + 60 + 45 + 0
+maxbid = (sale - costs - 75 - 400) / 1.08
+eq("deal avg", da["B9"].value, avg)
+eq("deal sale", da["B11"].value, sale)
+eq("deal max bid", da["B22"].value, maxbid)
+eq("deal profit at max", da["B23"].value, 400)
 cl = wb["Cost Log"]
 for r in range(5, 19):
     if cl.cell(row=r, column=7).value == "Unknown Stock ID":

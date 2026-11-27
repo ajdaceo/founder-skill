@@ -16,6 +16,7 @@ WHAT IT DOES
 - Vehicles sheet: purchase price, buyer's fees, sale price, selling fees, net profit, ROI and days in stock for every vehicle.
 - Cost Log: log parts, labour, MOT, valeting, transport and adverts against each vehicle; totals flow in automatically.
 - Dashboard: total profit, average profit per car, average days to sell, money tied up in unsold stock, loss-making sales, best and worst deals, month-by-month results.
+- Deal Analyser: enter comparable adverts, expected costs, auction fees and your target profit to get your maximum bid before you buy.
 - Profit by where you bought (auction, private, trade, part-ex) and where you sold.
 - UK tax year summary (6 April to 5 April) with a flag when takings pass £1,000.
 WHAT YOU GET
