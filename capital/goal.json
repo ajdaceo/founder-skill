@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-27T22:05:00Z",
+  "updated_utc": "2026-11-27T23:10:00Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -30,20 +30,24 @@
   },
   "current_priority": "Build E2 product v1 and listings now; owner sets up Etsy shop, developer app, network hosts and private repo.",
   "next_actions": [
-    "Build Vehicle Flipping Profit Tracker v1 (xlsx, Sheets-compatible) with tests and screenshots",
-    "Build UK Reseller Profit & Threshold Tracker v1",
-    "Write listing copy, tags, AI disclosure",
-    "When Etsy API available: check favourites/competition for candidate niches; create draft listings",
-    "Apify, Workspace Marketplace: deferred; E1 deferred"
+    "When ETSY_* env vars and network hosts exist: run ops/etsy.py whoami, confirm taxonomy_id and when_made values, then create-drafts listings/plan.json (drafts only)",
+    "Owner reviews drafts; publish on approval; record listing fees in ledger.csv",
+    "From shop day 15: Etsy Ads <= \u00a33/day within the approved envelope",
+    "Track views/favourites/sales; record results in experiments/E2",
+    "While blocked: improve products (Sheets compatibility notes), research Etsy keyword demand from permitted sources"
   ],
   "blocked_actions": [
     {
-      "action": "Remove Gmail/Calendar/Docs connectors from the scheduled task",
-      "blocked_on": "owner: remove Gmail, Google Calendar and Claude Docs connectors in the scheduled task's settings (no tool available to do it)"
+      "action": "Create Etsy draft listings",
+      "blocked_on": "owner: Etsy shop, developer app keys in env, network hosts openapi.etsy.com and api.etsy.com, E2 approval"
     },
     {
-      "action": "Shell access to most external hosts",
-      "blocked_on": "cloud environment network policy; request specific hosts once a platform is chosen"
+      "action": "Move records to private repo",
+      "blocked_on": "owner: create private repo and grant access"
+    },
+    {
+      "action": "Remove personal connectors from scheduled task",
+      "blocked_on": "owner: task settings"
     }
   ],
   "pending_owner_approvals": [
@@ -56,8 +60,8 @@
     "ICO self-check (likely exempt: own accounts and own marketing only)",
     "Remove Gmail/Calendar/Docs connectors from the scheduled task"
   ],
-  "last_verified_progress": "2026-11-27: mandate and amendment adopted; old task disabled (verified); single 3-hourly task created; repo push verified; Apify and Etsy evidence recorded.",
-  "next_checkpoint": "2026-11-28T00:36Z first scheduled run; check cycles.log for multiple sequential actions.",
+  "last_verified_progress": "2026-11-27 23:10: two products built and tested (23/23 and 24/24 formula checks in LibreOffice), 8 listing images, 3 listing drafts validated against Etsy limits, Etsy API client written and tested offline; owner setup requested.",
+  "next_checkpoint": "2026-11-28T00:36Z scheduled run (verify multi-action behaviour in cycles.log)",
   "programme": {
     "start": "2026-11-27",
     "review_deadline": "2026-12-27"

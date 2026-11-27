@@ -1,0 +1,100 @@
+{
+  "note": "taxonomy_id must be confirmed against Etsy's seller taxonomy (GET /seller-taxonomy/nodes) before first use; 2078 is a placeholder ASSUMPTION.",
+  "listings": [
+    {
+      "title": "Car Flipping Profit Tracker Spreadsheet UK, Used Car Trader Stock & Profit Log, Excel & Google Sheets, Days in Stock, Tax Year Summary",
+      "price": 12.0,
+      "taxonomy_id": 2078,
+      "tags": [
+        "car flipping",
+        "car trader sheet",
+        "used car profit",
+        "vehicle stock log",
+        "car dealer tracker",
+        "motor trader uk",
+        "google sheets",
+        "excel tracker",
+        "profit tracker",
+        "side hustle uk",
+        "auction car tracker",
+        "car sales record",
+        "flip tracker"
+      ],
+      "images": [
+        "images/vehicle-1.jpg",
+        "images/vehicle-2.jpg",
+        "images/vehicle-3.jpg",
+        "images/vehicle-4.jpg"
+      ],
+      "files": [
+        "files/Vehicle-Flip-Tracker-UK.xlsx",
+        "files/Vehicle-Flip-Tracker-UK-EXAMPLE.xlsx"
+      ],
+      "description": "Know exactly what every car really made you.\nThis tracker is for people who buy, fix and sell cars, vans or bikes in the UK, whether it is a side hustle or a small trade.\nWHAT IT DOES\n- Vehicles sheet: purchase price, buyer's fees, sale price, selling fees, net profit, ROI and days in stock for every vehicle.\n- Cost Log: log parts, labour, MOT, valeting, transport and adverts against each vehicle; totals flow in automatically.\n- Dashboard: total profit, average profit per car, average days to sell, money tied up in unsold stock, loss-making sales, best and worst deals, month-by-month results.\n- Profit by where you bought (auction, private, trade, part-ex) and where you sold.\n- UK tax year summary (6 April to 5 April) with a flag when takings pass \u00a31,000.\nWHAT YOU GET\n- Blank tracker (.xlsx) and an example copy with sample vehicles so you can see how it works.\n- Works in Microsoft Excel and free Google Sheets. No macros, no subscription.\nGOOD TO KNOW\n- This is a record-keeping tool, not tax or legal advice. It does not calculate VAT or the margin scheme.\n- Digital download: nothing is posted. Instant download after purchase."
+    },
+    {
+      "title": "UK Reseller Profit Tracker Spreadsheet, eBay Vinted Depop Sales Log, HMRC Platform Reporting 30 Sales Check, Excel & Google Sheets",
+      "price": 9.0,
+      "taxonomy_id": 2078,
+      "tags": [
+        "reseller sheet",
+        "vinted tracker",
+        "ebay profit",
+        "depop seller",
+        "hmrc reselling",
+        "side hustle uk",
+        "inventory tracker",
+        "google sheets",
+        "reseller stock",
+        "sales tracker uk",
+        "charity shop flips",
+        "profit and loss",
+        "car boot reseller"
+      ],
+      "images": [
+        "images/reseller-1.jpg",
+        "images/reseller-2.jpg",
+        "images/reseller-3.jpg",
+        "images/reseller-4.jpg"
+      ],
+      "files": [
+        "files/UK-Reseller-Tracker.xlsx",
+        "files/UK-Reseller-Tracker-EXAMPLE.xlsx"
+      ],
+      "description": "See your real profit on every item, and how close you are to the point where UK platforms report sellers to HMRC.\nWHAT IT DOES\n- Sales sheet: cost, sale price, postage charged and paid, platform fees, net profit, margin and days to sell for every item.\n- Platform Check: per platform and calendar year, your sales count and value against the reporting thresholds (30 sales or about \u00a31,700). Warns you when you get close.\n- Tax Year: takings and profit by UK tax year, with your own personal items kept separate.\n- Dashboard: profit, margin, stock at cost, items losing money, and results by platform and category.\n- Settings: thresholds you can update if the rules change.\nWHAT YOU GET\n- Blank tracker (.xlsx) and an example copy with sample items.\n- Works in Microsoft Excel and free Google Sheets. No macros, no subscription.\nGOOD TO KNOW\n- Being reported by a platform is not a tax bill, and HMRC says reporting is not a new tax. This is a record-keeping tool, not tax advice.\n- Digital download: instant download after purchase."
+    },
+    {
+      "title": "UK Reseller & Car Flipping Profit Tracker Bundle, eBay Vinted Depop and Vehicle Trader Spreadsheets, Excel & Google Sheets",
+      "price": 16.0,
+      "taxonomy_id": 2078,
+      "tags": [
+        "reseller sheet",
+        "car flipping",
+        "ebay profit",
+        "vinted tracker",
+        "car trader sheet",
+        "side hustle uk",
+        "google sheets",
+        "excel tracker",
+        "profit tracker",
+        "hmrc reselling",
+        "motor trader uk",
+        "inventory tracker",
+        "spreadsheet bundle"
+      ],
+      "images": [
+        "images/reseller-1.jpg",
+        "images/vehicle-1.jpg",
+        "images/reseller-3.jpg",
+        "images/vehicle-2.jpg"
+      ],
+      "files": [
+        "files/Vehicle-Flip-Tracker-UK.xlsx",
+        "files/Vehicle-Flip-Tracker-UK-EXAMPLE.xlsx",
+        "files/UK-Reseller-Tracker.xlsx",
+        "files/UK-Reseller-Tracker-EXAMPLE.xlsx"
+      ],
+      "description": "Both trackers in one download: the UK Vehicle Flipping Profit Tracker and the UK Reseller Profit & HMRC Threshold Tracker.\n- Blank and example copies of each (.xlsx).\n- Works in Microsoft Excel and free Google Sheets. No macros, no subscription.\n- Record-keeping tools, not tax or legal advice.\n- Digital download: instant download after purchase."
+    }
+  ]
+}
