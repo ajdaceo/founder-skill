@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-27T23:00:00Z",
+  "updated_utc": "2026-11-27T23:04:52Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -19,7 +19,7 @@
     "M13": "not_started"
   },
   "current_milestone": "M1",
-  "current_experiment": "E3 PROPOSED: experiments/E3-crp-public-suppliers.md (awaiting owner approval)",
+  "current_experiment": "E3 PROPOSED: experiments/E3-crp-public-suppliers.md. Targeting scan done and passes the 40% bar narrowly; awaiting owner approval of the \u00a325 setup",
   "finance_gbp": {
     "revenue": 0,
     "expenditure": 0,
@@ -28,17 +28,19 @@
     "base_budget": 100,
     "max_budget_with_owner_approval": 250
   },
-  "current_priority": "Independent opportunity screen (research/2026-11-27-reassessment.md), finish by 2026-11-29, then one experiment",
+  "current_priority": "Owner decision on E3 and the \u00a325 envelope (asked 2026-11-27). Meanwhile: unblocked E3 preparation that costs nothing",
   "next_actions": [
-    "FIRST: test network (curl gov.uk). If reachable: cd capital && python3 ops/crp_scan.py research/e3-prospects-nhs-food-framework.csv research/e3-scan-results.csv --limit 50; then manually verify every no_site and a sample of no_crp rows; write research/2026-11-27-e3-supplier-scan.md with counts and verdict",
-    "Fill products/crp/factors.csv from the DESNZ 2026 flat file (needs network), then generate a sample CRP for the offer page",
-    "Verdict rule (owner's terms): in-scope (NHS Supply Chain framework => Evergreen Level 1 CRP required for tenders since Apr 2026), lacking a current CRP, realistic buyer (SME limited company with contact route). E3 proceeds if >=40% of 50 lack a current CRP; feasibility already confirmed (self-certified, director sign-off, no accreditation)",
-    "If verdict passes: send OWNER ACTION asking for the \u00a325 setup approval with a mailbox provider proposal"
+    "If owner approves E3 + \u00a325: confirm domain and mailbox provider against live prices (mailbox must allow send/read by API), then give the owner exact purchase steps. No spend by the operator",
+    "Before first client use: products/crp/build_crp.py applies one factor set (DESNZ 2026) to every year. Add the DESNZ 2024 and 2025 flat-file factor sets and pick by reporting year (2026 factors are for 2026 activity)",
+    "Collect a published email address for each of the 22 reachable prospects in research/e3-scan-verified.csv (limited companies only); record which only offer a contact form",
+    "Scan rows 51-80 of research/e3-prospects-nhs-food-framework.csv: fill website by hand, run ops/crp_scan.py, then browser pass and read each plan (script alone matched 29/50)",
+    "Source more in-scope SME supplier lists (other NHS Supply Chain frameworks) - about 230 scanned suppliers needed for 100 emails at the 44% rate",
+    "Generate a sample CRP (fictitious client, clearly labelled) for the offer page"
   ],
   "blocked_actions": [
     {
-      "action": "Verify supplier websites for published CRPs; bulk Contracts Finder pulls; any autonomous public research in scheduled runs",
-      "blocked_on": "owner: set cloud environment network access to Full (or Custom research allowlist); see research/2026-11-27-research-access.md"
+      "action": "Any E3 spend, outreach email, or public offer page",
+      "blocked_on": "owner: approve E3 and the \u00a325 envelope; domain, mailbox and payment processor in owner's name"
     },
     {
       "action": "Remove personal connectors from scheduled task",
@@ -52,14 +54,14 @@
     "Employment-contract clauses",
     "Remove Gmail/Calendar/Docs from scheduled task"
   ],
-  "last_verified_progress": "2026-11-27 23:00: 8 SME framework suppliers checked: 3 current CRP, 1 outdated (2024), 4 none -> 62% lack current CRP (n=8, interim). See research/2026-11-27-e3-supplier-scan.md",
-  "next_checkpoint": "2026-11-28T00:36Z scheduled run (verify multi-action behaviour in cycles.log)",
+  "last_verified_progress": "2026-11-27: DESNZ 2026 factors filled (9, flat file v1.2). 50 framework suppliers hand-verified: 13 current CRP, 5 overdue, 2 outdated, 1 unpublished, 14 none, 5 site down, 8 no website, 2 insolvent. 37/50 (74%) lack a current published CRP; 22/50 (44%) are reachable realistic buyers; 17/50 (34%) on the most cautious count. See research/2026-11-27-e3-supplier-scan.md",
+  "next_checkpoint": "Owner reply on E3 approval; next scheduled run continues the zero-cost next_actions",
   "programme": {
     "start": "2026-11-27",
     "review_deadline": "2026-12-27"
   },
   "blockers": [
-    "Shell egress proxy returns 403 for non-allowlisted hosts (fix: claude.ai web > Settings > Capabilities allowed domains)",
-    "WebFetch of new domains needs per-URL owner approval in chat sessions"
+    "DuckDuckGo HTML search is reset from the cloud shell: crp_scan.py cannot find websites itself; fill the website column by hand",
+    "Some supplier sites block scripts or cloud addresses; use the browser pass"
   ]
 }

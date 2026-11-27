@@ -1,4 +1,15 @@
-# Owner actions (updated 2026-11-27 22:10 UK)
+# Owner actions (updated 2026-11-27 23:04 UTC)
+
+## PENDING APPROVAL: E3 and the £25 setup envelope (asked 2026-11-27)
+- **What:** approve experiment E3 (`experiments/E3-crp-public-suppliers.md`) and a spending cap of £25 from the £100 budget: a domain (about £10) and one month of a business mailbox the operator can send and read by API (about £1–7). Provider and exact prices to be confirmed against live pricing before anything is bought; purchases are made by you, in your name.
+- **Why:** the targeting scan passed your 40% bar. Of 50 NHS framework suppliers, 37 (74%) lack a current published Carbon Reduction Plan; 22 (44%) are solvent, have a working website and lack a current plan. Evidence: `research/2026-11-27-e3-supplier-scan.md`.
+- **Cost and risk:** £25 maximum. The pass is narrow: on the most cautious count it is 34%. Most suppliers who needed a plan made one themselves with the free template, so £249 may not sell. The prospect pool is thin: about 230 suppliers must be scanned to reach 100 emails.
+- **Expected benefit:** a direct answer on whether these suppliers will pay. Pass is one paid order (£249) within 14 days of the first send.
+- **Alternatives:** (a) scan the other 30 suppliers and a second framework first, at no cost, then decide; (b) drop E3 and return to opportunity selection.
+- **Can other work continue?** Yes: collecting prospect email addresses, scanning more suppliers, year-matched emission factors and a sample plan all cost nothing.
+- Also needed if approved: payment acceptance for £249 invoices (processor account in your name) and the employment-contract clauses (still outstanding).
+- Reply "E3 approved" (or amend). Silence is not consent.
+
 
 ON HOLD: everything Etsy-specific below (approval, shop, developer app, network hosts) pending the independent reassessment. Still useful now: private repo, employment clauses, removing personal connectors from the scheduled task.
 

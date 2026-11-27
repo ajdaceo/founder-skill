@@ -1,4 +1,4 @@
-# State (updated 2026-11-27 21:45 UK)
+# State (updated 2026-11-27 23:04 UTC)
 
 Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlier rules in `README.md` and `history/` apply only where they don't conflict.
 
@@ -10,7 +10,7 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlie
 ## Verified position
 - Execution: daily scheduled task "CAPITAL operating cycle" (14:17 UTC) wakes a persistent Claude Code cloud session. Last wake delivered 2026-11-27. Whether each cycle does useful work is not yet verified.
 - Repo push from this session: working (tested 2026-11-27).
-- Shell network (tested 2026-11-27): github.com and pypi.org reachable; api.stripe.com, whatdotheyknow.com, contractsfinder blocked. WebFetch from chat reaches public pages.
+- Shell network (retested 2026-11-27 22:30 UTC, new session, environment set to Full): gov.uk, contractsfinder and most supplier sites reachable. DuckDuckGo HTML search is reset; a few supplier sites block scripts. Chromium (Playwright) works for browser checks.
 - Records: this folder on branch `claude/wizardly-noether-26a3n7` of ajdaceo/founder-skill (public repo; fork). Consider moving to a private repo before customer data exists.
 - Network: cloud environment shell blocks most hosts. WebFetch from a chat session reached whatdotheyknow.com on 2026-11-27, so FOI-log collection can run through WebFetch, slowly.
 - Payments, hosting, mailbox, domain: none exist.
@@ -22,6 +22,13 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlie
 - Old "CAPITAL operating cycle" task (trig_011WoZfwCJmbERHrXQkT5ZqB) disabled 2026-11-27 21:35 with owner approval; confirmed enabled=false.
 - Lock: `LOCK` file in this folder holds start time (UTC ISO) of the run in progress. A run that finds a LOCK younger than 2 hours makes no changes. Delete LOCK at the end of every run.
 - Cycle log: append one line per run to `cycles.log` (UTC time, what was done, result).
+
+## E3 (CRPs for public-sector suppliers): targeting scan done, awaiting owner approval
+- DESNZ 2026 factors filled in `products/crp/factors.csv` (flat file v1.2). Generator runs end to end; tests pass.
+- 50 framework suppliers hand-verified (`research/2026-11-27-e3-supplier-scan.md`, `research/e3-scan-verified.csv`): 37/50 (74%) lack a current published CRP; 22/50 (44%) are reachable realistic buyers; 17/50 (34%) on the most cautious count. Passes the 40% bar narrowly.
+- Risks: 60% of working-site suppliers already made a plan themselves (mostly the free template); prospect pool is thin (about 230 scans for 100 emails).
+- Owner asked 2026-11-27 to approve E3 and the £25 envelope. No spend, outreach or publication until approved.
+- Known product gap: generator uses 2026 factors for every year; needs year-matched factor sets before first client.
 
 ## Opportunity selection: open
 - Prior research (research/, history/) is unverified historical input, not decisions. The round-2 shortlist is not presumed best.
