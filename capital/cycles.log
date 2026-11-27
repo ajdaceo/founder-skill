@@ -18,3 +18,4 @@
 2026-11-27T23:20Z chat: search-only CRP checks inconclusive (search can't prove absence); drafted outreach email + data checklist (unsent). Remaining actions need approval: site fetches/network, E3+£25, sending.
 2026-11-27T23:30Z chat: located DESNZ 2026 flat file URL (recorded in products/crp/factors.csv); download blocked pending approval/network. Owner notified by push. Stopping: remaining actions all need owner approval.
 2026-11-27T22:30Z chat: owner moving CAPITAL to a new Claude Code desktop session (Full network). This chat session is retired as operator; do not resume from it.
+2026-11-27T22:31Z operator: network reachable (gov.uk 200), no prior LOCK; DESNZ 2026 flat file v1.2 downloaded, 9 factors filled in products/crp/factors.csv with row IDs; generator test 8/8; end-to-end run OK.

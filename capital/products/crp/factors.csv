@@ -1,12 +1,13 @@
 key,unit,kgco2e_per_unit,scope,source
 # Source file (July 2026 revised flat file): https://assets.publishing.service.gov.uk/media/6a6c9748862aaf18d9c62ac9/ghg-conversion-factors-2026-flat-format-revised.xlsx
-# FILL from DESNZ 2026 GHG conversion factors flat file (OGL) before first client use; run verifies none are blank.
-natural_gas_kwh,kWh,,1,DESNZ 2026 Fuels > Natural gas > kWh (Gross CV)
-diesel_litre,litre,,1,DESNZ 2026 Fuels > Diesel (average biofuel blend) > litres
-petrol_litre,litre,,1,DESNZ 2026 Fuels > Petrol (average biofuel blend) > litres
-electricity_kwh,kWh,,2,DESNZ 2026 UK electricity > kWh
-car_km,km,,3,DESNZ 2026 Business travel land > Average car > Unknown fuel > km
-rail_km,passenger.km,,3,DESNZ 2026 Business travel land > National rail
-van_diesel_km,km,,3,DESNZ 2026 Delivery vehicles > Average van diesel > km
-waste_landfill_tonne,tonne,,3,DESNZ 2026 Waste disposal > Commercial and industrial waste > Landfill
-commute_km,km,,3,DESNZ 2026 Average car > km (employee commuting)
+# DESNZ/UK Government GHG Conversion Factors for Company Reporting 2026, flat file v1.2 (Final, updated 2026-07-10), sheet "Factors by Category", GHG/Unit = kg CO2e. Open Government Licence.
+# Filled 2026-11-27 from the downloaded file (sha256 a9a455ab396dae226d510c7be6233748416d490c41a5d20f3dc7a0c45feecd5e). Each source ends with the flat-file row ID. Next DESNZ publication: June 2027.
+natural_gas_kwh,kWh,0.18231,1,DESNZ 2026 Fuels > Gaseous fuels > Natural gas > kWh (Gross CV) [1_100_1004_6_1]
+diesel_litre,litre,2.58354,1,DESNZ 2026 Fuels > Liquid fuels > Diesel (average biofuel blend) > litres [1_101_1011_8_1]
+petrol_litre,litre,2.075,1,DESNZ 2026 Fuels > Liquid fuels > Petrol (average biofuel blend) > litres [1_101_1017_8_1]
+electricity_kwh,kWh,0.13096,2,DESNZ 2026 UK electricity > Electricity generated > Electricity: UK > kWh [7_400_4000_5_1]
+car_km,km,0.16591,3,DESNZ 2026 Business travel- land > Cars (by size) > Average car > Unknown fuel > km [25_301_3074_4_1]
+rail_km,passenger.km,0.03092,3,DESNZ 2026 Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
+van_diesel_km,km,0.25716,3,DESNZ 2026 Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km [27_303_3102_4_1] (third-party transport; own vans go in Scope 1 via diesel_litre)
+waste_landfill_tonne,tonne,520.58023,3,DESNZ 2026 Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes [20_507_5313_15_1]
+commute_km,km,0.16591,3,DESNZ 2026 Business travel- land > Cars (by size) > Average car > Unknown fuel > km [25_301_3074_4_1] (employee commuting)
