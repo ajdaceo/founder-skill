@@ -14,3 +14,4 @@
 2026-11-27T22:20Z chat: checked 3 NHS-linked SME supplier sites via approved fetch: Raynor has CRP; Tiffin and Ribble Farm Fare do not. E3 proposed (experiments/E3-crp-public-suppliers.md).
 2026-11-27T22:35Z chat: 80-supplier NHS framework prospect list saved; feasibility confirmed (self-certified CRP, director sign-off, no accreditation); ops/crp_scan.py written for the 50-site check (needs Full network; this session's network still blocked).
 2026-11-27T23:00Z chat: E3 interim scan 8 SMEs, 5/8 lack current CRP; blocked on fetch approvals + shell proxy 403 (gov.uk); 42 remaining.
+2026-11-27T23:10Z chat: built products/crp generator (Annex A structure, scope totals, sign-off block; refuses to run until DESNZ 2026 factors filled). Tests pass.

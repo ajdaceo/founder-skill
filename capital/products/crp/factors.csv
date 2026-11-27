@@ -1,0 +1,11 @@
+key,unit,kgco2e_per_unit,scope,source
+# FILL from DESNZ 2026 GHG conversion factors flat file (OGL) before first client use; run verifies none are blank.
+natural_gas_kwh,kWh,,1,DESNZ 2026 Fuels > Natural gas > kWh (Gross CV)
+diesel_litre,litre,,1,DESNZ 2026 Fuels > Diesel (average biofuel blend) > litres
+petrol_litre,litre,,1,DESNZ 2026 Fuels > Petrol (average biofuel blend) > litres
+electricity_kwh,kWh,,2,DESNZ 2026 UK electricity > kWh
+car_km,km,,3,DESNZ 2026 Business travel land > Average car > Unknown fuel > km
+rail_km,passenger.km,,3,DESNZ 2026 Business travel land > National rail
+van_diesel_km,km,,3,DESNZ 2026 Delivery vehicles > Average van diesel > km
+waste_landfill_tonne,tonne,,3,DESNZ 2026 Waste disposal > Commercial and industrial waste > Landfill
+commute_km,km,,3,DESNZ 2026 Average car > km (employee commuting)
