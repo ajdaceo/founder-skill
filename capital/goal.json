@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-11-27T23:10:00Z",
+  "updated_utc": "2026-11-27T22:10:00Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
     "M0": "in_progress",
-    "M1": "provisional: E2 selected 2026-11-27; niche-level demand still to confirm",
+    "M1": "reopened 2026-11-27 after anchoring review; E2 demoted to asset",
     "M2": "not_started",
     "M3": "not_started",
     "M4": "not_started",
@@ -18,8 +18,8 @@
     "M12": "not_started",
     "M13": "not_started"
   },
-  "current_milestone": "M2",
-  "current_experiment": "E2: Etsy digital spreadsheet tools (experiments/E2-etsy-spreadsheets.md)",
+  "current_milestone": "M1",
+  "current_experiment": null,
   "finance_gbp": {
     "revenue": 0,
     "expenditure": 0,
@@ -28,37 +28,23 @@
     "base_budget": 100,
     "max_budget_with_owner_approval": 250
   },
-  "current_priority": "Build E2 product v1 and listings now; owner sets up Etsy shop, developer app, network hosts and private repo.",
+  "current_priority": "Independent opportunity screen (research/2026-11-27-reassessment.md), finish by 2026-11-29, then one experiment",
   "next_actions": [
-    "When ETSY_* env vars and network hosts exist: run ops/etsy.py whoami, confirm taxonomy_id and when_made values, then create-drafts listings/plan.json (drafts only)",
-    "Owner reviews drafts; publish on approval; record listing fees in ledger.csv",
-    "From shop day 15: Etsy Ads <= \u00a33/day within the approved envelope",
-    "Track views/favourites/sales; record results in experiments/E2",
-    "While blocked: improve products (Sheets compatibility notes), research Etsy keyword demand from permitted sources"
+    "Widen screen to >=8 unrelated categories with the new rules",
+    "Define cheapest paid-demand test for top 2 (CRP is leading on evidence of spend; competition risk)",
+    "Write E3 record; then request only the setup it needs"
   ],
   "blocked_actions": [
     {
-      "action": "Create Etsy draft listings",
-      "blocked_on": "owner: Etsy shop, developer app keys in env, network hosts openapi.etsy.com and api.etsy.com, E2 approval"
-    },
-    {
-      "action": "Move records to private repo",
-      "blocked_on": "owner: create private repo and grant access"
-    },
-    {
       "action": "Remove personal connectors from scheduled task",
-      "blocked_on": "owner: task settings"
+      "blocked_on": "owner"
     }
   ],
   "pending_owner_approvals": [
-    "E2 budget envelope \u00a370 (setup fee <=\u00a325, listings <=\u00a33, Etsy Ads <=\u00a340)",
-    "Etsy seller account and shop (owner identity)",
-    "Etsy developer seller app; API key into environment variables",
-    "Allow openapi.etsy.com and api.etsy.com in the cloud environment network settings",
-    "Private GitHub repo for business records (this repo is a public fork)",
+    "ON HOLD: E2 budget and Etsy setup",
+    "Private GitHub repo for records",
     "Employment-contract clauses",
-    "ICO self-check (likely exempt: own accounts and own marketing only)",
-    "Remove Gmail/Calendar/Docs connectors from the scheduled task"
+    "Remove Gmail/Calendar/Docs connectors from scheduled task"
   ],
   "last_verified_progress": "2026-11-27 23:10: two products built and tested (23/23 and 24/24 formula checks in LibreOffice), 8 listing images, 3 listing drafts validated against Etsy limits, Etsy API client written and tested offline; owner setup requested.",
   "next_checkpoint": "2026-11-28T00:36Z scheduled run (verify multi-action behaviour in cycles.log)",

@@ -1,4 +1,6 @@
-# Owner actions (updated 2026-11-27 22:05 UK)
+# Owner actions (updated 2026-11-27 22:10 UK)
+
+ON HOLD: everything Etsy-specific below (approval, shop, developer app, network hosts) pending the independent reassessment. Still useful now: private repo, employment clauses, removing personal connectors from the scheduled task.
 
 Selected experiment: E2, Etsy digital spreadsheet tools (`experiments/E2-etsy-spreadsheets.md`). About 45–60 minutes in total, once. Sent to owner 2026-11-27 22:05.
 

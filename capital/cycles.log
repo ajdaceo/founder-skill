@@ -6,3 +6,4 @@
 2026-11-27T23:10Z chat: Etsy client + offline tests, listing plan validated, shop policy and reply templates. Stopping: critical path blocked on owner setup (Etsy shop/app/network/approval); next executable action: ops/etsy.py whoami once ETSY_* exist. Lock released.
 2026-11-27T23:25Z chat: added taxonomy lookup to Etsy client; recorded competition evidence. Stopping: all remaining E2 steps need owner setup; scheduled runs continue.
 2026-11-27T23:45Z chat: Vehicle tracker v1.1.0 adds Deal Analyser (max bid; 27/27 tests); new listing image and copy. Stopping: remaining E2 steps need owner setup; next action ops/etsy.py whoami once ETSY_* set.
+2026-11-27T22:10Z chat: owner challenged anchoring; E2 demoted to asset; reassessment started (CRP, EPR, Renters' Rights examined); Etsy setup on hold.

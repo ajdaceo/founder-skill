@@ -1,6 +1,6 @@
 # E2: Etsy digital spreadsheet tools (selected 2026-11-27)
 
-Status: preparing. E1 remains a deferred candidate.
+Status: DEMOTED 2026-11-27 22:10 to preserved asset after anchoring review (research/2026-11-27-reassessment.md). Not selected.
 
 ## Why this one (gates)
 - A Demand: EVIDENCE Etsy hosts many paid reseller/profit-tracker spreadsheets at $7–$63 list prices (search results 2026-11-27). Category-level demand is real; niche-level demand (vehicle flippers) is unproven. ASSUMPTION until Etsy API favourites data is checked.
