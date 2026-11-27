@@ -16,3 +16,4 @@
 2026-11-27T23:00Z chat: E3 interim scan 8 SMEs, 5/8 lack current CRP; blocked on fetch approvals + shell proxy 403 (gov.uk); 42 remaining.
 2026-11-27T23:10Z chat: built products/crp generator (Annex A structure, scope totals, sign-off block; refuses to run until DESNZ 2026 factors filled). Tests pass.
 2026-11-27T23:20Z chat: search-only CRP checks inconclusive (search can't prove absence); drafted outreach email + data checklist (unsent). Remaining actions need approval: site fetches/network, E3+£25, sending.
+2026-11-27T23:30Z chat: located DESNZ 2026 flat file URL (recorded in products/crp/factors.csv); download blocked pending approval/network. Owner notified by push. Stopping: remaining actions all need owner approval.

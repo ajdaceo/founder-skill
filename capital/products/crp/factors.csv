@@ -1,4 +1,5 @@
 key,unit,kgco2e_per_unit,scope,source
+# Source file (July 2026 revised flat file): https://assets.publishing.service.gov.uk/media/6a6c9748862aaf18d9c62ac9/ghg-conversion-factors-2026-flat-format-revised.xlsx
 # FILL from DESNZ 2026 GHG conversion factors flat file (OGL) before first client use; run verifies none are blank.
 natural_gas_kwh,kWh,,1,DESNZ 2026 Fuels > Natural gas > kWh (Gross CV)
 diesel_litre,litre,,1,DESNZ 2026 Fuels > Diesel (average biofuel blend) > litres
