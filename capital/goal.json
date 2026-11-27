@@ -1,0 +1,57 @@
+{
+  "updated_utc": "2026-11-27T21:55:00Z",
+  "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
+  "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
+  "milestones": {
+    "M0": "in_progress",
+    "M1": "in_progress",
+    "M2": "not_started",
+    "M3": "not_started",
+    "M4": "not_started",
+    "M5": "not_started",
+    "M6": "not_started",
+    "M7": "not_started",
+    "M8": "not_started",
+    "M9": "not_started",
+    "M10": "not_started",
+    "M11": "not_started",
+    "M12": "not_started",
+    "M13": "not_started"
+  },
+  "current_milestone": "M1",
+  "current_experiment": null,
+  "finance_gbp": {
+    "revenue": 0,
+    "expenditure": 0,
+    "net": 0,
+    "approved_budget_available": 0,
+    "base_budget": 100,
+    "max_budget_with_owner_approval": 250
+  },
+  "current_priority": "Select one commercially credible experiment from evidence and move straight to validation.",
+  "next_actions": [
+    "Apify: find niches with >=200 users/30d, weak incumbents and legally clean sources; estimate revenue per user.",
+    "Etsy: find a permitted demand-data source; shortlist niches using owner knowledge (automotive, clothing, gaming).",
+    "Examine Envato/Creative Market, Amazon KDP, RapidAPI, agent/MCP tool marketplaces; Shopify, Gumroad Discover, Workspace Marketplace, Fab already assessed (see research file).",
+    "Write experiments/E2-*.md for the winner and the exact owner setup it needs."
+  ],
+  "blocked_actions": [
+    {
+      "action": "Remove Gmail/Calendar/Docs connectors from the scheduled task",
+      "blocked_on": "owner: remove Gmail, Google Calendar and Claude Docs connectors in the scheduled task's settings (no tool available to do it)"
+    },
+    {
+      "action": "Shell access to most external hosts",
+      "blocked_on": "cloud environment network policy; request specific hosts once a platform is chosen"
+    }
+  ],
+  "pending_owner_approvals": [
+    "Employment-contract clauses on outside business/IP (information, not approval)"
+  ],
+  "last_verified_progress": "2026-11-27: mandate and amendment adopted; old task disabled (verified); single 3-hourly task created; repo push verified; Apify and Etsy evidence recorded.",
+  "next_checkpoint": "2026-11-28T00:36Z first scheduled run; check cycles.log for multiple sequential actions.",
+  "programme": {
+    "start": "2026-11-27",
+    "review_deadline": "2026-12-27"
+  }
+}

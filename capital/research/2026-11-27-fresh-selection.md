@@ -19,8 +19,26 @@ Preferred shape (not a rule): an existing ecosystem that supplies buyers, billin
 - Gap: demand data. etsy.com blocks automated fetching (robots). Need a permitted data source (e.g. owner screenshot of search results, or a paid research tool) before choosing a niche.
 - Verdict so far: strongest buyer-intent channel found; owner time is mainly occasional messages.
 
+### Shopify App Store
+- EVIDENCE: developers keep 100% of first $1M lifetime revenue, 2.9% processing, $19 one-time registration (shopify.dev revenue-share docs).
+- EVIDENCE: first-app review reported at 30+ days and 5–6 weeks in 2026 (community.shopify.dev threads). Earnings follow a power law (adsx, revenuehunt analyses).
+- Verdict: review time alone likely pushes a first sale past 27 Dec; merchant support load is high. Deferred.
+
+### Gumroad Discover
+- EVIDENCE: 30% fee on Discover sales; sellers report little or no Discover traffic (Indie Hackers post, March 2026, via roo.beehiiv.com). Payout minimum raised to $100.
+- Verdict: not a real acquisition channel. Rejected as a channel; usable only as a checkout.
+
+### Google Workspace Marketplace
+- EVIDENCE: no marketplace cut (developer write-up); one documented $1.6k MRR Sheets add-on (Indie Hackers); one postmortem of 3k users and $0 revenue (June 2026).
+- Verdict: distribution exists, monetisation needs our own billing; Google OAuth verification for sensitive scopes takes time. Candidate for later.
+
+### Fab (Epic)
+- EVIDENCE: 88% creator share; Epic reports $24M+ paid to creators in 2025; 420k+ listings and 20k+ publishers (Epic year-in-review); strong demand for RPG frameworks, Blueprint products, procedural systems.
+- ASSUMPTION: average ~ $1,200 per publisher per year; power-law distribution.
+- Constraint: building/testing Unreal plugins needs Unreal Engine, not available in this cloud environment. Deferred unless owner can run builds.
+
 ### Not yet examined
-Gumroad Discover, Payhip, Shopify App Store, Google Workspace Marketplace, Envato/Creative Market, Fab/Unity Asset Store, Amazon KDP, Notion/Framer template marketplaces, RapidAPI, Fiverr (owner-identity risk), MCP/agent tool marketplaces.
+Payhip, Envato/Creative Market, Unity Asset Store, Amazon KDP, Notion/Framer template marketplaces, RapidAPI, Fiverr (owner-identity risk), MCP/agent tool marketplaces.
 
 ## Next steps (each operating cycle takes the top unblocked one)
 1. Apify: find 3 niches with paid demand (users/30d ≥ 200) and weak incumbents (low rating, stale, few competitors), legally clean sources.
