@@ -56,3 +56,10 @@ Kill conditions: no gap with at least 500 votes or 1,000 legacy installs and few
 
 ## Decision
 No product is selected. Atlassian Cloud migration-gap apps are the only direction that clears the channel, payment and demand gates; the specific product is unproven and will not be built until the data above confirms a gap.
+
+## Addendum, 12:45 UTC cycle (search only)
+- Atlassian vendor costs: bug bounty participation is mandatory for Silver tier and above and for trust badges; a community post reads the programme as Atlassian-funded. Whether a brand-new vendor below Silver must join, and at what cost, is NOT verified. Forge pricing and free allowance: not found.
+- The "Runs on Atlassian" badge is reported as being retired on 31 Dec 2026 (Atlassian trust page via search summary), so it is not a durable differentiator.
+- CPSC eFiling: CPSC's own registry is free and optional; no seller-forum complaints, tools or broker fees surfaced. No evidence of an unserved paid need. Rejected unless forum evidence appears.
+- EU Cyber Resilience Act kit for one-person vendors: 11 Dec 2027 date stands in the sources found; micro and small firms get a simplified technical-documentation form that the Commission has still to publish. An official free form would undercut a paid generator. Parked until that form's status is known.
+- marketplace.atlassian.com is still unreachable from this environment.

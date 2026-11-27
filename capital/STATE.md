@@ -26,5 +26,6 @@ Preserved in `products/mtd-workbook/` and `site/`. No launch, no further develop
 
 ## Backlog
 1. [blocked: network access] Pull Marketplace API and tracker data; rank gaps by legacy installs and votes against existing Cloud apps.
-2. While blocked: search-only checks on second-tier leads (CPSC eFiling prep, EU CRA kit for one-person vendors, Trello approvals), and Atlassian vendor costs (bug bounty, Forge pricing).
+2. Done 12:45 UTC: search-only checks on CPSC eFiling (rejected), EU CRA kit (parked), Atlassian vendor costs (unresolved). Search summaries are exhausted as a method; further cycles add little until page access exists.
+   Cycle cadence reduced to once a day until the blocker clears, to avoid spending usage on empty cycles.
 3. Select a product only if it passes every gate with cited evidence; otherwise widen the search.
