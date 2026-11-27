@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-27T22:35:00Z",
+  "updated_utc": "2026-11-27T23:00:00Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -51,7 +51,7 @@
     "Employment-contract clauses",
     "Remove Gmail/Calendar/Docs from scheduled task"
   ],
-  "last_verified_progress": "2026-11-27 22:35: 80 SME prospects extracted from NHS Supply Chain Fresh & Food to Go framework award (FTS 026675-2024); 3 sites checked directly (Raynor has CRP; Tiffin, Ribble Farm Fare do not); search shows larger non-SME framework members (Creamline, PFD Carlisle) do publish CRPs; feasibility confirmed: CRP is self-certified with director sign-off, no third-party verification or accreditation required.",
+  "last_verified_progress": "2026-11-27 23:00: 8 SME framework suppliers checked: 3 current CRP, 1 outdated (2024), 4 none -> 62% lack current CRP (n=8, interim). See research/2026-11-27-e3-supplier-scan.md",
   "next_checkpoint": "2026-11-28T00:36Z scheduled run (verify multi-action behaviour in cycles.log)",
   "programme": {
     "start": "2026-11-27",
