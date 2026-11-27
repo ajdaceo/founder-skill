@@ -18,9 +18,10 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlie
 - Lemon Squeezy closed new sign-ups 2026-11-16 (shuts 2027-03-31): not an option.
 
 ## Operator
-- This chat session is the sole CAPITAL operator under MANDATE.md (owner instruction 2026-11-27 21:30).
-- The old "CAPITAL operating cycle" scheduled task (trig_011WoZfwCJmbERHrXQkT5ZqB) runs on pre-mandate rules. Pausing it from here was refused; owner asked to pause it. Until then it is a competing operator with no spending or sending authority.
-- No new schedule until the old one is paused.
+- One operator: the scheduled task "CAPITAL operator (V1.0)", every 3 hours, fresh cloud session each run, state in this repo. Owner chat sessions use the same records and the same lock.
+- Old "CAPITAL operating cycle" task (trig_011WoZfwCJmbERHrXQkT5ZqB) disabled 2026-11-27 21:35 with owner approval; confirmed enabled=false.
+- Lock: `LOCK` file in this folder holds start time (UTC ISO) of the run in progress. A run that finds a LOCK younger than 2 hours makes no changes. Delete LOCK at the end of every run.
+- Cycle log: append one line per run to `cycles.log` (UTC time, what was done, result).
 
 ## Opportunity selection: open
 - Prior research (research/, history/) is unverified historical input, not decisions. The round-2 shortlist is not presumed best.
@@ -28,8 +29,8 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlie
 - E1 (`experiments/E1-contract-intel.md`) is one candidate, not selected.
 
 ## Backlog
-1. [independent] Fresh opportunity selection, due 2026-12-01; one experiment chosen with evidence.
-2. [owner] Pause the old scheduled task; employment-contract clauses; ICO self-check.
+1. [independent] Fresh opportunity selection: work through `research/2026-11-27-fresh-selection.md` next steps. Target a chosen experiment as soon as evidence allows (2026-12-01 is a latest date, not a plan).
+2. [owner] Employment-contract clauses. (ICO need to be assessed against the chosen activity, not now.)
 3. [after selection] Opportunity-specific setup and budget request.
 4. [research only] Acquisition scan, not before the first experiment launches.
 
