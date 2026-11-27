@@ -19,7 +19,7 @@ async function grab(ctx, u) {
   const page = await ctx.newPage();
   try {
     const resp = await page.goto(u, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    await page.waitForTimeout(2200);
+    await page.waitForTimeout(1500);
     const links = await page.$$eval('a', as => as.map(a => [(a.innerText || a.getAttribute('aria-label') || a.title || '').trim().replace(/\s+/g, ' ').slice(0, 80), a.href]));
     const text = await page.evaluate(() => document.body ? document.body.innerText : '');
     return { status: resp ? resp.status() : 0, final: page.url(), links, text, title: await page.title() };

@@ -108,3 +108,13 @@ plan, _, qa = B.build(c, F)
 ok(plan and qa["status"] == "review" and any("No electricity" in w for w in qa["warnings"]) and any("changed" in w for w in qa["warnings"]), f"warnings {qa['warnings']}")
 ok(all(v["factor"] >= 0 for v in F.values()) and len({k for _, k in F}) == 48, "48 activities")
 print(f"{n}/{n} pass")
+
+# 6. The release check re-adds the calculation record and compares it with the plan the client sees
+import os, tempfile, verify_outputs as V
+with tempfile.TemporaryDirectory() as d:
+    plan, calc, qa = B.build(copy.deepcopy(C), F)
+    open(os.path.join(d, "plan.md"), "w").write(plan); open(os.path.join(d, "calculation.md"), "w").write(calc)
+    assert V.verify(d) == [], V.verify(d)
+    open(os.path.join(d, "plan.md"), "w").write(plan.replace("| Scope 2 | 20.71 |", "| Scope 2 | 27.01 |"))
+    assert any("Baseline Scope 2" in p for p in V.verify(d)), "tampered plan must be caught"
+print("release check: 2/2 pass")
