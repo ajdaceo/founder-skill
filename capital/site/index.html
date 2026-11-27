@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuarterReady: MTD spreadsheet for sole traders and landlords</title>
+<meta name="description" content="Keep Making Tax Digital records in a spreadsheet you own. Check when MTD for Income Tax applies to you, see your quarterly deadlines, and get a workbook that totals everything into HMRC's categories.">
+<style>
+:root{--ink:#16233a;--muted:#55627a;--bg:#f7f9fc;--card:#fff;--line:#dbe2ec;--brand:#0f766e;--brand-ink:#fff;--warn:#b45309}
+@media (prefers-color-scheme:dark){:root{--ink:#e8edf5;--muted:#a3afc2;--bg:#0f1622;--card:#182233;--line:#2a3750;--brand:#2dd4bf;--brand-ink:#06201d;--warn:#fbbf24}}
+*{box-sizing:border-box}body{margin:0;font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.15;margin:24px 0 12px}h2{font-size:24px;margin:44px 0 10px}
+p.lead{font-size:20px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin:18px 0}
+label{display:block;font-weight:600;margin:12px 0 4px}
+input[type=number]{width:100%;font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+button,.btn{display:inline-block;font:inherit;font-weight:700;background:var(--brand);color:var(--brand-ink);border:0;border-radius:8px;padding:12px 20px;margin-top:14px;cursor:pointer;text-decoration:none}
+#result{margin-top:16px;padding:14px;border-left:4px solid var(--brand);background:var(--bg);border-radius:6px;display:none}
+table{width:100%;border-collapse:collapse}td,th{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left}
+ul{padding-left:20px}small,.muted{color:var(--muted)}.price{font-size:30px;font-weight:800}
+footer{margin-top:48px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<strong>QuarterReady</strong>
+<h1>Making Tax Digital records, in a spreadsheet you own</h1>
+<p class="lead">From 6 April 2027, sole traders and landlords with more than £30,000 of qualifying income must keep digital records and send HMRC an update every quarter. QuarterReady is a ready-made workbook that keeps those records and totals them into HMRC's categories.</p>
+
+<div class="card" id="checker">
+<h2 style="margin-top:0">Does MTD for Income Tax apply to you?</h2>
+<p class="muted">Enter your income <em>before</em> expenses from your Self Assessment return. Nothing you type leaves this page.</p>
+<label for="se">Self-employment turnover (£ per year)</label><input id="se" type="number" min="0" inputmode="decimal" placeholder="0">
+<label for="pr">UK and foreign rental income (£ per year, your share)</label><input id="pr" type="number" min="0" inputmode="decimal" placeholder="0">
+<button id="go" type="button">Check</button>
+<div id="result" role="status"></div>
+</div>
+
+<h2>What you get</h2>
+<ul>
+<li><strong>Transaction sheets</strong> for self-employment and property: date, amount and category on every row, with dropdowns using the same categories HMRC asks for.</li>
+<li><strong>Cumulative quarterly summaries</strong>. Each update to HMRC covers the year to date, and the workbook calculates exactly that, plus single-quarter figures for your own use.</li>
+<li><strong>Deadline sheet</strong> that works out your four update periods and due dates for any tax year, with standard or calendar quarters.</li>
+<li><strong>Private-use column</strong> so only the allowable part of a mixed cost is counted.</li>
+<li><strong>Mileage log</strong> with the flat-rate calculation, including the drop in rate after 10,000 miles.</li>
+<li><strong>Mortgage interest handled correctly</strong> for landlords: shown separately, not deducted from rental profit.</li>
+<li><strong>Rough tax set-aside estimate</strong> with editable rates.</li>
+<li>Error flags for rows missing a date or category, or dated outside the tax year.</li>
+</ul>
+<p>One file. Works in Excel, Google Sheets and LibreOffice. No macros, no subscription, no account.</p>
+
+<div class="card">
+<div class="price">£14 <small>one-off</small></div>
+<p>Instant download. Use it for every tax year: change one cell and all the dates move.</p>
+<a class="btn" id="buy" href="#">Buy the workbook</a>
+<p class="muted" id="buynote" style="display:none">Checkout is not open yet.</p>
+</div>
+
+<h2>What it does not do</h2>
+<p>QuarterReady keeps your records. It does not send anything to HMRC. To submit, you also need HMRC-compatible bridging software that reads the totals from a spreadsheet; several are free, and GOV.UK publishes the current list. QuarterReady's summary sheets have a fixed layout so they are simple to link.</p>
+
+<h2>Quarterly deadlines</h2>
+<table><tr><th>Update</th><th>Standard period (cumulative)</th><th>Send by</th></tr>
+<tr><td>1</td><td>6 April to 5 July</td><td>7 August</td></tr>
+<tr><td>2</td><td>6 April to 5 October</td><td>7 November</td></tr>
+<tr><td>3</td><td>6 April to 5 January</td><td>7 February</td></tr>
+<tr><td>4</td><td>6 April to 5 April</td><td>7 May</td></tr></table>
+<p class="muted">Calendar periods (1 April start, ending 30 June, 30 September, 31 December, 31 March) have the same deadlines.</p>
+
+<footer>
+<p>QuarterReady is a record-keeping template, not tax advice and not HMRC-recognised software. It is not affiliated with or endorsed by HMRC. Thresholds shown reflect published HMRC guidance as at November 2026; always confirm your own position on GOV.UK.</p>
+</footer>
+</main>
+<script>
+// Set this to the live checkout link once the store exists.
+var CHECKOUT_URL = "";
+var buy = document.getElementById("buy");
+if (CHECKOUT_URL) { buy.href = CHECKOUT_URL; } else { buy.addEventListener("click", function (e) { e.preventDefault(); document.getElementById("buynote").style.display = "block"; }); }
+function verdict(total) {
+  if (total > 50000) return "<strong>You are already in scope.</strong> Above £50,000 the rules applied from 6 April 2026 (based on your 2024 to 2025 return). Your next quarterly update is due on the 7th of August, November, February or May.";
+  if (total > 30000) return "<strong>You are likely to be in scope from 6 April 2027</strong> if this was your income on your 2025 to 2026 return. Your first quarterly update would be due by 7 August 2027.";
+  if (total > 20000) return "<strong>You are likely to be in scope from 6 April 2028</strong> if this is your income on your 2026 to 2027 return. You can sign up voluntarily before then.";
+  return "<strong>You are below the current thresholds.</strong> Nothing changes for you yet. The lowest announced threshold is £20,000, from April 2028.";
+}
+document.getElementById("go").addEventListener("click", function () {
+  var t = (parseFloat(document.getElementById("se").value) || 0) + (parseFloat(document.getElementById("pr").value) || 0);
+  var r = document.getElementById("result");
+  r.innerHTML = "Qualifying income: £" + t.toLocaleString("en-GB") + ". " + verdict(t) + "<br><small>Self-employment and property income are added together, before expenses. HMRC decides from your tax return and will write to you; some people are exempt.</small>";
+  r.style.display = "block";
+});
+</script>
+</body>
+</html>
