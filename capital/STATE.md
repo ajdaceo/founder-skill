@@ -4,15 +4,17 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlie
 
 ## Programme
 - 30-day programme start: 2026-11-27. Review due: 2026-12-27.
-- Validation budget: £100 total ceiling. Spent: £0. Approved envelopes: none yet (allocation proposed in `OWNER_ACTIONS.md`).
+- Validation budget: £100. Owner may raise the programme total to £200–£250 (absolute max £250) for a promising opportunity, only on an evidenced request (demand, channel, profitability, itemised spend, justification, expected outcomes, downside). No extra spend without explicit approval; £250 is not a target. Any justified category allowed (ads, API, hosting, data). Spent: £0. Approved envelopes: none yet (allocation proposed in `OWNER_ACTIONS.md`).
 - Revenue to date: £0. Paying customers: 0.
 
 ## Verified position
 - Execution: daily scheduled task "CAPITAL operating cycle" (14:17 UTC) wakes a persistent Claude Code cloud session. Last wake delivered 2026-11-27. Whether each cycle does useful work is not yet verified.
+- Repo push from this session: working (tested 2026-11-27).
+- Shell network (tested 2026-11-27): github.com and pypi.org reachable; api.stripe.com, whatdotheyknow.com, contractsfinder blocked. WebFetch from chat reaches public pages.
 - Records: this folder on branch `claude/wizardly-noether-26a3n7` of ajdaceo/founder-skill (public repo; fork). Consider moving to a private repo before customer data exists.
 - Network: cloud environment shell blocks most hosts. WebFetch from a chat session reached whatdotheyknow.com on 2026-11-27, so FOI-log collection can run through WebFetch, slowly.
 - Payments, hosting, mailbox, domain: none exist.
-- Provider terms (Anthropic Consumer Terms, checked 2026-11-27): automated access is barred except via API key or where Anthropic explicitly permits it; scheduled tasks are an Anthropic feature. No blanket ban on commercial use found. Move to API keys under Commercial Terms if CAPITAL ever needs a custom runtime.
+- Provider terms (Anthropic Consumer Terms, checked 2026-11-27): automated access is barred except via API key or where Anthropic explicitly permits it; scheduled tasks are an Anthropic feature. No blanket ban on commercial use found. Consumer Terms have no general ban on commercial use; Outputs are assigned to the user; reselling the Services is barred. Commercial use per business model still to be checked against the chosen platforms' own terms. Move to API keys under Commercial Terms if CAPITAL needs a custom runtime.
 - Lemon Squeezy closed new sign-ups 2026-11-16 (shuts 2027-03-31): not an option.
 
 ## Operator
