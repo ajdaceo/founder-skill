@@ -29,6 +29,24 @@
 - Weakness: main deadline passed; NRLA and agents already serve landlords; legal-advice risk.
 - Status: low priority unless the PRS database creates a clear paid task.
 
+### Cyber Essentials (PPN 014)
+- EVIDENCE: mandatory for many government contracts; IASME fee from ~£300; typical SME first-year spend £1,500–£3,500 incl. consultancy (Connection Technologies, Apr 2026); government launched a £9.4m SME support package on 3 Nov 2026.
+- Weakness: certification only via licensed Certification Bodies; readiness work is hands-on IT remediation, not automatable; subsidised free help now competes. Rejected.
+
+### Paid MCP / agent tools (x402, MCP marketplaces)
+- EVIDENCE: platforms exist (80–90% revenue share), but write-ups report ~95% of MCP developers earn nothing; demand from paying agents unproven. Rejected for the first revenue; watch.
+
+### European Accessibility Act (UK sellers into EU)
+- EVIDENCE: applies to UK businesses selling in-scope products/services to EU consumers since 28 Jun 2025; specialist services (AbilityNet) and automated tools exist.
+- Weakness: audits need expertise; remediation is hands-on; liability. Low priority.
+
+## Emerging view (ASSUMPTION until tested)
+- The strongest pattern is mandated documents for public-sector suppliers, led by Carbon Reduction Plans: mandatory (NHS Evergreen Level 1 for all NHS Supply Chain tenders since Apr 2026), recurring yearly, priced £199–£739/yr by incumbents.
+- Product is commoditised; a possible edge is targeting: find public-sector suppliers whose website shows no CRP and make a specific, checkable offer.
+- Draft E3 (not yet selected): prospect list from Contracts Finder award notices (OGL) → check supplier site for a published CRP → email limited companies without one (PECR corporate rule, identify sender, opt-out) offering a done-for-you PPN 006 CRP at a fixed price (e.g. £249) in 5 working days → deterministic calculation with DESNZ factors + template + client sign-off. Pass: ≥1 paid order from 100 delivered emails in 14 days.
+- Blocker found: fetching Contracts Finder from this session needs approval, which went unanswered (owner away). The shell blocks the host. Needed: owner approval for contractsfinder.service.gov.uk fetches or network allowlisting.
+- Opportunity-agnostic capability every B2B test needs: business domain + mailbox with an API so the operator can send and read email itself (not the owner's personal Gmail).
+
 ## Next (time-boxed: finish by 2026-11-29)
 1. Widen the screen to at least 8 unrelated categories using the rules above (e.g. B2B data/compliance, agent/API marketplaces, outsourced back-office tasks with published prices, acquisition of small profitable assets).
 2. For the top 2: define the cheapest test of paid demand that doesn't depend on the owner's identity or labour (e.g. a priced offer to a list built from open data, with replies handled from a business mailbox).
