@@ -1,37 +1,36 @@
-# State (updated 2026-11-27)
+# State (updated 2026-11-27 21:45 UK)
 
-Revenue to date: £0. Costs to date: £0. Nothing is published or on sale.
+Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlier rules in `README.md` and `history/` apply only where they don't conflict.
 
-## Current priority: opportunity discovery (owner directive, 2026-11-27)
-The owner rejected QuarterReady as the commercial bet: crowded market, free alternatives, no demonstrated competitive advantage, no verified search demand, no acquisition edge.
-Do not build a new product until a candidate clears every gate below with cited evidence.
+## Programme
+- 30-day programme start: 2026-11-27. Review due: 2026-12-27.
+- Validation budget: £100 total ceiling. Spent: £0. Approved envelopes: none yet (allocation proposed in `OWNER_ACTIONS.md`).
+- Revenue to date: £0. Paying customers: 0.
 
-Selection gates
-1. Demand demonstrably growing (dated event, trend or volume data, marketplace counts).
-2. Repeated, unresolved customer frustration (threads, reviews, feature requests).
-3. Existing solutions absent, inadequate or overpriced, confirmed by a direct competitor search including free and open-source options.
-4. Customers actively searching.
-5. A specific advantage we can hold.
-6. A zero-ad acquisition channel (marketplace, registry, search, community).
-7. Build and running costs justified by realistic revenue.
-Mark every claim EVIDENCE (with source) or ASSUMPTION.
+## Verified position
+- Execution: daily scheduled task "CAPITAL operating cycle" (14:17 UTC) wakes a persistent Claude Code cloud session. Last wake delivered 2026-11-27. Whether each cycle does useful work is not yet verified.
+- Records: this folder on branch `claude/wizardly-noether-26a3n7` of ajdaceo/founder-skill (public repo; fork). Consider moving to a private repo before customer data exists.
+- Network: cloud environment shell blocks most hosts. WebFetch from a chat session reached whatdotheyknow.com on 2026-11-27, so FOI-log collection can run through WebFetch, slowly.
+- Payments, hosting, mailbox, domain: none exist.
+- Provider terms (Anthropic Consumer Terms, checked 2026-11-27): automated access is barred except via API key or where Anthropic explicitly permits it; scheduled tasks are an Anthropic feature. No blanket ban on commercial use found. Move to API keys under Commercial Terms if CAPITAL ever needs a custom runtime.
+- Lemon Squeezy closed new sign-ups 2026-11-16 (shuts 2027-03-31): not an option.
 
-## Product 1: QuarterReady MTD workbook: SUSPENDED
-Preserved in `products/mtd-workbook/` and `site/`. No launch, no further development. Do not work on it.
-
-## Discovery status (updated 14:18 UTC cycle)
-- Round 1 (utilities, marketplace apps, mandates): nothing qualified. `research/2026-11-27-opportunity-comparison.md`.
-- Round 2 (owner's revised method): shortlist and validation plan in `research/2026-11-27-round2-comparison.md`; thread reports in `research/round2/`.
-- No product selected. Next step is validation, not building.
-- Atlassian: parked on current evidence; data pull not done (no network access).
+## Active experiment
+E1: public-sector software renewal snapshot. See `experiments/E1-contract-intel.md`.
 
 ## Backlog
-1. Test 1 prep (no approval needed): choose the software category from search evidence; draft league-table format and vendor email.
-2. Test 2 prep: build the late-payment calculator logic and tests (test asset only).
-3. [blocked: owner] Network access to public-sector sites; domain and mailbox (about £15); approval of outreach text; payment link.
-4. Run test 1, then test 2. A fail is a stop. Record results with evidence.
+1. [independent] Choose E1 category (criteria in E1 record) by 2026-12-01.
+2. [independent] Build the 60-body dataset from published FOI responses + Contracts Finder (OGL). Quality check: every row cites a source URL.
+3. [independent] Free league-table page + sample; vendor list (limited companies only) with 40 named contacts; email drafts.
+4. [blocked: owner] Setup actions in `OWNER_ACTIONS.md` (domain, mailbox, Stripe payment link, ICO self-assessment, employment-contract check, approval of email text).
+5. [independent, low priority] Test 2 calculator logic (late payment): test asset only.
+6. [research only] Acquisition scan: not before E1 has launched.
 
-## Standing rules learned
-- Fixed prices and rule-based fulfilment; the agent never negotiates.
-- Email only limited companies and LLPs; never sole traders or partnerships; opt-out in every message.
-- Disclose AI operation; name the owner as the human contact.
+## Pending approvals
+See `OWNER_ACTIONS.md`. Silence is not consent.
+
+## Standing rules
+- Fixed prices; no negotiation, discounts or discretionary refunds by the agent.
+- Email limited companies and LLPs only; opt-out in every message; disclose AI operation; owner named as human contact.
+- Revenue recorded only from processor records. Replies are signals, not sales.
+- No spend outside an approved envelope.
