@@ -10,6 +10,8 @@ Preferred shape (not a rule): an existing ecosystem that supplies buyers, billin
 - EVIDENCE: top independent creators make over $10,000 MRR (Apify help centre). Selection-biased; no median published.
 - EVIDENCE (Store API, 2026-11-27): head of store is social/maps scraping (Google Maps 44,951 users/30d; Instagram 58,069). UK niche actors are small: Companies House actors 2–49 users/30d at $0.0015–$0.008 per result; FCA register 5; CQC leads 5.
 - ASSUMPTION: at those prices a niche UK actor with ~50 monthly users earns tens of dollars a month. Head categories carry platform-ToS risk (social sites) and heavy competition.
+- EVIDENCE (Store API, 2026-11-27 21:45): 'UK' search: most actors 1–49 users/30d at $0.0009–$0.004/result (Autotrader, Zoopla, Gumtree, grocery); planning applications: 15+ competing actors, 0–11 users/30d each.
+- Verdict 21:45: oversupplied long tail; rejected for the first experiment (Gate C).
 - Verdict so far: good operations fit (hosted, billed, no customer comms); weak economics for a quick first sale unless a niche with high per-run value is found. Keep as candidate; next check: high-price PPE actors with few competitors and legally clean sources.
 
 ### Etsy (digital downloads)
