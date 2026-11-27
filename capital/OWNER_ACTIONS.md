@@ -1,6 +1,9 @@
 # Owner actions (updated 2026-11-27 23:04 UTC)
 
-## PENDING APPROVAL: E3 and the £25 setup envelope (asked 2026-11-27)
+## E3: CONDITIONALLY APPROVED by owner 2026-11-27 (validation only; max £25 setup; NO purchases yet)
+Owner's conditions: no purchases until one consolidated setup request is presented; approval is for validation, not a commitment to the model; reassess independently if evidence weakens the case. Readiness work in progress (see goal.json next_actions). Original request kept below for the record.
+
+### Original request (asked 2026-11-27)
 - **What:** approve experiment E3 (`experiments/E3-crp-public-suppliers.md`) and a spending cap of £25 from the £100 budget: a domain (about £10) and one month of a business mailbox the operator can send and read by API (about £1–7). Provider and exact prices to be confirmed against live pricing before anything is bought; purchases are made by you, in your name.
 - **Why:** the targeting scan passed your 40% bar. Of 50 NHS framework suppliers, 37 (74%) lack a current published Carbon Reduction Plan; 22 (44%) are solvent, have a working website and lack a current plan. Evidence: `research/2026-11-27-e3-supplier-scan.md`.
 - **Cost and risk:** £25 maximum. The pass is narrow: on the most cautious count it is 34%. Most suppliers who needed a plan made one themselves with the free template, so £249 may not sell. The prospect pool is thin: about 230 suppliers must be scanned to reach 100 emails.
