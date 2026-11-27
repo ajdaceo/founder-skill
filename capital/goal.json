@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-27T22:30:00Z",
+  "updated_utc": "2026-11-27T22:20:00Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -36,8 +36,8 @@
   ],
   "blocked_actions": [
     {
-      "action": "Fetch Contracts Finder award data",
-      "blocked_on": "owner approval for contractsfinder.service.gov.uk (chat fetch approval unanswered; shell host blocked)"
+      "action": "Verify supplier websites for published CRPs; bulk Contracts Finder pulls; any autonomous public research in scheduled runs",
+      "blocked_on": "owner: set cloud environment network access to Full (or Custom research allowlist); see research/2026-11-27-research-access.md"
     },
     {
       "action": "Remove personal connectors from scheduled task",
