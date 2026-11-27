@@ -1,0 +1,51 @@
+supplier,town,website,script_first_pass,verified_status,plan_date,evidence,reachable_prospect,note
+AG Axton & Sons (Wholesale) Ltd,Chandlers Ford,https://agaxtons.co.uk/,crp_current,crp_current,approved 2025-11-06 (year ending Aug 2025),https://agaxtons.co.uk/carbon-reduction-plan/,no,Web-page plan; next update due by Feb 2027
+Antony Morawski Ltd t/a Thomas Moss,Preston,,no_site,no_site,,,no,thomasmoss.com is parked for sale; no working site found
+Arthur Brett Catering Ltd,Digbeth,https://www.arthurbrett.co.uk/,crp_current,crp_current,2026-05-05,https://www.arthurbrett.co.uk/wp-content/uploads/2026/05/Carbon-Reduction-Plan-2026-1.pdf,no,
+Basketdrop Ltd,London,,no_crp,no_site,,,no,basketdrop.com is parked for sale; script's search fallback returned an unrelated site
+Bio&Me Limited,Chester,https://bioandme.co.uk/,no_crp,no_crp,,https://bioandme.co.uk/,yes,Consumer brand site; no carbon or net zero wording
+Braces Bakery Ltd,Newport,https://www.bracesbakery.co.uk/,crp_current,crp_outdated,2024-05-01,https://www.bracesbakery.co.uk/wp-content/uploads/Carbon-reduction-plan-2024.pdf,yes,Scanned plan; no Scope 3 figures
+C&G Wholesale Foods Limited,Hawkshaw,https://www.cgwholesalefoods.co.uk/,no_crp,site_down,,https://www.cgwholesalefoods.co.uk/,no,Site shows 'under maintenance'
+Chew Valley Dairy Limited,Bristol,https://www.chewvalleydairy.co.uk/,no_crp,no_crp,,https://www.chewvalleydairy.co.uk/,yes,Net zero wording (NFU 2040 ambition) but no plan
+Clegg's Chilled Food Service,Preston,https://www.cleggschilledfoodservice.co.uk/,crp_current,crp_overdue,2025-09-24,https://www.cleggschilledfoodservice.co.uk/_files/ugd/a2e658_0e6fe095accc4b98884318510613072d.pdf,yes,"Scanned plan, prepared with East Lancashire Chamber's Chamber Low Carbon; 14 months old"
+Clifton Dairies Limited,Woodplumpton,,no_site,no_site,,,no,No website found by web search or domain check
+Country Kitchen Foods (Norfolk) Ltd,Cawston,,no_site,no_site,,,no,No website found by web search or domain check
+County Foods Ltd,Poole,https://www.countyfoods.co.uk/,crp_current,crp_outdated,2024-04 (version 1),https://www.countyfoods.co.uk/wp-content/uploads/2016/05/Carbon-Reduction-Plan.pdf,yes,Scanned plan; baseline year only
+Cramart Ltd t/a Bentley Foodservice,Bicester,https://www.bentleyfoodservice.co.uk/,no_crp,no_crp,,https://www.bentleyfoodservice.co.uk/,yes,No carbon or net zero wording
+Crowndale Food Service Ltd,Leicester,https://crowndale.co.uk/,no_crp,no_crp,,https://crowndale.co.uk/,yes,No carbon or net zero wording
+Embleton Hall Dairies Limited,County Durham,http://www.embletonhalldairies.co.uk/,no_crp,site_down,,http://www.embletonhalldairies.co.uk/,no,Hosting account suspended
+Hallam Country Fresh Foods,Sheffield,https://www.countryfreshfoods.co.uk/,crp_current,crp_overdue,2025-10-10 (reporting year 2024),https://www.countryfreshfoods.co.uk/wp-content/uploads/2026/01/CFF_carbon_reduction_plan_Jan26.pdf,yes,13 months old; 2025 figures not yet reported
+Harlech Foodservice Ltd,Gwynedd,https://www.harlech.co.uk/,crp_current,crp_current,2026-04-16,https://www.harlech.co.uk/Content/Upload/Harlech-Foodservice-Carbon-Reduction-Plan 2045.pdf,no,Externally verified (Climate Partners)
+IMS of Smithfield Ltd,London,https://imsofsmithfield.com/,no_crp,no_crp,,https://imsofsmithfield.com/,yes,No carbon or net zero wording
+Island Foods Ltd,Ryde,,no_site,no_site,,,no,No website found; islandfoods.co.uk is for sale
+J Freeman & Sons Ltd t/a Freeman Catering Butchers,Gateshead,https://www.freemanbutchers.co.uk/,crp_current,crp_current,2026-07-21,https://www.freemanbutchers.co.uk/s/Freeman-Catering-Butchers-Carbon-Reduction-Plan-21072026.pdf,no,
+J R Holland Food Services Ltd,Gateshead,https://jrholland.co.uk/,no_crp,crp_current,2026-05-11,https://jrholland.co.uk/wp-content/uploads/2024/05/Carbon-Reduction-Template.pdf,no,Missed by the script; found in browser pass
+J R Wholesale Sussex Ltd,Hailsham,https://www.jrwholesalesussex.co.uk/,crp_current,crp_current,2026-06-06,https://www.jrwholesalesussex.co.uk/uploads/8/8/5/7/88574786/annex_1m_carbon_reduction_plan_template_-_complete_2.pdf,no,
+J.W. Young (Butchers) Ltd,Sheffield,,no_site,no_site,,,no,No website found by web search or domain check
+James Burrows Limited,Ashton-under-Lyne,,no_site,insolvent,,https://www.thegazette.co.uk/notice/4986082,no,Administrators appointed 2025-10-20 (Gazette); no website
+Johal Dairies Limited,Wolverhampton,https://www.johaldairies.co.uk/,crp_current,crp_current,2026-07,https://www.johaldairies.co.uk/wp-content/uploads/2026/07/Reporting-Year-2025-July-2026.pdf,no,
+John Palin Fresh Produce Ltd,Matlock,https://john-palin.co.uk/,crp_undated,crp_current,2026-04-01,https://john-palin.co.uk/app/uploads/John-Palin-Fresh-Produce-Ltd-Carbon-Reduction-Plan-2.pdf,no,Scanned plan
+John Sheppard Butchers Limited,Bristol,https://www.john-sheppard.co.uk/,no_crp,no_crp,,https://www.john-sheppard.co.uk/,yes,"Single-page site, content from 2015-16; no carbon wording (script pass + separate fetch)"
+Middlesex Meat Company Ltd,Wembley,https://www.middlesexmeat.co.uk/,crp_outdated,crp_unpublished,file dated 2024-01-01,https://www.middlesexmeat.co.uk/wp-content/uploads/2024/12/MMC-Carbon-Reduction-Plan-010124.pdf,yes,PDF only says 'for a copy of the plan please contact'; plan not published
+Moving Mountains Foods Ltd,London,https://movingmountainsfoods.com/,no_crp,no_crp,,https://movingmountainsfoods.com/,yes,Consumer brand site; no carbon or net zero wording
+Norfolk Catering Ltd,Norwich,https://www.norfolkcatering.co.uk/,no_crp,crp_current,2026-07,https://www.norfolkcatering.co.uk/assets/carbon-reduction-CEZCnhyh.pdf,no,Missed by the script; found in browser pass. Scope 3 mostly 'to be established'
+Owen Taylor & Sons Ltd,Alfreton,https://www.owentaylor.co.uk/,crp_current,crp_current,2026-05,https://www.owentaylor.co.uk/wp-content/uploads/2026/06/Appendix-13-Carbon-Reduction-Plan-Owen-Taylor-May-26-v1.1.pdf,no,
+Prescott-Thomas Ltd,Leyton,https://prescott-thomas.com/,site_error,crp_current,2026-01-24,https://prescott-thomas.com/wp-content/uploads/2026/08/Carbon-Reduction-Template-2026.pdf,no,Site blocks the script's user agent; found in browser pass
+QMover MFS Ltd,Barton under Needwood,https://www.midlandfood.co.uk/,site_error,insolvent,,https://www.thebusinessdesk.com/eastmidlands/news/2114327-food-wholesaler-takes-first-step-towards-administration,no,Notice of intention to appoint administrators reported 2026-08-28; both sites down
+Ralph Livesey Ltd,Southport,https://www.ralphlivesey.co.uk/,no_crp,no_crp,,https://www.ralphlivesey.co.uk/,yes,No policy pages at all
+Randall Parker Food Group,Towcester,https://www.randallparkerfoods.com/,site_error,site_down,,https://www.randallparkerfoods.com/,no,503 from two networks; web search finds no plan
+Reeves Butchers Ltd,Bracknell,https://reevesbutchers.co.uk/,crp_current,crp_current,2026-04-05,https://reevesbutchers.co.uk/carbon-reduction-plan/,no,Web-page plan
+Ribble Farm Fare Limited,Preston,https://ribblefarmfare.co.uk/,no_crp,no_crp,,https://ribblefarmfare.co.uk/sustainability/,yes,Sustainability page with net zero wording; no plan or figures
+Rockcliffe Group Int Ltd,Preston,,no_crp,no_site,,,no,No website found; script's search fallback returned an unrelated site
+School Milk Services Ltd,Weston Super Mare,https://www.schoolmilkservices.co.uk/,crp_current,crp_overdue,2025-03-26 (reporting year 2024),https://www.schoolmilkservices.co.uk/Carbon1.pdf,yes,20 months old
+Scorse Foods Limited,Helston,https://www.scorsefoods.co.uk/,site_error,site_down,,https://www.scorsefoods.co.uk/,no,503 from two networks; web search finds no plan
+Set Produce Ltd,Stockport,https://setproduce.co.uk/,no_crp,no_crp,,https://setproduce.co.uk/,yes,2020 environmental and sustainability policies only
+Solent Butchers & Co Ltd,Portsmouth,https://www.solentbutchers.co.uk/,site_error,site_down,,https://www.solentbutchers.co.uk/,no,522 from two networks; web search finds no plan
+Sykes House Farm Ltd,Harrogate,https://www.sykeshousefarm.co.uk/,no_crp,no_crp,,https://www.sykeshousefarm.co.uk/,yes,No carbon or net zero wording
+Tamar Fresh Ltd,Saltash,https://www.tamarfresh.co.uk/,crp_outdated,crp_overdue,2025-05-01 (own review date 2026-03),https://www.tamarfresh.co.uk/wp-content/uploads/2026/07/CRP25.pdf,yes,Script called it outdated from a 2023 blog post; footer links this plan. File re-saved 2026-07 but cover unchanged
+The Curious Vegan Company Ltd (Eat Curious),London,,no_site,no_site,,,no,eatcurious.com has lapsed to a domain reseller
+The Organic Pantry Ltd,Tadcaster,https://www.theorganicpantry.co.uk/,no_crp,no_crp,,https://www.theorganicpantry.co.uk/,yes,No carbon or net zero wording
+Town Head Farm Products Ltd,Grassington,https://www.dalesdairies.co.uk/,no_crp,no_crp,,https://www.dalesdairies.co.uk/,yes,Trades as Dales Dairies; no carbon or net zero wording
+TPB Foods Limited,Bolton,https://www.tpbfoods.co.uk/,no_crp,crp_overdue,2025-08-29 (reporting year 2025),https://www.tpbfoods.co.uk/s/Carbon-Reduction-Plan-TPB-FOODS-2025.pdf,yes,Missed by the script; found in browser pass. 15 months old
+VFC Foods Ltd,York,https://vfcfoods.com/,no_crp,no_crp,,https://vfcfoods.com/,yes,Consumer brand site; no carbon reduction plan
+W McClure Ltd,Windermere,https://www.wmcclure.co.uk/,crp_current,crp_current,2026,https://heyzine.com/flip-book/ec52f164ef.html,no,"Flip-book titled 'Carbon Reduction Plan McClures 2026', linked from site footer"

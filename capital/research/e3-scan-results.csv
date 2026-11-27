@@ -1,51 +1,51 @@
-supplier,town,sme,source,website,status,evidence,latest_year
-AG Axton & Sons (Wholesale) Ltd,Chandlers Ford,Yes,FTS 026675-2024,,no_site,,
-Antony Morawski Ltd t/a Thomas Moss,Preston,Yes,FTS 026675-2024,,no_site,,
-Arthur Brett Catering Ltd,Digbeth,Yes,FTS 026675-2024,,no_site,,
-Basketdrop Ltd,London,Yes,FTS 026675-2024,,no_site,,
-Bio&Me Limited,Chester,Yes,FTS 026675-2024,,no_site,,
-Braces Bakery Ltd,Newport,Yes,FTS 026675-2024,,no_site,,
-C&G Wholesale Foods Limited,Hawkshaw,Yes,FTS 026675-2024,,no_site,,
-Chew Valley Dairy Limited,Bristol,Yes,FTS 026675-2024,,no_site,,
-Clegg's Chilled Food Service,Preston,Yes,FTS 026675-2024,,no_site,,
-Clifton Dairies Limited,Woodplumpton,Yes,FTS 026675-2024,,no_site,,
-Country Kitchen Foods (Norfolk) Ltd,Cawston,Yes,FTS 026675-2024,,no_site,,
-County Foods Ltd,Poole,Yes,FTS 026675-2024,,no_site,,
-Cramart Ltd t/a Bentley Foodservice,Bicester,Yes,FTS 026675-2024,,no_site,,
-Crowndale Food Service Ltd,Leicester,Yes,FTS 026675-2024,,no_site,,
-Embleton Hall Dairies Limited,County Durham,Yes,FTS 026675-2024,,no_site,,
-Hallam Country Fresh Foods,Sheffield,Yes,FTS 026675-2024,,no_site,,
-Harlech Foodservice Ltd,Gwynedd,Yes,FTS 026675-2024,http://www.harlech.co.uk/,crp_current,http://www.harlech.co.uk/sustainability,2025
-IMS of Smithfield Ltd,London,Yes,FTS 026675-2024,,no_site,,
-Island Foods Ltd,Ryde,Yes,FTS 026675-2024,,no_site,,
-J Freeman & Sons Ltd t/a Freeman Catering Butchers,Gateshead,Yes,FTS 026675-2024,,no_site,,
-J R Holland Food Services Ltd,Gateshead,Yes,FTS 026675-2024,,no_site,,
-J R Wholesale Sussex Ltd,Hailsham,Yes,FTS 026675-2024,,no_site,,
-J.W. Young (Butchers) Ltd,Sheffield,Yes,FTS 026675-2024,,no_site,,
-James Burrows Limited,Ashton-under-Lyne,Yes,FTS 026675-2024,,no_site,,
-Johal Dairies Limited,Wolverhampton,Yes,FTS 026675-2024,,no_site,,
-John Palin Fresh Produce Ltd,Matlock,Yes,FTS 026675-2024,,no_site,,
-John Sheppard Butchers Limited,Bristol,Yes,FTS 026675-2024,,no_site,,
-Middlesex Meat Company Ltd,Wembley,Yes,FTS 026675-2024,,no_site,,
-Moving Mountains Foods Ltd,London,Yes,FTS 026675-2024,,no_site,,
-Norfolk Catering Ltd,Norwich,Yes,FTS 026675-2024,,no_site,,
-Owen Taylor & Sons Ltd,Alfreton,Yes,FTS 026675-2024,,no_site,,
-Prescott-Thomas Ltd,Leyton,Yes,FTS 026675-2024,,no_site,,
-QMover MFS Ltd,Barton under Needwood,Yes,FTS 026675-2024,,no_site,,
-Ralph Livesey Ltd,Southport,Yes,FTS 026675-2024,,no_site,,
-Randall Parker Food Group,Towcester,Yes,FTS 026675-2024,,no_site,,
-Reeves Butchers Ltd,Bracknell,Yes,FTS 026675-2024,,no_site,,
-Ribble Farm Fare Limited,Preston,Yes,FTS 026675-2024,,no_site,,
-Rockcliffe Group Int Ltd,Preston,Yes,FTS 026675-2024,,no_site,,
-School Milk Services Ltd,Weston Super Mare,Yes,FTS 026675-2024,,no_site,,
-Scorse Foods Limited,Helston,Yes,FTS 026675-2024,,no_site,,
-Set Produce Ltd,Stockport,Yes,FTS 026675-2024,,no_site,,
-Solent Butchers & Co Ltd,Portsmouth,Yes,FTS 026675-2024,,no_site,,
-Sykes House Farm Ltd,Harrogate,Yes,FTS 026675-2024,,no_site,,
-Tamar Fresh Ltd,Saltash,Yes,FTS 026675-2024,,no_site,,
-The Curious Vegan Company Ltd (Eat Curious),London,Yes,FTS 026675-2024,,no_site,,
-The Organic Pantry Ltd,Tadcaster,Yes,FTS 026675-2024,,no_site,,
-Town Head Farm Products Ltd,Grassington,Yes,FTS 026675-2024,,no_site,,
-TPB Foods Limited,Bolton,Yes,FTS 026675-2024,,no_site,,
-VFC Foods Ltd,York,Yes,FTS 026675-2024,,no_site,,
-W McClure Ltd,Windermere,Yes,FTS 026675-2024,,no_site,,
+supplier,town,sme,source,website,site_note,status,evidence,latest_year,links_seen
+AG Axton & Sons (Wholesale) Ltd,Chandlers Ford,Yes,FTS 026675-2024,https://agaxtons.co.uk/,,crp_current,https://agaxtons.co.uk/ ; https://agaxtons.co.uk/sustainability/ ; https://agaxtons.co.uk/carbon-reduction-plan/ ; https://agaxtons.co.uk/about-us/,2026,4
+Antony Morawski Ltd t/a Thomas Moss,Preston,Yes,FTS 026675-2024,,thomasmoss.com is a 114-byte placeholder; no working site found,no_site,,,0
+Arthur Brett Catering Ltd,Digbeth,Yes,FTS 026675-2024,https://www.arthurbrett.co.uk/,,crp_current,https://www.arthurbrett.co.uk/carbon-reduction-plan/ ; https://www.arthurbrett.co.uk/wp-content/uploads/2024/05/Carbon-Reduction-Plan.pdf ; https://www.arthurbrett.co.uk/wp-content/uploads/2026/05/Carbon-Reduction-Plan-2026-1.pdf,2026,5
+Basketdrop Ltd,London,Yes,FTS 026675-2024,https://apprenticeleague.co.uk/,basketdrop.com is a 114-byte placeholder; basketdrop.co.uk redirects to an unrelated store,no_crp,,,7
+Bio&Me Limited,Chester,Yes,FTS 026675-2024,https://bioandme.co.uk/,,no_crp,,,2
+Braces Bakery Ltd,Newport,Yes,FTS 026675-2024,https://www.bracesbakery.co.uk/,,crp_current,https://www.bracesbakery.co.uk/ ; https://www.bracesbakery.co.uk/sustainability/ ; https://www.bracesbakery.co.uk/environment/ ; https://www.bracesbakery.co.uk/wp-content/uploads/Carbon-reduction-plan-2024.pdf,2026,4
+C&G Wholesale Foods Limited,Hawkshaw,Yes,FTS 026675-2024,https://www.cgwholesalefoods.co.uk/,site shows 'under maintenance',no_crp,,,0
+Chew Valley Dairy Limited,Bristol,Yes,FTS 026675-2024,https://www.chewvalleydairy.co.uk/,,no_crp,,,0
+Clegg's Chilled Food Service,Preston,Yes,FTS 026675-2024,https://www.cleggschilledfoodservice.co.uk/,,crp_current,https://www.cleggschilledfoodservice.co.uk/about-us ; https://www.cleggschilledfoodservice.co.uk/sustainability-2025,2025,3
+Clifton Dairies Limited,Woodplumpton,Yes,FTS 026675-2024,,no website found (web search + domain check),no_site,,,0
+Country Kitchen Foods (Norfolk) Ltd,Cawston,Yes,FTS 026675-2024,,no website found (web search + domain check),no_site,,,0
+County Foods Ltd,Poole,Yes,FTS 026675-2024,https://www.countyfoods.co.uk/,,crp_current,https://www.countyfoods.co.uk/carbon-reduction-plan/ ; https://www.countyfoods.co.uk/news/county-foods-announces-commitment-to-achieve-net-zero-emissions-by-2039/ ; https://www.countyfoods.co.uk/wp-content/uploads/2016/05/Carbon-Reduction-Plan.pdf ; https://www.countyfoods.co.uk/wp-login.php?redirect_to=https%3A%2F%2Fwww.countyfoods.co.uk%2Fcarbon-reduction-plan%2F,2026,3
+Cramart Ltd t/a Bentley Foodservice,Bicester,Yes,FTS 026675-2024,https://www.bentleyfoodservice.co.uk/,,no_crp,,,0
+Crowndale Food Service Ltd,Leicester,Yes,FTS 026675-2024,https://crowndale.co.uk/,,no_crp,,,0
+Embleton Hall Dairies Limited,County Durham,Yes,FTS 026675-2024,http://www.embletonhalldairies.co.uk/,hosting account suspended,no_crp,,,0
+Hallam Country Fresh Foods,Sheffield,Yes,FTS 026675-2024,https://www.countryfreshfoods.co.uk/,,crp_current,https://www.countryfreshfoods.co.uk/ ; https://www.countryfreshfoods.co.uk/about ; https://www.countryfreshfoods.co.uk/wp-content/uploads/2026/01/CFF_carbon_reduction_plan_Jan26.pdf,2026,1
+Harlech Foodservice Ltd,Gwynedd,Yes,FTS 026675-2024,https://www.harlech.co.uk/,,crp_current,https://www.harlech.co.uk/sustainability ; https://www.harlech.co.uk/sustainability/ ; https://www.harlech.co.uk/Content/Upload/Harlech-Foodservice-Carbon-Reduction-Plan 2045.pdf ; https://www.harlech.co.uk/Sustainability,2029,2
+IMS of Smithfield Ltd,London,Yes,FTS 026675-2024,https://imsofsmithfield.com/,,no_crp,,,2
+Island Foods Ltd,Ryde,Yes,FTS 026675-2024,,no website found; islandfoods.co.uk is for sale,no_site,,,0
+J Freeman & Sons Ltd t/a Freeman Catering Butchers,Gateshead,Yes,FTS 026675-2024,https://www.freemanbutchers.co.uk/,,crp_current,https://www.freemanbutchers.co.uk/ ; https://www.freemanbutchers.co.uk/s/Freeman-Catering-Butchers-Carbon-Reduction-Plan-21072026.pdf,2028,1
+J R Holland Food Services Ltd,Gateshead,Yes,FTS 026675-2024,https://jrholland.co.uk/,,no_crp,,,0
+J R Wholesale Sussex Ltd,Hailsham,Yes,FTS 026675-2024,https://www.jrwholesalesussex.co.uk/,,crp_current,https://www.jrwholesalesussex.co.uk/policies.html ; https://www.jrwholesalesussex.co.uk/uploads/8/8/5/7/88574786/annex_1m_carbon_reduction_plan_template_-_complete_2.pdf,2026,4
+J.W. Young (Butchers) Ltd,Sheffield,Yes,FTS 026675-2024,,no website found (web search + domain check),no_site,,,0
+James Burrows Limited,Ashton-under-Lyne,Yes,FTS 026675-2024,,no website found; Gazette: administrators appointed 2025-10-20,no_site,,,0
+Johal Dairies Limited,Wolverhampton,Yes,FTS 026675-2024,https://www.johaldairies.co.uk/,,crp_current,https://www.johaldairies.co.uk/ ; https://www.johaldairies.co.uk/about/ ; https://www.johaldairies.co.uk/wp-content/uploads/2026/07/Reporting-Year-2025-July-2026.pdf,2026,2
+John Palin Fresh Produce Ltd,Matlock,Yes,FTS 026675-2024,https://john-palin.co.uk/,,crp_undated,https://john-palin.co.uk/ ; https://john-palin.co.uk/about-us/ ; https://john-palin.co.uk/app/uploads/John-Palin-Fresh-Produce-Ltd-Carbon-Reduction-Plan-2.pdf,,1
+John Sheppard Butchers Limited,Bristol,Yes,FTS 026675-2024,https://www.john-sheppard.co.uk/,returns 403 to scripts; check in a browser,no_crp,,,0
+Middlesex Meat Company Ltd,Wembley,Yes,FTS 026675-2024,https://www.middlesexmeat.co.uk/,,crp_outdated,https://www.middlesexmeat.co.uk/ ; https://www.middlesexmeat.co.uk/about-us/ ; https://www.middlesexmeat.co.uk/wp-content/uploads/2024/12/MMC-Carbon-Reduction-Plan-010124.pdf,2024,1
+Moving Mountains Foods Ltd,London,Yes,FTS 026675-2024,https://movingmountainsfoods.com/,,no_crp,,,0
+Norfolk Catering Ltd,Norwich,Yes,FTS 026675-2024,https://www.norfolkcatering.co.uk/,,no_crp,,,0
+Owen Taylor & Sons Ltd,Alfreton,Yes,FTS 026675-2024,https://www.owentaylor.co.uk/,,crp_current,https://www.owentaylor.co.uk/ ; https://www.owentaylor.co.uk/about-us/ ; https://www.owentaylor.co.uk/wp-content/uploads/2026/06/Appendix-13-Carbon-Reduction-Plan-Owen-Taylor-May-26-v1.1.pdf,2026,1
+Prescott-Thomas Ltd,Leyton,Yes,FTS 026675-2024,https://prescott-thomas.com/,,site_error,,,0
+QMover MFS Ltd,Barton under Needwood,Yes,FTS 026675-2024,https://www.midlandfood.co.uk/,site returns 500; trade press reports notice of intention to appoint administrators,site_error,,,0
+Ralph Livesey Ltd,Southport,Yes,FTS 026675-2024,https://www.ralphlivesey.co.uk/,,no_crp,,,0
+Randall Parker Food Group,Towcester,Yes,FTS 026675-2024,https://www.randallparkerfoods.com/,connection reset from cloud shell; check in a browser,site_error,,,0
+Reeves Butchers Ltd,Bracknell,Yes,FTS 026675-2024,https://reevesbutchers.co.uk/,,crp_current,https://reevesbutchers.co.uk/carbon-reduction-plan/,2026,1
+Ribble Farm Fare Limited,Preston,Yes,FTS 026675-2024,https://ribblefarmfare.co.uk/,,no_crp,,,2
+Rockcliffe Group Int Ltd,Preston,Yes,FTS 026675-2024,https://www.salsafood.co.uk/,no website found (web search + domain check),no_crp,,,0
+School Milk Services Ltd,Weston Super Mare,Yes,FTS 026675-2024,https://www.schoolmilkservices.co.uk/,,crp_current,https://www.schoolmilkservices.co.uk/ ; https://www.schoolmilkservices.co.uk/Carbon1.pdf,2026,1
+Scorse Foods Limited,Helston,Yes,FTS 026675-2024,https://www.scorsefoods.co.uk/,connection reset from cloud shell; check in a browser,site_error,,,0
+Set Produce Ltd,Stockport,Yes,FTS 026675-2024,https://setproduce.co.uk/,,no_crp,,,3
+Solent Butchers & Co Ltd,Portsmouth,Yes,FTS 026675-2024,https://www.solentbutchers.co.uk/,origin returns 522,site_error,,,0
+Sykes House Farm Ltd,Harrogate,Yes,FTS 026675-2024,https://www.sykeshousefarm.co.uk/,,no_crp,,,0
+Tamar Fresh Ltd,Saltash,Yes,FTS 026675-2024,https://www.tamarfresh.co.uk/,,crp_outdated,https://www.tamarfresh.co.uk/ ; https://www.tamarfresh.co.uk/about-us-meet-the-team/ ; https://www.tamarfresh.co.uk/building-connections-for-healthy-sustainable-school-meals-a-fantastic-meeting-with-catered-plymouth/ ; https://www.tamarfresh.co.uk/embracing-sustainability/,2024,5
+The Curious Vegan Company Ltd (Eat Curious),London,Yes,FTS 026675-2024,,eatcurious.com expired (domain reseller); no site found,no_site,,,0
+The Organic Pantry Ltd,Tadcaster,Yes,FTS 026675-2024,https://www.theorganicpantry.co.uk/,,no_crp,,,0
+Town Head Farm Products Ltd,Grassington,Yes,FTS 026675-2024,https://www.dalesdairies.co.uk/,trades as Dales Dairies,no_crp,,,0
+TPB Foods Limited,Bolton,Yes,FTS 026675-2024,https://www.tpbfoods.co.uk/,,no_crp,,,0
+VFC Foods Ltd,York,Yes,FTS 026675-2024,https://vfcfoods.com/,,no_crp,,,18
+W McClure Ltd,Windermere,Yes,FTS 026675-2024,https://www.wmcclure.co.uk/,,crp_current,https://www.wmcclure.co.uk/ ; https://www.wmcclure.co.uk/environmental-policy ; https://www.wmcclure.co.uk/about ; https://www.wmcclure.co.uk/about-us,2026,6
