@@ -1,5 +1,10 @@
 # Owner actions
 
+None at present. QuarterReady's launch is suspended on your instruction; the steps below are kept only for reference.
+
+---
+
+
 Only these need you. Total time about 30 minutes. Cost £0.
 
 ## 1. Approve going on sale (decision)
