@@ -1,6 +1,9 @@
 # Owner actions
 
-None at present. QuarterReady's launch is suspended on your instruction; the steps below are kept only for reference.
+## 1. Approve research network access (one click, £0)
+Approve the `capital-research` environment when prompted. It lets this session read five Atlassian sites (Marketplace, public feature tracker, two community forums, developer docs). Without it I can only see search-engine summaries, which do not show install counts, prices or vote totals.
+
+QuarterReady's launch is suspended on your instruction; the steps below are kept only for reference.
 
 ---
 

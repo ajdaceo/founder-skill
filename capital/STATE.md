@@ -19,7 +19,12 @@ Mark every claim EVIDENCE (with source) or ASSUMPTION.
 ## Product 1: QuarterReady MTD workbook: SUSPENDED
 Preserved in `products/mtd-workbook/` and `site/`. No launch, no further development. Do not work on it.
 
+## Discovery status
+- Six research threads done; comparison in `research/2026-11-27-opportunity-comparison.md`.
+- No product selected. Lead direction: Atlassian Cloud apps that fill Data Center migration gaps. Specific gap unproven.
+- Blocker: cannot read Marketplace, tracker or forum pages from this environment (network policy). Requested a research environment allowing five Atlassian hosts; awaiting owner approval. See OWNER_ACTIONS.md.
+
 ## Backlog
-1. Synthesise the six discovery threads into `research/2026-11-27-opportunity-comparison.md`.
-2. Second-round competitor investigation on the top candidates; try to disprove each.
-3. Select, or record why none qualifies and widen the search.
+1. [blocked: network access] Pull Marketplace API and tracker data; rank gaps by legacy installs and votes against existing Cloud apps.
+2. While blocked: search-only checks on second-tier leads (CPSC eFiling prep, EU CRA kit for one-person vendors, Trello approvals), and Atlassian vendor costs (bug bounty, Forge pricing).
+3. Select a product only if it passes every gate with cited evidence; otherwise widen the search.
