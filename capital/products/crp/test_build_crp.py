@@ -47,7 +47,7 @@ C = {"supplier": "Test Foods Ltd", "publication_date": "2026-05-01", "net_zero_y
                                 "commute_km": 100000, "waste_landfill_tonne": 4, "downstream:van_diesel_km": 10000}},
      "scope3_not_applicable": {"4": "Suppliers deliver on their own account; no transport is bought.", "9": "Customers collect."},
      "target_pct": 20, "target_year": 2031, "projects_done": ["LED lighting"], "projects_planned": ["Electric vans"],
-     "signatory_name": "A Director", "signatory_role": "Managing Director"}
+     "board_approval_date": "2026-04-28", "signatory_name": "A Director", "signatory_role": "Managing Director"}
 plan, calc, qa = B.build(copy.deepcopy(C), F)
 # 2023: gas 50000*0.18293=9146.5; diesel 10000*2.51206=25120.6 -> Scope 1 34.267 t. Electricity 100000*0.20707=20.707 t.
 # Scope 3: car 20000*0.16664=3.333; commute 100000*0.16664=16.664; landfill 5*520.33474=2.602 -> 22.599 t. Total 77.573 t.
@@ -56,9 +56,13 @@ ok(abs(qa["baseline_tco2e"]["1"] - 34.267) < 0.002 and abs(qa["baseline_tco2e"][
 ok(abs(qa["baseline_tco2e"]["3"] - 22.599) < 0.002 and abs(qa["baseline_tco2e"]["total"] - 77.573) < 0.004, f"baseline scope 3 {qa['baseline_tco2e']}")
 # 2025: electricity 90000*0.177=15.93 t. Gas 45000*0.18296=8.2332; diesel 9000*2.57082=23.13738 -> 31.371 t.
 ok(abs(qa["current_tco2e"]["2"] - 15.93) < 0.001 and abs(qa["current_tco2e"]["1"] - 31.371) < 0.002, f"current scopes {qa['current_tco2e']}")
-ok(qa["status"] == "pass" and not qa["errors"], f"status {qa}")
+ok(qa["status"] == "review" and not qa["errors"] and len(qa["warnings"]) == 1 and "different year-ends" in qa["warnings"][0], f"status {qa}")
+c2 = copy.deepcopy(C)
+c2["baseline"].update(period_start="2023-01-01", period_end="2023-12-31", label="2023")
+ok(B.build(c2, F)[2]["status"] == "pass", "matching year-ends, recent period: clean pass")
 for s in ("**Supplier name:** Test Foods Ltd", "Net Zero emissions by 2045", "PPN 006", "| Scope 2 | 20.71 |", "reduction of 20%",
-          "Downstream transportation and distribution | 2.", "Not applicable: Suppliers deliver", "A Director, Managing Director"):
+          "Downstream transportation and distribution | 2.", "Not applicable: Suppliers deliver", "A Director, Managing Director",
+          "SECR requirements (where required)", "Date of board approval: 2026-04-28", "operational control approach", "location-based"):
     ok(s in plan, f"plan text missing: {s}")
 ok("2023 factors" in calc and "2025 factors" in calc and "Electricity: UK" in calc, "calculation record shows factor years and sources")
 target_line = [l for l in plan.splitlines() if l.startswith("We project")][0]
@@ -87,6 +91,14 @@ blocked(lambda c: c.update(publication_date="2025-06-01"), "after the publicatio
 blocked(lambda c: c.update(projects_done=[], projects_planned=[]), "carbon reduction measure")
 blocked(lambda c: c.update(signatory_name=""), "Missing field: signatory_name")
 blocked(lambda c: c["current"]["activities"].update({"downstream:car_km": 5}), "only applies to transport")
+blocked(lambda c: c.update(publication_date="2027-09-01", target_year=2032), "more than 18 months")
+blocked(lambda c: c.update(boundary="whatever"), "boundary must be")
+blocked(lambda c: c.pop("board_approval_date"), "Missing field: board_approval_date")
+c3 = copy.deepcopy(C)
+c3.update(publication_date="2027-09-01", target_year=2032, stale_period_explanation="Change of accounting system delayed the 2026 figures.")
+plan3, _, qa3 = B.build(c3, F)
+ok(plan3 and "Explanation for the age of the reporting period" in plan3, "stale period allowed with an explanation, which is printed")
+ok(F[(2024, "water_treatment_m3")]["factor"] > 0 and F[(2024, "water_treatment_m3")]["cat"] == "5", "wastewater factor present under category 5")
 
 # 5. Warnings do not block but are recorded
 c = copy.deepcopy(C)
@@ -94,4 +106,5 @@ c["current"]["activities"]["electricity_kwh"] = 0
 c["current"]["activities"]["diesel_litre"] = 100
 plan, _, qa = B.build(c, F)
 ok(plan and qa["status"] == "review" and any("No electricity" in w for w in qa["warnings"]) and any("changed" in w for w in qa["warnings"]), f"warnings {qa['warnings']}")
+ok(all(v["factor"] >= 0 for v in F.values()) and len({k for _, k in F}) == 48, "48 activities")
 print(f"{n}/{n} pass")

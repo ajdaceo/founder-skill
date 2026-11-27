@@ -1,0 +1,260 @@
+{
+ "baseline": {
+  "factor_year": 2020,
+  "items": {
+   "1": {
+    "row": "Scope 1 > Fuels > Gaseous fuels > Natural gas > - / Energy - Gross CV > kWh (Gross CV)",
+    "factor": 0.18387,
+    "tco2e": 33.0966
+   },
+   "2": {
+    "row": "Scope 1 > Fuels > Gaseous fuels > LPG > - / Volume > litres",
+    "factor": 1.55537,
+    "tco2e": 3.11074
+   },
+   "3": {
+    "row": "Scope 1 > Fuels > Liquid fuels > Gas oil > - / Volume > litres",
+    "factor": 2.75776,
+    "tco2e": 4.13664
+   },
+   "4": {
+    "row": "Scope 1 > Fuels > Liquid fuels > Diesel (average biofuel blend) > - / Volume > litres",
+    "factor": 2.54603,
+    "tco2e": 106.93326
+   },
+   "5": {
+    "row": "Scope 1 > Fuels > Liquid fuels > Petrol (average biofuel blend) > - / Volume > litres",
+    "factor": 2.16802,
+    "tco2e": 6.50406
+   },
+   "6": {
+    "row": "Scope 1 > Refrigerant & other > Kyoto protocol- blends > R404A > - / - > kg",
+    "factor": 3922.0,
+    "tco2e": 47.064
+   },
+   "7": {
+    "row": "Scope 1 > Refrigerant & other > Kyoto protocol - standard > HFC-134a > - / - > kg",
+    "factor": 1430.0,
+    "tco2e": 2.86
+   },
+   "8": {
+    "row": "Scope 2 > UK electricity > Electricity generated > Electricity: UK > - / - > kWh",
+    "factor": 0.23314,
+    "tco2e": 72.2734
+   },
+   "9": {
+    "row": "Scope 3 > Freighting goods > HGV refrigerated (all diesel) > All HGVs > - / Average laden > km",
+    "factor": 1.0142,
+    "tco2e": 60.852
+   },
+   "10": {
+    "row": "Scope 3 > Freighting goods > Vans > Average (up to 3.5 tonnes) > - / Diesel > km",
+    "factor": 0.2471,
+    "tco2e": 6.1775
+   },
+   "11": {
+    "row": "Scope 3 > Waste disposal > Refuse > Commercial and industrial waste > - / Landfill > tonnes",
+    "factor": 458.1763,
+    "tco2e": 5.4981156
+   },
+   "12": {
+    "row": "Scope 3 > Waste disposal > Refuse > Commercial and industrial waste > - / Combustion > tonnes",
+    "factor": 21.3167,
+    "tco2e": 0.426334
+   },
+   "13": {
+    "row": "Scope 3 > Waste disposal > Refuse > Organic: food and drink waste > - / Anaerobic digestion > tonnes",
+    "factor": 10.2039,
+    "tco2e": 0.306117
+   },
+   "14": {
+    "row": "Scope 3 > Waste disposal > Paper > Paper and board: mixed > - / Closed-loop > tonnes",
+    "factor": 21.3167,
+    "tco2e": 0.1705336
+   },
+   "15": {
+    "row": "Scope 3 > Business travel- land > Cars (by size) > Average car > - / Unknown > km",
+    "factor": 0.1714,
+    "tco2e": 3.0852
+   },
+   "16": {
+    "row": "Scope 3 > Business travel- land > Rail > National rail > - / - > passenger.km",
+    "factor": 0.036939999999999994,
+    "tco2e": 0.22163999999999998
+   },
+   "17": {
+    "row": "Scope 3 > Business travel- air > Flights > Domestic, to/from UK > Average passenger / With RF > passenger.km",
+    "factor": 0.2443,
+    "tco2e": 0.9772
+   },
+   "18": {
+    "row": "Scope 3 > Business travel- air > Flights > Short-haul, to/from UK > Average passenger / With RF > passenger.km",
+    "factor": 0.15553,
+    "tco2e": 1.39977
+   },
+   "19": {
+    "row": "Scope 3 > Hotel stay > Hotel stay > UK > - / - > Room per night",
+    "factor": 15.7,
+    "tco2e": 0.3925
+   },
+   "20": {
+    "row": "Scope 3 > Business travel- land > Taxis > Regular taxi > - / - > passenger.km",
+    "factor": 0.14549,
+    "tco2e": 0.116392
+   },
+   "21": {
+    "row": "Scope 3 > Business travel- land > Cars (by size) > Average car > - / Unknown > km",
+    "factor": 0.1714,
+    "tco2e": 27.424
+   },
+   "22": {
+    "row": "Scope 3 > Business travel- land > Bus > Average local bus > - / - > passenger.km",
+    "factor": 0.10312,
+    "tco2e": 3.0936
+   },
+   "23": {
+    "row": "Scope 3 > Business travel- land > Rail > National rail > - / - > passenger.km",
+    "factor": 0.036939999999999994,
+    "tco2e": 0.44327999999999995
+   },
+   "24": {
+    "row": "Scope 3 > Business travel- land > Motorbike > Average > - / - > km",
+    "factor": 0.11337,
+    "tco2e": 0.22674
+   }
+  },
+  "scope1": 203.7053,
+  "scope2": 72.2734,
+  "scope3": 110.8109222,
+  "total": 386.7896222
+ },
+ "current": {
+  "factor_year": 2024,
+  "items": {
+   "1": {
+    "row": "Scope 1 > Fuels > Gaseous fuels > Natural gas > - / - > kWh (Gross CV)",
+    "factor": 0.1829,
+    "tco2e": 31.2759
+   },
+   "2": {
+    "row": "Scope 1 > Fuels > Gaseous fuels > LPG > - / - > litres",
+    "factor": 1.55713,
+    "tco2e": 2.802834
+   },
+   "3": {
+    "row": "Scope 1 > Fuels > Liquid fuels > Gas oil > - / - > litres",
+    "factor": 2.75541,
+    "tco2e": 3.306492
+   },
+   "4": {
+    "row": "Scope 1 > Fuels > Liquid fuels > Diesel (average biofuel blend) > - / - > litres",
+    "factor": 2.51279,
+    "tco2e": 101.767995
+   },
+   "5": {
+    "row": "Scope 1 > Fuels > Liquid fuels > Petrol (average biofuel blend) > - / - > litres",
+    "factor": 2.0844,
+    "tco2e": 5.211
+   },
+   "6": {
+    "row": "Scope 1 > Refrigerant & other > Blends > R404A > - / Emissions including only Kyoto products > kg",
+    "factor": 3943.0,
+    "tco2e": 23.658
+   },
+   "7": {
+    "row": "Scope 1 > Refrigerant & other > Kyoto protocol products > HFC-134a > - / Emissions including only Kyoto products > kg",
+    "factor": 1300.0,
+    "tco2e": 1.3
+   },
+   "8": {
+    "row": "Scope 2 > UK electricity > Electricity generated > Electricity: UK > kWh / - > kWh",
+    "factor": 0.20705,
+    "tco2e": 61.07975
+   },
+   "9": {
+    "row": "Scope 3 > Freighting goods > HGV refrigerated (all diesel) > All HGVs > - / Average laden > km",
+    "factor": 1.02228,
+    "tco2e": 59.29224
+   },
+   "10": {
+    "row": "Scope 3 > Freighting goods > Vans > Average (up to 3.5 tonnes) > - / Diesel > km",
+    "factor": 0.25023,
+    "tco2e": 6.75621
+   },
+   "11": {
+    "row": "Scope 3 > Waste disposal > Refuse > Commercial and industrial waste > - / Landfill > tonnes",
+    "factor": 520.3342,
+    "tco2e": 4.6830078
+   },
+   "12": {
+    "row": "Scope 3 > Waste disposal > Refuse > Commercial and industrial waste > - / Combustion > tonnes",
+    "factor": 6.41061,
+    "tco2e": 0.14103342
+   },
+   "13": {
+    "row": "Scope 3 > Waste disposal > Refuse > Organic: food and drink waste > - / Anaerobic digestion > tonnes",
+    "factor": 8.88386,
+    "tco2e": 0.29316738
+   },
+   "14": {
+    "row": "Scope 3 > Waste disposal > Paper > Paper and board: mixed > - / Closed-loop > tonnes",
+    "factor": 6.41061,
+    "tco2e": 0.0641061
+   },
+   "15": {
+    "row": "Scope 3 > Business travel- land > Cars (by size) > Average car > - / Unknown > km",
+    "factor": 0.16691,
+    "tco2e": 2.754015
+   },
+   "16": {
+    "row": "Scope 3 > Business travel- land > Rail > National rail > - / - > passenger.km",
+    "factor": 0.03546,
+    "tco2e": 0.24822
+   },
+   "17": {
+    "row": "Scope 3 > Business travel- air > Flights > Domestic, to/from UK > Average passenger / With RF > passenger.km",
+    "factor": 0.27257,
+    "tco2e": 0.81771
+   },
+   "18": {
+    "row": "Scope 3 > Business travel- air > Flights > Short-haul, to/from UK > Average passenger / With RF > passenger.km",
+    "factor": 0.18592,
+    "tco2e": 1.11552
+   },
+   "19": {
+    "row": "Scope 3 > Hotel stay > Hotel stay > UK > - / - > Room per night",
+    "factor": 10.4,
+    "tco2e": 0.208
+   },
+   "20": {
+    "row": "Scope 3 > Business travel- land > Taxis > Regular taxi > - / - > passenger.km",
+    "factor": 0.14861,
+    "tco2e": 0.089166
+   },
+   "21": {
+    "row": "Scope 3 > Business travel- land > Cars (by size) > Average car > - / Unknown > km",
+    "factor": 0.16691,
+    "tco2e": 26.37178
+   },
+   "22": {
+    "row": "Scope 3 > Business travel- land > Bus > Average local bus > - / - > passenger.km",
+    "factor": 0.10846,
+    "tco2e": 3.47072
+   },
+   "23": {
+    "row": "Scope 3 > Business travel- land > Rail > National rail > - / - > passenger.km",
+    "factor": 0.03546,
+    "tco2e": 0.49644
+   },
+   "24": {
+    "row": "Scope 3 > Business travel- land > Motorbike > Average > - / - > km",
+    "factor": 0.11367,
+    "tco2e": 0.170505
+   }
+  },
+  "scope1": 169.322221,
+  "scope2": 61.07975,
+  "scope3": 106.9718407,
+  "total": 337.3738117
+ }
+}

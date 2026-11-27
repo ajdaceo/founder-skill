@@ -73,6 +73,7 @@ SPEC = {
     "food_waste_ad_tonne": (3, "5", "tonne", [("Waste disposal", ("Refuse",), FOOD, ("Anaerobic digestion",), "tonnes")]),
     "food_waste_compost_tonne": (3, "5", "tonne", [("Waste disposal", ("Refuse",), FOOD, ("Composting",), "tonnes")]),
     "food_waste_landfill_tonne": (3, "5", "tonne", [("Waste disposal", ("Refuse",), FOOD, ("Landfill",), "tonnes")]),
+    "water_treatment_m3": (3, "5", "cubic metre", [("Water treatment", ("Water treatment",), ("Water treatment",), (), "cubic metres")]),
     # Scope 3, category 6: business travel
     "car_km": (3, "6", "km", [("Business travel- land", ("Cars (by size)",), ("Average car",), ("Unknown",), "km")]),
     "car_diesel_km": (3, "6", "km", [("Business travel- land", ("Cars (by size)",), ("Average car",), ("Diesel",), "km")]),

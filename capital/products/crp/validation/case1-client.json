@@ -1,0 +1,78 @@
+{
+ "supplier": "Validation Foods Ltd (fictitious)",
+ "publication_date": "2025-09-01",
+ "net_zero_year": 2045,
+ "baseline": {
+  "label": "2019/20",
+  "period_start": "2019-07-01",
+  "period_end": "2020-06-30",
+  "activities": {
+   "natural_gas_kwh": 180000,
+   "lpg_litre": 2000,
+   "gas_oil_litre": 1500,
+   "diesel_litre": 42000,
+   "petrol_litre": 3000,
+   "refrigerant_r404a_kg": 12,
+   "refrigerant_r134a_kg": 2,
+   "electricity_kwh": 310000,
+   "hgv_refrigerated_km": 60000,
+   "downstream:van_diesel_km": 25000,
+   "waste_landfill_tonne": 12,
+   "waste_combustion_tonne": 20,
+   "food_waste_ad_tonne": 30,
+   "recycling_paper_card_tonne": 8,
+   "car_km": 18000,
+   "rail_km": 6000,
+   "flight_domestic_km": 4000,
+   "flight_short_haul_km": 9000,
+   "hotel_night_uk": 25,
+   "taxi_km": 800,
+   "commute_km": 160000,
+   "commute_bus_km": 30000,
+   "commute_rail_km": 12000,
+   "commute_motorbike_km": 2000
+  }
+ },
+ "current": {
+  "label": "2024/25",
+  "period_start": "2024-04-01",
+  "period_end": "2025-03-31",
+  "activities": {
+   "natural_gas_kwh": 171000,
+   "lpg_litre": 1800,
+   "gas_oil_litre": 1200,
+   "diesel_litre": 40500,
+   "petrol_litre": 2500,
+   "refrigerant_r404a_kg": 6,
+   "refrigerant_r134a_kg": 1,
+   "electricity_kwh": 295000,
+   "hgv_refrigerated_km": 58000,
+   "downstream:van_diesel_km": 27000,
+   "waste_landfill_tonne": 9,
+   "waste_combustion_tonne": 22,
+   "food_waste_ad_tonne": 33,
+   "recycling_paper_card_tonne": 10,
+   "car_km": 16500,
+   "rail_km": 7000,
+   "flight_domestic_km": 3000,
+   "flight_short_haul_km": 6000,
+   "hotel_night_uk": 20,
+   "taxi_km": 600,
+   "commute_km": 158000,
+   "commute_bus_km": 32000,
+   "commute_rail_km": 14000,
+   "commute_motorbike_km": 1500
+  }
+ },
+ "target_pct": 25,
+ "target_year": 2030,
+ "projects_done": [
+  "LED lighting"
+ ],
+ "projects_planned": [
+  "Electric vans"
+ ],
+ "signatory_name": "A Director",
+ "signatory_role": "Managing Director",
+ "board_approval_date": "2025-08-28"
+}

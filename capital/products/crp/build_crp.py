@@ -1,6 +1,6 @@
 """Generate a Carbon Reduction Plan (PPN 006 template structure) from client inputs, with a calculation appendix.
 
-Usage: python3 build_crp.py client.json out_dir
+Usage: python3 build_crp.py client.json out_dir [--export]   (--export also writes plan.docx and plan.pdf)
 Writes out_dir/plan.md (the plan the client's director reviews, signs and publishes),
        out_dir/calculation.md (every figure: quantity x published factor, with the factor's year and source row),
        out_dir/qa.json (checks passed, warnings, and blocking errors).
@@ -10,7 +10,10 @@ Client JSON:
 {"supplier": "...", "publication_date": "YYYY-MM-DD", "net_zero_year": 2045,
  "baseline": {"label": "2023/24", "period_start": "2023-04-01", "period_end": "2024-03-31", "activities": {"electricity_kwh": 1000, ...}},
  "current":  {"label": "2025/26", "period_start": "2025-04-01", "period_end": "2026-03-31", "activities": {...}},
- "scope3_not_applicable": {"9": "We do not arrange onward distribution; customers collect."},
+ "boundary": "operational control",            (or "financial control" / "equity share"; default operational control)
+ "board_approval_date": "YYYY-MM-DD",
+ "scope3_not_applicable": {"9": "All onward transport is arranged and paid for by us, so it is reported under category 4."},
+ "stale_period_explanation": "...",             (only if the reporting period ended more than 18 months before publication)
  "target_pct": 25, "target_year": 2031,
  "projects_done": ["..."], "projects_planned": ["..."],
  "signatory_name": "...", "signatory_role": "Director"}
@@ -32,7 +35,8 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 SCOPE3_REQUIRED = {"4": "Upstream transportation and distribution", "5": "Waste generated in operations", "6": "Business travel",
                    "7": "Employee commuting", "9": "Downstream transportation and distribution"}
-# Activities under "4/9" count towards category 4 unless the client marks them downstream with a "downstream:" prefix.
+# Transport the company pays for (inbound or outbound) is category 4. Category 9 is only transport and storage of sold
+# goods that the company does NOT pay for (customers collecting, customer-arranged haulage): mark those "downstream:".
 
 
 class InputError(Exception):
@@ -110,7 +114,9 @@ def calculate(period, F, name):
 def checks(c, b, cur, bcats, ccats, by, cy):
     """Blocking errors and warnings. Errors stop the plan being issued."""
     errors, warnings = [], []
-    for field in ("supplier", "publication_date", "net_zero_year", "target_pct", "target_year", "signatory_name", "signatory_role"):
+    if c.get("boundary", "operational control") not in ("operational control", "financial control", "equity share"):
+        errors.append("boundary must be operational control, financial control or equity share")
+    for field in ("supplier", "publication_date", "net_zero_year", "target_pct", "target_year", "signatory_name", "signatory_role", "board_approval_date"):
         if c.get(field) in (None, ""):
             errors.append(f"Missing field: {field}")
     if isinstance(c.get("net_zero_year"), int) and c["net_zero_year"] > 2050:
@@ -120,8 +126,17 @@ def checks(c, b, cur, bcats, ccats, by, cy):
         cur_end = dt.date.fromisoformat(c["current"]["period_end"])
         if cur_end > pub:
             errors.append("Reporting period ends after the publication date")
-        if (pub - cur_end).days > 548:
-            warnings.append("Reporting period ended more than 18 months before publication; buyers expect the most recent year")
+        if (pub - cur_end).days > 548 and not str(c.get("stale_period_explanation", "")).strip():
+            errors.append("Reporting period ended more than 18 months before publication: buyers fail this unless the plan explains why "
+                          "(set stale_period_explanation) - or report the latest financial year")
+        elif (pub - cur_end).days > 183:
+            warnings.append("Plan is being published more than 6 months after the reporting year-end; the standard asks for an update within 6 months")
+        b_end = dt.date.fromisoformat(c["baseline"]["period_end"])
+        if (b_end.month, b_end.day) != (cur_end.month, cur_end.day):
+            warnings.append("Baseline and reporting periods have different year-ends; the standard asks for the same reporting period throughout - explain in baseline notes")
+        if c.get("board_approval_date"):
+            if dt.date.fromisoformat(str(c["board_approval_date"])) > pub:
+                errors.append("board_approval_date is after the publication date")
         if isinstance(c.get("target_year"), int) and not (pub.year < c["target_year"] <= pub.year + 6):
             warnings.append("Target year is usually five years ahead of publication")
     except (ValueError, KeyError, TypeError):
@@ -171,7 +186,13 @@ def render(c, b, cur, bcats, ccats):
          "introduction of any strategies to reduce emissions. Baseline emissions are the reference point against which emissions "
          "reduction can be measured.", "",
          f"**Baseline year:** {c['baseline']['label']} ({c['baseline']['period_start']} to {c['baseline']['period_end']})", "",
-         *([f"**Additional details relating to the baseline emissions calculations:** {c['baseline']['notes']}", ""] if c["baseline"].get("notes") else []),
+         "**Additional details relating to the baseline emissions calculations:** "
+         + (c["baseline"].get("notes", "").strip() + " " if c["baseline"].get("notes") else "")
+         + f"Emissions cover all UK operations under the {c.get('boundary', 'operational control')} approach. They are calculated from the "
+           "company's own activity records using the UK Government greenhouse gas conversion factors for the year of the activity data. "
+           "Electricity is reported on a location-based (grid average) basis. Flights include the effect of radiative forcing. "
+           "Well-to-tank emissions and electricity transmission and distribution losses fall outside the required categories and are not included.", "",
+         *([f"**Explanation for the age of the reporting period:** {c['stale_period_explanation']}", ""] if c.get("stale_period_explanation") else []),
          *table(b, bcats), "",
          "## Current emissions reporting",
          f"**Reporting year:** {c['current']['label']} ({c['current']['period_start']} to {c['current']['period_end']})", "",
@@ -187,12 +208,13 @@ def render(c, b, cur, bcats, ccats):
          "This Carbon Reduction Plan has been completed in accordance with PPN 006 and associated guidance and reporting standard "
          "for Carbon Reduction Plans.", "",
          "Emissions have been reported and recorded in accordance with the published reporting standard for Carbon Reduction Plans "
-         "and the GHG Reporting Protocol corporate standard, and uses the appropriate Government emission conversion factors for "
+         "and the GHG Reporting Protocol corporate standard and uses the appropriate government emission conversion factors for "
          "greenhouse gas company reporting.", "",
-         "Scope 1 and Scope 2 emissions have been reported in accordance with SECR requirements, and the required subset of Scope 3 "
-         "emissions have been reported in accordance with the published reporting standard for Carbon Reduction Plans and the "
-         "Corporate Value Chain (Scope 3) Standard.", "",
+         "Scope 1 and Scope 2 emissions have been reported in accordance with SECR requirements (where required), and the required "
+         "subset of Scope 3 emissions have been reported in accordance with the published reporting standard for Carbon Reduction "
+         "Plans and the Corporate Value Chain (Scope 3) Standard.", "",
          "This Carbon Reduction Plan has been reviewed and signed off by the board of directors (or equivalent management body).", "",
+         f"Date of board approval: {c['board_approval_date']}", "",
          "Signed on behalf of the supplier:", "", "______________________________", "",
          f"{c['signatory_name']}, {c['signatory_role']}", "", "Date: ______________", ""]
     return "\n".join(L)
@@ -227,6 +249,25 @@ def build(c, F):
     return render(c, b, cur, bcats, ccats), calc_appendix(c, [("Baseline", c["baseline"], blines, by), ("Current", c["current"], clines, cy)]), qa
 
 
+def export(out_dir):
+    """Word and PDF copies of the plan for the client (needs pandoc and LibreOffice). Returns the files written."""
+    import shutil
+    import subprocess
+    made = []
+    if not shutil.which("pandoc"):
+        return made
+    docx = os.path.join(out_dir, "plan.docx")
+    subprocess.run(["pandoc", os.path.join(out_dir, "plan.md"), "-o", docx], check=True, timeout=120)
+    made.append(docx)
+    if shutil.which("soffice"):
+        subprocess.run(["soffice", "--headless", "--norestore", f"-env:UserInstallation=file://{os.path.abspath(out_dir)}/.lo",
+                        "--convert-to", "pdf", "--outdir", out_dir, docx], capture_output=True, timeout=180)
+        shutil.rmtree(os.path.join(out_dir, ".lo"), ignore_errors=True)
+        if os.path.exists(os.path.join(out_dir, "plan.pdf")):
+            made.append(os.path.join(out_dir, "plan.pdf"))
+    return made
+
+
 if __name__ == "__main__":
     client, out_dir = json.load(open(sys.argv[1])), sys.argv[2]
     os.makedirs(out_dir, exist_ok=True)
@@ -240,5 +281,7 @@ if __name__ == "__main__":
         sys.exit(1)
     open(os.path.join(out_dir, "plan.md"), "w").write(plan)
     open(os.path.join(out_dir, "calculation.md"), "w").write(calc)
+    if "--export" in sys.argv:
+        print("exported:", ", ".join(os.path.basename(f) for f in export(out_dir)))
     print(f"{qa['status']}: baseline {qa['baseline_tco2e']['total']} t ({qa['baseline_factor_year']} factors), "
           f"current {qa['current_tco2e']['total']} t ({qa['current_factor_year']} factors)", *qa["warnings"], sep="\n  ")
