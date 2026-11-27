@@ -1,35 +1,19 @@
-# Owner actions (consolidated 2026-11-27)
+# Owner actions (updated 2026-11-27 22:05 UK)
 
-## Now
-- Pause the old "CAPITAL operating cycle" scheduled task (in your scheduled tasks list, or approve the pause in chat). It runs on pre-mandate rules.
-- Employment-contract clauses (setup item 1) and ICO self-check (item 2) are needed whatever opportunity is chosen.
-- Everything else below waits until an opportunity is selected (by 2026-12-01); it may change.
+Selected experiment: E2, Etsy digital spreadsheet tools (`experiments/E2-etsy-spreadsheets.md`). About 45–60 minutes in total, once. Sent to owner 2026-11-27 22:05.
 
-Total time about 60–75 minutes, mostly once. Nothing is bought until you approve the allocation.
+## Approvals (reply "E2 approved" or amend)
+- Budget envelope £70 within the £100: Etsy shop setup fee (≤£25, if charged), listing fees (≤£3), Etsy Ads (≤£40, ≤£3/day, from shop day 15).
 
-## Decision 1: budget allocation (reply "allocation approved" or amend)
-| Envelope | Max | Status |
-|---|---|---|
-| Domain, 1 year | £12 | for approval |
-| ICO data protection fee (only if the self-assessment says you must pay) | £52 | for approval, conditional |
-| Unallocated reserve | £36 | needs a separate approval per use |
-| Mailbox (Zoho Mail Forever Free) | £0 | |
-| Hosting (Cloudflare Pages or GitHub Pages) | £0 | |
-| Stripe | £0 fixed; 1.5% + 20p per UK card sale | |
-No recurring commitments. No advertising.
-
-## Decision 2: repo write access for chat sessions
-This chat was refused push access to ajdaceo/founder-skill. Approve it in this chat if you want updates from here to land in the repo directly.
-
-## Setup (in this order)
-1. Employment contract: check for clauses on outside business, conflicts of interest or IP ownership. Send only those clauses, or "none".
-2. ICO self-assessment (5 min): https://ico.org.uk/for-organisations/data-protection-fee/data-protection-fee-self-assessment/ Tell me the result.
-3. Domain: buy the name I propose (Cloudflare Registrar or similar), in your name.
-4. Mailbox: Zoho Mail Forever Free on that domain: https://www.zoho.com/mail/zohomail-pricing.html (web and mobile only; no IMAP, so emails are sent by you from drafts I prepare).
-5. Stripe account as sole trader: https://stripe.com/gb then create one Payment Link for £400 with the product name I give you. Send me the link.
-6. Hosting: Cloudflare Pages, upload the `site` folder I prepare. Send me the URL.
-7. Approve the email text before anything is sent; then send the 40 emails (about 30 minutes, once).
+## Setup
+1. Etsy seller account and shop: https://www.etsy.com/uk/sell (identity and bank are the owner's). Shop name proposed by operator. Nothing published yet.
+2. Etsy developer seller app: https://developer.etsy.com. Keystring and shared secret into cloud environment variables ETSY_API_KEY and ETSY_SHARED_SECRET (not chat).
+3. Network: allow `openapi.etsy.com` and `api.etsy.com` in the cloud environment.
+4. Private GitHub repo (e.g. `capital-ops`) with access for the operator; current repo is a public fork and must not hold customer or financial records.
+5. Employment-contract clauses on outside business, conflicts or IP, or "none".
+6. ICO self-check for "Etsy digital downloads; customer data only for own accounts and records" (likely exempt).
+7. Remove Gmail, Google Calendar and Claude Docs connectors from the "CAPITAL operator (V1.0)" scheduled task.
 
 ## Notes
-- Trading income over £1,000 gross in a tax year means registering for Self Assessment: https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income
-- Stripe is a payment processor, not a merchant of record: B2B UK sales only for E1, which keeps VAT out of scope while you're below the threshold.
+- Gross trading income over £1,000 in a tax year: register for Self Assessment (https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income).
+- Buyer messages arrive in the Etsy app; the API cannot answer them.

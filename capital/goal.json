@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-11-27T21:55:00Z",
+  "updated_utc": "2026-11-27T22:05:00Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
     "M0": "in_progress",
-    "M1": "in_progress",
+    "M1": "provisional: E2 selected 2026-11-27; niche-level demand still to confirm",
     "M2": "not_started",
     "M3": "not_started",
     "M4": "not_started",
@@ -18,8 +18,8 @@
     "M12": "not_started",
     "M13": "not_started"
   },
-  "current_milestone": "M1",
-  "current_experiment": null,
+  "current_milestone": "M2",
+  "current_experiment": "E2: Etsy digital spreadsheet tools (experiments/E2-etsy-spreadsheets.md)",
   "finance_gbp": {
     "revenue": 0,
     "expenditure": 0,
@@ -28,12 +28,13 @@
     "base_budget": 100,
     "max_budget_with_owner_approval": 250
   },
-  "current_priority": "Select one commercially credible experiment from evidence and move straight to validation.",
+  "current_priority": "Build E2 product v1 and listings now; owner sets up Etsy shop, developer app, network hosts and private repo.",
   "next_actions": [
-    "Apify: find niches with >=200 users/30d, weak incumbents and legally clean sources; estimate revenue per user.",
-    "Etsy: find a permitted demand-data source; shortlist niches using owner knowledge (automotive, clothing, gaming).",
-    "Examine Envato/Creative Market, Amazon KDP, RapidAPI, agent/MCP tool marketplaces; Shopify, Gumroad Discover, Workspace Marketplace, Fab already assessed (see research file).",
-    "Write experiments/E2-*.md for the winner and the exact owner setup it needs."
+    "Build Vehicle Flipping Profit Tracker v1 (xlsx, Sheets-compatible) with tests and screenshots",
+    "Build UK Reseller Profit & Threshold Tracker v1",
+    "Write listing copy, tags, AI disclosure",
+    "When Etsy API available: check favourites/competition for candidate niches; create draft listings",
+    "Apify, Workspace Marketplace: deferred; E1 deferred"
   ],
   "blocked_actions": [
     {
@@ -46,7 +47,14 @@
     }
   ],
   "pending_owner_approvals": [
-    "Employment-contract clauses on outside business/IP (information, not approval)"
+    "E2 budget envelope \u00a370 (setup fee <=\u00a325, listings <=\u00a33, Etsy Ads <=\u00a340)",
+    "Etsy seller account and shop (owner identity)",
+    "Etsy developer seller app; API key into environment variables",
+    "Allow openapi.etsy.com and api.etsy.com in the cloud environment network settings",
+    "Private GitHub repo for business records (this repo is a public fork)",
+    "Employment-contract clauses",
+    "ICO self-check (likely exempt: own accounts and own marketing only)",
+    "Remove Gmail/Calendar/Docs connectors from the scheduled task"
   ],
   "last_verified_progress": "2026-11-27: mandate and amendment adopted; old task disabled (verified); single 3-hourly task created; repo push verified; Apify and Etsy evidence recorded.",
   "next_checkpoint": "2026-11-28T00:36Z first scheduled run; check cycles.log for multiple sequential actions.",
