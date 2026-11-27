@@ -1,13 +1,420 @@
-key,unit,kgco2e_per_unit,scope,source
-# Source file (July 2026 revised flat file): https://assets.publishing.service.gov.uk/media/6a6c9748862aaf18d9c62ac9/ghg-conversion-factors-2026-flat-format-revised.xlsx
-# DESNZ/UK Government GHG Conversion Factors for Company Reporting 2026, flat file v1.2 (Final, updated 2026-07-10), sheet "Factors by Category", GHG/Unit = kg CO2e. Open Government Licence.
-# Filled 2026-11-27 from the downloaded file (sha256 a9a455ab396dae226d510c7be6233748416d490c41a5d20f3dc7a0c45feecd5e). Each source ends with the flat-file row ID. Next DESNZ publication: June 2027.
-natural_gas_kwh,kWh,0.18231,1,DESNZ 2026 Fuels > Gaseous fuels > Natural gas > kWh (Gross CV) [1_100_1004_6_1]
-diesel_litre,litre,2.58354,1,DESNZ 2026 Fuels > Liquid fuels > Diesel (average biofuel blend) > litres [1_101_1011_8_1]
-petrol_litre,litre,2.075,1,DESNZ 2026 Fuels > Liquid fuels > Petrol (average biofuel blend) > litres [1_101_1017_8_1]
-electricity_kwh,kWh,0.13096,2,DESNZ 2026 UK electricity > Electricity generated > Electricity: UK > kWh [7_400_4000_5_1]
-car_km,km,0.16591,3,DESNZ 2026 Business travel- land > Cars (by size) > Average car > Unknown fuel > km [25_301_3074_4_1]
-rail_km,passenger.km,0.03092,3,DESNZ 2026 Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
-van_diesel_km,km,0.25716,3,DESNZ 2026 Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km [27_303_3102_4_1] (third-party transport; own vans go in Scope 1 via diesel_litre)
-waste_landfill_tonne,tonne,520.58023,3,DESNZ 2026 Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes [20_507_5313_15_1]
-commute_km,km,0.16591,3,DESNZ 2026 Business travel- land > Cars (by size) > Average car > Unknown fuel > km [25_301_3074_4_1] (employee commuting)
+year,key,unit,kgco2e_per_unit,scope,ppn_scope3_category,source
+2018,natural_gas_kwh,kWh,0.18396,1,,UK Government GHG conversion factors 2018: Fuels > Gaseous fuels > Natural gas > Energy - Gross CV > kWh (Gross CV)
+2018,lpg_litre,litre,1.51906,1,,UK Government GHG conversion factors 2018: Fuels > Gaseous fuels > LPG > Volume > litres
+2018,burning_oil_litre,litre,2.53627,1,,UK Government GHG conversion factors 2018: Fuels > Liquid fuels > Burning oil > Volume > litres
+2018,gas_oil_litre,litre,2.97049,1,,UK Government GHG conversion factors 2018: Fuels > Liquid fuels > Gas oil > Volume > litres
+2018,diesel_litre,litre,2.62694,1,,UK Government GHG conversion factors 2018: Fuels > Liquid fuels > Diesel (average biofuel blend) > Volume > litres
+2018,petrol_litre,litre,2.20307,1,,UK Government GHG conversion factors 2018: Fuels > Liquid fuels > Petrol (average biofuel blend) > Volume > litres
+2018,own_car_km,km,0.18064,1,,UK Government GHG conversion factors 2018: Passenger vehicles > Cars (by size) > Average car > Unknown > km
+2018,own_car_diesel_km,km,0.17753,1,,UK Government GHG conversion factors 2018: Passenger vehicles > Cars (by size) > Average car > Diesel > km
+2018,own_car_petrol_km,km,0.18368,1,,UK Government GHG conversion factors 2018: Passenger vehicles > Cars (by size) > Average car > Petrol > km
+2018,own_van_diesel_km,km,0.2568,1,,UK Government GHG conversion factors 2018: Delivery vehicles > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2018,refrigerant_r404a_kg,kg,3922.0,1,,UK Government GHG conversion factors 2018: Refrigerant & other > Kyoto protocol- blends > R404A > kg
+2018,refrigerant_r410a_kg,kg,2088.0,1,,UK Government GHG conversion factors 2018: Refrigerant & other > Kyoto protocol- blends > R410A > kg
+2018,refrigerant_r407c_kg,kg,1774.0,1,,UK Government GHG conversion factors 2018: Refrigerant & other > Kyoto protocol- blends > R407C > kg
+2018,refrigerant_r134a_kg,kg,1430.0,1,,UK Government GHG conversion factors 2018: Refrigerant & other > Kyoto protocol - standard > HFC-134a > kg
+2018,refrigerant_r32_kg,kg,675.0,1,,UK Government GHG conversion factors 2018: Refrigerant & other > Kyoto protocol - standard > HFC-32 > kg
+2018,electricity_kwh,kWh,0.28307,2,,UK Government GHG conversion factors 2018: UK electricity > Electricity generated > Electricity: UK > kWh
+2018,van_diesel_km,km,0.2568,3,4/9,UK Government GHG conversion factors 2018: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2018,van_diesel_tonne_km,tonne.km,0.54441,3,4/9,UK Government GHG conversion factors 2018: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > tonne.km
+2018,hgv_rigid_km,km,0.80746,3,4/9,UK Government GHG conversion factors 2018: Freighting goods > HGV (all diesel) > All rigids > Average laden > km
+2018,hgv_artic_km,km,0.93428,3,4/9,UK Government GHG conversion factors 2018: Freighting goods > HGV (all diesel) > All artics > Average laden > km
+2018,hgv_tonne_km,tonne.km,0.1136,3,4/9,UK Government GHG conversion factors 2018: Freighting goods > HGV (all diesel) > All HGVs > Average laden > tonne.km
+2018,hgv_refrigerated_km,km,1.02370054891749,3,4/9,UK Government GHG conversion factors 2018: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > km
+2018,hgv_refrigerated_tonne_km,tonne.km,0.133133189693756,3,4/9,UK Government GHG conversion factors 2018: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > tonne.km
+2018,waste_landfill_tonne,tonne,99.7729,3,5,UK Government GHG conversion factors 2018: Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes
+2018,waste_combustion_tonne,tonne,21.3842,3,5,UK Government GHG conversion factors 2018: Waste disposal > Refuse > Commercial and industrial waste > Combustion > tonnes
+2018,waste_recycled_tonne,tonne,21.3842,3,5,UK Government GHG conversion factors 2018: Waste disposal > Refuse > Commercial and industrial waste > Closed-loop > tonnes
+2018,recycling_paper_card_tonne,tonne,21.3842,3,5,UK Government GHG conversion factors 2018: Waste disposal > Paper > Paper and board: mixed > Closed-loop > tonnes
+2018,recycling_plastics_tonne,tonne,21.3842,3,5,UK Government GHG conversion factors 2018: Waste disposal > Plastic > Plastics: average plastics > Closed-loop > tonnes
+2018,recycling_glass_tonne,tonne,21.3842,3,5,UK Government GHG conversion factors 2018: Waste disposal > Other > Glass > Closed-loop > tonnes
+2018,recycling_metal_tonne,tonne,21.3842,3,5,UK Government GHG conversion factors 2018: Waste disposal > Metal > Metal: mixed cans > Closed-loop > tonnes
+2018,food_waste_ad_tonne,tonne,21.3842,3,5,UK Government GHG conversion factors 2018: Waste disposal > Refuse > Organic: food and drink waste > Anaerobic digestion > tonnes
+2018,food_waste_compost_tonne,tonne,10.2586,3,5,UK Government GHG conversion factors 2018: Waste disposal > Refuse > Organic: food and drink waste > Composting > tonnes
+2018,food_waste_landfill_tonne,tonne,626.9729,3,5,UK Government GHG conversion factors 2018: Waste disposal > Refuse > Organic: food and drink waste > Landfill > tonnes
+2018,car_km,km,0.18064,3,6,UK Government GHG conversion factors 2018: Business travel- land > Cars (by size) > Average car > Unknown > km
+2018,car_diesel_km,km,0.17753,3,6,UK Government GHG conversion factors 2018: Business travel- land > Cars (by size) > Average car > Diesel > km
+2018,car_petrol_km,km,0.18368,3,6,UK Government GHG conversion factors 2018: Business travel- land > Cars (by size) > Average car > Petrol > km
+2018,rail_km,passenger.km,0.04424,3,6,UK Government GHG conversion factors 2018: Business travel- land > Rail > National rail > passenger.km
+2018,bus_km,passenger.km,0.10097,3,6,UK Government GHG conversion factors 2018: Business travel- land > Bus > Average local bus > passenger.km
+2018,taxi_km,passenger.km,0.15344,3,6,UK Government GHG conversion factors 2018: Business travel- land > Taxis > Regular taxi > passenger.km
+2018,flight_domestic_km,passenger.km,0.29832,3,6,"UK Government GHG conversion factors 2018: Business travel- air > Flights > Domestic, to/from UK > Average passenger > With RF > passenger.km"
+2018,flight_short_haul_km,passenger.km,0.16236,3,6,"UK Government GHG conversion factors 2018: Business travel- air > Flights > Short-haul, to/from UK > Average passenger > With RF > passenger.km"
+2018,flight_long_haul_km,passenger.km,0.21256,3,6,"UK Government GHG conversion factors 2018: Business travel- air > Flights > Long-haul, to/from UK > Average passenger > With RF > passenger.km"
+2018,hotel_night_uk,room night,26.4,3,6,UK Government GHG conversion factors 2018: Hotel stay > Hotel stay > UK > Room per night
+2018,commute_km,km,0.18064,3,7,UK Government GHG conversion factors 2018: Business travel- land > Cars (by size) > Average car > Unknown > km
+2018,commute_rail_km,passenger.km,0.04424,3,7,UK Government GHG conversion factors 2018: Business travel- land > Rail > National rail > passenger.km
+2018,commute_bus_km,passenger.km,0.10097,3,7,UK Government GHG conversion factors 2018: Business travel- land > Bus > Average local bus > passenger.km
+2018,commute_motorbike_km,km,0.11529,3,7,UK Government GHG conversion factors 2018: Business travel- land > Motorbike > Average > km
+2019,natural_gas_kwh,kWh,0.18385,1,,UK Government GHG conversion factors 2019: Fuels > Gaseous fuels > Natural gas > Energy - Gross CV > kWh (Gross CV)
+2019,lpg_litre,litre,1.5226,1,,UK Government GHG conversion factors 2019: Fuels > Gaseous fuels > LPG > Volume > litres
+2019,burning_oil_litre,litre,2.54042,1,,UK Government GHG conversion factors 2019: Fuels > Liquid fuels > Burning oil > Volume > litres
+2019,gas_oil_litre,litre,2.75821,1,,UK Government GHG conversion factors 2019: Fuels > Liquid fuels > Gas oil > Volume > litres
+2019,diesel_litre,litre,2.59411,1,,UK Government GHG conversion factors 2019: Fuels > Liquid fuels > Diesel (average biofuel blend) > Volume > litres
+2019,petrol_litre,litre,2.20904,1,,UK Government GHG conversion factors 2019: Fuels > Liquid fuels > Petrol (average biofuel blend) > Volume > litres
+2019,own_car_km,km,0.1771,1,,UK Government GHG conversion factors 2019: Passenger vehicles > Cars (by size) > Average car > Unknown > km
+2019,own_car_diesel_km,km,0.17336,1,,UK Government GHG conversion factors 2019: Passenger vehicles > Cars (by size) > Average car > Diesel > km
+2019,own_car_petrol_km,km,0.18084,1,,UK Government GHG conversion factors 2019: Passenger vehicles > Cars (by size) > Average car > Petrol > km
+2019,own_van_diesel_km,km,0.25213,1,,UK Government GHG conversion factors 2019: Delivery vehicles > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2019,refrigerant_r404a_kg,kg,3922.0,1,,UK Government GHG conversion factors 2019: Refrigerant & other > Kyoto protocol- blends > R404A > kg
+2019,refrigerant_r410a_kg,kg,2088.0,1,,UK Government GHG conversion factors 2019: Refrigerant & other > Kyoto protocol- blends > R410A > kg
+2019,refrigerant_r407c_kg,kg,1774.0,1,,UK Government GHG conversion factors 2019: Refrigerant & other > Kyoto protocol- blends > R407C > kg
+2019,refrigerant_r134a_kg,kg,1430.0,1,,UK Government GHG conversion factors 2019: Refrigerant & other > Kyoto protocol - standard > HFC-134a > kg
+2019,refrigerant_r32_kg,kg,675.0,1,,UK Government GHG conversion factors 2019: Refrigerant & other > Kyoto protocol - standard > HFC-32 > kg
+2019,electricity_kwh,kWh,0.2556,2,,UK Government GHG conversion factors 2019: UK electricity > Electricity generated > Electricity: UK > kWh
+2019,van_diesel_km,km,0.25213,3,4/9,UK Government GHG conversion factors 2019: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2019,van_diesel_tonne_km,tonne.km,0.62001,3,4/9,UK Government GHG conversion factors 2019: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > tonne.km
+2019,hgv_rigid_km,km,0.81867,3,4/9,UK Government GHG conversion factors 2019: Freighting goods > HGV (all diesel) > All rigids > Average laden > km
+2019,hgv_artic_km,km,0.92788,3,4/9,UK Government GHG conversion factors 2019: Freighting goods > HGV (all diesel) > All artics > Average laden > km
+2019,hgv_tonne_km,tonne.km,0.11133,3,4/9,UK Government GHG conversion factors 2019: Freighting goods > HGV (all diesel) > All HGVs > Average laden > tonne.km
+2019,hgv_refrigerated_km,km,1.03188,3,4/9,UK Government GHG conversion factors 2019: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > km
+2019,hgv_refrigerated_tonne_km,tonne.km,0.13051,3,4/9,UK Government GHG conversion factors 2019: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > tonne.km
+2019,waste_landfill_tonne,tonne,99.7592,3,5,UK Government GHG conversion factors 2019: Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes
+2019,waste_combustion_tonne,tonne,21.3538,3,5,UK Government GHG conversion factors 2019: Waste disposal > Refuse > Commercial and industrial waste > Combustion > tonnes
+2019,waste_recycled_tonne,tonne,21.3538,3,5,UK Government GHG conversion factors 2019: Waste disposal > Refuse > Commercial and industrial waste > Closed-loop > tonnes
+2019,recycling_paper_card_tonne,tonne,21.3538,3,5,UK Government GHG conversion factors 2019: Waste disposal > Paper > Paper and board: mixed > Closed-loop > tonnes
+2019,recycling_plastics_tonne,tonne,21.3538,3,5,UK Government GHG conversion factors 2019: Waste disposal > Plastic > Plastics: average plastics > Closed-loop > tonnes
+2019,recycling_glass_tonne,tonne,21.3538,3,5,UK Government GHG conversion factors 2019: Waste disposal > Other > Glass > Closed-loop > tonnes
+2019,recycling_metal_tonne,tonne,21.3538,3,5,UK Government GHG conversion factors 2019: Waste disposal > Metal > Metal: mixed cans > Closed-loop > tonnes
+2019,food_waste_ad_tonne,tonne,10.2039,3,5,UK Government GHG conversion factors 2019: Waste disposal > Refuse > Organic: food and drink waste > Anaerobic digestion > tonnes
+2019,food_waste_compost_tonne,tonne,10.2039,3,5,UK Government GHG conversion factors 2019: Waste disposal > Refuse > Organic: food and drink waste > Composting > tonnes
+2019,food_waste_landfill_tonne,tonne,626.9592,3,5,UK Government GHG conversion factors 2019: Waste disposal > Refuse > Organic: food and drink waste > Landfill > tonnes
+2019,car_km,km,0.1771,3,6,UK Government GHG conversion factors 2019: Business travel- land > Cars (by size) > Average car > Unknown > km
+2019,car_diesel_km,km,0.17336,3,6,UK Government GHG conversion factors 2019: Business travel- land > Cars (by size) > Average car > Diesel > km
+2019,car_petrol_km,km,0.18084,3,6,UK Government GHG conversion factors 2019: Business travel- land > Cars (by size) > Average car > Petrol > km
+2019,rail_km,passenger.km,0.04115,3,6,UK Government GHG conversion factors 2019: Business travel- land > Rail > National rail > passenger.km
+2019,bus_km,passenger.km,0.10471,3,6,UK Government GHG conversion factors 2019: Business travel- land > Bus > Average local bus > passenger.km
+2019,taxi_km,passenger.km,0.15018,3,6,UK Government GHG conversion factors 2019: Business travel- land > Taxis > Regular taxi > passenger.km
+2019,flight_domestic_km,passenger.km,0.25493,3,6,"UK Government GHG conversion factors 2019: Business travel- air > Flights > Domestic, to/from UK > Average passenger > With RF > passenger.km"
+2019,flight_short_haul_km,passenger.km,0.15832,3,6,"UK Government GHG conversion factors 2019: Business travel- air > Flights > Short-haul, to/from UK > Average passenger > With RF > passenger.km"
+2019,flight_long_haul_km,passenger.km,0.19562,3,6,"UK Government GHG conversion factors 2019: Business travel- air > Flights > Long-haul, to/from UK > Average passenger > With RF > passenger.km"
+2019,hotel_night_uk,room night,17.4,3,6,UK Government GHG conversion factors 2019: Hotel stay > Hotel stay > UK > Room per night
+2019,commute_km,km,0.1771,3,7,UK Government GHG conversion factors 2019: Business travel- land > Cars (by size) > Average car > Unknown > km
+2019,commute_rail_km,passenger.km,0.04115,3,7,UK Government GHG conversion factors 2019: Business travel- land > Rail > National rail > passenger.km
+2019,commute_bus_km,passenger.km,0.10471,3,7,UK Government GHG conversion factors 2019: Business travel- land > Bus > Average local bus > passenger.km
+2019,commute_motorbike_km,km,0.11551,3,7,UK Government GHG conversion factors 2019: Business travel- land > Motorbike > Average > km
+2020,natural_gas_kwh,kWh,0.18387,1,,UK Government GHG conversion factors 2020: Fuels > Gaseous fuels > Natural gas > Energy - Gross CV > kWh (Gross CV)
+2020,lpg_litre,litre,1.55537,1,,UK Government GHG conversion factors 2020: Fuels > Gaseous fuels > LPG > Volume > litres
+2020,burning_oil_litre,litre,2.54039,1,,UK Government GHG conversion factors 2020: Fuels > Liquid fuels > Burning oil > Volume > litres
+2020,gas_oil_litre,litre,2.75776,1,,UK Government GHG conversion factors 2020: Fuels > Liquid fuels > Gas oil > Volume > litres
+2020,diesel_litre,litre,2.54603,1,,UK Government GHG conversion factors 2020: Fuels > Liquid fuels > Diesel (average biofuel blend) > Volume > litres
+2020,petrol_litre,litre,2.16802,1,,UK Government GHG conversion factors 2020: Fuels > Liquid fuels > Petrol (average biofuel blend) > Volume > litres
+2020,own_car_km,km,0.1714,1,,UK Government GHG conversion factors 2020: Passenger vehicles > Cars (by size) > Average car > Unknown > km
+2020,own_car_diesel_km,km,0.16844,1,,UK Government GHG conversion factors 2020: Passenger vehicles > Cars (by size) > Average car > Diesel > km
+2020,own_car_petrol_km,km,0.1743,1,,UK Government GHG conversion factors 2020: Passenger vehicles > Cars (by size) > Average car > Petrol > km
+2020,own_van_diesel_km,km,0.2471,1,,UK Government GHG conversion factors 2020: Delivery vehicles > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2020,refrigerant_r404a_kg,kg,3922.0,1,,UK Government GHG conversion factors 2020: Refrigerant & other > Kyoto protocol- blends > R404A > kg
+2020,refrigerant_r410a_kg,kg,2088.0,1,,UK Government GHG conversion factors 2020: Refrigerant & other > Kyoto protocol- blends > R410A > kg
+2020,refrigerant_r407c_kg,kg,1774.0,1,,UK Government GHG conversion factors 2020: Refrigerant & other > Kyoto protocol- blends > R407C > kg
+2020,refrigerant_r134a_kg,kg,1430.0,1,,UK Government GHG conversion factors 2020: Refrigerant & other > Kyoto protocol - standard > HFC-134a > kg
+2020,refrigerant_r32_kg,kg,675.0,1,,UK Government GHG conversion factors 2020: Refrigerant & other > Kyoto protocol - standard > HFC-32 > kg
+2020,electricity_kwh,kWh,0.23314,2,,UK Government GHG conversion factors 2020: UK electricity > Electricity generated > Electricity: UK > kWh
+2020,van_diesel_km,km,0.2471,3,4/9,UK Government GHG conversion factors 2020: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2020,van_diesel_tonne_km,tonne.km,0.61628,3,4/9,UK Government GHG conversion factors 2020: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > tonne.km
+2020,hgv_rigid_km,km,0.80112,3,4/9,UK Government GHG conversion factors 2020: Freighting goods > HGV (all diesel) > All rigids > Average laden > km
+2020,hgv_artic_km,km,0.91569,3,4/9,UK Government GHG conversion factors 2020: Freighting goods > HGV (all diesel) > All artics > Average laden > km
+2020,hgv_tonne_km,tonne.km,0.1065,3,4/9,UK Government GHG conversion factors 2020: Freighting goods > HGV (all diesel) > All HGVs > Average laden > tonne.km
+2020,hgv_refrigerated_km,km,1.0142,3,4/9,UK Government GHG conversion factors 2020: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > km
+2020,hgv_refrigerated_tonne_km,tonne.km,0.12481,3,4/9,UK Government GHG conversion factors 2020: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > tonne.km
+2020,waste_landfill_tonne,tonne,458.1763,3,5,UK Government GHG conversion factors 2020: Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes
+2020,waste_combustion_tonne,tonne,21.3167,3,5,UK Government GHG conversion factors 2020: Waste disposal > Refuse > Commercial and industrial waste > Combustion > tonnes
+2020,waste_recycled_tonne,tonne,21.3167,3,5,UK Government GHG conversion factors 2020: Waste disposal > Refuse > Commercial and industrial waste > Closed-loop > tonnes
+2020,recycling_paper_card_tonne,tonne,21.3167,3,5,UK Government GHG conversion factors 2020: Waste disposal > Paper > Paper and board: mixed > Closed-loop > tonnes
+2020,recycling_plastics_tonne,tonne,21.3167,3,5,UK Government GHG conversion factors 2020: Waste disposal > Plastic > Plastics: average plastics > Closed-loop > tonnes
+2020,recycling_glass_tonne,tonne,21.3167,3,5,UK Government GHG conversion factors 2020: Waste disposal > Other > Glass > Closed-loop > tonnes
+2020,recycling_metal_tonne,tonne,21.3167,3,5,UK Government GHG conversion factors 2020: Waste disposal > Metal > Metal: mixed cans > Closed-loop > tonnes
+2020,food_waste_ad_tonne,tonne,10.2039,3,5,UK Government GHG conversion factors 2020: Waste disposal > Refuse > Organic: food and drink waste > Anaerobic digestion > tonnes
+2020,food_waste_compost_tonne,tonne,10.2039,3,5,UK Government GHG conversion factors 2020: Waste disposal > Refuse > Organic: food and drink waste > Composting > tonnes
+2020,food_waste_landfill_tonne,tonne,626.9073,3,5,UK Government GHG conversion factors 2020: Waste disposal > Refuse > Organic: food and drink waste > Landfill > tonnes
+2020,car_km,km,0.1714,3,6,UK Government GHG conversion factors 2020: Business travel- land > Cars (by size) > Average car > Unknown > km
+2020,car_diesel_km,km,0.16844,3,6,UK Government GHG conversion factors 2020: Business travel- land > Cars (by size) > Average car > Diesel > km
+2020,car_petrol_km,km,0.1743,3,6,UK Government GHG conversion factors 2020: Business travel- land > Cars (by size) > Average car > Petrol > km
+2020,rail_km,passenger.km,0.036939999999999994,3,6,UK Government GHG conversion factors 2020: Business travel- land > Rail > National rail > passenger.km
+2020,bus_km,passenger.km,0.10312,3,6,UK Government GHG conversion factors 2020: Business travel- land > Bus > Average local bus > passenger.km
+2020,taxi_km,passenger.km,0.14549,3,6,UK Government GHG conversion factors 2020: Business travel- land > Taxis > Regular taxi > passenger.km
+2020,flight_domestic_km,passenger.km,0.2443,3,6,"UK Government GHG conversion factors 2020: Business travel- air > Flights > Domestic, to/from UK > Average passenger > With RF > passenger.km"
+2020,flight_short_haul_km,passenger.km,0.15553,3,6,"UK Government GHG conversion factors 2020: Business travel- air > Flights > Short-haul, to/from UK > Average passenger > With RF > passenger.km"
+2020,flight_long_haul_km,passenger.km,0.19085000000000002,3,6,"UK Government GHG conversion factors 2020: Business travel- air > Flights > Long-haul, to/from UK > Average passenger > With RF > passenger.km"
+2020,hotel_night_uk,room night,15.7,3,6,UK Government GHG conversion factors 2020: Hotel stay > Hotel stay > UK > Room per night
+2020,commute_km,km,0.1714,3,7,UK Government GHG conversion factors 2020: Business travel- land > Cars (by size) > Average car > Unknown > km
+2020,commute_rail_km,passenger.km,0.036939999999999994,3,7,UK Government GHG conversion factors 2020: Business travel- land > Rail > National rail > passenger.km
+2020,commute_bus_km,passenger.km,0.10312,3,7,UK Government GHG conversion factors 2020: Business travel- land > Bus > Average local bus > passenger.km
+2020,commute_motorbike_km,km,0.11337,3,7,UK Government GHG conversion factors 2020: Business travel- land > Motorbike > Average > km
+2021,natural_gas_kwh,kWh,0.18316,1,,UK Government GHG conversion factors 2021: Fuels > Gaseous fuels > Natural gas > Energy - Gross CV > kWh (Gross CV)
+2021,lpg_litre,litre,1.55709,1,,UK Government GHG conversion factors 2021: Fuels > Gaseous fuels > LPG > Volume > litres
+2021,burning_oil_litre,litre,2.54014,1,,UK Government GHG conversion factors 2021: Fuels > Liquid fuels > Burning oil > Volume > litres
+2021,gas_oil_litre,litre,2.75857,1,,UK Government GHG conversion factors 2021: Fuels > Liquid fuels > Gas oil > Volume > litres
+2021,diesel_litre,litre,2.51233,1,,UK Government GHG conversion factors 2021: Fuels > Liquid fuels > Diesel (average biofuel blend) > Volume > litres
+2021,petrol_litre,litre,2.19352,1,,UK Government GHG conversion factors 2021: Fuels > Liquid fuels > Petrol (average biofuel blend) > Volume > litres
+2021,own_car_km,km,0.17148,1,,UK Government GHG conversion factors 2021: Passenger vehicles > Cars (by size) > Average car > Unknown > km
+2021,own_car_diesel_km,km,0.16843,1,,UK Government GHG conversion factors 2021: Passenger vehicles > Cars (by size) > Average car > Diesel > km
+2021,own_car_petrol_km,km,0.17431,1,,UK Government GHG conversion factors 2021: Passenger vehicles > Cars (by size) > Average car > Petrol > km
+2021,own_van_diesel_km,km,0.24116,1,,UK Government GHG conversion factors 2021: Delivery vehicles > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2021,refrigerant_r404a_kg,kg,3922.0,1,,UK Government GHG conversion factors 2021: Refrigerant & other > Kyoto protocol- blends > R404A > kg
+2021,refrigerant_r410a_kg,kg,2088.0,1,,UK Government GHG conversion factors 2021: Refrigerant & other > Kyoto protocol- blends > R410A > kg
+2021,refrigerant_r407c_kg,kg,1774.0,1,,UK Government GHG conversion factors 2021: Refrigerant & other > Kyoto protocol- blends > R407C > kg
+2021,refrigerant_r134a_kg,kg,1430.0,1,,UK Government GHG conversion factors 2021: Refrigerant & other > Kyoto protocol - standard > HFC-134a > kg
+2021,refrigerant_r32_kg,kg,675.0,1,,UK Government GHG conversion factors 2021: Refrigerant & other > Kyoto protocol - standard > HFC-32 > kg
+2021,electricity_kwh,kWh,0.21233,2,,UK Government GHG conversion factors 2021: UK electricity > Electricity generated > Electricity: UK > kWh
+2021,van_diesel_km,km,0.24116,3,4/9,UK Government GHG conversion factors 2021: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2021,van_diesel_tonne_km,tonne.km,0.60261,3,4/9,UK Government GHG conversion factors 2021: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > tonne.km
+2021,hgv_rigid_km,km,0.80305,3,4/9,UK Government GHG conversion factors 2021: Freighting goods > HGV (all diesel) > All rigids > Average laden > km
+2021,hgv_artic_km,km,0.91048,3,4/9,UK Government GHG conversion factors 2021: Freighting goods > HGV (all diesel) > All artics > Average laden > km
+2021,hgv_tonne_km,tonne.km,0.10749,3,4/9,UK Government GHG conversion factors 2021: Freighting goods > HGV (all diesel) > All HGVs > Average laden > tonne.km
+2021,hgv_refrigerated_km,km,1.01192,3,4/9,UK Government GHG conversion factors 2021: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > km
+2021,hgv_refrigerated_tonne_km,tonne.km,0.12588,3,4/9,UK Government GHG conversion factors 2021: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > tonne.km
+2021,waste_landfill_tonne,tonne,467.0458,3,5,UK Government GHG conversion factors 2021: Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes
+2021,waste_combustion_tonne,tonne,21.2935658914729,3,5,UK Government GHG conversion factors 2021: Waste disposal > Refuse > Commercial and industrial waste > Combustion > tonnes
+2021,waste_recycled_tonne,tonne,21.2935658914729,3,5,UK Government GHG conversion factors 2021: Waste disposal > Refuse > Commercial and industrial waste > Closed-loop > tonnes
+2021,recycling_paper_card_tonne,tonne,21.2935658914729,3,5,UK Government GHG conversion factors 2021: Waste disposal > Paper > Paper and board: mixed > Closed-loop > tonnes
+2021,recycling_plastics_tonne,tonne,21.2935658914729,3,5,UK Government GHG conversion factors 2021: Waste disposal > Plastic > Plastics: average plastics > Closed-loop > tonnes
+2021,recycling_glass_tonne,tonne,21.2935658914729,3,5,UK Government GHG conversion factors 2021: Waste disposal > Other > Glass > Closed-loop > tonnes
+2021,recycling_metal_tonne,tonne,21.2935658914729,3,5,UK Government GHG conversion factors 2021: Waste disposal > Metal > Metal: mixed cans > Closed-loop > tonnes
+2021,food_waste_ad_tonne,tonne,8.9506976744186,3,5,UK Government GHG conversion factors 2021: Waste disposal > Refuse > Organic: food and drink waste > Anaerobic digestion > tonnes
+2021,food_waste_compost_tonne,tonne,8.9506976744186,3,5,UK Government GHG conversion factors 2021: Waste disposal > Refuse > Organic: food and drink waste > Composting > tonnes
+2021,food_waste_landfill_tonne,tonne,626.874866154177,3,5,UK Government GHG conversion factors 2021: Waste disposal > Refuse > Organic: food and drink waste > Landfill > tonnes
+2021,car_km,km,0.17148,3,6,UK Government GHG conversion factors 2021: Business travel- land > Cars (by size) > Average car > Unknown > km
+2021,car_diesel_km,km,0.16843,3,6,UK Government GHG conversion factors 2021: Business travel- land > Cars (by size) > Average car > Diesel > km
+2021,car_petrol_km,km,0.17431,3,6,UK Government GHG conversion factors 2021: Business travel- land > Cars (by size) > Average car > Petrol > km
+2021,rail_km,passenger.km,0.03549,3,6,UK Government GHG conversion factors 2021: Business travel- land > Rail > National rail > passenger.km
+2021,bus_km,passenger.km,0.10227,3,6,UK Government GHG conversion factors 2021: Business travel- land > Bus > Average local bus > passenger.km
+2021,taxi_km,passenger.km,0.14876,3,6,UK Government GHG conversion factors 2021: Business travel- land > Taxis > Regular taxi > passenger.km
+2021,flight_domestic_km,passenger.km,0.24587,3,6,"UK Government GHG conversion factors 2021: Business travel- air > Flights > Domestic, to/from UK > Average passenger > With RF > passenger.km"
+2021,flight_short_haul_km,passenger.km,0.15353,3,6,"UK Government GHG conversion factors 2021: Business travel- air > Flights > Short-haul, to/from UK > Average passenger > With RF > passenger.km"
+2021,flight_long_haul_km,passenger.km,0.19309,3,6,"UK Government GHG conversion factors 2021: Business travel- air > Flights > Long-haul, to/from UK > Average passenger > With RF > passenger.km"
+2021,hotel_night_uk,room night,13.9,3,6,UK Government GHG conversion factors 2021: Hotel stay > Hotel stay > UK > Room per night
+2021,commute_km,km,0.17148,3,7,UK Government GHG conversion factors 2021: Business travel- land > Cars (by size) > Average car > Unknown > km
+2021,commute_rail_km,passenger.km,0.03549,3,7,UK Government GHG conversion factors 2021: Business travel- land > Rail > National rail > passenger.km
+2021,commute_bus_km,passenger.km,0.10227,3,7,UK Government GHG conversion factors 2021: Business travel- land > Bus > Average local bus > passenger.km
+2021,commute_motorbike_km,km,0.11355,3,7,UK Government GHG conversion factors 2021: Business travel- land > Motorbike > Average > km
+2022,natural_gas_kwh,kWh,0.18254,1,,UK Government GHG conversion factors 2022: Fuels > Gaseous fuels > Natural gas > kWh (Gross CV)
+2022,lpg_litre,litre,1.55709,1,,UK Government GHG conversion factors 2022: Fuels > Gaseous fuels > LPG > litres
+2022,burning_oil_litre,litre,2.54013,1,,UK Government GHG conversion factors 2022: Fuels > Liquid fuels > Burning oil > litres
+2022,gas_oil_litre,litre,2.75857,1,,UK Government GHG conversion factors 2022: Fuels > Liquid fuels > Gas oil > litres
+2022,diesel_litre,litre,2.55784,1,,UK Government GHG conversion factors 2022: Fuels > Liquid fuels > Diesel (average biofuel blend) > litres
+2022,petrol_litre,litre,2.16185,1,,UK Government GHG conversion factors 2022: Fuels > Liquid fuels > Petrol (average biofuel blend) > litres
+2022,own_car_km,km,0.17067,1,,UK Government GHG conversion factors 2022: Passenger vehicles > Cars (by size) > Average car > Unknown > km
+2022,own_car_diesel_km,km,0.17082414,1,,UK Government GHG conversion factors 2022: Passenger vehicles > Cars (by size) > Average car > Diesel > km
+2022,own_car_petrol_km,km,0.17048,1,,UK Government GHG conversion factors 2022: Passenger vehicles > Cars (by size) > Average car > Petrol > km
+2022,own_van_diesel_km,km,0.23156,1,,UK Government GHG conversion factors 2022: Delivery vehicles > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2022,refrigerant_r404a_kg,kg,3922.0,1,,UK Government GHG conversion factors 2022: Refrigerant & other > Blends > R404A > Emissions including only Kyoto products > kg
+2022,refrigerant_r410a_kg,kg,2088.0,1,,UK Government GHG conversion factors 2022: Refrigerant & other > Blends > R410A > Emissions including only Kyoto products > kg
+2022,refrigerant_r407c_kg,kg,1774.0,1,,UK Government GHG conversion factors 2022: Refrigerant & other > Blends > R407C > Emissions including only Kyoto products > kg
+2022,refrigerant_r134a_kg,kg,1430.0,1,,UK Government GHG conversion factors 2022: Refrigerant & other > Kyoto protocol products > HFC-134a > Emissions including only Kyoto products > kg
+2022,refrigerant_r32_kg,kg,675.0,1,,UK Government GHG conversion factors 2022: Refrigerant & other > Kyoto protocol products > HFC-32 > Emissions including only Kyoto products > kg
+2022,electricity_kwh,kWh,0.19338,2,,UK Government GHG conversion factors 2022: UK electricity > Electricity generated > Electricity: UK > 2020 > kWh
+2022,van_diesel_km,km,0.23156,3,4/9,UK Government GHG conversion factors 2022: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km
+2022,van_diesel_tonne_km,tonne.km,0.57871,3,4/9,UK Government GHG conversion factors 2022: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > tonne.km
+2022,hgv_rigid_km,km,0.84061,3,4/9,UK Government GHG conversion factors 2022: Freighting goods > HGV (all diesel) > All rigids > Average laden > km
+2022,hgv_artic_km,km,0.92391,3,4/9,UK Government GHG conversion factors 2022: Freighting goods > HGV (all diesel) > All artics > Average laden > km
+2022,hgv_tonne_km,tonne.km,0.10614,3,4/9,UK Government GHG conversion factors 2022: Freighting goods > HGV (all diesel) > All HGVs > Average laden > tonne.km
+2022,hgv_refrigerated_km,km,1.04208,3,4/9,UK Government GHG conversion factors 2022: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > km
+2022,hgv_refrigerated_tonne_km,tonne.km,0.12418,3,4/9,UK Government GHG conversion factors 2022: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > tonne.km
+2022,waste_landfill_tonne,tonne,467.008384449382,3,5,UK Government GHG conversion factors 2022: Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes
+2022,waste_combustion_tonne,tonne,21.2801937984496,3,5,UK Government GHG conversion factors 2022: Waste disposal > Refuse > Commercial and industrial waste > Combustion > tonnes
+2022,recycling_paper_card_tonne,tonne,21.2801937984496,3,5,UK Government GHG conversion factors 2022: Waste disposal > Paper > Paper and board: mixed > Closed-loop > tonnes
+2022,recycling_plastics_tonne,tonne,21.2801937984496,3,5,UK Government GHG conversion factors 2022: Waste disposal > Plastic > Plastics: average plastics > Closed-loop > tonnes
+2022,recycling_glass_tonne,tonne,21.2801937984496,3,5,UK Government GHG conversion factors 2022: Waste disposal > Other > Glass > Closed-loop > tonnes
+2022,recycling_metal_tonne,tonne,21.2801937984496,3,5,UK Government GHG conversion factors 2022: Waste disposal > Metal > Metal: mixed cans > Closed-loop > tonnes
+2022,food_waste_ad_tonne,tonne,8.91058139534884,3,5,UK Government GHG conversion factors 2022: Waste disposal > Refuse > Organic: food and drink waste > Anaerobic digestion > tonnes
+2022,food_waste_compost_tonne,tonne,8.91058139534884,3,5,UK Government GHG conversion factors 2022: Waste disposal > Refuse > Organic: food and drink waste > Composting > tonnes
+2022,food_waste_landfill_tonne,tonne,626.856145223945,3,5,UK Government GHG conversion factors 2022: Waste disposal > Refuse > Organic: food and drink waste > Landfill > tonnes
+2022,car_km,km,0.17067,3,6,UK Government GHG conversion factors 2022: Business travel- land > Cars (by size) > Average car > Unknown > km
+2022,car_diesel_km,km,0.17082414,3,6,UK Government GHG conversion factors 2022: Business travel- land > Cars (by size) > Average car > Diesel > km
+2022,car_petrol_km,km,0.17048,3,6,UK Government GHG conversion factors 2022: Business travel- land > Cars (by size) > Average car > Petrol > km
+2022,rail_km,passenger.km,0.03549,3,6,UK Government GHG conversion factors 2022: Business travel- land > Rail > National rail > passenger.km
+2022,bus_km,passenger.km,0.0965,3,6,UK Government GHG conversion factors 2022: Business travel- land > Bus > Average local bus > passenger.km
+2022,taxi_km,passenger.km,0.14876,3,6,UK Government GHG conversion factors 2022: Business travel- land > Taxis > Regular taxi > passenger.km
+2022,flight_domestic_km,passenger.km,0.24587,3,6,"UK Government GHG conversion factors 2022: Business travel- air > Flights > Domestic, to/from UK > Average passenger > With RF > passenger.km"
+2022,flight_short_haul_km,passenger.km,0.15353,3,6,"UK Government GHG conversion factors 2022: Business travel- air > Flights > Short-haul, to/from UK > Average passenger > With RF > passenger.km"
+2022,flight_long_haul_km,passenger.km,0.19309,3,6,"UK Government GHG conversion factors 2022: Business travel- air > Flights > Long-haul, to/from UK > Average passenger > With RF > passenger.km"
+2022,hotel_night_uk,room night,10.4,3,6,UK Government GHG conversion factors 2022: Hotel stay > Hotel stay > UK > Room per night
+2022,commute_km,km,0.17067,3,7,UK Government GHG conversion factors 2022: Business travel- land > Cars (by size) > Average car > Unknown > km
+2022,commute_rail_km,passenger.km,0.03549,3,7,UK Government GHG conversion factors 2022: Business travel- land > Rail > National rail > passenger.km
+2022,commute_bus_km,passenger.km,0.0965,3,7,UK Government GHG conversion factors 2022: Business travel- land > Bus > Average local bus > passenger.km
+2022,commute_motorbike_km,km,0.11355,3,7,UK Government GHG conversion factors 2022: Business travel- land > Motorbike > Average > km
+2023,natural_gas_kwh,kWh,0.18292892617449666,1,,UK Government GHG conversion factors 2023: Fuels > Gaseous fuels > Natural gas > kWh (Gross CV) [1_100_1004_6_1]
+2023,lpg_litre,litre,1.5571277838926174,1,,UK Government GHG conversion factors 2023: Fuels > Gaseous fuels > LPG > litres [1_100_1003_8_1]
+2023,burning_oil_litre,litre,2.540155856375839,1,,UK Government GHG conversion factors 2023: Fuels > Liquid fuels > Burning oil > litres [1_101_1010_8_1]
+2023,gas_oil_litre,litre,2.75540897852349,1,,UK Government GHG conversion factors 2023: Fuels > Liquid fuels > Gas oil > litres [1_101_1014_8_1]
+2023,diesel_litre,litre,2.5120638845637586,1,,UK Government GHG conversion factors 2023: Fuels > Liquid fuels > Diesel (average biofuel blend) > litres [1_101_1011_8_1]
+2023,petrol_litre,litre,2.097473127516779,1,,UK Government GHG conversion factors 2023: Fuels > Liquid fuels > Petrol (average biofuel blend) > litres [1_101_1017_8_1]
+2023,own_car_km,km,0.1666385879194631,1,,UK Government GHG conversion factors 2023: Passenger vehicles > Cars (by size) > Average car > Unknown > km [4_301_3074_4_1]
+2023,own_car_diesel_km,km,0.1698264488805369,1,,UK Government GHG conversion factors 2023: Passenger vehicles > Cars (by size) > Average car > Diesel > km [4_301_3069_4_1]
+2023,own_car_petrol_km,km,0.1639085342281879,1,,UK Government GHG conversion factors 2023: Passenger vehicles > Cars (by size) > Average car > Petrol > km [4_301_3070_4_1]
+2023,own_van_diesel_km,km,0.2312840268456376,1,,UK Government GHG conversion factors 2023: Delivery vehicles > Vans > Average (up to 3.5 tonnes) > Diesel > km [5_303_3102_4_1]
+2023,refrigerant_r404a_kg,kg,3943.0,1,,UK Government GHG conversion factors 2023: Refrigerant & other > Blends > R404A > Emissions including only Kyoto products > kg [3_201_2120_3_1]
+2023,refrigerant_r410a_kg,kg,1924.0,1,,UK Government GHG conversion factors 2023: Refrigerant & other > Blends > R410A > Emissions including only Kyoto products > kg [3_201_2156_3_1]
+2023,refrigerant_r407c_kg,kg,1624.0,1,,UK Government GHG conversion factors 2023: Refrigerant & other > Blends > R407C > Emissions including only Kyoto products > kg [3_201_2135_3_1]
+2023,refrigerant_r134a_kg,kg,1300.0,1,,UK Government GHG conversion factors 2023: Refrigerant & other > Kyoto protocol products > HFC-134a > Emissions including only Kyoto products > kg [3_200_2024_3_1]
+2023,refrigerant_r32_kg,kg,677.0,1,,UK Government GHG conversion factors 2023: Refrigerant & other > Kyoto protocol products > HFC-32 > Emissions including only Kyoto products > kg [3_200_2012_3_1]
+2023,electricity_kwh,kWh,0.20707428859060403,2,,UK Government GHG conversion factors 2023: UK electricity > Electricity generated > Electricity: UK > kWh > kWh [7_400_4000_5_1]
+2023,van_diesel_km,km,0.2312840268456376,3,4/9,UK Government GHG conversion factors 2023: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km [27_303_3102_4_1]
+2023,van_diesel_tonne_km,tonne.km,0.570596267114094,3,4/9,UK Government GHG conversion factors 2023: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > tonne.km [27_303_3102_14_1]
+2023,hgv_rigid_km,km,0.8231341248322148,3,4/9,UK Government GHG conversion factors 2023: Freighting goods > HGV (all diesel) > All rigids > Average laden > km [27_304_3124_4_1]
+2023,hgv_artic_km,km,0.9064371436241611,3,4/9,UK Government GHG conversion factors 2023: Freighting goods > HGV (all diesel) > All artics > Average laden > km [27_304_3136_4_1]
+2023,hgv_tonne_km,tonne.km,0.09695746711409396,3,4/9,UK Government GHG conversion factors 2023: Freighting goods > HGV (all diesel) > All HGVs > Average laden > tonne.km [27_304_3140_14_1]
+2023,hgv_refrigerated_km,km,1.020978477852349,3,4/9,UK Government GHG conversion factors 2023: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > km [27_306_3140_4_1]
+2023,hgv_refrigerated_tonne_km,tonne.km,0.11349746711409398,3,4/9,UK Government GHG conversion factors 2023: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > tonne.km [27_306_3140_14_1]
+2023,waste_landfill_tonne,tonne,520.3347434629953,3,5,UK Government GHG conversion factors 2023: Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes [20_507_5313_15_1]
+2023,waste_combustion_tonne,tonne,21.28080723687633,3,5,UK Government GHG conversion factors 2023: Waste disposal > Refuse > Commercial and industrial waste > Combustion > tonnes [20_507_5311_15_1]
+2023,recycling_paper_card_tonne,tonne,21.28080723687633,3,5,UK Government GHG conversion factors 2023: Waste disposal > Paper > Paper and board: mixed > Closed-loop > tonnes [20_506_5450_15_1]
+2023,recycling_plastics_tonne,tonne,21.28080723687633,3,5,UK Government GHG conversion factors 2023: Waste disposal > Plastic > Plastics: average plastics > Closed-loop > tonnes [20_505_5380_15_1]
+2023,recycling_glass_tonne,tonne,21.28080723687633,3,5,UK Government GHG conversion factors 2023: Waste disposal > Other > Glass > Closed-loop > tonnes [20_501_5268_15_1]
+2023,recycling_metal_tonne,tonne,21.28080723687633,3,5,UK Government GHG conversion factors 2023: Waste disposal > Metal > Metal: mixed cans > Closed-loop > tonnes [20_504_5359_15_1]
+2023,food_waste_ad_tonne,tonne,8.912421710629,3,5,UK Government GHG conversion factors 2023: Waste disposal > Refuse > Organic: food and drink waste > Anaerobic digestion > tonnes [20_507_5293_15_1]
+2023,food_waste_compost_tonne,tonne,8.912421710629,3,5,UK Government GHG conversion factors 2023: Waste disposal > Refuse > Organic: food and drink waste > Composting > tonnes [20_507_5291_15_1]
+2023,food_waste_landfill_tonne,tonne,700.2098817534277,3,5,UK Government GHG conversion factors 2023: Waste disposal > Refuse > Organic: food and drink waste > Landfill > tonnes [20_507_5292_15_1]
+2023,car_km,km,0.1666385879194631,3,6,UK Government GHG conversion factors 2023: Business travel- land > Cars (by size) > Average car > Unknown > km [25_301_3074_4_1]
+2023,car_diesel_km,km,0.1698264488805369,3,6,UK Government GHG conversion factors 2023: Business travel- land > Cars (by size) > Average car > Diesel > km [25_301_3069_4_1]
+2023,car_petrol_km,km,0.1639085342281879,3,6,UK Government GHG conversion factors 2023: Business travel- land > Cars (by size) > Average car > Petrol > km [25_301_3070_4_1]
+2023,rail_km,passenger.km,0.03546296375838926,3,6,UK Government GHG conversion factors 2023: Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
+2023,bus_km,passenger.km,0.10215039463087248,3,6,UK Government GHG conversion factors 2023: Business travel- land > Bus > Average local bus > passenger.km [25_314_3145_11_1]
+2023,taxi_km,passenger.km,0.148614925938255,3,6,UK Government GHG conversion factors 2023: Business travel- land > Taxis > Regular taxi > passenger.km [25_313_3141_11_1]
+2023,flight_domestic_km,passenger.km,0.2725767852348993,3,6,"UK Government GHG conversion factors 2023: Business travel- air > Flights > Domestic, to/from UK > Average passenger > With RF > passenger.km [21_316_3160_11_1]"
+2023,flight_short_haul_km,passenger.km,0.1859171395973154,3,6,"UK Government GHG conversion factors 2023: Business travel- air > Flights > Short-haul, to/from UK > Average passenger > With RF > passenger.km [21_316_3162_11_1]"
+2023,flight_long_haul_km,passenger.km,0.2612806295302013,3,6,"UK Government GHG conversion factors 2023: Business travel- air > Flights > Long-haul, to/from UK > Average passenger > With RF > passenger.km [21_316_3168_11_1]"
+2023,hotel_night_uk,room night,10.4,3,6,UK Government GHG conversion factors 2023: Hotel stay > Hotel stay > UK > Room per night [29_600_4000_13_1]
+2023,commute_km,km,0.1666385879194631,3,7,UK Government GHG conversion factors 2023: Business travel- land > Cars (by size) > Average car > Unknown > km [25_301_3074_4_1]
+2023,commute_rail_km,passenger.km,0.03546296375838926,3,7,UK Government GHG conversion factors 2023: Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
+2023,commute_bus_km,passenger.km,0.10215039463087248,3,7,UK Government GHG conversion factors 2023: Business travel- land > Bus > Average local bus > passenger.km [25_314_3145_11_1]
+2023,commute_motorbike_km,km,0.1136742644295302,3,7,UK Government GHG conversion factors 2023: Business travel- land > Motorbike > Average > km [25_302_3080_4_1]
+2024,natural_gas_kwh,kWh,0.1829,1,,UK Government GHG conversion factors 2024: Fuels > Gaseous fuels > Natural gas > kWh (Gross CV) [1_100_1004_6_1]
+2024,lpg_litre,litre,1.55713,1,,UK Government GHG conversion factors 2024: Fuels > Gaseous fuels > LPG > litres [1_100_1003_8_1]
+2024,burning_oil_litre,litre,2.54015,1,,UK Government GHG conversion factors 2024: Fuels > Liquid fuels > Burning oil > litres [1_101_1010_8_1]
+2024,gas_oil_litre,litre,2.75541,1,,UK Government GHG conversion factors 2024: Fuels > Liquid fuels > Gas oil > litres [1_101_1014_8_1]
+2024,diesel_litre,litre,2.51279,1,,UK Government GHG conversion factors 2024: Fuels > Liquid fuels > Diesel (average biofuel blend) > litres [1_101_1011_8_1]
+2024,petrol_litre,litre,2.0844,1,,UK Government GHG conversion factors 2024: Fuels > Liquid fuels > Petrol (average biofuel blend) > litres [1_101_1017_8_1]
+2024,own_car_km,km,0.16691,1,,UK Government GHG conversion factors 2024: Passenger vehicles > Cars (by size) > Average car > Unknown > km [4_301_3074_4_1]
+2024,own_car_diesel_km,km,0.16984,1,,UK Government GHG conversion factors 2024: Passenger vehicles > Cars (by size) > Average car > Diesel > km [4_301_3069_4_1]
+2024,own_car_petrol_km,km,0.1645,1,,UK Government GHG conversion factors 2024: Passenger vehicles > Cars (by size) > Average car > Petrol > km [4_301_3070_4_1]
+2024,own_van_diesel_km,km,0.25023,1,,UK Government GHG conversion factors 2024: Delivery vehicles > Vans > Average (up to 3.5 tonnes) > Diesel > km [5_303_3102_4_1]
+2024,refrigerant_r404a_kg,kg,3943.0,1,,UK Government GHG conversion factors 2024: Refrigerant & other > Blends > R404A > Emissions including only Kyoto products > kg [3_201_2120_3_1]
+2024,refrigerant_r410a_kg,kg,1924.0,1,,UK Government GHG conversion factors 2024: Refrigerant & other > Blends > R410A > Emissions including only Kyoto products > kg [3_201_2156_3_1]
+2024,refrigerant_r407c_kg,kg,1624.0,1,,UK Government GHG conversion factors 2024: Refrigerant & other > Blends > R407C > Emissions including only Kyoto products > kg [3_201_2135_3_1]
+2024,refrigerant_r134a_kg,kg,1300.0,1,,UK Government GHG conversion factors 2024: Refrigerant & other > Kyoto protocol products > HFC-134a > Emissions including only Kyoto products > kg [3_200_2024_3_1]
+2024,refrigerant_r32_kg,kg,677.0,1,,UK Government GHG conversion factors 2024: Refrigerant & other > Kyoto protocol products > HFC-32 > Emissions including only Kyoto products > kg [3_200_2012_3_1]
+2024,electricity_kwh,kWh,0.20705,2,,UK Government GHG conversion factors 2024: UK electricity > Electricity generated > Electricity: UK > kWh > kWh [7_400_4000_5_1]
+2024,van_diesel_km,km,0.25023,3,4/9,UK Government GHG conversion factors 2024: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km [27_303_3102_4_1]
+2024,van_diesel_tonne_km,tonne.km,0.61643,3,4/9,UK Government GHG conversion factors 2024: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > tonne.km [27_303_3102_14_1]
+2024,hgv_rigid_km,km,0.82657,3,4/9,UK Government GHG conversion factors 2024: Freighting goods > HGV (all diesel) > All rigids > Average laden > km [27_304_3124_4_1]
+2024,hgv_artic_km,km,0.90581,3,4/9,UK Government GHG conversion factors 2024: Freighting goods > HGV (all diesel) > All artics > Average laden > km [27_304_3136_4_1]
+2024,hgv_tonne_km,tonne.km,0.09752,3,4/9,UK Government GHG conversion factors 2024: Freighting goods > HGV (all diesel) > All HGVs > Average laden > tonne.km [27_304_3140_14_1]
+2024,hgv_refrigerated_km,km,1.02228,3,4/9,UK Government GHG conversion factors 2024: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > km [27_306_3140_4_1]
+2024,hgv_refrigerated_tonne_km,tonne.km,0.11417,3,4/9,UK Government GHG conversion factors 2024: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > tonne.km [27_306_3140_14_1]
+2024,waste_landfill_tonne,tonne,520.3342,3,5,UK Government GHG conversion factors 2024: Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes [20_507_5313_15_1]
+2024,waste_combustion_tonne,tonne,6.41061,3,5,UK Government GHG conversion factors 2024: Waste disposal > Refuse > Commercial and industrial waste > Combustion > tonnes [20_507_5311_15_1]
+2024,recycling_paper_card_tonne,tonne,6.41061,3,5,UK Government GHG conversion factors 2024: Waste disposal > Paper > Paper and board: mixed > Closed-loop > tonnes [20_506_5450_15_1]
+2024,recycling_plastics_tonne,tonne,6.41061,3,5,UK Government GHG conversion factors 2024: Waste disposal > Plastic > Plastics: average plastics > Closed-loop > tonnes [20_505_5380_15_1]
+2024,recycling_glass_tonne,tonne,6.41061,3,5,UK Government GHG conversion factors 2024: Waste disposal > Other > Glass > Closed-loop > tonnes [20_501_5268_15_1]
+2024,recycling_metal_tonne,tonne,6.41061,3,5,UK Government GHG conversion factors 2024: Waste disposal > Metal > Metal: mixed cans > Closed-loop > tonnes [20_504_5359_15_1]
+2024,food_waste_ad_tonne,tonne,8.88386,3,5,UK Government GHG conversion factors 2024: Waste disposal > Refuse > Organic: food and drink waste > Anaerobic digestion > tonnes [20_507_5293_15_1]
+2024,food_waste_compost_tonne,tonne,8.88386,3,5,UK Government GHG conversion factors 2024: Waste disposal > Refuse > Organic: food and drink waste > Composting > tonnes [20_507_5291_15_1]
+2024,food_waste_landfill_tonne,tonne,700.20961,3,5,UK Government GHG conversion factors 2024: Waste disposal > Refuse > Organic: food and drink waste > Landfill > tonnes [20_507_5292_15_1]
+2024,car_km,km,0.16691,3,6,UK Government GHG conversion factors 2024: Business travel- land > Cars (by size) > Average car > Unknown > km [25_301_3074_4_1]
+2024,car_diesel_km,km,0.16984,3,6,UK Government GHG conversion factors 2024: Business travel- land > Cars (by size) > Average car > Diesel > km [25_301_3069_4_1]
+2024,car_petrol_km,km,0.1645,3,6,UK Government GHG conversion factors 2024: Business travel- land > Cars (by size) > Average car > Petrol > km [25_301_3070_4_1]
+2024,rail_km,passenger.km,0.03546,3,6,UK Government GHG conversion factors 2024: Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
+2024,bus_km,passenger.km,0.10846,3,6,UK Government GHG conversion factors 2024: Business travel- land > Bus > Average local bus > passenger.km [25_314_3145_11_1]
+2024,taxi_km,passenger.km,0.14861,3,6,UK Government GHG conversion factors 2024: Business travel- land > Taxis > Regular taxi > passenger.km [25_313_3141_11_1]
+2024,flight_domestic_km,passenger.km,0.27257,3,6,"UK Government GHG conversion factors 2024: Business travel- air > Flights > Domestic, to/from UK > Average passenger > With RF > passenger.km [21_316_3160_11_1]"
+2024,flight_short_haul_km,passenger.km,0.18592,3,6,"UK Government GHG conversion factors 2024: Business travel- air > Flights > Short-haul, to/from UK > Average passenger > With RF > passenger.km [21_316_3162_11_1]"
+2024,flight_long_haul_km,passenger.km,0.26128,3,6,"UK Government GHG conversion factors 2024: Business travel- air > Flights > Long-haul, to/from UK > Average passenger > With RF > passenger.km [21_316_3168_11_1]"
+2024,hotel_night_uk,room night,10.4,3,6,UK Government GHG conversion factors 2024: Hotel stay > Hotel stay > UK > Room per night [29_600_4000_13_1]
+2024,commute_km,km,0.16691,3,7,UK Government GHG conversion factors 2024: Business travel- land > Cars (by size) > Average car > Unknown > km [25_301_3074_4_1]
+2024,commute_rail_km,passenger.km,0.03546,3,7,UK Government GHG conversion factors 2024: Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
+2024,commute_bus_km,passenger.km,0.10846,3,7,UK Government GHG conversion factors 2024: Business travel- land > Bus > Average local bus > passenger.km [25_314_3145_11_1]
+2024,commute_motorbike_km,km,0.11367,3,7,UK Government GHG conversion factors 2024: Business travel- land > Motorbike > Average > km [25_302_3080_4_1]
+2025,natural_gas_kwh,kWh,0.18296,1,,UK Government GHG conversion factors 2025: Fuels > Gaseous fuels > Natural gas > kWh (Gross CV) [1_100_1004_6_1]
+2025,lpg_litre,litre,1.55713,1,,UK Government GHG conversion factors 2025: Fuels > Gaseous fuels > LPG > litres [1_100_1003_8_1]
+2025,burning_oil_litre,litre,2.54016,1,,UK Government GHG conversion factors 2025: Fuels > Liquid fuels > Burning oil > litres [1_101_1010_8_1]
+2025,gas_oil_litre,litre,2.75541,1,,UK Government GHG conversion factors 2025: Fuels > Liquid fuels > Gas oil > litres [1_101_1014_8_1]
+2025,diesel_litre,litre,2.57082,1,,UK Government GHG conversion factors 2025: Fuels > Liquid fuels > Diesel (average biofuel blend) > litres [1_101_1011_8_1]
+2025,petrol_litre,litre,2.06916,1,,UK Government GHG conversion factors 2025: Fuels > Liquid fuels > Petrol (average biofuel blend) > litres [1_101_1017_8_1]
+2025,own_car_km,km,0.16725,1,,UK Government GHG conversion factors 2025: Passenger vehicles > Cars (by size) > Average car > Unknown > km [4_301_3074_4_1]
+2025,own_car_diesel_km,km,0.17304,1,,UK Government GHG conversion factors 2025: Passenger vehicles > Cars (by size) > Average car > Diesel > km [4_301_3069_4_1]
+2025,own_car_petrol_km,km,0.16272,1,,UK Government GHG conversion factors 2025: Passenger vehicles > Cars (by size) > Average car > Petrol > km [4_301_3070_4_1]
+2025,own_van_diesel_km,km,0.25561,1,,UK Government GHG conversion factors 2025: Delivery vehicles > Vans > Average (up to 3.5 tonnes) > Diesel > km [5_303_3102_4_1]
+2025,refrigerant_r404a_kg,kg,3943.0,1,,UK Government GHG conversion factors 2025: Refrigerant & other > Blends > R404A > Emissions including only Kyoto products > kg [3_201_2120_3_1]
+2025,refrigerant_r410a_kg,kg,1924.0,1,,UK Government GHG conversion factors 2025: Refrigerant & other > Blends > R410A > Emissions including only Kyoto products > kg [3_201_2156_3_1]
+2025,refrigerant_r407c_kg,kg,1624.0,1,,UK Government GHG conversion factors 2025: Refrigerant & other > Blends > R407C > Emissions including only Kyoto products > kg [3_201_2135_3_1]
+2025,refrigerant_r134a_kg,kg,1300.0,1,,UK Government GHG conversion factors 2025: Refrigerant & other > Kyoto protocol products > HFC-134a > Emissions including only Kyoto products > kg [3_200_2024_3_1]
+2025,refrigerant_r32_kg,kg,677.0,1,,UK Government GHG conversion factors 2025: Refrigerant & other > Kyoto protocol products > HFC-32 > Emissions including only Kyoto products > kg [3_200_2012_3_1]
+2025,electricity_kwh,kWh,0.177,2,,UK Government GHG conversion factors 2025: UK electricity > Electricity generated > Electricity: UK > kWh > kWh [7_400_4000_5_1]
+2025,van_diesel_km,km,0.25561,3,4/9,UK Government GHG conversion factors 2025: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km [27_303_3102_4_1]
+2025,van_diesel_tonne_km,tonne.km,0.6313,3,4/9,UK Government GHG conversion factors 2025: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > tonne.km [27_303_3102_14_1]
+2025,hgv_rigid_km,km,0.83751,3,4/9,UK Government GHG conversion factors 2025: Freighting goods > HGV (all diesel) > All rigids > Average laden > km [27_304_3124_4_1]
+2025,hgv_artic_km,km,0.92854,3,4/9,UK Government GHG conversion factors 2025: Freighting goods > HGV (all diesel) > All artics > Average laden > km [27_304_3136_4_1]
+2025,hgv_tonne_km,tonne.km,0.10163,3,4/9,UK Government GHG conversion factors 2025: Freighting goods > HGV (all diesel) > All HGVs > Average laden > tonne.km [27_304_3140_14_1]
+2025,hgv_refrigerated_km,km,1.04323,3,4/9,UK Government GHG conversion factors 2025: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > km [27_306_3140_4_1]
+2025,hgv_refrigerated_tonne_km,tonne.km,0.11894,3,4/9,UK Government GHG conversion factors 2025: Freighting goods > HGV refrigerated (all diesel) > All HGVs > Average laden > tonne.km [27_306_3140_14_1]
+2025,waste_landfill_tonne,tonne,520.5327,3,5,UK Government GHG conversion factors 2025: Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes [20_507_5313_15_1]
+2025,waste_combustion_tonne,tonne,4.68568,3,5,UK Government GHG conversion factors 2025: Waste disposal > Refuse > Commercial and industrial waste > Incineration with Energy Recovery > tonnes [20_507_5311_15_1]
+2025,recycling_paper_card_tonne,tonne,4.68568,3,5,UK Government GHG conversion factors 2025: Waste disposal > Paper > Paper and board: mixed > Closed-loop > tonnes [20_506_5450_15_1]
+2025,recycling_plastics_tonne,tonne,4.68568,3,5,UK Government GHG conversion factors 2025: Waste disposal > Plastic > Plastics: average plastics > Closed-loop > tonnes [20_505_5380_15_1]
+2025,recycling_glass_tonne,tonne,4.68568,3,5,UK Government GHG conversion factors 2025: Waste disposal > Other > Glass > Closed-loop > tonnes [20_501_5268_15_1]
+2025,recycling_metal_tonne,tonne,4.68568,3,5,UK Government GHG conversion factors 2025: Waste disposal > Metal > Metal: mixed cans > Closed-loop > tonnes [20_504_5359_15_1]
+2025,food_waste_ad_tonne,tonne,8.98311,3,5,UK Government GHG conversion factors 2025: Waste disposal > Refuse > Organic: food and drink waste > Anaerobic digestion > tonnes [20_507_5293_15_1]
+2025,food_waste_compost_tonne,tonne,8.98311,3,5,UK Government GHG conversion factors 2025: Waste disposal > Refuse > Organic: food and drink waste > Composting > tonnes [20_507_5291_15_1]
+2025,food_waste_landfill_tonne,tonne,700.30886,3,5,UK Government GHG conversion factors 2025: Waste disposal > Refuse > Organic: food and drink waste > Landfill > tonnes [20_507_5292_15_1]
+2025,car_km,km,0.16725,3,6,UK Government GHG conversion factors 2025: Business travel- land > Cars (by size) > Average car > Unknown > km [25_301_3074_4_1]
+2025,car_diesel_km,km,0.17304,3,6,UK Government GHG conversion factors 2025: Business travel- land > Cars (by size) > Average car > Diesel > km [25_301_3069_4_1]
+2025,car_petrol_km,km,0.16272,3,6,UK Government GHG conversion factors 2025: Business travel- land > Cars (by size) > Average car > Petrol > km [25_301_3070_4_1]
+2025,rail_km,passenger.km,0.03546,3,6,UK Government GHG conversion factors 2025: Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
+2025,bus_km,passenger.km,0.10385,3,6,UK Government GHG conversion factors 2025: Business travel- land > Bus > Average local bus > passenger.km [25_314_3145_11_1]
+2025,taxi_km,passenger.km,0.14861,3,6,UK Government GHG conversion factors 2025: Business travel- land > Taxis > Regular taxi > passenger.km [25_313_3141_11_1]
+2025,flight_domestic_km,passenger.km,0.22928,3,6,"UK Government GHG conversion factors 2025: Business travel- air > Flights > Domestic, to/from UK > Average passenger > With RF > passenger.km [21_316_3160_11_1]"
+2025,flight_short_haul_km,passenger.km,0.12786,3,6,"UK Government GHG conversion factors 2025: Business travel- air > Flights > Short-haul, to/from UK > Average passenger > With RF > passenger.km [21_316_3162_11_1]"
+2025,flight_long_haul_km,passenger.km,0.15282,3,6,"UK Government GHG conversion factors 2025: Business travel- air > Flights > Long-haul, to/from UK > Average passenger > With RF > passenger.km [21_316_3168_11_1]"
+2025,hotel_night_uk,room night,10.4,3,6,UK Government GHG conversion factors 2025: Hotel stay > Hotel stay > UK > Room per night [29_600_4000_13_1]
+2025,commute_km,km,0.16725,3,7,UK Government GHG conversion factors 2025: Business travel- land > Cars (by size) > Average car > Unknown > km [25_301_3074_4_1]
+2025,commute_rail_km,passenger.km,0.03546,3,7,UK Government GHG conversion factors 2025: Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
+2025,commute_bus_km,passenger.km,0.10385,3,7,UK Government GHG conversion factors 2025: Business travel- land > Bus > Average local bus > passenger.km [25_314_3145_11_1]
+2025,commute_motorbike_km,km,0.11367,3,7,UK Government GHG conversion factors 2025: Business travel- land > Motorbike > Average > km [25_302_3080_4_1]
+2026,natural_gas_kwh,kWh,0.18231,1,,UK Government GHG conversion factors 2026: Fuels > Gaseous fuels > Natural gas > kWh (Gross CV) [1_100_1004_6_1]
+2026,lpg_litre,litre,1.55713,1,,UK Government GHG conversion factors 2026: Fuels > Gaseous fuels > LPG > litres [1_100_1003_8_1]
+2026,burning_oil_litre,litre,2.54016,1,,UK Government GHG conversion factors 2026: Fuels > Liquid fuels > Burning oil > litres [1_101_1010_8_1]
+2026,gas_oil_litre,litre,2.75541,1,,UK Government GHG conversion factors 2026: Fuels > Liquid fuels > Gas oil > litres [1_101_1014_8_1]
+2026,diesel_litre,litre,2.58354,1,,UK Government GHG conversion factors 2026: Fuels > Liquid fuels > Diesel (average biofuel blend) > litres [1_101_1011_8_1]
+2026,petrol_litre,litre,2.075,1,,UK Government GHG conversion factors 2026: Fuels > Liquid fuels > Petrol (average biofuel blend) > litres [1_101_1017_8_1]
+2026,own_car_km,km,0.16591,1,,UK Government GHG conversion factors 2026: Passenger vehicles > Cars (by size) > Average car > Unknown > km [4_301_3074_4_1]
+2026,own_car_diesel_km,km,0.17265,1,,UK Government GHG conversion factors 2026: Passenger vehicles > Cars (by size) > Average car > Diesel > km [4_301_3069_4_1]
+2026,own_car_petrol_km,km,0.16152,1,,UK Government GHG conversion factors 2026: Passenger vehicles > Cars (by size) > Average car > Petrol > km [4_301_3070_4_1]
+2026,own_van_diesel_km,km,0.25716,1,,UK Government GHG conversion factors 2026: Delivery vehicles > Vans > Average (up to 3.5 tonnes) > Diesel > km [5_303_3102_4_1]
+2026,refrigerant_r404a_kg,kg,3943.0,1,,UK Government GHG conversion factors 2026: Refrigerant & other > Blends > R404A > Emissions including only Kyoto products > kg [3_201_2120_3_1]
+2026,refrigerant_r410a_kg,kg,1924.0,1,,UK Government GHG conversion factors 2026: Refrigerant & other > Blends > R410A > Emissions including only Kyoto products > kg [3_201_2156_3_1]
+2026,refrigerant_r407c_kg,kg,1624.0,1,,UK Government GHG conversion factors 2026: Refrigerant & other > Blends > R407C > Emissions including only Kyoto products > kg [3_201_2135_3_1]
+2026,refrigerant_r134a_kg,kg,1300.0,1,,UK Government GHG conversion factors 2026: Refrigerant & other > Kyoto protocol products > HFC-134a > Emissions including only Kyoto products > kg [3_200_2024_3_1]
+2026,refrigerant_r32_kg,kg,677.0,1,,UK Government GHG conversion factors 2026: Refrigerant & other > Kyoto protocol products > HFC-32 > Emissions including only Kyoto products > kg [3_200_2012_3_1]
+2026,electricity_kwh,kWh,0.13096,2,,UK Government GHG conversion factors 2026: UK electricity > Electricity generated > Electricity: UK > kWh > kWh [7_400_4000_5_1]
+2026,van_diesel_km,km,0.25716,3,4/9,UK Government GHG conversion factors 2026: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > km [27_303_3102_4_1]
+2026,van_diesel_tonne_km,tonne.km,0.63511,3,4/9,UK Government GHG conversion factors 2026: Freighting goods > Vans > Average (up to 3.5 tonnes) > Diesel > tonne.km [27_303_3102_14_1]
+2026,hgv_rigid_km,km,0.84606,3,4/9,"UK Government GHG conversion factors 2026: Freighting goods > HGV (non-refrigerated, all diesel) > Average non-refrigerated rigids > Average laden > km [27_304_3124_4_1]"
+2026,hgv_artic_km,km,0.93374,3,4/9,"UK Government GHG conversion factors 2026: Freighting goods > HGV (non-refrigerated, all diesel) > Average non-refrigerated artics > Average laden > km [27_304_3136_4_1]"
+2026,hgv_tonne_km,tonne.km,0.10356,3,4/9,"UK Government GHG conversion factors 2026: Freighting goods > HGV (non-refrigerated, all diesel) > Average non-refrigerated HGVs > Average laden > tonne.km [27_304_3140_14_1]"
+2026,hgv_refrigerated_km,km,1.05066,3,4/9,"UK Government GHG conversion factors 2026: Freighting goods > HGV (refrigerated, all diesel) > Average refrigerated HGVs > Average laden > km [27_306_3140_4_1]"
+2026,hgv_refrigerated_tonne_km,tonne.km,0.12122,3,4/9,"UK Government GHG conversion factors 2026: Freighting goods > HGV (refrigerated, all diesel) > Average refrigerated HGVs > Average laden > tonne.km [27_306_3140_14_1]"
+2026,waste_landfill_tonne,tonne,520.58023,3,5,UK Government GHG conversion factors 2026: Waste disposal > Refuse > Commercial and industrial waste > Landfill > tonnes [20_507_5313_15_1]
+2026,waste_combustion_tonne,tonne,4.65358,3,5,UK Government GHG conversion factors 2026: Waste disposal > Refuse > Commercial and industrial waste > Combustion > tonnes [20_507_5311_15_1]
+2026,waste_recycled_tonne,tonne,4.65358,3,5,UK Government GHG conversion factors 2026: Waste disposal > Refuse > Commercial and industrial waste > Closed-loop > tonnes [20_507_5310_15_1]
+2026,recycling_paper_card_tonne,tonne,4.65358,3,5,UK Government GHG conversion factors 2026: Waste disposal > Paper > Paper and board: mixed > Closed-loop > tonnes [20_506_5450_15_1]
+2026,recycling_plastics_tonne,tonne,4.65358,3,5,UK Government GHG conversion factors 2026: Waste disposal > Plastic > Plastics: average plastics > Closed-loop > tonnes [20_505_5380_15_1]
+2026,recycling_glass_tonne,tonne,4.65358,3,5,UK Government GHG conversion factors 2026: Waste disposal > Other > Glass > Closed-loop > tonnes [20_501_5268_15_1]
+2026,recycling_metal_tonne,tonne,4.65358,3,5,UK Government GHG conversion factors 2026: Waste disposal > Metal > Metal: mixed cans > Closed-loop > tonnes [20_504_5359_15_1]
+2026,food_waste_ad_tonne,tonne,9.00687,3,5,UK Government GHG conversion factors 2026: Waste disposal > Refuse > Organic: food and drink waste > Anaerobic digestion > tonnes [20_507_5293_15_1]
+2026,food_waste_compost_tonne,tonne,9.00687,3,5,UK Government GHG conversion factors 2026: Waste disposal > Refuse > Organic: food and drink waste > Composting > tonnes [20_507_5291_15_1]
+2026,food_waste_landfill_tonne,tonne,700.33263,3,5,UK Government GHG conversion factors 2026: Waste disposal > Refuse > Organic: food and drink waste > Landfill > tonnes [20_507_5292_15_1]
+2026,car_km,km,0.16591,3,6,UK Government GHG conversion factors 2026: Business travel- land > Cars (by size) > Average car > Unknown > km [25_301_3074_4_1]
+2026,car_diesel_km,km,0.17265,3,6,UK Government GHG conversion factors 2026: Business travel- land > Cars (by size) > Average car > Diesel > km [25_301_3069_4_1]
+2026,car_petrol_km,km,0.16152,3,6,UK Government GHG conversion factors 2026: Business travel- land > Cars (by size) > Average car > Petrol > km [25_301_3070_4_1]
+2026,rail_km,passenger.km,0.03092,3,6,UK Government GHG conversion factors 2026: Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
+2026,bus_km,passenger.km,0.10151,3,6,UK Government GHG conversion factors 2026: Business travel- land > Bus > Average local bus > passenger.km [25_314_3145_11_1]
+2026,taxi_km,passenger.km,0.14861,3,6,UK Government GHG conversion factors 2026: Business travel- land > Taxis > Regular taxi > passenger.km [25_313_3141_11_1]
+2026,flight_domestic_km,passenger.km,0.22928,3,6,"UK Government GHG conversion factors 2026: Business travel- air > Flights > Domestic, to/from UK > Average passenger > With RF > passenger.km [21_316_3160_11_1]"
+2026,flight_short_haul_km,passenger.km,0.12786,3,6,"UK Government GHG conversion factors 2026: Business travel- air > Flights > Short-haul, to/from UK > Average passenger > With RF > passenger.km [21_316_3162_11_1]"
+2026,flight_long_haul_km,passenger.km,0.15282,3,6,"UK Government GHG conversion factors 2026: Business travel- air > Flights > Long-haul, to/from UK > Average passenger > With RF > passenger.km [21_316_3168_11_1]"
+2026,hotel_night_uk,room night,10.4,3,6,UK Government GHG conversion factors 2026: Hotel stay > Hotel stay > UK > Room per night [29_600_4000_13_1]
+2026,commute_km,km,0.16591,3,7,UK Government GHG conversion factors 2026: Business travel- land > Cars (by size) > Average car > Unknown > km [25_301_3074_4_1]
+2026,commute_rail_km,passenger.km,0.03092,3,7,UK Government GHG conversion factors 2026: Business travel- land > Rail > National rail > passenger.km [25_315_3147_11_1]
+2026,commute_bus_km,passenger.km,0.10151,3,7,UK Government GHG conversion factors 2026: Business travel- land > Bus > Average local bus > passenger.km [25_314_3145_11_1]
+2026,commute_motorbike_km,km,0.11367,3,7,UK Government GHG conversion factors 2026: Business travel- land > Motorbike > Average > km [25_302_3080_4_1]
