@@ -11,3 +11,4 @@
 2026-11-27T22:40Z chat: E3 Gate D (DESNZ 2026 factors, OGL flat file) and Gate E (ICO PECR corporate-subscriber rule) confirmed. Stopping: remaining E3 step needs owner approval for Contracts Finder access.
 2026-11-27T22:20Z chat: Contracts Finder sample pulled (approved); 6 NHS-linked SMEs show no CRP via search (unproven); research-access root cause and fix documented.
 2026-11-27T22:15Z chat: owner set Default cloud environment Network access = Full (screenshot). This running session still blocked (gov.uk 000), likely needs a fresh session. NEXT RUN FIRST ACTION: curl gov.uk, contractsfinder, a supplier site; record result; if reachable start the 50-supplier CRP check (research/2026-11-27-reassessment.md).
+2026-11-27T22:20Z chat: checked 3 NHS-linked SME supplier sites via approved fetch: Raynor has CRP; Tiffin and Ribble Farm Fare do not. E3 proposed (experiments/E3-crp-public-suppliers.md).

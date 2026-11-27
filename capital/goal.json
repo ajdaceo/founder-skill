@@ -19,7 +19,7 @@
     "M13": "not_started"
   },
   "current_milestone": "M1",
-  "current_experiment": null,
+  "current_experiment": "E3 PROPOSED: experiments/E3-crp-public-suppliers.md (awaiting owner approval)",
   "finance_gbp": {
     "revenue": 0,
     "expenditure": 0,
@@ -30,9 +30,9 @@
   },
   "current_priority": "Independent opportunity screen (research/2026-11-27-reassessment.md), finish by 2026-11-29, then one experiment",
   "next_actions": [
-    "Owner present: approve Contracts Finder access; sample 50 recent public-sector awards to SMEs and check how many lack a published CRP (tests the E3 targeting idea cheaply)",
-    "Screen 2+ more unrelated categories (acquisition of small profitable assets: research only; B2B data products)",
-    "Decide E3 vs alternatives; then request only the setup it needs (likely domain + business mailbox with API)"
+    "Extend CRP website check to 50 NHS/public-sector SME suppliers (needs a fresh session with Full network)",
+    "On approval: choose mailbox provider with API, write offer email, intake form, CRP calculator and template",
+    "Send batch 1 (50) once mailbox and payment exist"
   ],
   "blocked_actions": [
     {
@@ -45,12 +45,13 @@
     }
   ],
   "pending_owner_approvals": [
-    "ON HOLD: E2 budget and Etsy setup",
-    "Private GitHub repo for records",
+    "E3 and \u00a325 envelope",
+    "Domain + business mailbox with API",
+    "Payment acceptance (processor in owner's name)",
     "Employment-contract clauses",
-    "Remove Gmail/Calendar/Docs connectors from scheduled task"
+    "Remove Gmail/Calendar/Docs from scheduled task"
   ],
-  "last_verified_progress": "2026-11-27 22:30: independent screen covered 10 categories; CRP leads on evidence of spend; E3 draft written; data access for the targeting test blocked on approval.",
+  "last_verified_progress": "2026-11-27 22:20: Default environment set to Full by owner (takes effect in new sessions); 3 NHS-linked SME suppliers checked, 2 lack a published CRP; E3 proposed.",
   "next_checkpoint": "2026-11-28T00:36Z scheduled run (verify multi-action behaviour in cycles.log)",
   "programme": {
     "start": "2026-11-27",
