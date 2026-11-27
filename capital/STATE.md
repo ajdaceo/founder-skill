@@ -15,16 +15,21 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlie
 - Provider terms (Anthropic Consumer Terms, checked 2026-11-27): automated access is barred except via API key or where Anthropic explicitly permits it; scheduled tasks are an Anthropic feature. No blanket ban on commercial use found. Move to API keys under Commercial Terms if CAPITAL ever needs a custom runtime.
 - Lemon Squeezy closed new sign-ups 2026-11-16 (shuts 2027-03-31): not an option.
 
-## Active experiment
-E1: public-sector software renewal snapshot. See `experiments/E1-contract-intel.md`.
+## Operator
+- This chat session is the sole CAPITAL operator under MANDATE.md (owner instruction 2026-11-27 21:30).
+- The old "CAPITAL operating cycle" scheduled task (trig_011WoZfwCJmbERHrXQkT5ZqB) runs on pre-mandate rules. Pausing it from here was refused; owner asked to pause it. Until then it is a competing operator with no spending or sending authority.
+- No new schedule until the old one is paused.
+
+## Opportunity selection: open
+- Prior research (research/, history/) is unverified historical input, not decisions. The round-2 shortlist is not presumed best.
+- Fresh first-principles selection against Gates A–F, due 2026-12-01. Distribution (Gate B) without an owner face or ad budget is the first filter.
+- E1 (`experiments/E1-contract-intel.md`) is one candidate, not selected.
 
 ## Backlog
-1. [independent] Choose E1 category (criteria in E1 record) by 2026-12-01.
-2. [independent] Build the 60-body dataset from published FOI responses + Contracts Finder (OGL). Quality check: every row cites a source URL.
-3. [independent] Free league-table page + sample; vendor list (limited companies only) with 40 named contacts; email drafts.
-4. [blocked: owner] Setup actions in `OWNER_ACTIONS.md` (domain, mailbox, Stripe payment link, ICO self-assessment, employment-contract check, approval of email text).
-5. [independent, low priority] Test 2 calculator logic (late payment): test asset only.
-6. [research only] Acquisition scan: not before E1 has launched.
+1. [independent] Fresh opportunity selection, due 2026-12-01; one experiment chosen with evidence.
+2. [owner] Pause the old scheduled task; employment-contract clauses; ICO self-check.
+3. [after selection] Opportunity-specific setup and budget request.
+4. [research only] Acquisition scan, not before the first experiment launches.
 
 ## Pending approvals
 See `OWNER_ACTIONS.md`. Silence is not consent.

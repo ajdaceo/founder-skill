@@ -1,5 +1,10 @@
 # Owner actions (consolidated 2026-11-27)
 
+## Now
+- Pause the old "CAPITAL operating cycle" scheduled task (in your scheduled tasks list, or approve the pause in chat). It runs on pre-mandate rules.
+- Employment-contract clauses (setup item 1) and ICO self-check (item 2) are needed whatever opportunity is chosen.
+- Everything else below waits until an opportunity is selected (by 2026-12-01); it may change.
+
 Total time about 60–75 minutes, mostly once. Nothing is bought until you approve the allocation.
 
 ## Decision 1: budget allocation (reply "allocation approved" or amend)

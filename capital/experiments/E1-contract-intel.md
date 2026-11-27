@@ -1,6 +1,6 @@
 # E1: Public-sector software renewal snapshot
 
-Status: preparing (2026-11-27)
+Status: candidate only, not selected (2026-11-27). Evidence inherited from earlier research is unverified.
 
 - Hypothesis: small UK software vendors selling one category to councils or NHS bodies will pay £400 for a verified table of which bodies use which supplier, at what value, ending when.
 - Evidence so far: incumbents charge for this (Tussell ~£11,400/licence/yr; Stotles £50–£475/month); 9,416 published IT contracts end in the 12 months to Sept 2027 (round 2 research). Raw notice feeds are commoditised (several Apify actors at ~$3 per 1,000 notices), so the offer must rest on FOI-derived incumbent and renewal data that notices don't contain.
