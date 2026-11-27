@@ -4,6 +4,7 @@ Status: preparing. E1 remains a deferred candidate.
 
 ## Why this one (gates)
 - A Demand: EVIDENCE Etsy hosts many paid reseller/profit-tracker spreadsheets at $7–$63 list prices (search results 2026-11-27). Category-level demand is real; niche-level demand (vehicle flippers) is unproven. ASSUMPTION until Etsy API favourites data is checked.
+- A (competition, 2026-11-27 search): reseller trackers are crowded and mostly US-focused (Poshmark/Mercari) at $9.95–$19.99; few car-flipping trackers found on Etsy (a car ownership cost tracker at $9; a UK car-flip deal analyser sold off-Etsy on Stan Store). UK HMRC-threshold angle is the reseller differentiator; car-flip niche is thin competition but unproven demand.
 - B Distribution: buyers already search Etsy; Etsy Ads from $1/day (new shops must wait 15 days); CPC for digital downloads reported $0.10–$0.50.
 - C Economics: UK fees £0.15 listing + 6.5% + 4% + £0.20 + 0.32%; at £12 price net ≈ £10.30 before ads. Ads spend per sale reported ~$7–12 (ASSUMPTION for our niche).
 - D Operations: automatic file delivery by Etsy; listings creatable via Open API v3 seller app (approved within minutes); no messaging API, so buyer messages need the owner in the Etsy app (expected rare).
@@ -18,4 +19,5 @@ Status: preparing. E1 remains a deferred candidate.
 - Exposure target: 1,000 listing views or 150 ad clicks by 24 Dec.
 - Pass: ≥1 independent sale by 24 Dec. Strong: ≥3 sales.
 - Fail: 0 sales after ≥150 ad clicks (offer/product failure) or <300 views (reach failure). Record which.
+- Launch checks: taxonomy_id from `ops/etsy.py taxonomy spreadsheet` (placeholder 2078 in plan.json must be replaced); confirm when_made accepted on first draft.
 - Results: none yet.

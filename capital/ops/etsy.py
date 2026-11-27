@@ -7,6 +7,7 @@ Commands:
   python3 etsy.py exchange CODE            -> exchanges the code; prints the refresh token for the owner to store as ETSY_REFRESH_TOKEN
   python3 etsy.py whoami                   -> checks credentials and prints shop id
   python3 etsy.py create-drafts PLAN.json  -> creates draft listings with images and files (idempotent by title; never publishes)
+  python3 etsy.py taxonomy WORD            -> lists seller taxonomy nodes whose name contains WORD (set taxonomy_id in plan.json from this)
   python3 etsy.py receipts [--since ISO]   -> prints paid receipts as JSON lines (for ledger.csv)
 Publishing (state=active) is deliberately not automated until the owner approves it in OWNER_ACTIONS/goal.json.
 """
@@ -157,6 +158,17 @@ if __name__ == "__main__":
         print(json.dumps({"user_id": me.get("user_id"), "shop_id": me.get("shop_id")}))
     elif cmd == "create-drafts":
         create_drafts(sys.argv[2])
+    elif cmd == "taxonomy":
+        r = requests.get(API + "/seller-taxonomy/nodes", headers=api_key_header(), timeout=TIMEOUT)
+        r.raise_for_status()
+        word = sys.argv[2].lower()
+        def walk(nodes, path=""):
+            for n in nodes:
+                full = f"{path} > {n['name']}" if path else n["name"]
+                if word in n["name"].lower():
+                    print(n["id"], full)
+                walk(n.get("children", []), full)
+        walk(r.json().get("results", []))
     elif cmd == "receipts":
         since = sys.argv[3] if len(sys.argv) > 3 and sys.argv[2] == "--since" else None
         import datetime
