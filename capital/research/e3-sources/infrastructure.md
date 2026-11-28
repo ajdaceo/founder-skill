@@ -1,4 +1,4 @@
-<!-- Source notes compiled 2026-11-27 by a research agent for CAPITAL (E3). Each claim carries its URL and quote. Decisive points were spot-checked by the operator; see research/2026-11-27-e3-readiness.md. Not legal advice. -->
+<!-- Source notes compiled 2026-11-27 by a research agent for CAPITAL (E3). Each claim carries its URL and quote. Decisive points were spot-checked by the operator; see research/2026-11-28-e3-readiness.md. Not legal advice. -->
 # Infrastructure research: CRP service on a £25 setup budget
 
 Date-stamped: **27 November 2026**. All pages opened on that date from a cloud container (outbound via proxy, non-UK IP, so geo-priced pages may differ slightly from what a UK browser shows).

@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-27T23:23:32Z",
+  "updated_utc": "2026-11-28T00:20:54Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -29,16 +29,13 @@
     "max_budget_with_owner_approval": 250,
     "approval_note": "GBP 25 setup cap approved conditionally for E3 validation; purchases held until the consolidated setup request is answered"
   },
-  "current_priority": "E3 readiness pack, then ONE consolidated owner setup request. Reassess independently if evidence weakens the case",
+  "current_priority": "Owner to read the E3 readiness note; operator to finalise the consolidated setup request. No purchases.",
   "next_actions": [
-    "Expand prospect pool across public-sector frameworks and industries; reach >=100 genuinely qualified prospects (requirement applies, active limited company, SME, no current CRP, published email, urgency)",
-    "Establish applicable procurement requirements and commercial urgency from primary sources",
-    "Assess addressable market and whether GBP 1k-10k monthly net profit is realistic",
-    "Integrate historical DESNZ factor sets (year-matched) and independently validate the calculation method",
-    "Design intake, generation, QA, delivery, revisions and renewals for minimal owner involvement",
-    "Verify regulatory requirements, liability, and whether specialist review or insurance is needed",
-    "Choose mailbox, domain, payment and delivery infrastructure with verified costs",
-    "Present one consolidated setup request in OWNER_ACTIONS.md"
+    "FINISH and present the consolidated setup request in OWNER_ACTIONS.md from research/2026-11-28-e3-readiness.md (draft section there)",
+    "Hand-check the 213 prospects before any send (sample error rate 1 in 12: wrong website)",
+    "Write offer page, terms, privacy notice; solicitor look at liability cap",
+    "Decide whether to build the 2027 NHS CRP (spend-based Scope 3) for framework suppliers",
+    "Continue opportunity selection in parallel: E3 ceiling looks like hundreds of pounds a month"
   ],
   "blocked_actions": [
     {
@@ -55,7 +52,7 @@
     "Employment-contract clauses",
     "Remove Gmail/Calendar/Docs from scheduled task"
   ],
-  "last_verified_progress": "2026-11-27: DESNZ 2026 factors filled (9, flat file v1.2). 50 framework suppliers hand-verified: 13 current CRP, 5 overdue, 2 outdated, 1 unpublished, 14 none, 5 site down, 8 no website, 2 insolvent. 37/50 (74%) lack a current published CRP; 22/50 (44%) are reachable realistic buyers; 17/50 (34%) on the most cautious count. See research/2026-11-27-e3-supplier-scan.md",
+  "last_verified_progress": "2026-11-28: 213 qualified prospects (research/e3-prospects-qualified.csv); generator validated independently (48/48 lines) with 2018-2026 factors; requirements, regulatory and infrastructure research sourced (research/e3-sources/). See research/2026-11-28-e3-readiness.md",
   "next_checkpoint": "Owner reply on E3 approval; next scheduled run continues the zero-cost next_actions",
   "programme": {
     "start": "2026-11-27",

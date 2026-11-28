@@ -1,4 +1,4 @@
-<!-- Source notes compiled 2026-11-27 by a research agent for CAPITAL (E3). Each claim carries its URL and quote. Decisive points were spot-checked by the operator; see research/2026-11-27-e3-readiness.md. Not legal advice. -->
+<!-- Source notes compiled 2026-11-27 by a research agent for CAPITAL (E3). Each claim carries its URL and quote. Decisive points were spot-checked by the operator; see research/2026-11-28-e3-readiness.md. Not legal advice. -->
 # Carbon Reduction Plan (CRP) requirements - sourced research notes
 
 Research date: 27 November 2026. Read-only web research. Every quote below was copied from a source opened on that date unless marked otherwise.

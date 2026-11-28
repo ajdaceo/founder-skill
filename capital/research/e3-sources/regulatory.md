@@ -1,4 +1,4 @@
-<!-- Source notes compiled 2026-11-27 by a research agent for CAPITAL (E3). Each claim carries its URL and quote. Decisive points were spot-checked by the operator; see research/2026-11-27-e3-readiness.md. Not legal advice. -->
+<!-- Source notes compiled 2026-11-27 by a research agent for CAPITAL (E3). Each claim carries its URL and quote. Decisive points were spot-checked by the operator; see research/2026-11-28-e3-readiness.md. Not legal advice. -->
 # Regulatory research notes: AI-operated Carbon Reduction Plan (CRP) service, UK sole trader
 
 Research date: 27 November 2026. General information gathering, not legal advice.
