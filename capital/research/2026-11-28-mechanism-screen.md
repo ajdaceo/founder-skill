@@ -1,4 +1,4 @@
-# Mechanism screen (started 2026-11-28) — WORKING NOTE, evidence still arriving
+# Mechanism screen (2026-11-28): two rounds complete
 
 Owner brief (2026-11-28): stop gravitating to "build a digital product or compliance document and advertise it". Look for an economic advantage across fundamentally different mechanisms. Not UK-only, not tied to earlier experiments. Smaller opportunities are acceptable if they build capital, infrastructure or a base for expansion.
 
@@ -70,11 +70,51 @@ Nothing tested so far shows a proven, defensible advantage. What the evidence do
 3. **Accumulating data.** Daily snapshots and verified joins become harder to copy with time.
 That points at business-to-business intelligence for buyers with high customer value, run as a portfolio of narrow feeds on one pipeline. It does not yet prove anyone will pay.
 
-## Round 2 (in progress)
-Three further mechanisms with higher ceilings or different payers:
-- Deal origination for acquirers of small companies (retainers and success fees).
-- Supply-side positions in ecosystems that publish demand data and pay per use (including tools sold to other AI agents).
-- Inbound enquiries captured and sold per lead or per call.
+## Round 2 evidence (2026-11-28)
 
-## Decision and smallest tests
-Pending round 2.
+### 8. Deal origination for acquirers of small companies: REJECTED for now
+- The fees are the largest seen in this screen: retainers quoted at $5,000 to $25,000 a month and success fees of 1 to 5% of the price (vendor-published figures).
+- Search itself is commoditised by tools at about $15,000 a year. What buyers pay for is trusted conversations with owners and completed deals.
+- Buyers rarely accept success-only terms from an unknown provider and ask for a track record. Median time from search to acquisition is about 20 months. An operator with no record and no capital cannot fund that wait. Unregistered-finder risk in the US; UK position needs legal advice.
+- Keep as a later stage: it becomes possible once CAPITAL has a track record and its own company dataset.
+
+### 9. Inbound enquiries captured and sold per lead: REJECTED
+- Payouts are real but low: about $30 to $45 a call for US home services; £7 to £75 for a UK solar or heat-pump enquiry.
+- A newcomer cannot get the traffic: 2 to 6% of new pages reach the first results page within a year; AI summaries cut clicks to the top result by about 58%; scaled AI-written sites are being removed (one documented case lost over 200,000 queries); AI assistants send 0.1 to 1% of visits.
+
+### 6. Supply-side positions in ecosystems: REJECTED, on first-hand data
+- Apify is the only ecosystem found that publishes per-listing demand and pays out real money. Its public store data (top 60,000 of 119,369 listings, pulled 2026-11-28 with `ops/apify_store_probe.py` logic) shows:
+  - Paid listings: median 1 monthly user; 90th percentile 10; 99th percentile 183.
+  - New listings (every user arrived in the last 90 days): 3,282 of them; median 1 monthly user; 1% reach 10; one reaches 50.
+  - 236 authors already run portfolios of 50 or more listings (several run 500 to 1,000). Their median is 360 monthly users in total, 2.6 per listing. The "large portfolio maintained cheaply by AI" idea is already crowded.
+  - Public-register listings: 4,059 of them share 8,267 monthly users; 60 have 20 or more. Typical price $4 per 1,000 results.
+  - Rough yield: Apify's last published monthly payout ($563k, September 2025) divided by today's 1.27 million user-listing pairs is about $0.44 per user per month. A new listing would earn a few dollars a month.
+- Paid tools for AI agents: under 5% of about 16,000 servers earn anything (author estimates); pay-per-call volume is tiny. No evidence of supply shortage anywhere a newcomer can enter.
+
+## What the two rounds show
+1. **Anything open to "anyone with an AI agent" is saturated or closing.** Bounty payers are shutting programmes because of AI volume. New marketplace listings get one user. Search no longer feeds new sites. Six of the eight mechanisms tested fail for this one reason.
+2. **So the advantage cannot be capability. It has to be a position others lack:** data that is hard to obtain or assemble, a trusted relationship, a licence, capital, or assets the owner already holds. CAPITAL has a start on the first and none of the others.
+3. **The few-customers, high-value shape is the one that fits.** UK public bodies published 2,577 software and IT award notices in 23 months, to 1,566 suppliers, from 713 buyers, with median award values of £180,000 to £800,000 by category. Vendors with deals that size already pay £1,200 to £11,000 a year each for procurement intelligence.
+
+## Direction recommended
+**Procurement intelligence for vendors, built on data that is not free to copy.** Two sources of edge, in order of strength:
+1. **Information obtained by statutory request (FOI) and parsed at scale.** Which body uses which supplier, at what value, ending when: facts award notices mostly do not contain. Sending and chasing 100 to 200 requests and reading as many differently formatted replies is laborious for people and cheap for software. This is experiment E1, already drafted, in sharper form.
+2. **Verified joins of public registers** (award, company, website, detected gap), which exist now from the E3 work. Thinner edge: the inputs are free.
+
+What is honest to say about it:
+- It is still a data product sold by direct approach, to a few dozen vendors per category. The difference from E3 is who pays and why: a few buyers with large contract values, and an edge in the data, not in the ability to build.
+- Willingness to pay for a niche report is unproven. General tools have published prices; a one-category snapshot does not.
+- Ceiling per category is plausibly a few thousand pounds a year at first. Scale comes from repeating across categories and refreshing annually, and from the dataset that accumulates. That dataset is also what the higher-fee mechanisms (deal origination, introductions) would later need.
+- Replies to statutory requests take 20 working days, so data from requests sent in early December arrives after the 27 December review. Vendor interest in a free sample can be measured before then.
+
+## Next steps
+**Now, no spend and no outbound contact:**
+1. Classify the 2,577 software and IT notices into product categories and pick one with at least 40 vendors and 100 buyers that existing tools cover poorly.
+2. Confirm the re-use terms for information released under FOI and typical response rates for that kind of question.
+3. Build the free sample for that category from published data.
+
+**Needs owner approval before it happens:**
+- Sending statutory requests to public bodies (needs a named requester: the owner or a trading name).
+- Approaching the category's vendors with the sample.
+
+**Owner-only options that would open other mechanisms** (not requested, noted for completeness): a small budget to buy an asset that already has users; or the owner's own trade knowledge and contacts as the trusted position.

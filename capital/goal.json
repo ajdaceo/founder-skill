@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-28T01:15:00Z",
+  "updated_utc": "2026-11-28T01:29:16Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -29,11 +29,13 @@
     "max_budget_with_owner_approval": 250,
     "approval_note": "E3 GBP 25 conditional approval suspended by owner 2026-11-28; nothing spent"
   },
-  "current_priority": "Mechanism-level opportunity search (owner instruction 2026-11-28): find an economic advantage, not something buildable. Look at information advantages, automation, intermediation, licensing, recurring services, transaction-based revenue, existing ecosystems. Not limited to UK, products, the owner's interests or earlier experiments. Small opportunities acceptable if they build capital or a base for expansion.",
+  "current_priority": "Mechanism screen complete for two rounds (research/2026-11-28-mechanism-screen.md): 6 of 8 mechanisms rejected because anything open to anyone with an AI agent is saturated. Recommended direction: procurement intelligence for vendors built on statutory-request (FOI) data and verified public-register joins (E1 in sharper form). No spend, no outbound without owner approval.",
   "next_actions": [
-    "Read research/2026-11-28-mechanism-screen.md (in progress) and continue it: gather evidence on the shortlisted mechanisms, then propose the smallest test of the strongest one",
-    "Do NOT develop or spend on E3. Do not run the E3 hand-check. Keep all E3 files as they are",
-    "Weekly report due Friday 2026-12-04"
+    "Zero-cost, no outbound: classify the 2,577 software/IT award notices (Find a Tender, Jan 2025-Nov 2026; re-pull with ops/fts_pull.py) into product categories; pick one with >=40 vendors and >=100 buyers that Stotles/Tussell cover poorly",
+    "Confirm re-use terms for FOI-released information (Re-use of Public Sector Information Regulations 2015, OGL) and typical response rates; record sources",
+    "Build a free sample for the chosen category from published data; update experiments/E1-contract-intel.md with the sharper design",
+    "Then ask the owner ONCE for approval of: (a) statutory requests in a named requester identity, (b) approaching the category's vendors with the sample",
+    "Do NOT develop or spend on E3. Weekly report due Friday 2026-12-04"
   ],
   "blocked_actions": [
     {
@@ -45,7 +47,7 @@
     "Employment-contract clauses",
     "Remove Gmail/Calendar/Docs from scheduled task"
   ],
-  "last_verified_progress": "2026-11-28: E3 fully prepared and preserved (213 prospects, validated generator, setup request, drafts). Owner suspended it and redirected the search to different commercial mechanisms.",
+  "last_verified_progress": "2026-11-28: mechanism screen, two rounds, eight mechanisms, evidence in research/mechanisms/. First-hand Apify store data: new paid listings have a median of 1 monthly user. Award data: 2,577 software/IT notices, 1,566 suppliers, 713 buyers, median values GBP 180k-800k.",
   "next_checkpoint": "Owner reply to the setup request; next scheduled run checks OWNER_ACTIONS.md and network access first",
   "programme": {
     "start": "2026-11-27",

@@ -1,0 +1,38 @@
+Source notes compiled 2026-11-28 by a research agent (capped at about 26 lookups). Secondary sources unless stated; UNCONFIRMED items are marked.
+
+INBOUND-LEAD RESEARCH NOTES (28 Nov 2026). Sources via search summaries/fetches; vendor blogs flagged.
+
+1. PRICES
+- Lead Smart Aug 2026 benchmark (one network, live buyer bids, 416,715 ZIP-vertical records, 11 Aug 2026): https://leadsmartinc.com/news/press-pay-per-call-benchmark-august-2026
+  Median per call: pest control $42.50, roofing $42.00, HVAC $38.50, plumbing $33.60, electrical $23.63. Per appointment-lead: water damage $201, biohazard $210.50, roofing CPL $130, plumbing $44. Legal: auto accident $27.50, PI $5.50, DUI $1.38 (medians, low!). Overall median $32.50, mean $56.91. "an offer, not a guarantee". Publisher sign-up steps: UNCONFIRMED (claims 10,000+ publishers).
+- Industry blogs (affiliate-marketer sources, weak): $20-140/call typical; legal up to $400; home services $14-258. https://www.businessofapps.com/affiliate/pay-per-call , https://www.nichepursuits.com/best-pay-per-call-networks/ . Networks named: Marketcall, PX, Click Dealer, RingPartner, Aragon.
+- UK solar/heat pump (Whito, checked 3 Sep 2026): only 4 of 9 suppliers publish price, GBP7-75/lead; Solar PV Leads GBP8-15; HelloLeads GBP35-75 ground-source heat pump, min 10. https://whito.co.uk/research/renewables-leads-cost-uk/ ; shared solar GBP15-30 sold to 3-5 installers (competitor blog) https://poweredleads.pages.dev/blog/solar-lead-cost-uk-comparison/
+- Whito indicative medians: finance GBP80, real estate GBP47 (cost of lead generation via ads, not payouts to publishers) https://whito.co.uk/research/cost-per-lead-uk/
+- Conveyancing: First4Lawyers claims leads "from GBP20" (marketing claim). UK business finance, business energy, merchant services, removals, accountancy: UNCONFIRMED (no published payouts found).
+- Capterra PPC: category bidding, vendor pays per click; official terms https://www.capterra.com/legal/ppc-service-description/ . $2 min bid / $500 min budget from third-party blog SpotSaaS: UNCONFIRMED. Capterra/G2 publisher/affiliate programme: no official page found; UpPromote claims $0.50-$20+ per lead (UNCONFIRMED). Capterra/Software Advice are the incumbents, not buyers from small publishers.
+- Addiction treatment: LegitScript says lead call generators/referral businesses are ineligible for certification; Google/Meta/Microsoft rely on it. https://www.legitscript.com/service/certification/addiction-treatment/standards/ . Payouts: UNCONFIRMED. US/Canada only.
+COMPLIANCE
+- UK PI referral fees banned since 1 Apr 2013 (LASPO s56-60); per-lead payments are a warning sign. https://www.sra.org.uk/solicitors/guidance/ban-personal-injury-referral-fees . Legal Futures: "pay per enquiry" only compliant if no client data transferred https://www.legalfutures.co.uk/latest-news/f4l-unveils-referral-fee-compliant-pay-per-enquiry-model
+- FCA claims-management: lead gen (seeking out/referring claims, selling data) is regulated; market study launched 19 May 2026, interim findings expected Dec 2026. https://www.fca.org.uk/news/statements/fca-review-claims-management-practices ; https://www.freshfields.com/en/our-thinking/blogs/risk-and-compliance/the-fca-launches-market-study-into-claims-management-services-102mvdq . Consumer credit/mortgage/insurance introducing: not verified in this run (UNCONFIRMED; general knowledge says introducing/effecting introductions is regulated, check FCA perimeter).
+- US TCPA one-to-one consent rule vacated by 11th Cir. 24 Jan 2025 (Insurance Marketing Coalition v FCC): https://www.mofo.com/resources/insights/250130-eleventh-circuit-vacates-fcc-s-tcpa-one-to-one-consent-rule . Later 2025-26 status: UNCONFIRMED; express written consent still required for marketing calls/texts.
+
+2. TRAFFIC
+- Ahrefs: ~1.74% (1M random URLs, Sep 2023) to 6.11% (non-empty English) of new pages reach top 10 within a year; 2017 figure 5.7%, most that did took 61-182 days. https://ahrefs.com/blog/how-long-does-it-take-to-rank/
+- AI Overviews: Ahrefs Feb 2026 - 58% lower CTR for top page (Dec 2023 vs Dec 2025) https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/ ; Pew 8% vs 15% click rate; DMG Media told CMA up to 89% CTR drop; Similarweb zero-click 56%->69% (May 2024-May 2025).
+- Spam: scaled content abuse policy March 2024; Glenn Gabe Aug 2026 spam update case studies: programmatic+100% AI YMYL site lost rankings for 200K+ queries; "Scaled content abuse (especially via AI-generated content) has surged." https://gsqi.com/marketing-blog/august-2026-google-spam-update-case-studies/ ; Lily Ray: AI-scaled gains rarely held, eventual loss often exceeded peak https://lilyraynyc.substack.com/p/it-works-until-it-doesnt-ai-content-risks
+- AI referrals: Ahrefs 3,000 sites: 0.12% of views / 0.17% of visitors from AI (top sites ~6%, one 18%); Conductor ~1% (date UNCONFIRMED). ChatGPT ~76-78% of AI referrals (SE Ranking/Statcounter). https://ahrefs.com/benchmarks/ai-vs-search ; https://seranking.com/blog/chatgpt-referral-traffic-may-2026/ . Independent conversion data: UNCONFIRMED.
+- Public-data pages ranking for NEW domains: no independent evidence found (UNCONFIRMED). Ahrefs free-tools guide (Jul 2026) argues interactive tools survive AIO but examples are established domains. https://ahrefs.com/blog/the-free-tools-seo-strategy/
+
+3. EARNINGS
+- No independent survey of rank-and-rent earnings found. Seller/course claims: ~$1,000-3,000/mo per ranked site (sidehustlenation, ippei.com) - all self-reported, survivor-biased. https://www.sidehustlenation.com/rank-and-rent/
+- Flippa listings: lead-gen site GBP/USD ~$1,641/mo profit (2024-ish), $2,783/mo; UK six-site portfolio ~GBP2,000/mo; mostly established sites. https://flippa.com/ ; Empire Flippers lead-gen multiples 24-40x monthly profit https://empireflippers.com/marketplace/lead-gen-businesses-for-sale . Typical time to build: UNCONFIRMED (sellers say many months).
+
+4. ALTERNATIVES
+- Reddit 2026: AI-based crackdown on brand/GEO marketing slop; mods did >52% of removals Jul-Dec 2025. https://www.digitaltrends.com/social-media/reddits-ai-is-hunting-brands-that-dress-marketing-slop-up-as-honest-opinions/ , https://www.emarketer.com/content/reddit-geo-crackdown-could-raise-stakes-ai-visibility-strategies
+- Quora links nofollow; Quora ~7.25% of Google AI Mode answers cite it (Semrush) https://www.semrush.com/blog/quora-google-ai-mode-research ; Quora official AI/spam policy UNCONFIRMED.
+- Extensions, YouTube, marketplaces-sending-enquiries: not researched (budget). UNCONFIRMED.
+
+5. NICHES (best-evidenced, all thin)
+ a) US home-service pay-per-call (pest control $42.50, roofing $42, HVAC $38.50 median; restoration CPL $190-210). Compliance: call recording/consent, TCPA if texting; no licence to pass on call. Competition: heavy, incumbent lead-gen domains + Google LSA.
+ b) UK solar/heat pump enquiries GBP8-75 (shared GBP15-30). Compliance: UK GDPR/PECR consent, ICO; no FCA unless finance attached. Competition: Checkatrade/MyBuilder/Solar Guide-type aggregators.
+ c) UK conveyancing enquiries ~GBP20+ (claim). Compliance: SRA referral/transparency rules; avoid PI. Competition: First4Lawyers, comparison sites.
