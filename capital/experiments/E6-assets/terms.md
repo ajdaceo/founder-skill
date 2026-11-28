@@ -6,7 +6,7 @@
 
 **Payment and delivery.** Card payment through the link. The file is emailed within one working day of payment.
 
-**Limited sale.** Sold to no more than five buyers.
+**Not exclusive.** The same list is sold to up to five buyers in total. Other buyers may be providers of the same service as you and may contact the same companies. The seller may also publish or sell later, updated lists.
 
 **Accuracy.** Each entry was checked by software against the company's website and Companies House, and a sample was re-checked by a second method. About 1 in 12 entries may be wrong. The list reflects the date of checking; companies may have published a plan since.
 

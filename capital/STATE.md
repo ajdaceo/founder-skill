@@ -1,11 +1,10 @@
-# State (updated 2026-11-28 02:40 UTC)
+# State (updated 2026-11-28 02:50 UTC)
 
-## Latest (2026-11-28 02:40 UTC)
-- Owner instruction `history/2026-11-28-owner-infrastructure-go.md`: build the reusable infrastructure; Oakmarch subject to checks; customer interest before any statutory request; prepare a shorter-cycle experiment; verify before spending; nothing sent or activated without its specific approval.
-- Done this run: E4 wording amended (no requests sent yet; no claims about competitors); E6 prepared (`experiments/E6-checked-prospect-lists.md`, `experiments/E6-assets/`, `ops/e6_build.py`); set-up guide finalised with checks; approvals and standing authorisations set out in order (P1 to P3, A1 to A8).
-- Verified: scheduled sessions in `capital-ops` reach the twelve allowed hosts; a task created by the operator has no repository and cannot push, so the owner must edit the existing task; mailbox scoping method (Exchange "RBAC for Applications") and the trial's default renewal to an annual term; no company or .uk domain named Oakmarch.
-- Not confirmed: the official trade mark register (automated access refused). Near name OAKMARK is registered for investment services.
-- Found: this repository is public and holds the E6 product. E6 cannot start until the list is out of public view.
+## Latest (2026-11-28 02:50 UTC)
+- Owner instruction `history/2026-11-28-owner-p1-p2-conditional.md`: P1 and P2 approved in principle with four conditions; P3 pending demand; private canonical repository and operator push to be resolved first; exposure to be assessed; E6 lawfulness, accuracy and non-exclusivity to be verified; Sonnet for routine operation, Haiku for routine subagents, Fable or Opus only where necessary; set-up one step at a time.
+- Done: scheduled operator set to Sonnet with current instructions (`ops/operator-prompt.md`); model allocation in `OPERATING.md`; exposure assessment (`infrastructure/EXPOSURE-ASSESSMENT.md`); 115 copied addresses removed from `research/e3-candidates-nhs-sme.csv`; E6 reuse check (`experiments/E6-assets/data-reuse-check.md`); non-exclusivity stated in all E6 texts; re-check job written (`ops/E6-RECHECK.md`); conditions table in `infrastructure/STANDING-AUTHORISATIONS.md`.
+- Facts: this repository is a public fork and cannot be made private. The existing scheduled task pushes correctly; tasks created by the operator cannot. GitHub traffic log: 0 views to 26 November.
+- Waiting on the owner: step A (private repository `capital-ops`). Then the operator copies the records across, proves it can push, and gives step B.
 - Spent £0. Revenue £0. Nothing sent.
 
 Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0), with `MANDATE-AMENDMENT-1.md` (persistent goal), `MANDATE-AMENDMENT-2.md` (investment and scope) and `MANDATE-AMENDMENT-3.md` (from research to operation, 2026-11-28). How each run works: `OPERATING.md`. Earlier rules in `README.md` and `history/` apply only where they don't conflict.

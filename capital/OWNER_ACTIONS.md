@@ -1,23 +1,26 @@
-# Owner actions (updated 2026-11-28 02:40 UTC)
+# Owner actions (updated 2026-11-28 02:50 UTC)
 
-See `DASHBOARD.md` for the whole position. Nothing has been sent, requested or activated. Three things are needed from you, in this order.
+Set-up is being done one step at a time. Nothing has been sent, requested, spent or activated.
 
-## 1. Set up the shared business infrastructure (about 60 minutes, once; about £5 now)
-Follow `infrastructure/SETUP-GUIDE.md`, steps 0 to 8, in order. Each step ends with what to tell me.
-- Step 0 name check (official trade mark register; 5 minutes) · 1 domain · 2 DNS · 3 mailbox · 4 payments · 5 make this repository private (it is public today) · 6 credentials · 7 ICO self-assessment · 8 edit the scheduled task.
-- Cost: about £5 for the domain; the mailbox is free for 30 days, then £7.78 a month. Turn recurring billing off on day one, or the trial renews to an annual term.
+## Current step: A. Create the private repository (3 minutes, free)
+1. Open https://github.com/new. Owner: your account. Name: `capital-ops`. Choose **Private**. Leave README, .gitignore and licence unticked. Create repository.
+2. Open https://github.com/apps/claude/installations/select_target, choose your account, add `capital-ops` under Repository access, Save.
+3. Reply "private repo done".
 
-## 2. Approve what leaves the building
-Listed in `infrastructure/STANDING-AUTHORISATIONS.md`, part 1. Reply "approve P1" or "approve P2", with any changes.
-- **P1, the short-cycle experiment E6:** a checked list of 213 NHS suppliers with no current Carbon Reduction Plan, offered at £195 to firms that sell such plans. Messages, terms and 22 prospects: `experiments/E6-assets/`. Record: `experiments/E6-checked-prospect-lists.md`. One thing to weigh: it sells the list E3 would have used.
-- **P2, the longer-lead experiment E4:** 28 emails asking suppliers whether they want a report of unpublished contracts at £295. The emails say no requests have been sent. Messages, terms and prospects: `experiments/E4-assets/`.
-- **P3, later and only if earned:** the statutory requests in your name. I will ask only if three or more firms reserve.
+## Then, in order
+B. Edit the scheduled task: repository `capital-ops`, environment `capital-ops`, remove Gmail, Calendar and Docs.
+0. Name check and the address to show · 1. Domain · 2. DNS · 3. Mailbox · 4. Payments · 5. Website hosting · 6. Credentials · 7. ICO self-assessment.
+Full detail for each: `infrastructure/SETUP-GUIDE.md`.
 
-## 3. Enter two secrets when I ask
-After steps 3 and 4, say "ready for credentials". Two secure forms appear (mailbox app, Stripe key). Never paste a secret into chat.
+## Settings only you can change
+- The scheduled task's repository, environment and connectors (step B). Its model is already Sonnet.
+- The model of any session you open with me: choose Sonnet for check-ins and set-up; Opus or Fable only for the decisions listed in `OPERATING.md`.
+- Deleting the public branch once the private copy is verified (or tell me to).
 
-## Later, not now
-- Standing authorisations A1 to A8: `infrastructure/STANDING-AUTHORISATIONS.md`, part 2. None is in force.
+## Approvals on record
+- P1 (E6) and P2 (E4): approved in principle 2026-11-28, subject to four conditions. Status of each: `infrastructure/STANDING-AUTHORISATIONS.md`.
+- P3 (statutory requests): pending customer demand.
+- Standing authorisations A1 to A8: none in force.
 - Still outstanding from before: employment-contract clauses.
 
 Silence is not consent.

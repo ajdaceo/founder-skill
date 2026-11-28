@@ -1,6 +1,6 @@
 # CAPITAL dashboard
 
-Updated 2026-11-28 02:40 UTC by the operator. This is the one place to see CAPITAL's position; it is revised at the end of every run.
+Updated 2026-11-28 02:50 UTC by the operator. This is the one place to see CAPITAL's position; it is revised at the end of every run.
 Key: **[V]** verified result · **[E]** estimate · **[A]** assumption · **[U]** built but untested.
 
 ## Money [V]
@@ -29,8 +29,8 @@ Capital available: £25 approved for E4 set-up, within the £100 starting budget
 ## Opportunities
 | | Item | State | Next step |
 |---|---|---|---|
-| Short cycle | **E6** checked list of 213 NHS suppliers with no current Carbon Reduction Plan, sold to firms that sell such plans (£195, 22 prospects, product exists) | Prepared 2026-11-28; days from approval to a possible first payment | Owner: approve pack P1; take the list out of public view |
-| Longer lead | **E4** unpublished renewals report for suppliers (£295, 28 prospects) | Approved for controlled validation. Outreach first; statutory requests only if three firms reserve, and then only with your approval | Owner: approve pack P2 |
+| Short cycle | **E6** checked list of 213 NHS suppliers with no current Carbon Reduction Plan, sold to firms that sell such plans (£195, 22 prospects, product exists) | Approved in principle 2026-11-28, subject to four conditions; two are met | Private repository; pre-sale re-check; infrastructure test |
+| Longer lead | **E4** unpublished renewals report for suppliers (£295, 28 prospects) | Outreach approved in principle 2026-11-28, subject to the same conditions. Statutory requests (P3) not approved: pending demand | Infrastructure test; figures hand-checked on send day |
 | Fallback | **E3** carbon plans for NHS suppliers | Suspended, launch-ready. Selling its list in E6 means a restart needs a fresh list | None unless reactivated |
 | Candidate | **E5** fixing a measured weakness for hand-picked firms | Sketch only | Choose one weakness from the 564 sites already checked |
 | Candidate | Referring the 213 companies to an established plan seller for a fee | Idea; one seller advertises £1,000 per referred client | Follow-on to E6 if buyers prefer paying on results |
@@ -48,6 +48,9 @@ Rejected, with the deciding reason: open bounties (payers closing programmes; me
 ## Decisions (newest first)
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-11-28 | Scheduled operator moved from Opus to Sonnet; Haiku for routine subagents; Opus or Fable only for listed decisions | Owner instruction; allowance nearly used |
+| 2026-11-28 | New private repository to become the single source of truth; public branch to be deleted after the copy is verified | The current repository is a public fork and cannot be made private [V] |
+| 2026-11-28 | Owner approved P1 (E6) and P2 (E4) in principle, with four conditions | Conditions tracked in `infrastructure/STANDING-AUTHORISATIONS.md` |
 | 2026-11-28 | E6 prepared as the shorter-cycle experiment | Only candidate with a finished product; payment possible within days. Own estimate: a sale is less likely than not [E] |
 | 2026-11-28 | E4: 28 vendor emails before any statutory request; requests only on three reservations and your approval | Owner instruction; no waiting on public bodies in December |
 | 2026-11-28 | Name Oakmarch kept; never to be used for financial services | No company or .uk domain of that name [V]; no mark found on a third-party index [P]; near name OAKMARK is registered for investment services |
@@ -81,14 +84,14 @@ Full log: `radar/RADAR.md`. Next weekly pass: on or after 2026-11-30.
 
 ## Capabilities and blockers
 - **Can do now:** research, data collection from allowed public sources, prospect checks, document, list and report generation, paper trading, record keeping.
-- **Cannot do yet:** send or read email, take payment, publish a website. All wait on the set-up guide.
-- **Verified today [V]:** unattended sessions in `capital-ops` reach all twelve allowed hosts and are refused others. Mailbox scoping method and trial terms confirmed at Microsoft's pages.
-- **Found today [V]:** this repository is public, and it holds the E6 product. E6 cannot start until the list is out of public view (set-up step 5).
-- **Found today [V]:** I cannot move the scheduled operator to `capital-ops` myself; a task I create cannot push. You edit the existing task (set-up step 8, 3 minutes).
-- **Not confirmed:** the official trade mark register for the name (set-up step 0, 5 minutes).
+- **Cannot do yet:** send or read email, take payment, publish a website. All wait on set-up.
+- **Public exposure [V]:** records were on a public branch for about a day. GitHub's log shows no views or visitors to 26 November; no secrets or identity details were in it. One file of copied contact addresses has been cleaned. Detail: `infrastructure/EXPOSURE-ASSESSMENT.md`.
+- **Operator [V]:** the existing scheduled task pushes correctly and now runs on Sonnet with current instructions. It still needs the owner to change its repository, environment and connectors (step B).
+- **E6 checks [V]:** all 213 companies re-confirmed active at Companies House today; Stripe's and Microsoft's terms do not bar the product on their text; non-exclusivity now stated in every E6 text. Website re-check of all 213 is still to run (`ops/E6-RECHECK.md`).
+- **Not confirmed:** the official trade mark register for the name (step 0).
 
 ## Owner actions
-`OWNER_ACTIONS.md`, in order: (1) set-up guide steps 0 to 8, about 60 minutes once, about £5; (2) approve pack P1 (E6) and pack P2 (E4) in `infrastructure/STANDING-AUTHORISATIONS.md`; (3) enter two secrets in the secure forms when asked.
+One step at a time. **Current step: A, create the private repository** (`infrastructure/SETUP-GUIDE.md`). Then B (scheduled task), then steps 0 to 7.
 
 ## Next actions and milestones
 1. Owner completes set-up; operator tests mail and payment end to end on a message and a £1 test invoice to the owner. **Milestone: first verified pass through send, receive, invoice, pay, record.**

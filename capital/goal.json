@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-11-28T02:40:00Z",
+ "updated_utc": "2026-11-28T02:50:00Z",
  "primary_objective": "Generate, preserve and compound capital through measurable economic activity, as an autonomous commercial operator and capital allocator for the owner (MANDATE.md, amendments 1 and 2).",
  "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
  "milestones": {
@@ -19,7 +19,7 @@
   "M13": "not_started"
  },
  "current_milestone": "M2",
- "current_experiment": "E6 (short cycle: checked list of 213 NHS suppliers without a current Carbon Reduction Plan, GBP 195, 22 prospects) PREPARED, awaiting owner approval of pack P1 and the list being taken out of public view. E4 (longer lead) approved for controlled validation: 28 vendor emails first (pack P2); statutory requests only after three reservations and owner approval (P3). E3 suspended. E5 candidate.",
+ "current_experiment": "E6 and E4 outreach APPROVED IN PRINCIPLE by the owner 2026-11-28, subject to four conditions tracked in infrastructure/STANDING-AUTHORISATIONS.md (not yet effective). P3 (statutory requests) not approved: pending demand. E3 suspended. E5 candidate. Set-up is being done with the owner one step at a time; current step A (private repository).",
  "finance_gbp": {
   "revenue": 0,
   "expenditure": 0,
@@ -31,43 +31,44 @@
  },
  "current_priority": "Verify the full commercial cycle end to end with E4: send, receive, invoice, pay, deliver, record. Keep radar and simulations running. Update DASHBOARD.md at the end of every run.",
  "next_actions": [
-  "If the owner has completed set-up steps 0-6: request the two credentials through the secure form (login.microsoftonline.com basic = client id + secret; api.stripe.com bearer restricted key); test mail send/read to the owner's address and a GBP 1 test invoice; record the result on the dashboard",
-  "If the owner has approved P1 (E6) AND the list is no longer public: re-check the five example companies, hand-confirm each recipient, create the GBP 195 payment link, send to ready firms in experiments/E6-assets/prospects.csv (5 on day one, max 20 a day), one follow-up after 5 days, deliver via ops/e6_build.py output when Stripe shows paid; judge 10 days after first send",
-  "If the owner has approved P2 (E4): rebuild calendars (ops/cf_report.py), re-run ops/e4_prepare.py, hand-check each prospect's figures, send 28 emails; NO statutory requests unless three or more reservations within 14 days and the owner then approves P3",
-  "If the owner says 'update the operator's instructions' after editing the scheduled task (set-up step 8): replace the trigger prompt so it reads MANDATE amendments 1-3, OPERATING.md and DASHBOARD.md",
-  "If none of the above: write the website pages (identity, services, terms, privacy), hand-check the six held E6 prospects, and prepare E4 reply templates",
+  "If this run has open web access and research/e6-recheck/ has no results dated within the last 7 days: run ops/E6-RECHECK.md (Haiku subagents for the second-method sample). Company-level data only",
+  "If capital/MOVED.md exists: stop; the records have moved to the private repository named there",
+  "If the owner has completed set-up steps 3 and 4: request the two credentials through the secure form; send the owner a fully rendered copy of the first E6 and E4 messages from the new mailbox and a GBP 1 test invoice; record results; wait for the owner's 'go'",
+  "If every condition for P1 reads met: re-check the five example companies, hand-confirm each recipient, create the GBP 195 payment link, send to ready firms in experiments/E6-assets/prospects.csv (5 on day one, max 20 a day), one follow-up after 5 days, deliver via ops/e6_build.py output when Stripe shows paid; judge 10 days after first send",
+  "If every condition for P2 reads met: rebuild calendars (ops/cf_report.py), re-run ops/e4_prepare.py, hand-check each prospect's figures, send 28 emails; NO statutory requests unless three or more reservations within 14 days and the owner then approves P3",
+  "Otherwise: write the website pages (identity, services, terms, privacy) under site/, hand-check the six held E6 prospects, prepare E4 reply templates",
   "Weekly: radar pass (due on or after 2026-11-30), paper books, DASHBOARD.md, Friday report 2026-12-04",
-  "Do NOT develop or spend on E3. Do NOT use the Oakmarch name for anything financial."
+  "Do NOT develop or spend on E3. Do NOT use the Oakmarch name for anything financial. Follow the model allocation in OPERATING.md."
  ],
  "blocked_actions": [
   {
    "action": "Any sending, publishing or spend",
-   "blocked_on": "owner set-up and one-off approvals P1/P2"
+   "blocked_on": "set-up and the four conditions on P1/P2"
   },
   {
    "action": "E6 sending",
-   "blocked_on": "the list being out of public view (repository is public)"
+   "blocked_on": "private repository; ops/E6-RECHECK.md within 7 days before first send; infrastructure test; owner's go"
   },
   {
    "action": "Statutory requests",
    "blocked_on": "three E4 reservations within 14 days, then owner approval P3"
   },
   {
-   "action": "Moving the scheduled operator to capital-ops",
-   "blocked_on": "owner must edit the existing task; a task created by the operator cannot push (tested 2026-11-28)"
+   "action": "Moving the scheduled operator",
+   "blocked_on": "owner edits the existing task (step B)"
   }
  ],
  "pending_owner_approvals": [
-  "Set-up guide steps 0-8 (infrastructure/SETUP-GUIDE.md), including official trade mark register check and making the repository private or creating a private one",
-  "P1: E6 messages, terms and prospect list",
-  "P2: E4 messages, terms and prospect list",
-  "P3 (only after three E4 reservations): statutory request text",
-  "Two credential forms",
-  "Scheduled task edit (environment capital-ops, connectors removed) then 'update the operator's instructions'",
+  "Step A: create private repository capital-ops and give the Claude GitHub app access",
+  "Step B: edit the scheduled task (repository, environment capital-ops, remove Gmail/Calendar/Docs)",
+  "Delete the public branch after the private copy is verified (irreversible; owner's word needed)",
+  "Set-up steps 0-7 (name check, domain, DNS, mailbox, payments, site, credentials, ICO)",
+  "Final 'go' on the rendered first messages of P1 and P2",
+  "P3 only after three E4 reservations",
   "Standing authorisations A1-A8 (none in force)",
   "Employment-contract clauses"
  ],
- "last_verified_progress": "2026-11-28: scheduled-session connectivity verified in capital-ops (12 hosts reachable, others refused); repository push from an operator-created task refused; mailbox scoping and trial terms confirmed at source; E6 product file built (213 rows, no release problems); 22 E6 prospects checked at Companies House (16 ready).",
+ "last_verified_progress": "2026-11-28 02:50Z: operator trigger set to claude-sonnet-5-5 with current prompt (verified by read-back); exposure assessed (0 views/visitors to 26 Nov per GitHub traffic log; fork cannot be made private); 115 copied addresses removed from current files; E6 reuse check written; Stripe restricted list read; all 213 E6 companies re-confirmed active at Companies House.",
  "next_checkpoint": "Owner reply to the setup request; next scheduled run checks OWNER_ACTIONS.md and network access first",
  "programme": {
   "start": "2026-11-27",

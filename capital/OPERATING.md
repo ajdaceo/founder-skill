@@ -28,3 +28,20 @@ One operator, one schedule (the existing "CAPITAL operator" task and owner chat 
 
 ## Limits that do not change
 Fixed prices, no negotiation or discretionary refunds; limited companies and LLPs only for unsolicited email, with sender identity, opt-out and AI disclosure; revenue recorded only from processor records; no customer data in this public repository.
+
+## Model allocation (owner instruction 2026-11-28)
+The aim is to spend the expensive models only where judgement decides the outcome.
+
+| Work | Model | Set by |
+|---|---|---|
+| The scheduled operator: every routine run | Sonnet | The scheduled task's model setting (changed to Sonnet on 2026-11-28) |
+| Subagents that fetch, extract, check, classify or reformat | Haiku | The operator, per subagent |
+| Subagents that research across several sources or draft customer text | Sonnet | The operator, per subagent |
+| One Opus subagent, at most once per run, for the decisions listed below | Opus | The operator, per subagent |
+| Sessions the owner opens | The owner's choice in the model picker: Sonnet for check-ins and set-up; Opus or Fable for the decisions listed below | The owner |
+
+Decisions that justify Opus or Fable: a first external message pack or new commercial terms; a legal, regulatory or provider-terms judgement with real downside; a complaint, dispute or other incident; a go or no-go on an experiment; the monthly review. Everything else stays on Sonnet or Haiku. Never start a Fable subagent. Every subagent brief carries a cap on tool calls.
+
+## Two environments, two jobs
+- `capital-ops`: holds the mailbox and payment credentials and reaches twelve named hosts only. Customer-facing work runs here.
+- Default: open web, no credentials. Jobs that must read arbitrary websites (for example `ops/E6-RECHECK.md`) run here. A session that browses the open web never holds credentials.

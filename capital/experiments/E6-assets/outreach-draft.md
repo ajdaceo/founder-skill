@@ -20,7 +20,9 @@ Five from the list:
 - Your Medical Services Ltd (yourmedicalservices.com): plan dated 2023. Framework run by Countess of Chester Hospital NHS Foundation Trust.
 - Amethyst Assessment Centre Ltd (amethystassessmentcentre.co.uk): plan dated January 2025. Same framework.
 
-The full list gives each company's number, website, plan status with the evidence link, and the NHS buyer, contract and award notice. It is £195: {payment_link}. It arrives by email within one working day, and we will sell it to no more than five firms.
+The full list gives each company's number, website, plan status with the evidence link, and the NHS buyer, contract and award notice. It is £195: {payment_link}. It arrives by email within one working day.
+
+This list is not exclusive. We will sell the same list to up to five firms in total, so other providers of your service may hold it and contact the same companies.
 
 It was checked on 28 November. A re-check of a sample found about 1 entry in 12 wrong, and some companies will have published a plan since. If it is not what you expected, tell us within 14 days for a full refund.
 
@@ -58,7 +60,7 @@ Hello,
 
 Thank you for your order. The list is attached as a spreadsheet: 213 companies, checked on {checked_date}. The "Read me" sheet explains how each company was selected and checked.
 
-Two things to keep in mind. About 1 entry in 12 may be wrong, and some companies will have published a plan since the check, so look at a company's website before you contact it. Unsolicited email may be sent only to companies and LLPs, with your identity and an opt-out.
+Three things to keep in mind. The list is not exclusive: up to four other firms may buy the same list and contact the same companies. About 1 entry in 12 may be wrong, and some companies will have published a plan since the check, so look at a company's website before you contact it. Unsolicited email may be sent only to companies and LLPs, with your identity and an opt-out.
 
 Your receipt comes separately from our payment processor. If the list is not what you expected, reply within 14 days and we will refund you in full.
 
@@ -70,6 +72,6 @@ Your receipt comes separately from our payment processor. If the list is not wha
 - **"sample":** ten further real rows, same columns, and the payment link.
 - **"How was it checked?":** the method paragraph from the "Read me" sheet, with the 1-in-12 error rate.
 - **"Can you invoice us?":** yes; a card or bank-transfer invoice for £195 from the payment processor, list delivered when it shows as paid.
-- **"Is it exclusive?":** no; sold to at most five firms, and the number sold so far.
+- **"Is it exclusive?":** no; the same list is sold to at most five firms in total, who may contact the same companies; and the number sold so far.
 - **"stop" or any objection:** one line confirming no further contact; address added to the suppression list.
 - **A complaint, a legal or regulatory point, a request for a different price or terms:** not answered by template; passed to the owner.

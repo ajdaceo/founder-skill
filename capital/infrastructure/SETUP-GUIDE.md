@@ -2,7 +2,7 @@
 
 Built once, reused by every experiment and service. Work through the steps in order; each says what to do, what it costs, and what to tell me afterwards.
 
-**Your time:** about 60 minutes, once. **Cost in the first 30 days:** about £5 (the domain). **From day 31:** £7.78 a month if the mailbox is kept. Inside the £25 cap for roughly the first three months.
+**Your time:** about 65 minutes, once. **Cost in the first 30 days:** about £5 (the domain). **From day 31:** £7.78 a month if the mailbox is kept. Inside the £25 cap for roughly the first three months.
 
 Marks used: **[V]** read at the provider's own page or tested on 2026-11-28 · **[P]** partly checked, detail given · **[N]** not verified.
 
@@ -31,6 +31,27 @@ Marks used: **[V]** read at the provider's own page or tested on 2026-11-28 · *
 | Refunds and tax | Refunds stay with you until authorised; tax is your legal responsibility |
 
 Everything else is mine.
+
+---
+
+## Do these two first (owner instruction 2026-11-28)
+
+### Step A. Private repository (3 minutes, free)
+Why a new one: this repository is a fork of someone else's public repository, and GitHub does not allow a fork to be made private **[V]**. What was exposed and what it means: `infrastructure/EXPOSURE-ASSESSMENT.md`.
+1. Open https://github.com/new. Owner: your account. Repository name: `capital-ops`. Choose **Private**. Leave "Add a README", ".gitignore" and "licence" unticked. Create repository.
+2. Open https://github.com/apps/claude/installations/select_target, choose your account, and under Repository access add `capital-ops` to the selected repositories. Save. (The app can see only `founder-skill` today **[V]**.)
+
+**Tell me:** "private repo done". I then attach it, copy the records across as a clean first commit, prove that I can push, and treat it as the single source of truth.
+
+### Step B. Scheduled operator (3 minutes)
+The existing task "CAPITAL operator (V1.0)" pushes correctly today; it is tasks that I create that cannot **[V]**. So the fix is to keep that task and change three settings that only you can change:
+1. Repository: `capital-ops` in place of `founder-skill`.
+2. Environment: `capital-ops`.
+3. Connectors: remove Gmail, Google Calendar and Docs.
+
+Already done by me: its model is now Sonnet and its instructions are current (text in `ops/operator-prompt.md`). After your edit I point the instructions at the new repository and run it once to prove it can push. If the edit screen does not offer one of these settings, tell me what it does offer and we take the other route: a new task with the same instructions.
+
+**Tell me:** "task edited".
 
 ---
 
@@ -83,14 +104,10 @@ What the app can and cannot do: send from, read and file mail in the organisatio
 
 Good to know: Stripe holds a new account's first payout for 7 to 14 days after the first payment **[V]**. A customer can pay within days; the money reaches your bank a week or two later the first time.
 
-## Step 5. Keep working records out of public view (2 minutes, free)
-This repository (`ajdaceo/founder-skill`) is **public** **[V]**. It holds prospect lists and, for the shorter experiment, the product itself. No customer data is in it and nothing in it names you. Choose one:
-- **Recommended: make this repository private.** GitHub, the repository's Settings, General, scroll to Danger Zone, Change repository visibility, Private. One change covers everything, past and future, and no second repository is needed. It has no forks and no stars today **[V]**.
-- **Or keep it public** (for example if you want the skill itself public) and create a private repository `capital-ops`, giving the Claude GitHub app access at https://github.com/apps/claude/installations/select_target. I then move the working data there. The copies already published stay visible in this repository's history.
+## Step 5. Website hosting (3 minutes, free)
+In Cloudflare open Workers & Pages, Create, Pages, Connect to Git, pick the private repository `capital-ops`, set the build output folder to `site`, and add the custom domain `oakmarch.co.uk`. From then on the site updates when I commit. No Cloudflare key is needed.
 
-Then, for the website: in Cloudflare open Workers & Pages, Create, Pages, Connect to Git, pick the private repository, set the build output folder to `capital/site` (or `site` in `capital-ops`), and add the custom domain `oakmarch.co.uk`. From then on the site updates when I commit. No Cloudflare key is needed.
-
-**Tell me:** which option you chose.
+**Tell me:** "site connected".
 
 ## Step 6. Credentials (5 minutes)
 When steps 3 and 4 are done, say "ready for credentials". I raise two secure forms; you type the secrets into the forms, never into chat:
@@ -107,15 +124,8 @@ They are stored on the `capital-ops` environment and added to requests by the ne
 
 **Tell me:** "ICO: exempt" or "ICO: paid".
 
-## Step 8. Point the scheduled operator at the new environment (3 minutes)
-The three-hourly scheduled task "CAPITAL operator (V1.0)" still runs in your Default environment with the Gmail, Calendar and Docs connectors attached. I tested whether I could replace it myself: I cannot. A scheduled session that I create has no repository attached and is refused when it tries to push **[V]**, so it could not save its work. The change has to be made on the existing task, by you:
-1. Open the task in the Claude app's scheduled tasks list and edit it.
-2. Environment: change to **capital-ops**.
-3. Repository: leave `ajdaceo/founder-skill` attached (add `capital-ops` too if you created it in step 5).
-4. Connectors: remove Gmail, Google Calendar and Docs. The operator does not use them.
-5. Save. Then say **"update the operator's instructions"** and I will replace its prompt with one that reads the current mandate amendments, `OPERATING.md` and `DASHBOARD.md`. I can change the prompt; I cannot change the environment, repository or connectors.
-
-Until this is done the scheduled runs keep working as now, but they cannot reach the mailbox or Stripe, because the credentials live on `capital-ops`.
+## Step 8. Already covered
+The scheduled operator is handled in step B above.
 
 ---
 

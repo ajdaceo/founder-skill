@@ -4,15 +4,25 @@
 
 There are two kinds of permission. A **one-off approval** covers named texts to a named list, once. A **standing authorisation** lets a routine action repeat within a hard limit without asking each time.
 
-## Part 1. One-off approvals needed first (in this order)
+## Part 1. One-off approvals
 
-| # | What you approve | Exactly what it permits | What must be true before I act on it |
-|---|---|---|---|
-| P1 | **E6 pack**: `experiments/E6-assets/outreach-draft.md`, `terms.md`, `prospects.csv` | The first email to the firms marked ready (16, up to 22 after hand-checks); one follow-up after five days; the listed template replies; the delivery email with the list attached once the processor shows £195 paid. Nothing else. | Set-up steps 0 to 6 done; test email and £1 test invoice passed; the list is no longer public (set-up step 5) |
-| P2 | **E4 pack**: `experiments/E4-assets/outreach-drafts.md`, `terms.md`, `prospects.csv` | The first email to the 28 firms; one follow-up after seven days; a one-line acknowledgement of a "reserve" reply. No statutory requests. | Set-up steps 0 to 6 done; tests passed |
-| P3 | **E4 statutory requests**: `experiments/E4-assets/foi-request-draft.md` | About 280 requests in your name, 60 a day | Asked for only if three or more firms reserve within 14 days of P2. Not before. |
+**Status 2026-11-28: the owner approved P1 and P2 in principle, subject to four conditions. Neither is effective until every condition below reads "met". P3 stays pending customer demand.**
 
-To approve: reply "approve P1" or "approve P2", with any changes to the wording. Sending starts at five messages on the first day and never exceeds twenty a day.
+| # | What it permits | Before I act on it |
+|---|---|---|
+| P1 | **E6**: the first email to the firms marked ready in `experiments/E6-assets/prospects.csv`; one follow-up after five days; the listed template replies; the delivery email with the list attached once the processor shows £195 paid. Nothing else. | All four conditions met |
+| P2 | **E4**: the first email to the 28 firms in `experiments/E4-assets/prospects.csv`; one follow-up after seven days; a one-line acknowledgement of a "reserve" reply. No statutory requests. | All four conditions met |
+| P3 | **E4 statutory requests** in the owner's name, about 280, 60 a day (`experiments/E4-assets/foi-request-draft.md`) | Not approved. Asked for only if three or more firms reserve within 14 days of P2 |
+
+### Conditions (the operator updates this table; "met" needs the evidence named)
+| Condition | P1 (E6) | P2 (E4) |
+|---|---|---|
+| Final infrastructure verification: set-up steps complete; a fully rendered copy of the first message received by the owner from the new mailbox; £1 test invoice paid and recorded; owner replies "go" to that copy | NOT MET | NOT MET |
+| Lawful data reuse | Met on the operator's reading: `experiments/E6-assets/data-reuse-check.md`. Not a solicitor's opinion | Met on the operator's reading: Contracts Finder data under the Open Government Licence; company role addresses only |
+| Provider compliance | Met on the text: Microsoft terms and Stripe's restricted-businesses list read 2026-11-28 | Met on the text: Microsoft terms read 2026-11-28 |
+| Accurate commercial claims | NOT MET: list must be in a private repository; `ops/E6-RECHECK.md` must have run within seven days before the first send and the email's figures updated to its results | NOT MET until send day: each prospect's figures are hand-checked against a fresh data pull on the day of sending |
+
+Sending starts at five messages on the first day and never exceeds twenty a day.
 
 ## Part 2. Standing authorisations (proposed order of activation)
 

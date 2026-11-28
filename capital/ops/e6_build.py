@@ -84,6 +84,7 @@ def build(src, out_dir, checked):
         "Accuracy: a second check of 12 entries found 1 wrong. Expect about 1 entry in 12 to be wrong. Companies may have published a plan since the check.",
         "A plan can also exist without being published; the list records only what the website showed.",
         "",
+        "Not exclusive: the same list is sold to up to five buyers in total, who may contact the same companies.",
         "Use: for the buyer's own marketing and research; not for resale. Unsolicited email may be sent only to companies and LLPs, with your identity and an opt-out.",
         "Refund: in full on request within 14 days of delivery.",
         "",
