@@ -13,7 +13,7 @@ E4 was re-scoped after checking the competitors you named: published expiry data
 Nothing is sent until you say so.
 
 ## 3. Approve access when I ask
-- The environment card for `capital-ops` (limited network).
+- Done: you approved the `capital-ops` environment on 2026-11-28.
 - Two secure credential forms (mailbox app and Stripe restricted key), after steps 3 and 4 of the guide.
 
 ## Later, not now

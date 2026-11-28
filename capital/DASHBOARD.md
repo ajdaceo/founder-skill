@@ -1,6 +1,6 @@
 # CAPITAL dashboard
 
-Updated 2026-11-28 02:17 UTC by the operator. This is the one place to see CAPITAL's position; it is revised at the end of every run.
+Updated 2026-11-28 02:19 UTC by the operator. This is the one place to see CAPITAL's position; it is revised at the end of every run.
 Key: **[V]** verified result · **[E]** estimate · **[A]** assumption · **[U]** built but untested.
 
 ## Money [V]
@@ -49,7 +49,7 @@ Rejected, with the deciding reason: open bounties (payers closing programmes; me
 |---|---|---|
 | 2026-11-28 | E4's paid product changed to unpublished contracts | Published expiry data is free at Stotles and £155 to £189 a month at BidSkim |
 | 2026-11-28 | Mailbox on Microsoft 365, not Google | Google's terms bar unsolicited commercial email outright; Microsoft's bar bulk spam |
-| 2026-11-28 | Dedicated limited-network environment proposed | Default environment is unrestricted and shared with your other work |
+| 2026-11-28 | Dedicated environment `capital-ops` created with a twelve-host allowlist; owner approved [V] | Default environment was unrestricted and shared with your other work |
 | 2026-11-28 | Owner approved E4 for controlled validation, £25 cap | Cheap test beats more research |
 | 2026-11-28 | Owner suspended E3 | Small market, hard acquisition, liability and operating burden |
 | 2026-11-28 | Trading kept on paper | Backtest: 5.0% a year with a 12% worst fall; no capital created at this scale |
@@ -76,10 +76,10 @@ Full log: `radar/RADAR.md`. Next weekly pass: on or after 2026-11-30.
 ## Capabilities and blockers
 - **Can do now:** research, data collection from allowed public sources, prospect checks, document and report generation, paper trading, record keeping.
 - **Cannot do yet:** send or read email, take payment, publish a website. All wait on the set-up guide.
-- **Scheduled runs:** the last one had no network access [V]. The proposed environment fixes this once the scheduled task is pointed at it.
+- **Environment:** `capital-ops` exists and is in use in this session [V]. The scheduled task still has to be pointed at it (set-up guide, step 6.3).
 
 ## Owner actions
-`OWNER_ACTIONS.md`: (1) set-up guide, about 60 to 75 minutes once; (2) approve the outreach text, terms and statutory request text; (3) approve the environment card and enter two secrets in the secure forms.
+`OWNER_ACTIONS.md`: (1) set-up guide, about 60 to 75 minutes once; (2) approve the outreach text, terms and statutory request text; (3) enter two secrets in the secure forms when asked (the environment card is already approved).
 
 ## Next actions and milestones
 1. Owner completes set-up; operator tests mail and payment end to end on a message and a £1 test invoice to the owner. **Milestone: first verified pass through send, receive, invoice, pay, record.**

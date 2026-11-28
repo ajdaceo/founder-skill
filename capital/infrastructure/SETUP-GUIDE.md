@@ -63,7 +63,7 @@ Everything else is mine.
 3. Tell me its name. Customer records, replies and paid reports go there, never in the public repository.
 
 ## Step 6. Operating environment and credentials (10 minutes)
-1. I will raise an approval card for a new cloud environment, **capital-ops**, with limited network access. It allows only these hosts:
+1. **Done 2026-11-28:** you approved the cloud environment **capital-ops** (limited network access) and this session now runs in it. It allows only these hosts:
    `graph.microsoft.com`, `login.microsoftonline.com` (mail); `api.stripe.com` (payments); `www.contractsfinder.service.gov.uk`, `www.find-tender.service.gov.uk`, `find-and-update.company-information.service.gov.uk`, `www.gov.uk`, `assets.publishing.service.gov.uk` (public data); `www.whatdotheyknow.com` (public bodies' request addresses); `query1.finance.yahoo.com`, `data-api.binance.vision`, `api.apify.com` (paper books and radar data). GitHub and package registries are reachable by default. Open-web research then happens only through the search and fetch tools or in a session you start in the Default environment.
 2. When steps 3 and 4 are done, I will raise two secure credential forms. Enter:
    - Host `login.microsoftonline.com`, type username and password: username = the Application (client) ID, password = the client secret Value. Microsoft's documentation confirms this sign-in pattern is supported.
