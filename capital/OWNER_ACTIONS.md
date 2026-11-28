@@ -1,4 +1,13 @@
-# Owner actions (updated 2026-11-28 01:00 UTC)
+# Owner actions (updated 2026-11-28 01:15 UTC)
+
+## NOTHING IS NEEDED FROM YOU RIGHT NOW
+On 2026-11-28 you suspended E3 as a launch-ready candidate: no expenditure and no further development. The E3 setup request below is ON HOLD and kept only so E3 can be restarted later. Do not act on it.
+Still outstanding from before, when convenient: employment-contract clauses; removing Gmail, Calendar and Docs from the scheduled task.
+
+---
+
+## ON HOLD: E3 material (kept for a possible restart)
+
 
 ## E3 CONSOLIDATED SETUP REQUEST (final, presented 2026-11-28). Awaiting your reply.
 

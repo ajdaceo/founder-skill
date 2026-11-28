@@ -29,3 +29,4 @@
 2026-11-28T00:50Z operator: final consolidated E3 setup request written to OWNER_ACTIONS.md (£60 envelope, contingent insurance, decisions, 10 setup steps); offer page, terms, privacy notice drafted (unpublished).
 2026-11-28T01:00Z operator: hand-check of 50 priority prospects attempted by 2 agents: blocked (shell 403 policy denial on all hosts; WebFetch needs live approval). 0 verified; batches kept in research/e3-handcheck/.
 2026-11-28T01:02Z operator: STOP: critical owner approval (setup request) and network access block all meaningful progress. Next executable action: on network access, run research/e3-handcheck batches; on "E3 go", build offer page, intake form, payment link and mail client. Lock released.
+2026-11-28T01:15Z operator: owner suspended E3 (launch-ready, preserved; no spend, no development) and redirected selection to fundamentally different commercial mechanisms. Records updated; mechanism screen started. Lock taken.

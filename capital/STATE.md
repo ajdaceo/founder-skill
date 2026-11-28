@@ -1,4 +1,4 @@
-# State (updated 2026-11-28 01:00 UTC)
+# State (updated 2026-11-28 01:15 UTC)
 
 ## Latest (2026-11-28)
 - Final consolidated E3 setup request presented (OWNER_ACTIONS.md top): £60 envelope now, insurance about £74-£125 only after a paid order, email channel, fixed prices £249/£149/£49, trading name, per-plan owner review, draft terms. Awaiting reply. Spent £0. Revenue £0.
@@ -28,7 +28,14 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlie
 - Lock: `LOCK` file in this folder holds start time (UTC ISO) of the run in progress. A run that finds a LOCK younger than 2 hours makes no changes. Delete LOCK at the end of every run.
 - Cycle log: append one line per run to `cycles.log` (UTC time, what was done, result).
 
-## E3 (CRPs for public-sector suppliers): targeting scan done, awaiting owner approval
+## Direction set by owner 2026-11-28
+- E3 is SUSPENDED as a launch-ready candidate: no expenditure, no further development. All E3 work is preserved.
+- Reason given: viable only at small scale; limited market, hard acquisition, liability and operating burden.
+- Owner also observed that selection keeps gravitating to digital products and compliance documents.
+- New brief: investigate fundamentally different commercial mechanisms (information advantage, automation, intermediation, licensing, recurring services, transaction-based revenue, existing ecosystems). Find where money already changes hands and automation gives a measurable, defensible edge. Not UK-only, not product-and-advertise, not tied to the owner's interests. Prefer credible potential for substantial profit, but do not reject smaller opportunities that build capital, infrastructure or a base for expansion.
+- Working note: `research/2026-11-28-mechanism-screen.md`.
+
+## E3 (CRPs for public-sector suppliers): SUSPENDED, launch-ready (history below)
 - DESNZ 2026 factors filled in `products/crp/factors.csv` (flat file v1.2). Generator runs end to end; tests pass.
 - 50 framework suppliers hand-verified (`research/2026-11-27-e3-supplier-scan.md`, `research/e3-scan-verified.csv`): 37/50 (74%) lack a current published CRP; 22/50 (44%) are reachable realistic buyers; 17/50 (34%) on the most cautious count. Passes the 40% bar narrowly.
 - Risks: 60% of working-site suppliers already made a plan themselves (mostly the free template); prospect pool is thin (about 230 scans for 100 emails).

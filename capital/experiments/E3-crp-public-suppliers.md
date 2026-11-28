@@ -1,6 +1,6 @@
 # E3: Done-for-you Carbon Reduction Plans for public-sector suppliers (proposed 2026-11-27 22:20)
 
-Status: PROPOSED, awaiting owner approval of setup and budget.
+Status: SUSPENDED by owner 2026-11-28 as a launch-ready candidate. No expenditure or further development. Restart pack: OWNER_ACTIONS.md (on-hold setup request), research/2026-11-28-e3-readiness.md, research/e3-prospects-qualified.csv, products/crp/, experiments/E3-assets/.
 
 ## Evidence (gates)
 - A Demand: NHS Supply Chain requires Evergreen Level 1 (published PPN 006 CRP) for all tenders since 6 Apr 2026; NHS requires CRPs for all new procurements since Apr 2024; enhanced global Scope 1–3 CRPs from 1 Apr 2027; CRPs must be updated within 6 months of each financial year-end (recurring). Buyers already pay: Go Positive £449/yr, CarbonPass £199/yr software.
