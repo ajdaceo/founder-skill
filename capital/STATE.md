@@ -1,11 +1,11 @@
-# State (updated 2026-11-28 01:15 UTC)
+# State (updated 2026-11-28 01:36 UTC)
 
 ## Latest (2026-11-28)
 - Final consolidated E3 setup request presented (OWNER_ACTIONS.md top): £60 envelope now, insurance about £74-£125 only after a paid order, email channel, fixed prices £249/£149/£49, trading name, per-plan owner review, draft terms. Awaiting reply. Spent £0. Revenue £0.
 - Drafts (unpublished): experiments/E3-assets/offer-page-draft.md, terms-draft.md, privacy-draft.md.
 - Blocker: this scheduled-task environment has no web access (shell 403 policy denial; WebFetch needs live approval). Hand-check of 50 priority prospects prepared, not run (research/e3-handcheck/).
 
-Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlier rules in `README.md` and `history/` apply only where they don't conflict.
+Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0), with `MANDATE-AMENDMENT-1.md` (persistent goal) and `MANDATE-AMENDMENT-2.md` (investment and scope, 2026-11-28). Earlier rules in `README.md` and `history/` apply only where they don't conflict.
 
 ## Programme
 - 30-day programme start: 2026-11-27. Review due: 2026-12-27.
@@ -27,6 +27,14 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlie
 - Old "CAPITAL operating cycle" task (trig_011WoZfwCJmbERHrXQkT5ZqB) disabled 2026-11-27 21:35 with owner approval; confirmed enabled=false.
 - Lock: `LOCK` file in this folder holds start time (UTC ISO) of the run in progress. A run that finds a LOCK younger than 2 hours makes no changes. Delete LOCK at the end of every run.
 - Cycle log: append one line per run to `cycles.log` (UTC time, what was done, result).
+
+## Investment and scope clarification (owner, 2026-11-28, MANDATE-AMENDMENT-2.md)
+- CAPITAL is an operator and capital allocator, not only a digital product developer. Objective: generate, preserve and compound capital.
+- The owner will invest where evidence shows a return; funds are limited, so operations must become self-financing. The budget is capital for discovery and validation, not a rule to build for nothing.
+- Investigate all legitimate mechanisms using agents, software, information and capital. For promising ones establish: evidence of profit, minimum investment, working capital, expected and worst case, time to revenue and payback, automation, scalability, advantage, legal and platform requirements.
+- Trading: historical validation, realistic costs, out-of-sample tests and paper trading first. No real money, leverage or financial accounts without separate explicit approval.
+- Outreach: lawful targeting, platform compliance, truthful offers, reliable fulfilment.
+- Working note: `research/2026-11-28-capital-allocation-screen.md`.
 
 ## Direction set by owner 2026-11-28
 - E3 is SUSPENDED as a launch-ready candidate: no expenditure, no further development. All E3 work is preserved.
