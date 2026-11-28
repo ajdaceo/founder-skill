@@ -1,6 +1,6 @@
 # CAPITAL dashboard
 
-Updated 2026-11-28 02:50 UTC by the operator. This is the one place to see CAPITAL's position; it is revised at the end of every run.
+Updated 2026-11-28 09:40 UTC by the operator (no change since 02:50 UTC; blocked on owner step A). This is the one place to see CAPITAL's position; it is revised at the end of every run.
 Key: **[V]** verified result · **[E]** estimate · **[A]** assumption · **[U]** built but untested.
 
 ## Money [V]
