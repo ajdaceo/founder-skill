@@ -113,6 +113,8 @@ What is honest to say about it:
 2. Confirm the re-use terms for information released under FOI and typical response rates for that kind of question.
 3. Build the free sample for that category from published data.
 
+First cut done 2026-11-28: see `research/procurement-intel/README.md`. Categories with 40 or more vendors include CCTV and body-worn video (123 vendors, 82 small), HR and payroll (49), Microsoft licensing (52), networks (81) and print and mail (59).
+
 **Needs owner approval before it happens:**
 - Sending statutory requests to public bodies (needs a named requester: the owner or a trading name).
 - Approaching the category's vendors with the sample.
