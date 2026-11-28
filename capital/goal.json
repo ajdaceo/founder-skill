@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-28T01:41:53Z",
+  "updated_utc": "2026-11-28T02:02:31Z",
   "primary_objective": "Generate, preserve and compound capital through measurable economic activity, as an autonomous commercial operator and capital allocator for the owner (MANDATE.md, amendments 1 and 2).",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
     "M0": "in_progress",
-    "M1": "reopened 2026-11-28 by owner: broaden to fundamentally different commercial mechanisms",
-    "M2": "not_started",
+    "M1": "done 2026-11-28: E4 selected for test (E3 held ready)",
+    "M2": "in_progress: E4 channel test prepared, awaiting owner approval",
     "M3": "not_started",
     "M4": "not_started",
     "M5": "not_started",
@@ -18,8 +18,8 @@
     "M12": "not_started",
     "M13": "not_started"
   },
-  "current_milestone": "M1",
-  "current_experiment": "NONE ACTIVE. E3 SUSPENDED by owner 2026-11-28 as a launch-ready candidate: no expenditure, no further development (experiments/E3-crp-public-suppliers.md)",
+  "current_milestone": "M2",
+  "current_experiment": "E4 PREPARED, awaiting owner approval: experiments/E4-vendor-renewals-calendar.md (28 prospects, GBP 295 offer, GBP 25 cap). E3 suspended, launch-ready.",
   "finance_gbp": {
     "revenue": 0,
     "expenditure": 0,
@@ -29,24 +29,30 @@
     "max_budget_with_owner_approval": 250,
     "approval_note": "E3 GBP 25 conditional approval suspended by owner 2026-11-28; nothing spent"
   },
-  "current_priority": "Capital-allocation screen done (research/2026-11-28-capital-allocation-screen.md): no mechanism yet justifies investment beyond capped validation tests. Next: build the zero-cost vendor-intelligence sample, keep paper trading, then make ONE validation-tier request (about GBP 15 plus named-requester approval).",
+  "current_priority": "Operate the three functions in OPERATING.md. E4 waits on the owner's approval and set-up (OWNER_ACTIONS.md). No spend or sending before that.",
   "next_actions": [
-    "Paper trading: when network allows, run `python3 trading/fetch_data.py <dir>` then `python3 trading/paper.py <dir>`; commit trading/paper/. Weekly is enough. Never place real trades",
-    "Vendor intelligence: pick one category from research/procurement-intel/README.md (classify titles properly; check what Stotles/Tussell already show); build a free sample from research/procurement-intel/tech-awards-2025-01-to-2026-11.csv; draft the statutory request (include a request for re-use under the Open Government Licence)",
-    "Then ask the owner ONCE: validation-tier test (about GBP 15), named requester for statutory requests, approach to that category's vendors",
+    "If the owner has approved E4: follow OWNER_ACTIONS.md set-up; rebuild calendars (ops/cf_report.py), re-run ops/e4_prepare.py, hand-check each prospect's figures, send 28 emails, log results in the E4 record",
+    "If not yet approved: do not send. Prepare the next experiment candidate from radar/RADAR.md (highest score with a cheap test)",
+    "Simulation: when network allows, python3 trading/fetch_data.py <dir> && python3 trading/paper.py <dir>; commit trading/paper/",
+    "Radar: weekly pass due on or after 2026-11-30; append to radar/RADAR.md",
     "Do NOT develop or spend on E3. Weekly report due Friday 2026-12-04"
   ],
   "blocked_actions": [
     {
-      "action": "Any spend, outreach or publication",
-      "blocked_on": "owner approval of a specific experiment"
+      "action": "Sending E4 emails; any spend",
+      "blocked_on": "owner: E4 approval, trading identity, domain, mailbox, Stripe"
+    },
+    {
+      "action": "Unattended radar, paper trading and sending in scheduled runs",
+      "blocked_on": "owner: full network access for the scheduled task's environment"
     }
   ],
   "pending_owner_approvals": [
+    "E4 approval and set-up (OWNER_ACTIONS.md)",
     "Employment-contract clauses",
     "Remove Gmail/Calendar/Docs from scheduled task"
   ],
-  "last_verified_progress": "2026-11-28: 12 mechanisms screened in three rounds. First-hand backtests: trend rule on five asset classes 5.0%/yr, worst fall 12% (2007-2026, after costs); crypto trend rule 9-23%/yr out of sample with 39-56% falls, fragile. Paper ledger started. Asset purchase and goods arbitrage rejected at this size; weakness-based outreach weak.",
+  "last_verified_progress": "2026-11-28: three operating functions set up (OPERATING.md). E4 prepared: two category calendars built from Contracts Finder (449 and 303 contracts), 28 vetted prospects with individual samples, drafts written. Paper books and asset watch started.",
   "next_checkpoint": "Owner reply to the setup request; next scheduled run checks OWNER_ACTIONS.md and network access first",
   "programme": {
     "start": "2026-11-27",
@@ -55,5 +61,31 @@
   "blockers": [
     "Scheduled-run shell: CONNECT 403 policy denial for gov.uk, Companies House, DuckDuckGo (2026-11-28 00:40Z)",
     "WebFetch in unattended runs: PROVENANCE_REQUIRED, approval not answerable"
-  ]
+  ],
+  "functions": {
+    "1_active_experiments": {
+      "live": [],
+      "prepared": [
+        "E4"
+      ],
+      "held_ready": [
+        "E3"
+      ],
+      "rule": "customer obligations and replies first; then the live experiment; then the next one"
+    },
+    "2_opportunity_radar": {
+      "record": "radar/RADAR.md",
+      "cadence": "weekly, first run on or after Monday; at most about ten lookups or one capped research agent",
+      "next_due": "2026-11-30"
+    },
+    "3_simulated_validation": {
+      "record": "simulation/REGISTER.md",
+      "books": [
+        "S1 trend rule on five funds",
+        "S2 crypto trend rule",
+        "S3 asset watch"
+      ],
+      "cadence": "S1/S2 weekly when network allows; S3 monthly, next 2026-12-28"
+    }
+  }
 }

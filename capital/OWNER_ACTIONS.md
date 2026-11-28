@@ -1,8 +1,29 @@
-# Owner actions (updated 2026-11-28 01:15 UTC)
+# Owner actions (updated 2026-11-28 02:02 UTC)
 
-## NOTHING IS NEEDED FROM YOU RIGHT NOW
-On 2026-11-28 you suspended E3 as a launch-ready candidate: no expenditure and no further development. The E3 setup request below is ON HOLD and kept only so E3 can be restarted later. Do not act on it.
-Still outstanding from before, when convenient: employment-contract clauses; removing Gmail, Calendar and Docs from the scheduled task.
+## ONE REQUEST: approve and set up experiment E4 (asked 2026-11-28)
+**What.** A controlled test of whether suppliers will pay £295 for a calendar of when their competitors' public-sector contracts end. 28 hand-picked companies in two markets (12 occupational health, 16 learning systems), one individual email each and one follow-up. Record: `experiments/E4-vendor-renewals-calendar.md`. Example emails: `experiments/E4-assets/outreach-drafts.md`. Prospects: `experiments/E4-assets/prospects.csv`.
+
+**Why.** The data is built and checked (449 and 303 published contracts; 151 and 102 ending within 18 months). Only real buyers can show whether it sells.
+
+**Cost and risk.** Cap £25: a domain (about £5) and the first month of a mailbox (free trial, then about £6.50 a month if kept). Worst case: £25 and three weeks. Emails go only to limited companies' published company addresses, with your identity, an AI disclosure and an opt-out.
+
+**What counts as success.** One paid order within 21 days of the first send; three is strong. Fewer than four serious replies and no order is a fail, recorded with the reason.
+
+**Alternatives.** Send the same emails yourself from an existing business mailbox (no set-up, about 30 minutes of your time, but I cannot read replies). Or decline, and I move to the next candidate.
+
+**Other work continues** either way: the radar and the paper trading need nothing from you.
+
+### If you approve, these are the set-up steps (about 45 minutes, once; they also serve later experiments)
+1. Reply "E4 approved" (or amend the price, refund rule or wording).
+2. Choose a trading name, and give the address and phone number that must appear on business emails.
+3. Register a .co.uk domain for that name in your own name (about £5 a year).
+4. Start a Microsoft 365 Business Basic trial on that domain with one mailbox. Choose monthly billing, not annual. Register an app with permission to send and read that mailbox. I will ask for its secret through the secure credential form, never in chat.
+5. Open a Stripe account as a sole trader and create a £295 payment link. I will ask for a restricted read-only key the same way.
+6. Create a private GitHub repository for replies and customer records, and give this operator access. This repository is public.
+7. Give the scheduled task's environment full network access. The last scheduled run could not reach any website, so unattended runs cannot send, read replies, update the paper books or scan for opportunities.
+8. Take the ICO's data protection fee self-assessment (five minutes). Replies will contain named people's details; a fee of £47 to £52 may be due.
+
+Still outstanding from before, when convenient: employment-contract clauses; removing Gmail, Calendar and Docs from the scheduled task. Silence is not consent.
 
 ---
 

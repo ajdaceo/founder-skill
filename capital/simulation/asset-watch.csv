@@ -1,0 +1,9 @@
+first_seen,marketplace,asset,asking_usd,stated_annual_revenue_usd,price_to_revenue,paper_call,reason,last_checked,status
+2026-11-28,Microns,Exam platform,1000,44,22.7,pass,revenue too small to cover running costs,2026-11-28,listed
+2026-11-28,Microns,AI document extraction tool,1500,390,3.8,pass,profit not shown; revenue under running costs,2026-11-28,listed
+2026-11-28,Microns,Reddit tool,2500,638,3.9,pass,profit not shown,2026-11-28,listed
+2026-11-28,Microns,AI book summaries,3600,1114,3.2,watch,revenue could cover costs if verified,2026-11-28,listed
+2026-11-28,Microns,AI writing assistant,5500,2250,2.4,watch,lowest price to revenue of the small listings; needs processor verification,2026-11-28,listed
+2026-11-28,Microns,AI video app,15000,7220,2.1,watch,above current scale; track for base rates,2026-11-28,listed
+2026-11-28,Microns,E-commerce profit tracker,20000,11550,1.7,watch,above current scale; track for base rates,2026-11-28,listed
+2026-11-28,Microns,Portfolio of Apify data-extraction listings,89000,30956,2.9,watch,shows marketplace listings do trade; far above scale,2026-11-28,listed

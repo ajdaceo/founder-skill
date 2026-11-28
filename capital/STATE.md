@@ -1,11 +1,11 @@
-# State (updated 2026-11-28 01:36 UTC)
+# State (updated 2026-11-28 02:02 UTC)
 
 ## Latest (2026-11-28)
 - Final consolidated E3 setup request presented (OWNER_ACTIONS.md top): £60 envelope now, insurance about £74-£125 only after a paid order, email channel, fixed prices £249/£149/£49, trading name, per-plan owner review, draft terms. Awaiting reply. Spent £0. Revenue £0.
 - Drafts (unpublished): experiments/E3-assets/offer-page-draft.md, terms-draft.md, privacy-draft.md.
 - Blocker: this scheduled-task environment has no web access (shell 403 policy denial; WebFetch needs live approval). Hand-check of 50 priority prospects prepared, not run (research/e3-handcheck/).
 
-Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0), with `MANDATE-AMENDMENT-1.md` (persistent goal) and `MANDATE-AMENDMENT-2.md` (investment and scope, 2026-11-28). Earlier rules in `README.md` and `history/` apply only where they don't conflict.
+Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0), with `MANDATE-AMENDMENT-1.md` (persistent goal), `MANDATE-AMENDMENT-2.md` (investment and scope) and `MANDATE-AMENDMENT-3.md` (from research to operation, 2026-11-28). How each run works: `OPERATING.md`. Earlier rules in `README.md` and `history/` apply only where they don't conflict.
 
 ## Programme
 - 30-day programme start: 2026-11-27. Review due: 2026-12-27.
@@ -27,6 +27,12 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0), with `
 - Old "CAPITAL operating cycle" task (trig_011WoZfwCJmbERHrXQkT5ZqB) disabled 2026-11-27 21:35 with owner approval; confirmed enabled=false.
 - Lock: `LOCK` file in this folder holds start time (UTC ISO) of the run in progress. A run that finds a LOCK younger than 2 hours makes no changes. Delete LOCK at the end of every run.
 - Cycle log: append one line per run to `cycles.log` (UTC time, what was done, result).
+
+## Operating mode (owner, 2026-11-28, MANDATE-AMENDMENT-3.md)
+- Move from researching to testing. Three standing functions, one schedule: active experiments, weekly opportunity radar, background simulation (`OPERATING.md`).
+- Experiments use tens of hand-picked prospects. A cheap controlled test beats more desk research.
+- E4 (renewals calendar for suppliers; 28 prospects; £295; £25 cap) is prepared and waits for the owner's approval and set-up.
+- E3 stays suspended and launch-ready. The owner may fund exceptional opportunities, including asset purchases, on evidence and separate approval.
 
 ## Investment and scope clarification (owner, 2026-11-28, MANDATE-AMENDMENT-2.md)
 - CAPITAL is an operator and capital allocator, not only a digital product developer. Objective: generate, preserve and compound capital.
