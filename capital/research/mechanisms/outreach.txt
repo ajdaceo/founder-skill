@@ -1,0 +1,51 @@
+Source notes compiled 2026-11-28 by a research agent (capped at about 28 lookups). Secondary sources unless stated; UNCONFIRMED items are marked; estimates are the agent's.
+
+NOTES - automated outreach to SMBs with a paid fix (research 28 Nov 2026). Evidence labels: [PRIMARY]=regulator/vendor policy page fetched; [SEARCH]=search summary only, not opened; [VENDOR]=seller/course/tool claim. Not confirmed = UNCONFIRMED.
+
+1 PROFITABILITY
+- No independent dataset or detailed audited case study found for AI-demo-site / GBP / review / missed-call-text-back outreach with close rate and revenue. UNCONFIRMED.
+- Generic cold email benchmarks [VENDOR]: Instantly 2026 avg reply 3.43%, top quartile 5.5%+ (https://instantly.ai/blog/how-to-use-ai-for-sales-outreach-personalization/); Hunter 2025 avg 4.1% (https://hunter.io/the-state-of-cold-email-2025); Instantly guide says generic templates 0.5-2%.
+- Clay community post: 4,500 emails -> 47 replies (~1%) construction co. (https://community.clay.com/x/content-and-events/msg_MnpXn5oZ1eZh/cold-email-case-study-47-leads-for-sacramento-cons) - no revenue.
+- DEV post: 225 cold emails in a day, 6 conversations, 4 meetings, 1 project closed $2,800 (https://dev.to/gentleaffair274/i-sent-225-cold-emails-in-one-day-here-are-the-numbers-1hd5) - anecdote, n=1.
+- Overloop playbook (vendor): digital/web agencies 4.8% reply, 1.8% meeting, 22% close (https://overloop.com/playbooks/digital-web-agencies). Implied ~0.4% of contacts become clients = ~4 per 1,000. VENDOR, treat as upper bound.
+- Podcast summary: sold websites $2,000, 1 in 10 said yes (to those pitched, not cold) - unverified.
+- Churn: Vendasta 2023 Agency Insights via Duda: typical agency churn 2-8% (per month, UNCONFIRMED period) (https://blog.duda.co/warning-signs-your-smb-client-might-churn-and-how-to-keep-them). Vendasta: reporting reduces churn 47% (vendor). No tenure-in-months figure found.
+- Missed-call-text-back price points: not found. UNCONFIRMED.
+
+2 SATURATION
+- No SMB-owner survey on volume of agency cold pitches found. UNCONFIRMED.
+- Firmable: 1,009 professionals, 82% delete/skim-delete cold outreach (https://www.contentgrip.com/firmable-ai-cold-outreach/) - general B2B, not SMB, vendor survey.
+- BrightLocal 2025: 778 US SMB owners, 54% run marketing themselves (https://www.brightlocal.com/research/smb-marketing-2025/).
+- Agency-side: vendor survey 215 agencies, 63% cold email main channel (self-reported).
+- Tools for exactly this pitch exist: NearSited (June 2026 listing), Rewebly, Site Bloomy, DIY Claude+Places API+Vercel preview workflows (https://www.indiehackers.com/product/rewebly , https://ccm-design-engineer.netlify.app/summaries/ai-workflow-to-redesign-local-sites-for-cold-outre-summary). Does AI demo still lift reply in 2026: UNCONFIRMED (only a vendor-ish 2.7%->12.7% claim for human-edited AI research).
+
+3 LAW
+- UK PECR [PRIMARY ICO https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/business-to-business-marketing/]: "The PECR rule on direct marketing by electronic mail does not apply to corporate subscribers." Sole traders and some partnerships: "you can only market them by electronic mail if they have specifically consented, or the 'soft opt-in' applies." Must "not disguise or conceal your identity" and "give a valid address for business to opt-out". Live calls: "cannot call numbers registered with the Corporate Telephone Preference Service (CTPS)" nor TPS; screen both. (UK GDPR still applies to named individuals' data - UNCONFIRMED detail, not fetched.)
+- US CAN-SPAM [PRIMARY https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business]: "The law makes no exception for business-to-business email." Accurate headers, non-deceptive subject, disclose it is an ad, valid physical postal address, clear opt-out honoured within 10 business days, up to $53,088 per email.
+- US TCPA [SEARCH]: FCC declaratory ruling 8 Feb 2024: AI-generated voices are "artificial" under TCPA, need prior consent (https://www.fcc.gov/document/fcc-makes-ai-generated-voices-robocalls-illegal). Business texts: consent rules not confirmed. UNCONFIRMED.
+- Canada CASL [SEARCH; crtc.gc.ca 403]: express consent, or implied via conspicuous publication of address only if no "do not contact" notice and message is relevant to recipient's role (CRTC guide https://crtc.gc.ca/eng/com500/guide.htm; FCA CompuFinder 2020). Burden on sender; no harvesting from third-party directories. Penalties and content rules UNCONFIRMED here (identity + unsubscribe required, from memory).
+- Australia Spam Act [SEARCH https://www.acma.gov.au/avoid-sending-spam]: consent needed (express or inferred), burden on sender; unsubscribe honoured within 5 working days; inferred consent from published address: Sched 2 s4 - exact conditions UNCONFIRMED (not opened).
+- EU [SEARCH, vendor blogs only, no primary]: Germany UWG s7 requires prior consent even B2B; France permissive for B2B if relevant to role, with opt-out; Netherlands, Ireland described as permissive; sole traders treated as individuals (consent) - UNCONFIRMED, need primary sources/local counsel.
+- Practical lawful-without-consent set: UK limited companies/LLPs; US (CAN-SPAM compliant); France/NL/Ireland (corporate, role-relevant) UNCONFIRMED; Canada and Australia only narrowly.
+
+4 PLATFORMS
+- Google bulk sender rules [PRIMARY https://support.google.com/a/answer/81126]: >5,000 msgs/day to Gmail = bulk; spam rate must stay below 0.30%, guideline below 0.10%; all senders SPF or DKIM, bulk SPF+DKIM+DMARC; marketing messages must support one-click unsubscribe; bulk also visible unsubscribe link. A few thousand/month is far below the 5,000/day threshold but authentication and low complaints still advisable.
+- Microsoft Outlook.com [PRIMARY https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlooks-new-requirements-for-high%E2%80%90volume-senders/4399730]: >5,000/day; SPF, DKIM, DMARC p=none minimum; from 5 May 2025 non-compliant to Junk, rejection later (550 5.7.515); clear unsubscribe.
+- Google Workspace policy [SEARCH https://support.google.com/a/answer/178266]: prohibits unsolicited commercial email in volume to people with no relationship; can suspend user or whole domain. So cold email from Workspace is policy risk even if legal.
+- Instantly [SEARCH]: Growth $47/mo, Hypergrowth $97-107/mo; leads credits separate (https://instantly.ai/pricing). Smartlead [SEARCH]: Base $39, Pro $94 (https://www.smartlead.ai/pricing.md). Workspace Business Starter UK GBP5.90 annual/GBP7 monthly per user ex VAT (https://workspace.google.com/intl/en_uk/pricing?region=GB). lemlist, Apollo ToS on cold email: UNCONFIRMED.
+- Blocking causes: complaints over ~0.3%, no auth, unverified/bounced lists, bad domains. Specific rates UNCONFIRMED (general knowledge).
+- Compliant set-up for ~3,000/mo: 2-3 secondary domains, 2 mailboxes each (6 mailboxes ~GBP35-42/mo), outreach tool ~GBP40-80/mo, domains ~GBP10-15 each/yr, verification ~GBP20-50, SPF/DKIM/DMARC, one-click unsubscribe, <50 emails/mailbox/day. Total ~GBP100-170/mo. [my estimate]
+
+5 FULFILMENT
+- GoHighLevel $97/$297/$497 per mo, SaaS mode only $497 (third-party blogs, https://www.apexure.com/blog/gohighlevel-pricing). Vendasta: $0 subscription but $99/$499/$999 monthly qualifying spend (single comparison source). Duda Team ~$29-39, White Label $149-199/mo (sources conflict; https://www.duda.co/plans). Simbasite consumer-priced rival at $16/mo (market price floor).
+- Google Business Profile API [SEARCH https://developers.google.com/my-business/content/faq]: access per Cloud project via application, reviewed within ~14 days; clients must grant manager access; forum reports of quota/allowlist trouble. Automated GBP edits for clients are therefore gated. Cloudflare Pages/Webflow/Framer API pricing: not checked, UNCONFIRMED.
+- Cost per client: static AI-built site on Cloudflare Pages/hosting ~near GBP0-5/mo plus domain GBP10/yr [my estimate]; Duda ~GBP25-40/site/mo on lower tiers [source conflict].
+- Which keep paying: UNCONFIRMED. Only directional: local SEO churn lower when reporting visible (Localogy/vcita ~2.5%/period; Vendasta 47% churn reduction with reports).
+
+6 TEST ECONOMICS (my estimate)
+- 2,000 lawful targets, cost: infra ~GBP150-250 for 6-8 weeks, data (Places API/scraping/verification) ~GBP50-150, domain/hosting demos ~GBP50, LLM ~GBP50 => ~GBP350-550 plus time. First revenue 3-6 weeks.
+- Conversion assumption: 1-3% reply, 0.2-0.5% buy => 4-10 sales... conservative: 2-6 clients per 2,000 at GBP300-600 one-off or GBP30-80/mo.
+- Expected: GBP0.8-2.5k revenue first 3 months, near breakeven. Worst: 0 sales, lose ~GBP300-600 and a burned domain. Best case 10 clients x GBP500 = GBP5k.
+
+7 COMPETITORS
+- NearSited, Rewebly, Site Bloomy, Zapsite (trustmrr listing), Thryv AI builder, Vendasta/GoHighLevel agency stacks. Revenue of these unverified. Possible niche edge: first-party data on a measurable defect, a non-English market, a trade vertical. UNCONFIRMED whether any works.

@@ -1,0 +1,48 @@
+Source notes compiled 2026-11-28 by a research agent (capped at about 28 lookups). Secondary sources unless stated; UNCONFIRMED items are marked; estimates are the agent's.
+
+UK retail automated trading - research notes (28 Nov 2026). Many items rely on search-engine summaries, not full page reads; flagged UNCONFIRMED where so.
+
+== 1. EVIDENCE ON OUTCOMES
+- COBS 22.5 FCA Handbook: firms must show "[x]% of retail investor accounts lose money when trading CFDs with this provider". https://handbook.fca.org.uk/handbook/cobs22/cobs22s5
+- ESMA 2018 intervention: "74-89% of retail accounts typically lose money", avg loss EUR1,600-29,000. https://www.esma.europa.eu/node/84933
+- One broker disclosure (search snippet): 58.9% lose. Third-party aggregate 69.9% mean across 14 FCA brokers (theinvestorscentre.co.uk, not FCA). FCA 2017 dataset: 82% / 76% / 78% quoted by secondary sources. UNCONFIRMED: no FCA-wide 2025/26 figure found.
+- FCA CFD rules PS19/18: leverage 30:1 to 2:1 by volatility; FCA estimates retail saves GBP267m-451m/yr. https://www.fca.org.uk/publication/policy/ps19-18.pdf
+- Chague, De-Losso, Giovannetti "Day Trading for a Living?" (Brazil futures 2013-15): 97% of those persisting >300 days lost money; 1.1% earned > min wage; 0.5% > bank teller starting salary. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3423101
+- Barber & Odean "Trading is Hazardous to Your Wealth": costs and trading frequency explain poor household returns. https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf
+- McLean & Pontiff (J Finance 2016, 97 predictors): returns 26% lower out of sample, 58% lower post-publication. https://econpapers.repec.org/RePEc:bla:jfinan:v:71:y:2016:i:1:p:5-32
+- Hurst, Ooi, Pedersen "A Century of Evidence on Trend-Following Investing" (AQR): 67 markets since 1880; net Sharpe ~0.76 after costs and 2/20 fees per secondary commentary (UNCONFIRMED vs paper). https://www.aqr.com/insights/research/journal-article/a-century-of-evidence-on-trend-following-investing
+- Not found: Moskowitz-Ooi-Pedersen decay evidence; typical drawdown figures (UNCONFIRMED; trend-following drawdowns of 20-30%+ commonly reported, need citation).
+
+== 2. ACCESS / PROVIDERS
+- Trading 212 public API: beta; Invest and Stocks ISA only; per-account rate limits; orders only in account primary currency; no order-by-value; practice mode exists (community thread "New Equity Trading API in beta - try in practice mode"). Reports of ISA key 401 problems. https://docs.trading212.com/api/section/general-information/api-limitations ; https://community.trading212.com/t/stocks-shares-isa-api-key-returns-401-unauthorized-on-every-request-3-fresh-keys-tried/93064.md
+- Trading 212 costs: no commission; 0.15% FX conversion; card deposit 0.7% above GBP2,000; min deposit GBP1 (review sites: wise.com/gb/blog/trading-212-fees; finder.com/uk/trading-212-review). Spread on stocks/ETFs: UNCONFIRMED. Fractional shares: yes (platform feature, UNCONFIRMED in search).
+- Interactive Brokers UK (FCA ref 208159): European stocks ~GBP/EUR 3 per trade or 0.05% above ~6,000 (search snippet); LSE-specific schedule NOT confirmed (page returned 403). Directed API orders cannot use Tiered; SmartRouted can. Taxes passed through (UK 0.5% SDRT). https://www.interactivebrokers.co.uk/en/pricing/commissions-stocks-europe.php . Paper account and API fees: UNCONFIRMED (IBKR paper accounts exist per my background knowledge only).
+- IG, Saxo APIs, demo, minimums: UNCONFIRMED (search returned nothing).
+- Alpaca: paper API free and open globally, no account needed (https://alpaca.markets/blog/paper-trading-api). Live for non-US: limited/non-solicited; UK live access UNCONFIRMED. Lightyear (UK) uses Alpaca Broker API but that is a B2B route.
+- Kraken: fee page gives no spot maker/taker (needs /pro/fees); UNCONFIRMED. Coinbase UK API: UNCONFIRMED.
+- FCA crypto regime: authorisation gateway 30 Sep 2026 - 28 Feb 2027; regime in force 25 Oct 2027. https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation ; https://www.pinsentmasons.com/out-law/analysis/fca-finalises-cryptoasset-regime-2027-authorisation-deadline
+- Crypto derivatives: retail ban remains (no source announcing lifting). Crypto ETNs retail access opened 8 Oct 2025. https://www.fca.org.uk/news/press-releases/fca-opens-retail-access-crypto-etns
+- Spread bets/CFDs: leverage 30:1 max (major FX) down to 2:1 (crypto-underlying CFDs banned for retail).
+- Betfair: Live API key one-off GBP299 activation (Betfair developer docs, via search; page fetch empty); Delayed key free. Standard commission commonly 5% (UNCONFIRMED officially). Premium charge: Racing Post says dropped with new commission system from 2025; Betfair datascientists page still describes it - CONFLICT/UNCONFIRMED. https://racingpost.com/news/britain/betfair-exchange-to-introduce-new-commission-system-for-2025-as-premium-charge-is-dropped-a7wbg0v4GCAJ ; https://betfair-datascientists.github.io/wagering/commission . Rules on automation: UNCONFIRMED. Other exchanges (Betdaq, Smarkets): not researched.
+- Prediction markets: Polymarket blocks UK IPs; Kalshi unavailable in GB; FCA views financial event contracts as binary options (retail ban); FCA reportedly considering easing (Sept-Oct 2026), no decision. https://www.cryptotimes.io/2026/09/08/uk-fca-reviews-prediction-markets-as-kalshi-polymarket-gain-ground/ ; https://www.gambling.com/uk/news/are-prediction-markets-legal-in-the-uk . VPN use would breach terms (my inference).
+
+== 3. TAX
+- CGT 2026-27: annual exempt amount GBP3,000; 18% basic / 24% higher. https://www.gov.uk/capital-gains-tax/rates (fetched, quoted)
+- Trading vs investing: HMRC manual fetch 404; secondary sources say HMRC presumes individual share/crypto activity is investment, but frequent organised trading can be treated as trade (income tax) - UNCONFIRMED from HMRC.
+- Crypto disposals: CGT on sell, swap, spend, gift (secondary: IG). Confirm on gov.uk.
+- Stamp duty 0.5% on UK-listed shares (SDRT); most UK-domiciled/Irish ETFs exempt; US shares not UK SDRT (secondary: IG; verify).
+- Spread betting: generally free of CGT and stamp duty unless HMRC deems it trading; losses not deductible (secondary). Betting winnings not taxable (background knowledge, UNCONFIRMED here).
+- ISA: Trading 212 Stocks ISA has API; IBKR ISA UNCONFIRMED.
+
+== 4. DATA ==
+- Betfair historic data: free Basic tier = minute-interval last traded price, no volume; Advanced/Pro paid. https://betfair-datascientists.github.io/data/usingHistoricDataSite . Licence/redistribution terms UNCONFIRMED.
+- Stooq/Yahoo/Binance public data/Tiingo licences: UNCONFIRMED (search returned nothing). Yahoo terms are generally personal-use only (background, UNCONFIRMED).
+
+== 5. CAPACITY-CONSTRAINED EDGES ==
+- Not researched with citations (budget). Only the McLean-Pontiff decay and Barber-Odean cost evidence above. UNCONFIRMED: closed-end fund discount, small-cap, small crypto market evidence.
+
+== 6. REGULATORY LINES ==
+- Copy trading classed as portfolio management when no manual input per trade; requires authorisation. https://www.fca.org.uk/firms/copy-trading
+- PERG 2 lists managing investments, advising, arranging, dealing as agent. https://www.handbook.fca.org.uk/handbook/PERG/2/7.pdf
+- Own-account trading: not confirmed directly; my understanding is no authorisation for a private individual trading own money. UNCONFIRMED from source.
+- Provider rules on automated/AI trading: only Trading 212 API terms (https://trading212.com/legal-documentation/API-Terms_EN.pdf) located, not read. UNCONFIRMED.

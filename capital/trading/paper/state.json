@@ -1,0 +1,54 @@
+{
+ "started": "2026-11-28",
+ "slots": {
+  "A:SPY": {
+   "value": 199.8,
+   "in_market": true,
+   "ref_px": 716.7000122070312,
+   "ref_cash": 110.31999969482422,
+   "last_signal_asof": "2026-10"
+  },
+  "A:EFA": {
+   "value": 199.8,
+   "in_market": true,
+   "ref_px": 99.18000030517578,
+   "ref_cash": 110.31999969482422,
+   "last_signal_asof": "2026-10"
+  },
+  "A:IEF": {
+   "value": 199.8,
+   "in_market": false,
+   "ref_px": 92.05999755859375,
+   "ref_cash": 110.31999969482422,
+   "last_signal_asof": "2026-10"
+  },
+  "A:VNQ": {
+   "value": 199.8,
+   "in_market": true,
+   "ref_px": 95.66000366210938,
+   "ref_cash": 110.31999969482422,
+   "last_signal_asof": "2026-10"
+  },
+  "A:DBC": {
+   "value": 199.8,
+   "in_market": true,
+   "ref_px": 29.270000457763672,
+   "ref_cash": 110.31999969482422,
+   "last_signal_asof": "2026-10"
+  },
+  "B:BTCUSDT": {
+   "value": 498.7,
+   "in_market": false,
+   "ref_px": 60203.33,
+   "ref_cash": 110.31999969482422,
+   "last_signal_asof": "2026-11-27"
+  },
+  "B:ETHUSDT": {
+   "value": 498.7,
+   "in_market": false,
+   "ref_px": 1669.53,
+   "ref_cash": 110.31999969482422,
+   "last_signal_asof": "2026-11-27"
+  }
+ }
+}

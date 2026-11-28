@@ -1,0 +1,44 @@
+Source notes compiled 2026-11-28 by a research agent (capped at about 28 lookups). Secondary sources unless stated; UNCONFIRMED items are marked; estimates are the agent's.
+
+ARBITRAGE RESEARCH NOTES (28 Nov 2026). Source = search snippets / one page fetch; most are vendor blogs. UNCONFIRMED marks gaps.
+
+1 AMAZON/EBAY RETAIL ARBITRAGE
+- Amazon EU/UK fee update 2026 (fetched): https://www.aboutamazon.eu/news/empowering-small-business/update-to-european-referral-and-fulfilment-by-amazon-fees-for-2026
+  15 Dec 2025: Clothing referral 8%->5% (<=£15), 15%->10% (£15-20); FBA parcel fees cut avg £0.26.
+  5 Jan 2026: Home 15%->8% (<=£20); Pet 15%->5% (<=£10); Grocery/vitamins 8%->5% (<=£10); Low-price FBA extended to <=£20, avg -£0.40/unit.
+- UNCONFIRMED: 1.5% UK fuel/logistics surcharge from Apr 2026 (one blog only); DSF rise 2%->3% from 20 Mar 2026 applies to UK sellers on .fr/.es/.it (ayko blog https://www.ayko.com/blog/amazon-announces-fee-reductions-for-2026-what-uk-sellers-need-to-know).
+- Tools: Threecolts sells Tactical Arbitrage only inside Seller 365 bundle (https://profitpath.com/en/blog/best-online-arbitrage-tools); Keepa paid ~EUR19/mo (blog, https://affmaven.com/online-arbitrage-tools-amazon-sellers/). SellerAmp price, UK prep-centre rates, net ROI/unit: UNCONFIRMED (no independent data found).
+- Warning from repricer.com: tools "surfaces 100 deals, all calculated with incorrect FBA fees or missing prep costs" (https://www.repricer.com/blog/online-arbitrage-software-comparison/)
+- Suspension risk: UK forum reports of Section 3 "inauthenticity" deactivations after OA, Jan 2026 Jellycat ASIN case despite authorised UK retailers: https://sellercentral-europe.amazon.com/seller-forums/discussions/t/6753001e-914a-4e3a-b554-addecbf6ce76 ; retail receipts not accepted: https://sellercentral.amazon.co.uk/forums/t/fees-to-high/88838/3 ; Financial Ombudsman cases on withheld Amazon seller funds e.g. https://www.financial-ombudsman.org.uk/decision/DRN-5922263.pdf (anecdotal).
+- Ungating/inventory limits 2026: UNCONFIRMED.
+
+2 BOOKS / FLIPPING
+- Amazon textbook trade-in ended 2020 (https://gauravtiwari.org/best-places-to-sell-textbooks-online). Buyback sites pay ~10-35% of retail; eBay net 40-55% of new price (US blog). World of Books min 10 items or £5 (https://sell.worldofbooks.com/en-gb/sell-textbooks). No UK per-book margin data: UNCONFIRMED.
+- eBay UK: listing then buying from another retailer that ships direct to buyer is not allowed; dropship only with wholesale supplier or owned stock: https://www.ebay.co.uk/help/selling/posting-items/setting-postage-options/drop-shipping?id=4176 (snippet; exact wording not opened).
+- Amazon dropshipping allowed only if you are seller of record, you handle returns, no third-party packing slips (secondary: https://casrai.org/guides/amazon-dropshipping-policy ; Amazon blog https://sell.amazon.com/blog/dropshipping-on-amazon). Wording UNCONFIRMED at source.
+
+3 PALLETS / AUCTIONS
+- "30-60% margins" claims come from pallet sellers (https://www.topdowntrading.co.uk/blog/amazon-return-pallets-5-hidden-costs-resellers-always-miss.html). Hidden: freight, storage, repair, labour, fees, auction overspend. Amazon Liquidation Auctions UK limited to UK-registered buyers (https://bstock.com/blog/amazon-customer-returns-uk). Independent margin data: UNCONFIRMED.
+- Auction buyer's premium typically 10-25% on hammer, up to 33-34% incl VAT/online surcharge; VAT on premium (£100 hammer +£24 +£4.80 VAT = £128.80): https://grahambuddauctions.co.uk/buying-selling/buying/buyer-s-premium-vat ; VAT margin scheme https://www.gov.uk/guidance/buying-and-selling-goods-at-auction-using-the-vat-margin-scheme . BidSpotter/i-bidder/GovDeals fees and margins: UNCONFIRMED.
+
+4 COLLECTIBLES
+- Grading: PSA Regular $79.99/card, Value tiers paused; CGC ~$17-20; PSA 9 vs 10 swing turns profit to loss (pokemonpricetracker.com https://www.pokemonpricetracker.com/blog/posts/best-pokemon-cards-to-grade-in-2026-roi-calculator-guide ; closo.co https://closo.co/blogs/blog/how-to-resell-pokemon). Sealed box flip example nets ~7.4% (vendor blog). All vendor sources.
+- StockX: 3% processing + 7% Level 1 transaction fee (third party says 9%), GB min £4.50; transaction fee on StockX Live from 1 Dec 2026 (https://stockx.com/help/en-GB/articles/What-are-StockXs-fees-for-Sellers). Cardmarket, Vinted fees, bot rules, LEGO returns: UNCONFIRMED (not researched/found).
+
+5 TICKETS
+- Govt response: price cap with no mark-up incl unavoidable fees, plus cap on platform service fees, plus ban on reselling more tickets than entitled to buy; "will legislate ... when parliamentary time allows": https://www.gov.uk/government/consultations/putting-fans-first-consultation-on-the-resale-of-live-events-tickets/outcome/government-response-to-the-consultation-on-the-resale-of-live-events-tickets
+- King's Speech 13 May 2026 announced draft Ticket Tout Ban Bill; Full Fact 24 Aug 2026: not yet introduced (https://fullfact.org/government-tracker/ticket-resales-consumer-protections/). Status after Aug 2026 UNCONFIRMED. Conclusion: policy direction removes profit; not viable.
+
+6 DOMAINS
+- Sell-through rule of thumb 1-2%/yr hand-registered (namefi https://namefi.io/r/en/blog/domain-renewal-costs-and-sell-through-rate); ~3-4% .com avg (Freename Q1 2025 https://freename.com/blog/domain-aftermarket-report-q1-2025). Afternic commission 25% default, 15% with GoDaddy nameservers, $15 min (page dated Feb 2023; https://www.afternic.com/legal/agreements/pricing-and-fees). Example: 45% total return ~8%/yr (domaindetails). Sedo/DAN fees: UNCONFIRMED. No audited small-portfolio returns.
+
+7 VEHICLES
+- Dealer Auction Retail Margin Monitor June 2026: avg retail margin £4,000 (gross, one platform's stock): https://www.dealerauction.co.uk/retail-margin-monitor/rmm-june-2026/ ; sub-£10k Clio >£2,300 Jan. Independents report rising prep costs squeezing margins: https://cardealermagazine.co.uk/independent-dealers-warn-rising-prep-costs-and-stock-shortages-are-squeezing-margins/323274 . BCA/Motorway fees, floorplan, CRA duties: UNCONFIRMED here (general knowledge: Consumer Rights Act applies to trade sales, 30-day short-term right to reject).
+
+8 OTHER
+- Gift cards: stolen-card eGift resale, devalued cards, UK losses £13.5m 2023 (Edenred https://eps.edenred.com/blog/guarding-against-gift-card-fraud-a-guide-for-brands ; Which? https://www.which.co.uk/news/article/how-scammers-use-gift-cards-in-their-schemes-ao8Zf5s3I62f). Not researched: cross-border, refurbished electronics, wholesale clearance.
+
+UK TAX/LAW
+- Trading allowance £1,000 gross (one source says rises to £3,000 from Apr 2027 - UNCONFIRMED): https://taxhelpforhustles.campaign.gov.uk/buying-or-making-things-to-sell-and-online-selling-tax-rules ; platforms report sellers to HMRC from 2024 (30+ sales or EUR2,000): https://www.litrg.org.uk/working/gig-economy/digital-platform-reporting-rules
+- VAT threshold £90,000 (secondary sources, unchanged 2026): https://www.gov.uk/how-vat-works/vat-thresholds
+- Consumer Contracts Regs 2013: 14-day cancellation from delivery for distance sales: https://www.legislation.gov.uk/uksi/2013/3134/part/3

@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-28T01:36:20Z",
+  "updated_utc": "2026-11-28T01:41:53Z",
   "primary_objective": "Generate, preserve and compound capital through measurable economic activity, as an autonomous commercial operator and capital allocator for the owner (MANDATE.md, amendments 1 and 2).",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -29,11 +29,11 @@
     "max_budget_with_owner_approval": 250,
     "approval_note": "E3 GBP 25 conditional approval suspended by owner 2026-11-28; nothing spent"
   },
-  "current_priority": "Capital-allocation screen (MANDATE-AMENDMENT-2.md): investigate mechanisms that use capital as well as software and information (trading with validation and paper trading only; asset acquisition; price discrepancies; commercial-weakness outreach; others). For promising ones establish the nine facts the owner listed. Procurement intelligence continues but must not dominate. No real money, leverage or financial-account access without separate explicit approval.",
+  "current_priority": "Capital-allocation screen done (research/2026-11-28-capital-allocation-screen.md): no mechanism yet justifies investment beyond capped validation tests. Next: build the zero-cost vendor-intelligence sample, keep paper trading, then make ONE validation-tier request (about GBP 15 plus named-requester approval).",
   "next_actions": [
-    "Continue research/2026-11-28-capital-allocation-screen.md (in progress)",
-    "Run the paper-trading ledger in trading/paper/ whenever network access allows; never place real trades",
-    "Procurement intelligence: confirm FOI re-use terms; choose one category (research/procurement-intel/README.md)",
+    "Paper trading: when network allows, run `python3 trading/fetch_data.py <dir>` then `python3 trading/paper.py <dir>`; commit trading/paper/. Weekly is enough. Never place real trades",
+    "Vendor intelligence: pick one category from research/procurement-intel/README.md (classify titles properly; check what Stotles/Tussell already show); build a free sample from research/procurement-intel/tech-awards-2025-01-to-2026-11.csv; draft the statutory request (include a request for re-use under the Open Government Licence)",
+    "Then ask the owner ONCE: validation-tier test (about GBP 15), named requester for statutory requests, approach to that category's vendors",
     "Do NOT develop or spend on E3. Weekly report due Friday 2026-12-04"
   ],
   "blocked_actions": [
@@ -46,7 +46,7 @@
     "Employment-contract clauses",
     "Remove Gmail/Calendar/Docs from scheduled task"
   ],
-  "last_verified_progress": "2026-11-28: mechanism screen, two rounds, eight mechanisms, evidence in research/mechanisms/. First-hand Apify store data: new paid listings have a median of 1 monthly user. Award data: 2,577 software/IT notices, 1,566 suppliers, 713 buyers, median values GBP 180k-800k.",
+  "last_verified_progress": "2026-11-28: 12 mechanisms screened in three rounds. First-hand backtests: trend rule on five asset classes 5.0%/yr, worst fall 12% (2007-2026, after costs); crypto trend rule 9-23%/yr out of sample with 39-56% falls, fragile. Paper ledger started. Asset purchase and goods arbitrage rejected at this size; weakness-based outreach weak.",
   "next_checkpoint": "Owner reply to the setup request; next scheduled run checks OWNER_ACTIONS.md and network access first",
   "programme": {
     "start": "2026-11-27",
