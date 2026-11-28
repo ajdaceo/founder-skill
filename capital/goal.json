@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-28T00:20:54Z",
+  "updated_utc": "2026-11-28T00:45:20Z",
   "primary_objective": "Establish and operate a legitimate, sustainably profitable enterprise for the owner, maximising net profit relative to invested capital and owner time.",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -27,20 +27,23 @@
     "approved_budget_available": 25,
     "base_budget": 100,
     "max_budget_with_owner_approval": 250,
-    "approval_note": "GBP 25 setup cap approved conditionally for E3 validation; purchases held until the consolidated setup request is answered"
+    "approval_note": "GBP 25 setup cap approved conditionally; \u00a360 envelope requested 2026-11-28, not yet approved. Nothing spent."
   },
-  "current_priority": "Owner to read the E3 readiness note; operator to finalise the consolidated setup request. No purchases.",
+  "current_priority": "Owner to answer the consolidated E3 setup request at the top of OWNER_ACTIONS.md. No purchases or sends until then.",
   "next_actions": [
-    "FINISH and present the consolidated setup request in OWNER_ACTIONS.md from research/2026-11-28-e3-readiness.md (draft section there)",
-    "Hand-check the 213 prospects before any send (sample error rate 1 in 12: wrong website)",
-    "Write offer page, terms, privacy notice; solicitor look at liability cap",
-    "Decide whether to build the 2027 NHS CRP (spend-based Scope 3) for framework suppliers",
-    "Continue opportunity selection in parallel: E3 ceiling looks like hundreds of pounds a month"
+    "When network access returns: run the hand-check of research/e3-handcheck/batch1-input.csv and batch2-input.csv (50 prospects), then the remaining 163",
+    "On 'E3 go': build the Cloudflare offer page from experiments/E3-assets/offer-page-draft.md, Tally intake form from data-checklist.md, Stripe payment link, Graph send/read client with suppression list and 15/day cap; test end to end before first send",
+    "On 'E3 stop': return to opportunity selection (research/2026-11-27-fresh-selection.md)",
+    "Weekly report due Friday 2026-12-04"
   ],
   "blocked_actions": [
     {
       "action": "Any E3 spend, outreach email, or public offer page",
-      "blocked_on": "owner: approve E3 and the \u00a325 envelope; domain, mailbox and payment processor in owner's name"
+      "blocked_on": "owner reply to consolidated setup request (OWNER_ACTIONS.md, presented 2026-11-28)"
+    },
+    {
+      "action": "Prospect hand-check and all web research",
+      "blocked_on": "scheduled-task environment: shell 403 policy denial on all hosts; WebFetch needs live approval (unattended). Owner to set Network access = Full for this task's environment"
     },
     {
       "action": "Remove personal connectors from scheduled task",
@@ -48,18 +51,19 @@
     }
   ],
   "pending_owner_approvals": [
-    "Consolidated E3 setup request (in preparation)",
+    "Consolidated E3 setup request: \u00a360 envelope (+ ~\u00a3125 insurance only after a paid order), channel, prices, trading name, per-plan review, terms",
+    "Network access for the scheduled task environment",
     "Employment-contract clauses",
     "Remove Gmail/Calendar/Docs from scheduled task"
   ],
-  "last_verified_progress": "2026-11-28: 213 qualified prospects (research/e3-prospects-qualified.csv); generator validated independently (48/48 lines) with 2018-2026 factors; requirements, regulatory and infrastructure research sourced (research/e3-sources/). See research/2026-11-28-e3-readiness.md",
-  "next_checkpoint": "Owner reply on E3 approval; next scheduled run continues the zero-cost next_actions",
+  "last_verified_progress": "2026-11-28: final consolidated E3 setup request in OWNER_ACTIONS.md; offer page, terms and privacy drafts in experiments/E3-assets/ (unpublished); 50-prospect hand-check batches prepared but blocked by network.",
+  "next_checkpoint": "Owner reply to the setup request; next scheduled run checks OWNER_ACTIONS.md and network access first",
   "programme": {
     "start": "2026-11-27",
     "review_deadline": "2026-12-27"
   },
   "blockers": [
-    "DuckDuckGo HTML search is reset from the cloud shell: crp_scan.py cannot find websites itself; fill the website column by hand",
-    "Some supplier sites block scripts or cloud addresses; use the browser pass"
+    "Scheduled-run shell: CONNECT 403 policy denial for gov.uk, Companies House, DuckDuckGo (2026-11-28 00:40Z)",
+    "WebFetch in unattended runs: PROVENANCE_REQUIRED, approval not answerable"
   ]
 }

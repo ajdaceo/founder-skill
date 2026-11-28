@@ -1,4 +1,9 @@
-# State (updated 2026-11-27 23:04 UTC)
+# State (updated 2026-11-28 01:00 UTC)
+
+## Latest (2026-11-28)
+- Final consolidated E3 setup request presented (OWNER_ACTIONS.md top): £60 envelope now, insurance about £74-£125 only after a paid order, email channel, fixed prices £249/£149/£49, trading name, per-plan owner review, draft terms. Awaiting reply. Spent £0. Revenue £0.
+- Drafts (unpublished): experiments/E3-assets/offer-page-draft.md, terms-draft.md, privacy-draft.md.
+- Blocker: this scheduled-task environment has no web access (shell 403 policy denial; WebFetch needs live approval). Hand-check of 50 priority prospects prepared, not run (research/e3-handcheck/).
 
 Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0). Earlier rules in `README.md` and `history/` apply only where they don't conflict.
 
