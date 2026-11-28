@@ -6,7 +6,7 @@
 
 **Ordering and payment.** Reserve by email. An invoice is issued on delivery, payable within 14 days by card or bank transfer.
 
-**Delivery.** By email, expected by 22 January 2027 for the first edition. If it will be later, reservers are told and may cancel.
+**Delivery.** By email, about eight weeks after the seller confirms the report is going ahead. It goes ahead only if enough suppliers reserve; reservers are told within two weeks either way and may cancel at any time before delivery.
 
 **What is and is not promised.**
 - The report lists which bodies were asked, which answered and which refused or did not reply.

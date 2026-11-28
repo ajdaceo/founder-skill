@@ -1,9 +1,12 @@
-# State (updated 2026-11-28 02:17 UTC)
+# State (updated 2026-11-28 02:40 UTC)
 
-## Latest (2026-11-28)
-- Final consolidated E3 setup request presented (OWNER_ACTIONS.md top): £60 envelope now, insurance about £74-£125 only after a paid order, email channel, fixed prices £249/£149/£49, trading name, per-plan owner review, draft terms. Awaiting reply. Spent £0. Revenue £0.
-- Drafts (unpublished): experiments/E3-assets/offer-page-draft.md, terms-draft.md, privacy-draft.md.
-- Blocker: this scheduled-task environment has no web access (shell 403 policy denial; WebFetch needs live approval). Hand-check of 50 priority prospects prepared, not run (research/e3-handcheck/).
+## Latest (2026-11-28 02:40 UTC)
+- Owner instruction `history/2026-11-28-owner-infrastructure-go.md`: build the reusable infrastructure; Oakmarch subject to checks; customer interest before any statutory request; prepare a shorter-cycle experiment; verify before spending; nothing sent or activated without its specific approval.
+- Done this run: E4 wording amended (no requests sent yet; no claims about competitors); E6 prepared (`experiments/E6-checked-prospect-lists.md`, `experiments/E6-assets/`, `ops/e6_build.py`); set-up guide finalised with checks; approvals and standing authorisations set out in order (P1 to P3, A1 to A8).
+- Verified: scheduled sessions in `capital-ops` reach the twelve allowed hosts; a task created by the operator has no repository and cannot push, so the owner must edit the existing task; mailbox scoping method (Exchange "RBAC for Applications") and the trial's default renewal to an annual term; no company or .uk domain named Oakmarch.
+- Not confirmed: the official trade mark register (automated access refused). Near name OAKMARK is registered for investment services.
+- Found: this repository is public and holds the E6 product. E6 cannot start until the list is out of public view.
+- Spent £0. Revenue £0. Nothing sent.
 
 Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0), with `MANDATE-AMENDMENT-1.md` (persistent goal), `MANDATE-AMENDMENT-2.md` (investment and scope) and `MANDATE-AMENDMENT-3.md` (from research to operation, 2026-11-28). How each run works: `OPERATING.md`. Earlier rules in `README.md` and `history/` apply only where they don't conflict.
 

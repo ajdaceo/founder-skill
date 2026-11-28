@@ -1,23 +1,23 @@
-# Owner actions (updated 2026-11-28 02:17 UTC)
+# Owner actions (updated 2026-11-28 02:40 UTC)
 
-See `DASHBOARD.md` for the whole position. Three things are needed from you, in this order.
+See `DASHBOARD.md` for the whole position. Nothing has been sent, requested or activated. Three things are needed from you, in this order.
 
-## 1. Set up the shared business infrastructure (about 60 to 75 minutes, once; about £5 now)
-Follow `infrastructure/SETUP-GUIDE.md`. It covers the identity (recommended trading name: Oakmarch), domain, website hosting, mailbox, payments, private repository, operating environment, credentials and the ICO check, with links and verified prices. It is built for every future experiment, not only E4.
+## 1. Set up the shared business infrastructure (about 60 minutes, once; about £5 now)
+Follow `infrastructure/SETUP-GUIDE.md`, steps 0 to 8, in order. Each step ends with what to tell me.
+- Step 0 name check (official trade mark register; 5 minutes) · 1 domain · 2 DNS · 3 mailbox · 4 payments · 5 make this repository private (it is public today) · 6 credentials · 7 ICO self-assessment · 8 edit the scheduled task.
+- Cost: about £5 for the domain; the mailbox is free for 30 days, then £7.78 a month. Turn recurring billing off on day one, or the trial renews to an annual term.
 
-## 2. Approve what leaves the building (E4)
-E4 was re-scoped after checking the competitors you named: published expiry data is free at Stotles, so the paid product is now the contracts that were never published. Please approve or amend:
-- **Outreach emails** to 28 companies: `experiments/E4-assets/outreach-drafts.md` (four examples; the rest follow the same template with each firm's own figures). Prospect list: `experiments/E4-assets/prospects.csv`.
-- **Commercial terms**: `experiments/E4-assets/terms.md` (£295 on delivery, refund within 14 days, liability limited to the price).
-- **Statutory request text** in your name to about 280 public bodies: `experiments/E4-assets/foi-request-draft.md`.
-Nothing is sent until you say so.
+## 2. Approve what leaves the building
+Listed in `infrastructure/STANDING-AUTHORISATIONS.md`, part 1. Reply "approve P1" or "approve P2", with any changes.
+- **P1, the short-cycle experiment E6:** a checked list of 213 NHS suppliers with no current Carbon Reduction Plan, offered at £195 to firms that sell such plans. Messages, terms and 22 prospects: `experiments/E6-assets/`. Record: `experiments/E6-checked-prospect-lists.md`. One thing to weigh: it sells the list E3 would have used.
+- **P2, the longer-lead experiment E4:** 28 emails asking suppliers whether they want a report of unpublished contracts at £295. The emails say no requests have been sent. Messages, terms and prospects: `experiments/E4-assets/`.
+- **P3, later and only if earned:** the statutory requests in your name. I will ask only if three or more firms reserve.
 
-## 3. Approve access when I ask
-- Done: you approved the `capital-ops` environment on 2026-11-28.
-- Two secure credential forms (mailbox app and Stripe restricted key), after steps 3 and 4 of the guide.
+## 3. Enter two secrets when I ask
+After steps 3 and 4, say "ready for credentials". Two secure forms appear (mailbox app, Stripe key). Never paste a secret into chat.
 
 ## Later, not now
-- Standing authorisations so routine actions stop needing you: proposal in `infrastructure/STANDING-AUTHORISATIONS.md`. None is in force.
+- Standing authorisations A1 to A8: `infrastructure/STANDING-AUTHORISATIONS.md`, part 2. None is in force.
 - Still outstanding from before: employment-contract clauses.
 
 Silence is not consent.

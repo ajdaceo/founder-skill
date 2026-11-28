@@ -1,90 +1,107 @@
 {
-  "updated_utc": "2026-11-28T02:17:47Z",
-  "primary_objective": "Generate, preserve and compound capital through measurable economic activity, as an autonomous commercial operator and capital allocator for the owner (MANDATE.md, amendments 1 and 2).",
-  "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
-  "milestones": {
-    "M0": "in_progress",
-    "M1": "done 2026-11-28: E4 selected for test (E3 held ready)",
-    "M2": "in_progress: E4 channel test prepared, awaiting owner approval",
-    "M3": "not_started",
-    "M4": "not_started",
-    "M5": "not_started",
-    "M6": "not_started",
-    "M7": "not_started",
-    "M8": "not_started",
-    "M9": "not_started",
-    "M10": "not_started",
-    "M11": "not_started",
-    "M12": "not_started",
-    "M13": "not_started"
+ "updated_utc": "2026-11-28T02:40:00Z",
+ "primary_objective": "Generate, preserve and compound capital through measurable economic activity, as an autonomous commercial operator and capital allocator for the owner (MANDATE.md, amendments 1 and 2).",
+ "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
+ "milestones": {
+  "M0": "in_progress",
+  "M1": "done 2026-11-28: E4 selected for test (E3 held ready)",
+  "M2": "in_progress: E4 channel test prepared, awaiting owner approval",
+  "M3": "not_started",
+  "M4": "not_started",
+  "M5": "not_started",
+  "M6": "not_started",
+  "M7": "not_started",
+  "M8": "not_started",
+  "M9": "not_started",
+  "M10": "not_started",
+  "M11": "not_started",
+  "M12": "not_started",
+  "M13": "not_started"
+ },
+ "current_milestone": "M2",
+ "current_experiment": "E6 (short cycle: checked list of 213 NHS suppliers without a current Carbon Reduction Plan, GBP 195, 22 prospects) PREPARED, awaiting owner approval of pack P1 and the list being taken out of public view. E4 (longer lead) approved for controlled validation: 28 vendor emails first (pack P2); statutory requests only after three reservations and owner approval (P3). E3 suspended. E5 candidate.",
+ "finance_gbp": {
+  "revenue": 0,
+  "expenditure": 0,
+  "net": 0,
+  "approved_budget_available": 0,
+  "base_budget": 100,
+  "max_budget_with_owner_approval": 250,
+  "approval_note": "E3 GBP 25 conditional approval suspended by owner 2026-11-28; nothing spent"
+ },
+ "current_priority": "Verify the full commercial cycle end to end with E4: send, receive, invoice, pay, deliver, record. Keep radar and simulations running. Update DASHBOARD.md at the end of every run.",
+ "next_actions": [
+  "If the owner has completed set-up steps 0-6: request the two credentials through the secure form (login.microsoftonline.com basic = client id + secret; api.stripe.com bearer restricted key); test mail send/read to the owner's address and a GBP 1 test invoice; record the result on the dashboard",
+  "If the owner has approved P1 (E6) AND the list is no longer public: re-check the five example companies, hand-confirm each recipient, create the GBP 195 payment link, send to ready firms in experiments/E6-assets/prospects.csv (5 on day one, max 20 a day), one follow-up after 5 days, deliver via ops/e6_build.py output when Stripe shows paid; judge 10 days after first send",
+  "If the owner has approved P2 (E4): rebuild calendars (ops/cf_report.py), re-run ops/e4_prepare.py, hand-check each prospect's figures, send 28 emails; NO statutory requests unless three or more reservations within 14 days and the owner then approves P3",
+  "If the owner says 'update the operator's instructions' after editing the scheduled task (set-up step 8): replace the trigger prompt so it reads MANDATE amendments 1-3, OPERATING.md and DASHBOARD.md",
+  "If none of the above: write the website pages (identity, services, terms, privacy), hand-check the six held E6 prospects, and prepare E4 reply templates",
+  "Weekly: radar pass (due on or after 2026-11-30), paper books, DASHBOARD.md, Friday report 2026-12-04",
+  "Do NOT develop or spend on E3. Do NOT use the Oakmarch name for anything financial."
+ ],
+ "blocked_actions": [
+  {
+   "action": "Any sending, publishing or spend",
+   "blocked_on": "owner set-up and one-off approvals P1/P2"
   },
-  "current_milestone": "M2",
-  "current_experiment": "E4 APPROVED for controlled validation (cap GBP 25; external messages need final approval); re-scoped to unpublished contracts after competitor check. Waiting on owner set-up (infrastructure/SETUP-GUIDE.md). E3 suspended, launch-ready. E5 candidate.",
-  "finance_gbp": {
-    "revenue": 0,
-    "expenditure": 0,
-    "net": 0,
-    "approved_budget_available": 0,
-    "base_budget": 100,
-    "max_budget_with_owner_approval": 250,
-    "approval_note": "E3 GBP 25 conditional approval suspended by owner 2026-11-28; nothing spent"
+  {
+   "action": "E6 sending",
+   "blocked_on": "the list being out of public view (repository is public)"
   },
-  "current_priority": "Verify the full commercial cycle end to end with E4: send, receive, invoice, pay, deliver, record. Keep radar and simulations running. Update DASHBOARD.md at the end of every run.",
-  "next_actions": [
-    "If the owner has completed set-up steps: request the two credentials through the secure form (login.microsoftonline.com basic = client id + secret; api.stripe.com bearer restricted key); test mail send/read to the owner's address and a GBP 1 test invoice; record the result on the dashboard",
-    "If the owner has approved the texts: rebuild calendars (ops/cf_report.py), re-run ops/e4_prepare.py, hand-check each prospect's figures, send 28 emails (max 20 a day), then statutory requests (max 60 a day); log everything in the private repository",
-    "If neither: write the reply templates, the website pages (identity, services, terms, privacy) and the FOI recipient list (councils and police without a live published contract; request addresses from whatdotheyknow.com authority list)",
-    "Weekly: radar pass (due on or after 2026-11-30), paper books, DASHBOARD.md, Friday report 2026-12-04",
-    "E5: choose one measurable weakness from the 564 checked sites and write the experiment record",
-    "Do NOT develop or spend on E3"
-  ],
-  "blocked_actions": [
-    {
-      "action": "Any sending, publishing or spend",
-      "blocked_on": "owner set-up and final approval of external communications"
-    }
-  ],
-  "pending_owner_approvals": [
-    "Set-up guide steps 0-7",
-    "E4 outreach text, terms and statutory request text",
-    "capital-ops environment card and two credential forms",
-    "Standing authorisations (later)",
-    "Employment-contract clauses"
-  ],
-  "last_verified_progress": "2026-11-28: competitor check at source (Stotles free expiry data; BidSkim GBP 155-189/month) -> E4 re-scoped to unpublished contracts (only 69 English councils have a live published occupational health contract). Setup guide written with verified provider terms and prices; dashboard, standing-authorisation proposal, terms and statutory request text drafted.",
-  "next_checkpoint": "Owner reply to the setup request; next scheduled run checks OWNER_ACTIONS.md and network access first",
-  "programme": {
-    "start": "2026-11-27",
-    "review_deadline": "2026-12-27"
+  {
+   "action": "Statutory requests",
+   "blocked_on": "three E4 reservations within 14 days, then owner approval P3"
   },
-  "blockers": [
-    "Scheduled-run shell: CONNECT 403 policy denial for gov.uk, Companies House, DuckDuckGo (2026-11-28 00:40Z)",
-    "WebFetch in unattended runs: PROVENANCE_REQUIRED, approval not answerable"
-  ],
-  "functions": {
-    "1_active_experiments": {
-      "live": [],
-      "prepared": [
-        "E4"
-      ],
-      "held_ready": [
-        "E3"
-      ],
-      "rule": "customer obligations and replies first; then the live experiment; then the next one"
-    },
-    "2_opportunity_radar": {
-      "record": "radar/RADAR.md",
-      "cadence": "weekly, first run on or after Monday; at most about ten lookups or one capped research agent",
-      "next_due": "2026-11-30"
-    },
-    "3_simulated_validation": {
-      "record": "simulation/REGISTER.md",
-      "books": [
-        "S1 trend rule on five funds",
-        "S2 crypto trend rule",
-        "S3 asset watch"
-      ],
-      "cadence": "S1/S2 weekly when network allows; S3 monthly, next 2026-12-28"
-    }
+  {
+   "action": "Moving the scheduled operator to capital-ops",
+   "blocked_on": "owner must edit the existing task; a task created by the operator cannot push (tested 2026-11-28)"
   }
+ ],
+ "pending_owner_approvals": [
+  "Set-up guide steps 0-8 (infrastructure/SETUP-GUIDE.md), including official trade mark register check and making the repository private or creating a private one",
+  "P1: E6 messages, terms and prospect list",
+  "P2: E4 messages, terms and prospect list",
+  "P3 (only after three E4 reservations): statutory request text",
+  "Two credential forms",
+  "Scheduled task edit (environment capital-ops, connectors removed) then 'update the operator's instructions'",
+  "Standing authorisations A1-A8 (none in force)",
+  "Employment-contract clauses"
+ ],
+ "last_verified_progress": "2026-11-28: scheduled-session connectivity verified in capital-ops (12 hosts reachable, others refused); repository push from an operator-created task refused; mailbox scoping and trial terms confirmed at source; E6 product file built (213 rows, no release problems); 22 E6 prospects checked at Companies House (16 ready).",
+ "next_checkpoint": "Owner reply to the setup request; next scheduled run checks OWNER_ACTIONS.md and network access first",
+ "programme": {
+  "start": "2026-11-27",
+  "review_deadline": "2026-12-27"
+ },
+ "blockers": [
+  "Scheduled-run shell: CONNECT 403 policy denial for gov.uk, Companies House, DuckDuckGo (2026-11-28 00:40Z)",
+  "WebFetch in unattended runs: PROVENANCE_REQUIRED, approval not answerable"
+ ],
+ "functions": {
+  "1_active_experiments": {
+   "live": [],
+   "prepared": [
+    "E6",
+    "E4"
+   ],
+   "held_ready": [
+    "E3"
+   ],
+   "rule": "customer obligations and replies first; then the live experiment; then the next one"
+  },
+  "2_opportunity_radar": {
+   "record": "radar/RADAR.md",
+   "cadence": "weekly, first run on or after Monday; at most about ten lookups or one capped research agent",
+   "next_due": "2026-11-30"
+  },
+  "3_simulated_validation": {
+   "record": "simulation/REGISTER.md",
+   "books": [
+    "S1 trend rule on five funds",
+    "S2 crypto trend rule",
+    "S3 asset watch"
+   ],
+   "cadence": "S1/S2 weekly when network allows; S3 monthly, next 2026-12-28"
+  }
+ }
 }

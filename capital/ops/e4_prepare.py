@@ -108,18 +108,18 @@ def render(p):
     own = (f"{p['company']} holds {p['live_contracts']} live public-sector contract{'s' if p['live_contracts'] != 1 else ''} in this market that I can find in published award notices"
            + (f", {p['own_ending_within_18_months']} of them ending within 18 months." if p["own_ending_within_18_months"] else "."))
     rows = "\n".join(f"- {r['buyer']}: held by {r['incumbent_supplier']}, £{float(r['awarded_value_gbp']):,.0f}, ends {r['contract_end']}" for r in p["_sample"])
-    return (f"To: {p['email']}\nSubject: {short.capitalize()} contracts that never reach the tender portals\n\nHello,\n\n{own}\n\n"
-            "Published award notices are the easy part: the usual tender tools already list them, some for free. What no tool shows is the work that was never published. "
-            f"I can find a live {short} contract in published notices for only {councils} English councils, {nhs} NHS bodies and {police} police forces. "
-            "For the rest there is no award notice that I can find, so the incumbent and the end date do not appear in those tools.\n\n"
-            "We are asking those bodies directly, under the Freedom of Information Act, who holds the contract, what it is worth, when it ends and what extensions remain. "
-            f"The replies go into one spreadsheet with the source for every row, alongside the published contracts ({s['contracts']} since 2020, {s['ending_within_18_months']} ending within 18 months).\n\n"
+    return (f"To: {p['email']}\nSubject: {short.capitalize()} contracts with no published award notice\n\nHello,\n\n{own}\n\n"
+            f"Published award notices cover only part of this market. I can find a live {short} contract in published notices for only {councils} English councils, {nhs} NHS bodies and {police} police forces. "
+            "For the rest I can find no award notice.\n\n"
+            "We are considering compiling the missing ones: asking each of those bodies, under the Freedom of Information Act, who holds the contract, what it is worth, when it ends and what extensions remain, "
+            f"and putting the replies into one spreadsheet with the source for every row, alongside the published contracts ({s['contracts']} since 2020, {s['ending_within_18_months']} ending within 18 months). "
+            "No requests have been sent yet. We will go ahead only if enough suppliers want the result.\n\n"
             f"To show the format, five published contracts ending in the next 4 to 14 months that you do not hold:\n{rows}\n\n"
-            "The report is £295, payable on delivery, which we expect by {delivery_date}. Reply \"reserve\" and we will hold a copy for you. "
-            "There is nothing to pay until it arrives, and a full refund within 14 days if it is not as described.\n\n"
-            "Its limits: public bodies have 20 working days to reply, and some answer late or refuse. The report will list exactly which bodies answered.\n\n"
+            "The report would be £295, payable on delivery. Public bodies have 20 working days to reply, so delivery would be about eight weeks after we go ahead. "
+            "Reply \"reserve\" and we will tell you within two weeks whether it is going ahead. There is nothing to pay unless and until you receive it, and a full refund within 14 days if it is not as described.\n\n"
+            "Some bodies answer late or refuse. The report would list exactly which bodies were asked and which answered.\n\n"
             "{owner_name}, sole trader trading as {trading_name}\n{service_address} · {phone}\n"
-            "Compiled by AI software from Contracts Finder award notices (Open Government Licence v3.0) and from public bodies' replies, and checked before sending.\n"
+            "The figures above were compiled by AI software from Contracts Finder award notices (Open Government Licence v3.0) and checked before sending.\n"
             f"You are receiving this once because {p['company']} is a supplier in this market. Reply \"stop\" and we will not contact you again.\n")
 with open(f"{out}/outreach-drafts.md", "w") as f:
     f.write("# E4 outreach drafts (NOT SENT)\n\nExamples only (two per arm); `ops/e4_prepare.py` generates one per prospect. Placeholders in braces are filled after owner set-up.\n\n"

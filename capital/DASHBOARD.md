@@ -1,6 +1,6 @@
 # CAPITAL dashboard
 
-Updated 2026-11-28 02:19 UTC by the operator. This is the one place to see CAPITAL's position; it is revised at the end of every run.
+Updated 2026-11-28 02:40 UTC by the operator. This is the one place to see CAPITAL's position; it is revised at the end of every run.
 Key: **[V]** verified result · **[E]** estimate · **[A]** assumption · **[U]** built but untested.
 
 ## Money [V]
@@ -14,11 +14,11 @@ Capital available: £25 approved for E4 set-up, within the £100 starting budget
 | Stage | Status | Basis |
 |---|---|---|
 | Opportunity discovery | Operational [V] | 13 mechanisms screened; weekly radar running |
-| Finding and qualifying prospects | Operational [V] | 213 for E3 and 28 for E4, each checked against Companies House and the firm's own site |
+| Finding and qualifying prospects | Operational [V] | 213 for E3, 28 for E4 and 22 for E6, each checked against Companies House and the firm's own site |
 | Customer acquisition (outreach) | Untested [U] | No message has ever been sent. Needs the mailbox and your approval of the text |
-| Sales conversation and replies | Untested [U] | Reply templates not yet written |
+| Sales conversation and replies | Untested [U] | Reply templates written for E6; none used |
 | Payment | Not set up [U] | Needs your Stripe account |
-| Fulfilment | Part built | Carbon-plan generator tested on test data [V], never on a customer [U]. Report builder works on published data [V]; collecting replies from public bodies is untested [U] |
+| Fulfilment | Part built | E6 list file builds with release checks passing [V], never delivered [U]. Carbon-plan generator tested on test data [V]. Report builder works on published data [V]; collecting replies from public bodies is untested [U] |
 | Customer support | Untested [U] | Rules drafted only |
 | Accounting | Minimal [V] | `ledger.csv` exists and is empty; reconciliation with the processor untested [U] |
 | Profit measurement | Operational [V] | This dashboard; nothing to measure yet |
@@ -29,10 +29,11 @@ Capital available: £25 approved for E4 set-up, within the £100 starting budget
 ## Opportunities
 | | Item | State | Next step |
 |---|---|---|---|
-| Primary | **E4** unpublished renewals report for suppliers (£295, 28 prospects) | Approved for controlled validation; re-scoped after competitor check; waiting on set-up and approval of messages | Owner: set-up guide and approvals |
-| Fallback | **E3** carbon plans for NHS suppliers | Suspended, launch-ready | None unless reactivated |
+| Short cycle | **E6** checked list of 213 NHS suppliers with no current Carbon Reduction Plan, sold to firms that sell such plans (£195, 22 prospects, product exists) | Prepared 2026-11-28; days from approval to a possible first payment | Owner: approve pack P1; take the list out of public view |
+| Longer lead | **E4** unpublished renewals report for suppliers (£295, 28 prospects) | Approved for controlled validation. Outreach first; statutory requests only if three firms reserve, and then only with your approval | Owner: approve pack P2 |
+| Fallback | **E3** carbon plans for NHS suppliers | Suspended, launch-ready. Selling its list in E6 means a restart needs a fresh list | None unless reactivated |
 | Candidate | **E5** fixing a measured weakness for hand-picked firms | Sketch only | Choose one weakness from the 564 sites already checked |
-| Candidate | Selling unpublished-contract data to the tender-tool companies | Idea, depends on E4 data | Hold |
+| Candidate | Referring the 213 companies to an established plan seller for a fee | Idea; one seller advertises £1,000 per referred client | Follow-on to E6 if buyers prefer paying on results |
 | Simulated | S1 trend rule on five funds; S2 crypto trend rule; S3 asset watch | Running on paper | Weekly and monthly updates |
 
 Rejected, with the deciding reason: open bounties (payers closing programmes; measured trial earned $0) · contingency recovery (needs account access and trust; platforms automate it) · freelance marketplaces (not autonomous) · marketplace listings (new listings get a median of one user [V]) · inbound lead capture (no traffic for new sites) · deal origination (needs a track record; about 20 months to a deal) · buying assets at £200 to £5,000 (earn too little; unverifiable) · goods arbitrage (no evidence of net return; hands-on) · published-data renewals calendar (free at Stotles [V]).
@@ -41,12 +42,16 @@ Rejected, with the deciding reason: open bounties (payers closing programmes; me
 - Prospecting pipeline: award notices to company to verified website to detected signal (`ops/`). Measured on 35 hand-checked sites.
 - Carbon Reduction Plan generator with 428 official factors, 63 tests, independent recalculation matched on 48 of 48 lines.
 - Contract data: 723 occupational health and 486 learning-system contracts since 2020; 7,160 technology award rows.
-- E3 prospect list (213) and restart pack. E4 prospect list (28) with individual samples.
+- E3 prospect list (213) and restart pack. E4 prospect list (28) with individual samples. E6 product file builder and prospect list (22).
 - Trading backtests and paper ledger. Research library of 13 mechanism files.
 
 ## Decisions (newest first)
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-11-28 | E6 prepared as the shorter-cycle experiment | Only candidate with a finished product; payment possible within days. Own estimate: a sale is less likely than not [E] |
+| 2026-11-28 | E4: 28 vendor emails before any statutory request; requests only on three reservations and your approval | Owner instruction; no waiting on public bodies in December |
+| 2026-11-28 | Name Oakmarch kept; never to be used for financial services | No company or .uk domain of that name [V]; no mark found on a third-party index [P]; near name OAKMARK is registered for investment services |
+| 2026-11-28 | Scheduled operator to be moved by the owner editing the existing task | Test showed a task I create cannot push to the repository [V] |
 | 2026-11-28 | E4's paid product changed to unpublished contracts | Published expiry data is free at Stotles and £155 to £189 a month at BidSkim |
 | 2026-11-28 | Mailbox on Microsoft 365, not Google | Google's terms bar unsolicited commercial email outright; Microsoft's bar bulk spam |
 | 2026-11-28 | Dedicated environment `capital-ops` created with a twelve-host allowlist; owner approved [V] | Default environment was unrestricted and shared with your other work |
@@ -57,6 +62,7 @@ Rejected, with the deciding reason: open bounties (payers closing programmes; me
 ## Pipeline [V]
 | Experiment | Prospects | Contacted | Replies | Reservations | Paid | Conversion |
 |---|---|---|---|---|---|---|
+| E6 | 22 (16 ready) | 0 | 0 | n/a | 0 | n/a |
 | E4 | 28 | 0 | 0 | 0 | 0 | n/a |
 | E3 | 213 | 0 | 0 | 0 | 0 | n/a |
 
@@ -68,22 +74,25 @@ Rejected, with the deciding reason: open bounties (payers closing programmes; me
 | S3 asset watch | 2026-11-28 | 8 listings tracked | next check 2026-12-28 | |
 
 ## Radar: newest items
-1. Tender tools share one gap: contracts that were never published (score 9). In E4.
-2. The same data could be sold to the tender-tool companies (score 7). Held.
-3. Cyber Essentials discount scheme may lift demand for 350+ certification bodies (score 8). Terms not yet read.
+1. Checked lists as a product line: the prospecting pipeline's output is itself saleable to firms that sell to those companies (score 8). In E6.
+2. Plan sellers pay for results: one advertises £1,000 per referred client (score 7). Follow-on to E6.
+3. Tender tools share one gap: contracts that were never published (score 9). In E4.
 Full log: `radar/RADAR.md`. Next weekly pass: on or after 2026-11-30.
 
 ## Capabilities and blockers
-- **Can do now:** research, data collection from allowed public sources, prospect checks, document and report generation, paper trading, record keeping.
+- **Can do now:** research, data collection from allowed public sources, prospect checks, document, list and report generation, paper trading, record keeping.
 - **Cannot do yet:** send or read email, take payment, publish a website. All wait on the set-up guide.
-- **Environment:** `capital-ops` exists and is in use in this session [V]. The scheduled task still has to be pointed at it (set-up guide, step 6.3).
+- **Verified today [V]:** unattended sessions in `capital-ops` reach all twelve allowed hosts and are refused others. Mailbox scoping method and trial terms confirmed at Microsoft's pages.
+- **Found today [V]:** this repository is public, and it holds the E6 product. E6 cannot start until the list is out of public view (set-up step 5).
+- **Found today [V]:** I cannot move the scheduled operator to `capital-ops` myself; a task I create cannot push. You edit the existing task (set-up step 8, 3 minutes).
+- **Not confirmed:** the official trade mark register for the name (set-up step 0, 5 minutes).
 
 ## Owner actions
-`OWNER_ACTIONS.md`: (1) set-up guide, about 60 to 75 minutes once; (2) approve the outreach text, terms and statutory request text; (3) enter two secrets in the secure forms when asked (the environment card is already approved).
+`OWNER_ACTIONS.md`, in order: (1) set-up guide steps 0 to 8, about 60 minutes once, about £5; (2) approve pack P1 (E6) and pack P2 (E4) in `infrastructure/STANDING-AUTHORISATIONS.md`; (3) enter two secrets in the secure forms when asked.
 
 ## Next actions and milestones
 1. Owner completes set-up; operator tests mail and payment end to end on a message and a £1 test invoice to the owner. **Milestone: first verified pass through send, receive, invoice, pay, record.**
-2. Send 28 approved emails and the first statutory requests. **Milestone: first genuine customer interaction.**
-3. Compile and deliver the report in January; invoice reservers. **Milestone M4: first independent customer payment.**
+2. E6: send to the ready firms, five on day one. **Milestone: first genuine customer interaction.** Judged ten days after the first send. **Milestone M4 if one pays: first independent customer payment.**
+3. E4: send the 28 emails alongside E6. Go or no-go on statutory requests 14 days later.
 4. Weekly: radar pass, paper books, this dashboard, Friday report.
 Programme review: 27 December 2026.

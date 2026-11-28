@@ -1,4 +1,4 @@
-# Statutory request text (FOR OWNER APPROVAL; not sent)
+# Statutory request text (NOT SENT; to be approved only after E4's go threshold of three reservations is met)
 
 To be sent from hello@oakmarch.co.uk in the owner's name to public bodies with no live published contract in the market. First batch: English councils and police forces (about 280 bodies), no more than 60 a day. One request per body.
 
