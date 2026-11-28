@@ -1,4 +1,4 @@
-# State (updated 2026-11-28 02:02 UTC)
+# State (updated 2026-11-28 02:17 UTC)
 
 ## Latest (2026-11-28)
 - Final consolidated E3 setup request presented (OWNER_ACTIONS.md top): £60 envelope now, insurance about £74-£125 only after a paid order, email channel, fixed prices £249/£149/£49, trading name, per-plan owner review, draft terms. Awaiting reply. Spent £0. Revenue £0.
@@ -27,6 +27,11 @@ Canonical directive: `MANDATE.md` (CAPITAL Final Operating Mandate v1.0), with `
 - Old "CAPITAL operating cycle" task (trig_011WoZfwCJmbERHrXQkT5ZqB) disabled 2026-11-27 21:35 with owner approval; confirmed enabled=false.
 - Lock: `LOCK` file in this folder holds start time (UTC ISO) of the run in progress. A run that finds a LOCK younger than 2 hours makes no changes. Delete LOCK at the end of every run.
 - Cycle log: append one line per run to `cycles.log` (UTC time, what was done, result).
+
+## Latest owner instructions (2026-11-28, `history/2026-11-28-owner-e4-approval.md` and `history/2026-11-28-owner-external-review.md`)
+- E4 approved for controlled validation; cap £25; external messages need final approval. Infrastructure must serve all future operations: see `infrastructure/SETUP-GUIDE.md`.
+- Competitors checked; E4's paid product is now the unpublished contracts. `DASHBOARD.md` is canonical and updated every run.
+- Priority: prove the whole commercial cycle works, then reduce owner involvement through standing authorisations (`infrastructure/STANDING-AUTHORISATIONS.md`, proposal only).
 
 ## Operating mode (owner, 2026-11-28, MANDATE-AMENDMENT-3.md)
 - Move from researching to testing. Three standing functions, one schedule: active experiments, weekly opportunity radar, background simulation (`OPERATING.md`).

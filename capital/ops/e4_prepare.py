@@ -93,20 +93,33 @@ with open(f"{out}/prospects.csv", "w", newline="") as f:
     w.writerow(["arm", "company", "company_number", "company_type", "website", "email", "contracts_on_record", "live_contracts", "own_ending_within_18_months"])
     for p in final:
         w.writerow([p["arm"], p["company"], p["company_number"], p["company_type"], p["website"], p["email"], p["contracts_on_record"], p["live_contracts"], p["own_ending_within_18_months"]])
+def coverage(slug):
+    live = [r for r in cal[slug] if r["months_until_end"] not in ("",) and float(r["months_until_end"]) >= 0]
+    count = lambda pat: len({r["buyer"].strip().lower() for r in live if re.search(pat, r["buyer"].lower())})
+    return count(r"council|borough|corporation of london"), count(r"\bnhs\b"), count(r"police|constab|crime commissioner")
+
+
+SHORT = {"oh-eap": "occupational health", "lms": "learning management system"}
+
+
 def render(p):
-    s, lab = summ[p["arm"]], LABEL[p["arm"]]
-    own = (f"{p['company']} holds {p['live_contracts']} live public-sector contract{'s' if p['live_contracts'] != 1 else ''} in this market that I can see in published award notices"
+    s, lab, short = summ[p["arm"]], LABEL[p["arm"]], SHORT[p["arm"]]
+    councils, nhs, police = coverage(p["arm"])
+    own = (f"{p['company']} holds {p['live_contracts']} live public-sector contract{'s' if p['live_contracts'] != 1 else ''} in this market that I can find in published award notices"
            + (f", {p['own_ending_within_18_months']} of them ending within 18 months." if p["own_ending_within_18_months"] else "."))
     rows = "\n".join(f"- {r['buyer']}: held by {r['incumbent_supplier']}, £{float(r['awarded_value_gbp']):,.0f}, ends {r['contract_end']}" for r in p["_sample"])
-    return (f"To: {p['email']}\nSubject: {s['ending_within_18_months']} public-sector {lab.split(' and ')[0]} contracts end in the next 18 months\n\nHello,\n\n{own}\n\n"
-            f"I have compiled every published public-sector {lab} contract awarded since January 2023: {s['contracts']} contracts from {s['buyers']} buyers, each with the incumbent, value and end date. "
-            f"{s['ending_within_18_months']} of them end within 18 months, worth £{s['ending_within_18_months_value_gbp'] / 1e6:.1f}m in total.\n\n"
-            f"Five ending in the next 4 to 14 months that you do not hold:\n{rows}\n\n"
-            "The full calendar is a spreadsheet with a link to the source notice for every row, and includes one refresh in six months. It costs £295: {payment_link}. "
-            "If you find material errors, tell us within 14 days for a full refund.\n\n"
-            "Its limits: it covers contracts that were published. Some bodies publish late or not at all, and extensions are not always announced.\n\n"
+    return (f"To: {p['email']}\nSubject: {short.capitalize()} contracts that never reach the tender portals\n\nHello,\n\n{own}\n\n"
+            "Published award notices are the easy part: the usual tender tools already list them, some for free. What no tool shows is the work that was never published. "
+            f"I can find a live {short} contract in published notices for only {councils} English councils, {nhs} NHS bodies and {police} police forces. "
+            "For the rest there is no award notice that I can find, so the incumbent and the end date do not appear in those tools.\n\n"
+            "We are asking those bodies directly, under the Freedom of Information Act, who holds the contract, what it is worth, when it ends and what extensions remain. "
+            f"The replies go into one spreadsheet with the source for every row, alongside the published contracts ({s['contracts']} since 2020, {s['ending_within_18_months']} ending within 18 months).\n\n"
+            f"To show the format, five published contracts ending in the next 4 to 14 months that you do not hold:\n{rows}\n\n"
+            "The report is £295, payable on delivery, which we expect by {delivery_date}. Reply \"reserve\" and we will hold a copy for you. "
+            "There is nothing to pay until it arrives, and a full refund within 14 days if it is not as described.\n\n"
+            "Its limits: public bodies have 20 working days to reply, and some answer late or refuse. The report will list exactly which bodies answered.\n\n"
             "{owner_name}, sole trader trading as {trading_name}\n{service_address} · {phone}\n"
-            "Compiled by AI software from Contracts Finder award notices (Open Government Licence v3.0) and checked before sending.\n"
+            "Compiled by AI software from Contracts Finder award notices (Open Government Licence v3.0) and from public bodies' replies, and checked before sending.\n"
             f"You are receiving this once because {p['company']} is a supplier in this market. Reply \"stop\" and we will not contact you again.\n")
 with open(f"{out}/outreach-drafts.md", "w") as f:
     f.write("# E4 outreach drafts (NOT SENT)\n\nExamples only (two per arm); `ops/e4_prepare.py` generates one per prospect. Placeholders in braces are filled after owner set-up.\n\n"

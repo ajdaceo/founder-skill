@@ -22,3 +22,6 @@ Weekly, capped (see `OPERATING.md`). Score each item 0 to 3 on: money already ch
 | 2026-11-28 | Small online assets: content sites falling out of favour, small software and video channels rising | Marketplace reports 2026, `research/mechanisms/acquire.txt` | money 2, test 2, edge 1, time 1 = 6 | Simulated asset watch started; owner may fund an exceptional find |
 | 2026-11-28 | Ticket resale price cap planned in the UK | `research/mechanisms/arbitrage.txt` | n/a | Closed: avoid |
 | 2026-11-28 | UK retail cannot trade crypto derivatives; new crypto authorisation regime from 25 Oct 2027 | `research/mechanisms/trading.txt` | n/a | Constraint noted |
+| 2026-11-28 | Tender tools (Stotles, BidSkim) sell expiry data from published notices only; unpublished contracts are a gap they share | Their own pages; our count of 69 English councils with a live published occupational health contract | money 3, test 3, edge 2, time 1 = 9 | In E4 (re-scoped) |
+| 2026-11-28 | The same unpublished-contract data could be sold or licensed to the tender-tool companies | Inference from the gap above; no contact made | money 2, test 2, edge 2, time 1 = 7 | Hold until E4 data exists |
+| 2026-11-28 | Fixing a measured weakness for hand-picked small companies | `research/mechanisms/outreach.txt`; 564 sites already checked | money 2, test 2, edge 1, time 1 = 6 | Candidate E5 |

@@ -1,29 +1,26 @@
-# Owner actions (updated 2026-11-28 02:02 UTC)
+# Owner actions (updated 2026-11-28 02:17 UTC)
 
-## ONE REQUEST: approve and set up experiment E4 (asked 2026-11-28)
-**What.** A controlled test of whether suppliers will pay £295 for a calendar of when their competitors' public-sector contracts end. 28 hand-picked companies in two markets (12 occupational health, 16 learning systems), one individual email each and one follow-up. Record: `experiments/E4-vendor-renewals-calendar.md`. Example emails: `experiments/E4-assets/outreach-drafts.md`. Prospects: `experiments/E4-assets/prospects.csv`.
+See `DASHBOARD.md` for the whole position. Three things are needed from you, in this order.
 
-**Why.** The data is built and checked (449 and 303 published contracts; 151 and 102 ending within 18 months). Only real buyers can show whether it sells.
+## 1. Set up the shared business infrastructure (about 60 to 75 minutes, once; about £5 now)
+Follow `infrastructure/SETUP-GUIDE.md`. It covers the identity (recommended trading name: Oakmarch), domain, website hosting, mailbox, payments, private repository, operating environment, credentials and the ICO check, with links and verified prices. It is built for every future experiment, not only E4.
 
-**Cost and risk.** Cap £25: a domain (about £5) and the first month of a mailbox (free trial, then about £6.50 a month if kept). Worst case: £25 and three weeks. Emails go only to limited companies' published company addresses, with your identity, an AI disclosure and an opt-out.
+## 2. Approve what leaves the building (E4)
+E4 was re-scoped after checking the competitors you named: published expiry data is free at Stotles, so the paid product is now the contracts that were never published. Please approve or amend:
+- **Outreach emails** to 28 companies: `experiments/E4-assets/outreach-drafts.md` (four examples; the rest follow the same template with each firm's own figures). Prospect list: `experiments/E4-assets/prospects.csv`.
+- **Commercial terms**: `experiments/E4-assets/terms.md` (£295 on delivery, refund within 14 days, liability limited to the price).
+- **Statutory request text** in your name to about 280 public bodies: `experiments/E4-assets/foi-request-draft.md`.
+Nothing is sent until you say so.
 
-**What counts as success.** One paid order within 21 days of the first send; three is strong. Fewer than four serious replies and no order is a fail, recorded with the reason.
+## 3. Approve access when I ask
+- The environment card for `capital-ops` (limited network).
+- Two secure credential forms (mailbox app and Stripe restricted key), after steps 3 and 4 of the guide.
 
-**Alternatives.** Send the same emails yourself from an existing business mailbox (no set-up, about 30 minutes of your time, but I cannot read replies). Or decline, and I move to the next candidate.
+## Later, not now
+- Standing authorisations so routine actions stop needing you: proposal in `infrastructure/STANDING-AUTHORISATIONS.md`. None is in force.
+- Still outstanding from before: employment-contract clauses.
 
-**Other work continues** either way: the radar and the paper trading need nothing from you.
-
-### If you approve, these are the set-up steps (about 45 minutes, once; they also serve later experiments)
-1. Reply "E4 approved" (or amend the price, refund rule or wording).
-2. Choose a trading name, and give the address and phone number that must appear on business emails.
-3. Register a .co.uk domain for that name in your own name (about £5 a year).
-4. Start a Microsoft 365 Business Basic trial on that domain with one mailbox. Choose monthly billing, not annual. Register an app with permission to send and read that mailbox. I will ask for its secret through the secure credential form, never in chat.
-5. Open a Stripe account as a sole trader and create a £295 payment link. I will ask for a restricted read-only key the same way.
-6. Create a private GitHub repository for replies and customer records, and give this operator access. This repository is public.
-7. Give the scheduled task's environment full network access. The last scheduled run could not reach any website, so unattended runs cannot send, read replies, update the paper books or scan for opportunities.
-8. Take the ICO's data protection fee self-assessment (five minutes). Replies will contain named people's details; a fee of £47 to £52 may be due.
-
-Still outstanding from before, when convenient: employment-contract clauses; removing Gmail, Calendar and Docs from the scheduled task. Silence is not consent.
+Silence is not consent.
 
 ---
 

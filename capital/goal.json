@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-28T02:02:31Z",
+  "updated_utc": "2026-11-28T02:17:47Z",
   "primary_objective": "Generate, preserve and compound capital through measurable economic activity, as an autonomous commercial operator and capital allocator for the owner (MANDATE.md, amendments 1 and 2).",
   "current_mission": "First genuine independent customer payment, delivered and supported, with a viable path to repeatable net profit.",
   "milestones": {
@@ -19,7 +19,7 @@
     "M13": "not_started"
   },
   "current_milestone": "M2",
-  "current_experiment": "E4 PREPARED, awaiting owner approval: experiments/E4-vendor-renewals-calendar.md (28 prospects, GBP 295 offer, GBP 25 cap). E3 suspended, launch-ready.",
+  "current_experiment": "E4 APPROVED for controlled validation (cap GBP 25; external messages need final approval); re-scoped to unpublished contracts after competitor check. Waiting on owner set-up (infrastructure/SETUP-GUIDE.md). E3 suspended, launch-ready. E5 candidate.",
   "finance_gbp": {
     "revenue": 0,
     "expenditure": 0,
@@ -29,30 +29,29 @@
     "max_budget_with_owner_approval": 250,
     "approval_note": "E3 GBP 25 conditional approval suspended by owner 2026-11-28; nothing spent"
   },
-  "current_priority": "Operate the three functions in OPERATING.md. E4 waits on the owner's approval and set-up (OWNER_ACTIONS.md). No spend or sending before that.",
+  "current_priority": "Verify the full commercial cycle end to end with E4: send, receive, invoice, pay, deliver, record. Keep radar and simulations running. Update DASHBOARD.md at the end of every run.",
   "next_actions": [
-    "If the owner has approved E4: follow OWNER_ACTIONS.md set-up; rebuild calendars (ops/cf_report.py), re-run ops/e4_prepare.py, hand-check each prospect's figures, send 28 emails, log results in the E4 record",
-    "If not yet approved: do not send. Prepare the next experiment candidate from radar/RADAR.md (highest score with a cheap test)",
-    "Simulation: when network allows, python3 trading/fetch_data.py <dir> && python3 trading/paper.py <dir>; commit trading/paper/",
-    "Radar: weekly pass due on or after 2026-11-30; append to radar/RADAR.md",
-    "Do NOT develop or spend on E3. Weekly report due Friday 2026-12-04"
+    "If the owner has completed set-up steps: request the two credentials through the secure form (login.microsoftonline.com basic = client id + secret; api.stripe.com bearer restricted key); test mail send/read to the owner's address and a GBP 1 test invoice; record the result on the dashboard",
+    "If the owner has approved the texts: rebuild calendars (ops/cf_report.py), re-run ops/e4_prepare.py, hand-check each prospect's figures, send 28 emails (max 20 a day), then statutory requests (max 60 a day); log everything in the private repository",
+    "If neither: write the reply templates, the website pages (identity, services, terms, privacy) and the FOI recipient list (councils and police without a live published contract; request addresses from whatdotheyknow.com authority list)",
+    "Weekly: radar pass (due on or after 2026-11-30), paper books, DASHBOARD.md, Friday report 2026-12-04",
+    "E5: choose one measurable weakness from the 564 checked sites and write the experiment record",
+    "Do NOT develop or spend on E3"
   ],
   "blocked_actions": [
     {
-      "action": "Sending E4 emails; any spend",
-      "blocked_on": "owner: E4 approval, trading identity, domain, mailbox, Stripe"
-    },
-    {
-      "action": "Unattended radar, paper trading and sending in scheduled runs",
-      "blocked_on": "owner: full network access for the scheduled task's environment"
+      "action": "Any sending, publishing or spend",
+      "blocked_on": "owner set-up and final approval of external communications"
     }
   ],
   "pending_owner_approvals": [
-    "E4 approval and set-up (OWNER_ACTIONS.md)",
-    "Employment-contract clauses",
-    "Remove Gmail/Calendar/Docs from scheduled task"
+    "Set-up guide steps 0-7",
+    "E4 outreach text, terms and statutory request text",
+    "capital-ops environment card and two credential forms",
+    "Standing authorisations (later)",
+    "Employment-contract clauses"
   ],
-  "last_verified_progress": "2026-11-28: three operating functions set up (OPERATING.md). E4 prepared: two category calendars built from Contracts Finder (449 and 303 contracts), 28 vetted prospects with individual samples, drafts written. Paper books and asset watch started.",
+  "last_verified_progress": "2026-11-28: competitor check at source (Stotles free expiry data; BidSkim GBP 155-189/month) -> E4 re-scoped to unpublished contracts (only 69 English councils have a live published occupational health contract). Setup guide written with verified provider terms and prices; dashboard, standing-authorisation proposal, terms and statutory request text drafted.",
   "next_checkpoint": "Owner reply to the setup request; next scheduled run checks OWNER_ACTIONS.md and network access first",
   "programme": {
     "start": "2026-11-27",

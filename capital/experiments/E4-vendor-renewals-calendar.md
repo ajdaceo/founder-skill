@@ -1,6 +1,6 @@
-# E4: Renewals calendar for suppliers in one public-sector category
+# E4: Unpublished renewals report for suppliers in one public-sector market
 
-Status: PREPARED 2026-11-28. Not live. Needs the owner's approval and set-up in `OWNER_ACTIONS.md` before anything is sent.
+Status: APPROVED by owner 2026-11-28 for controlled validation (cap £25; external messages need final approval). RE-SCOPED the same day after the competitor check below. Not live.
 
 ## Hypothesis
 A supplier that depends on public-sector contracts in a narrow category will pay for a complete, checked calendar showing when its competitors' contracts end.
@@ -52,8 +52,31 @@ Per arm: delivered, replies, substantive replies, orders, refunds, and what repl
 ## If it passes
 Edition two adds contracts that were never published, obtained by statutory request to the bodies missing from the calendar (each request asks for re-use under the Open Government Licence). More categories follow on the same pipeline; each is a separate small product.
 
+## Competition (checked at source 2026-11-28) and what it changes
+| | Stotles | BidSkim | This report |
+|---|---|---|---|
+| Expiring contracts from published notices | Yes, including on the free plan ("Expiring contracts and awards"); award search is free | Yes: end date, extensions, incumbent, value; 22,900+ contracts ending within 12 months; updated daily | Yes, as a courtesy sample only |
+| Price | Free; Basic £99 a month billed yearly (£1,188 + VAT); Growth from £475 a month | Monitor £79 a month; Predict (renewals) £189 a month, or £155 billed yearly | £295 once per market |
+| Contracts never published | No evidence they have them | No evidence they have them | The paid product |
+
+**Finding.** A paid calendar built only from published notices is not worth £295: Stotles shows the same facts free and BidSkim adds daily monitoring. That version of E4 is withdrawn.
+
+**What they cannot show.** Both read published notices. In occupational health we find a live published contract for only 69 English councils, 14 NHS bodies and 10 police forces (Contracts Finder, 2020 to 2026, title search; some contracts will sit under other titles or frameworks). The rest are in no notice.
+
+**Re-scope.** The paid product is the unpublished contracts, obtained by one short Freedom of Information request per body, compiled with the published ones. Payment on delivery. The published-data sample in each email shows competence, not the product.
+
+**Still unproven.** Whether suppliers value the unpublished contracts enough to pay; how many bodies answer usefully; whether the tools add this later. The test answers the first two.
+
+## Revised test (supersedes the offer, pass lines and fulfilment above)
+- **Offer:** "Unpublished renewals report" for the market, £295 on delivery, reserve by reply, refund within 14 days if not as described. Terms: `E4-assets/terms.md`.
+- **Messages:** `E4-assets/outreach-drafts.md` (28 prospects; examples shown). Statutory request text: `E4-assets/foi-request-draft.md` (about 280 bodies in the first batch, 60 a day).
+- **Order of work after approval:** vendor emails and statutory requests go out in the same week, so the 20-working-day reply period is not wasted. Replies are logged; the report is compiled in January; invoices follow delivery.
+- **Pass:** three or more reservations within 21 days of the first email, and at least one invoice paid within 14 days of delivery. **Fail:** fewer than two reservations and fewer than four serious replies.
+- **Evidence timing:** reservations and replies before the 27 December review; payment evidence in late January.
+- **Second use of the data if vendors do not buy:** offer it to the tender-tool companies themselves (radar item).
+
 ## Results
 None yet.
 
 ## Next decision
-Owner: approve or amend the request in `OWNER_ACTIONS.md`.
+Owner: complete `infrastructure/SETUP-GUIDE.md`, and approve the messages, terms and statutory request text listed in `OWNER_ACTIONS.md`.

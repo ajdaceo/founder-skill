@@ -17,6 +17,11 @@ One operator, one schedule (the existing "CAPITAL operator" task and owner chat 
 - Record: `simulation/REGISTER.md`. Paper books and other zero-capital trials with fixed rules set in advance.
 - No real money, leverage or financial account without the owner's separate explicit approval.
 
+## Dashboard (last step of every run)
+- `DASHBOARD.md` is the one place to see CAPITAL's position. Update it before releasing the lock, even if nothing changed: money from `ledger.csv` and processor records, pipeline counts from the experiment records, simulations from `simulation/`, new radar items, blockers, owner actions, next actions.
+- Mark every figure as verified, estimate, assumption or untested. Keep it to one screen per section. Edit the file by hand; do not build tooling for it.
+- If a file named `STOP` exists in this folder, take no outward action and say so on the dashboard.
+
 ## Capital
 - Policy: `research/2026-11-28-capital-allocation-screen.md`. Validation tests are small and capped; scale follows a measured conversion number.
 - The owner may fund an exceptional opportunity, including an asset purchase, on evidence and separate approval. Do not assume purchases must wait for retained profit; do not assume funding either.

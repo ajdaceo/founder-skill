@@ -1,6 +1,6 @@
 """Build a category "renewals calendar" from Contracts Finder award notices (Open Government Licence v3.0).
 
-Usage: python3 cf_report.py OUT_DIR SLUG "phrase one" ["phrase two" ...] [--from 2023-01-01] [--today YYYY-MM-DD]
+Usage: python3 cf_report.py OUT_DIR SLUG "phrase one" ["phrase two" ...] [--from 2020-01-01] [--today YYYY-MM-DD]
 Writes OUT_DIR/SLUG-calendar.csv (one row per awarded contract), OUT_DIR/SLUG-suppliers.csv and OUT_DIR/SLUG-summary.json.
 A notice is included when its title contains one of the phrases. Read-only; one request per phrase.
 The full calendar is the paid product: keep OUT_DIR outside the public repository.
@@ -21,12 +21,30 @@ URL = "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json
 NOTICE = "https://www.contractsfinder.service.gov.uk/notice/"
 
 
-def search(phrase, frm):
-    body = {"searchCriteria": {"types": ["Contract"], "statuses": ["Awarded"], "keyword": f'"{phrase}"', "publishedFrom": frm + "T00:00:00"}, "size": 1000}
-    r = requests.post(URL, json=body, headers={"Accept": "application/json", "User-Agent": "CAPITAL research (read-only)"}, timeout=120)
+def search(phrase, frm, to=None):
+    crit = {"types": ["Contract"], "statuses": ["Awarded"], "keyword": f'"{phrase}"', "publishedFrom": frm + "T00:00:00"}
+    if to:
+        crit["publishedTo"] = to + "T23:59:59"
+    r = requests.post(URL, json={"searchCriteria": crit, "size": 1000}, headers={"Accept": "application/json", "User-Agent": "CAPITAL research (read-only)"}, timeout=120)
     r.raise_for_status()
     d = r.json()
     return d.get("hitCount", 0), [x.get("item", x) for x in d.get("noticeList", [])]
+
+
+def search_all(phrase, frm, today):
+    """Year-by-year windows so no search hits the 1,000-result ceiling."""
+    hits_total, items, truncated = 0, [], []
+    start = dt.date.fromisoformat(frm)
+    while start <= today:
+        end = min(dt.date(start.year, 12, 31), today)
+        hits, got = search(phrase, start.isoformat(), end.isoformat())
+        hits_total += hits
+        items += got
+        if hits > len(got):
+            truncated.append((phrase, start.year, hits, len(got)))
+        start = dt.date(start.year + 1, 1, 1)
+        time.sleep(0.8)
+    return hits_total, items, truncated
 
 
 def norm(s):
@@ -42,9 +60,8 @@ def build(out_dir, slug, phrases, frm, today):
     os.makedirs(out_dir, exist_ok=True)
     seen, rows, truncated = set(), [], []
     for ph in phrases:
-        hits, items = search(ph, frm)
-        if hits > len(items):
-            truncated.append((ph, hits, len(items)))
+        hits, items, trunc = search_all(ph, frm, today)
+        truncated += trunc
         for i in items:
             title = i.get("title") or ""
             if ph.lower() not in title.lower() or not i.get("awardedSupplier"):
@@ -66,7 +83,6 @@ def build(out_dir, slug, phrases, frm, today):
                          "awarded_date": (i.get("awardedDate") or "")[:10], "contract_start": start, "contract_end": end, "term_months": term,
                          "months_until_end": to_end, "region": i.get("regionText") or i.get("region") or "", "buyer_postcode": i.get("postcode") or "",
                          "source_notice": NOTICE + str(i.get("id")), "published": (i.get("publishedDate") or "")[:10]})
-        time.sleep(1)
     rows.sort(key=lambda r: (r["contract_end"] or "9999"))
     with open(os.path.join(out_dir, f"{slug}-calendar.csv"), "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
@@ -101,7 +117,7 @@ def build(out_dir, slug, phrases, frm, today):
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    frm = sys.argv[sys.argv.index("--from") + 1] if "--from" in sys.argv else "2023-01-01"
+    frm = sys.argv[sys.argv.index("--from") + 1] if "--from" in sys.argv else "2020-01-01"
     today = dt.date.fromisoformat(sys.argv[sys.argv.index("--today") + 1]) if "--today" in sys.argv else dt.date.today()
     args = [a for a in args if a not in (frm, today.isoformat())]
     print(json.dumps(build(args[0], args[1], args[2:], frm, today), indent=1))
