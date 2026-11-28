@@ -1,0 +1,36 @@
+Source notes compiled 2026-11-28 by a research agent (capped at about 25 lookups). Secondary sources unless stated; UNCONFIRMED items are marked.
+
+BOUNTY MARKET NOTES, 28 Nov 2026. Sources are search-result summaries and fetch summaries; primary pages often 404'd (algora.io/bounties, /community, huntr.com/bounties, Algora docs). Anything not quoted is UNCONFIRMED.
+
+1 OSS ISSUE BOUNTIES
+- Algora: no platform-wide open count or total paid found (UNCONFIRMED). Per-org snapshots only, undated: one org $21,100 across 229 bounties; another $135,424 / 1,172 bounties / 320 contributors / 55 countries (third-party listing). Payment route to UK individual, fees, KYC: UNCONFIRMED (docs 404).
+- Competition: https://marchantdev.github.io/blog/bot-farms.html (7 Mar 2026): asyncapi/cli issue drew 5 competing PRs in ~2h; tscircuit/jlcsearch 8 PRs in 36h; "automated tooling watching the Algora feed and opening draft PRs"; $3,500 golem-cli bounty on repo with last merge Sept 2023 (dead). Author: >2 competing PRs makes economics poor.
+- https://dev.to/zeroknowledge0x/i-let-an-ai-agent-hunt-open-source-bounties-for-48-hours-heres-what-i-learned-about-the-future-5131 : AI agent, 200+ bounties scanned, 12 "legitimate", 5 PRs, 0 merged (3 closed, 2 open), earnings $0, author claims "90% of bounties are fake", 5-10 devs per bounty. Self-published anecdote.
+- Opire: scan 22 Mar 2026 found 30 live bounties ~ $18,000, 8 on closed issues; Godot outlier $13,380 (dev.to farkharoumy). Older listing $500 paid across 13 bounties (Sept 2024, stale). IssueHunt, Gitcoin bounties: no usable stats. One anecdote: $500-800/month from bounties and tokens (dev.to zeroknowledge0x open-source money map).
+- AI PR rules: no Algora-wide rule found; maintainers set own (many projects ban/limit AI PRs: e.g. https://willmcgugan.github.io/ai-pr-policy, https://docs.asterisk.org/Development/Policies-and-Procedures/AI-Policy/). Public evidence of AI agents earning: none found.
+
+2 PAID OSS SECURITY REVIEW  (market is contracting sharply)
+- curl: bounty ended 31 Jan 2026 after 6 years, $86,000 paid, 78 vulns. https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/ ; ~20% of mid-2025 reports AI slop; later 2026 status unclear.
+- Internet Bug Bounty (HackerOne): paused to new submissions from 27 Mar 2026, still paused as of 21 May (latest found). Payouts cut: critical $9,250->$2,257, high $4,429->$1,009, medium $1,843->$297, low $597->$68; applied to already-filed reports; unpaid backlogs. https://www.theregister.com/security/2026/05/21/hackerone-takes-an-axe-to-its-bug-bounty-rewards/5244458
+- Google OSS VRP: product-vulnerability submissions suspended from 1 Oct 2026 until at least Q1 2027 due to AI slop; Patch Rewards still open, "up to $15,000" (secondary). https://helpnetsecurity.com/2026/10/05/google-ai-generated-vulnerability-reports-pause ; rules page https://bughunters.google.com/about/rules/6521337925468160/google-open-source-software-vulnerability-reward-program-rules. March 2026 CSO: Google stops accepting AI-generated submissions to OSS programme.
+- huntr: moving from OSS bounties to challenge-based AI-security competitions (launch 12 Jun 2026); historic OSS reports accessible until 30 Aug 2026; owned by Palo Alto Networks. Apache Software Foundation stopped accepting huntr reports (LLM slop). https://blog.huntr.com/huntr-2-0-stop-writing-reports-start-breaking-ai ; https://security.apache.org/huntr/. Current reward sizes UNCONFIRMED.
+- GitHub Security Lab bounties: UNCONFIRMED (not researched; GitHub cut public bounty payouts, Hacker News Jul 2026 https://thehackernews.com/2026/07/github-cuts-public-bounty-payouts.html - title only).
+- Node.js discontinued security bounties https://nodejs.org/es/blog/announcements/discontinuing-security-bug-bounties
+
+3 AUDIT CONTESTS
+- Code4rena winding down, announced 13 May 2026; Immunefi absorbs bug bounty customers. https://www.theblock.co/post/401179
+- Sherlock: contest docs path marked "deprecated, replaced by audit engine"; pivot to AI Audit Engine (Oct 2026). https://docs.sherlock.xyz/llms.txt ; https://sherlock.xyz/post/audit-engine-october-2026-update. Ripple/Sherlock $550K contest was announced (theblock 397376, date UNCONFIRMED). One Sherlock watson career total ~$107.84K (single profile).
+- Code4rena bot races: AI bots allowed in separate race, top 20 bots admitted after screening (code4rena.com/blog/new-to-code4rena-bot-races, older). Cantina/Immunefi: prize pools, leaderboards, AI rules, KYC UNCONFIRMED. Immunefi claims $6M+ paid across audit comps (undated).
+- Structural: duplicate findings split the pot (Runtime Verification article, old).
+
+4 MAINSTREAM BUG BOUNTY
+- XBOW topped HackerOne US leaderboard 2025, >1,000 reports, humans reviewed before submission to comply with policy on automated tools. https://www.techrepublic.com/article/news-ai-xbow-tops-hackerone-us-leaderboad/
+- Bugcrowd Mar 2026 enforcement: ID verification, rate limits, 30-day suspension after 10 consecutive rejections, permanent ban for automated spam (secondary). https://www.bugcrowd.com/blog/bugcrowd-policy-changes-to-address-ai-slop-submissions/
+- Intigriti requires AI-use disclosure. Census of 53 programs (stingrai, 28 Jul 2026): none ban AI-assisted outright; test is whether a human stands behind it. https://www.computing.co.uk/news/2026/security/bug-bounty-platforms-battle-ai-slop
+- HackerOne cut rewards generally May 2026 (Register).
+
+5 OTHER
+- Metaculus AI bot tournaments: $50k per season pool; Spring 2026 AIB $58,000; Q4 $30,000; Fall 2026 commercial bots not prize-eligible unless open-sourced. https://www.metaculus.com/aib/2026/spring/ ; spring results: "pros beat bots". Per-bot earnings UNCONFIRMED.
+- ARC Prize 2026 $2M, requires open-sourcing. https://arcprize.org/competitions/2026
+- Kaggle Gemma 4 agent competition $100,000 pool, closed 25 Nov 2026. Kaggle Community Hackathons from 19 Mar 2026.
+- OpenSats $21.6M allocated to FOSS (grant, human applicant, not outcome-paid).

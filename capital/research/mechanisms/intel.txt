@@ -1,0 +1,37 @@
+Source notes compiled 2026-11-28 by a research agent (capped at about 25 lookups). Secondary sources unless stated; UNCONFIRMED items are marked.
+
+INTEL NOTES 2026-11-28 (budget-limited; items marked UNCONFIRMED not verified)
+
+1 PRICES
+- Stotles Sales Studio: Free; Basic GBP99/m billed annually (GBP1,188+VAT; GBP150 monthly); Growth from GBP475/m (buyer intent, decision-maker contacts, supplier profiles); End-to-end from GBP873/m. https://www.stotles.com/pricing (also search snippet "From GBP50 per user/month" on https://www.stotles.com/ppc/list-of-awarded-government-contracts)
+- Tussell: annual subscription, NO published price; tiers Starter/Plus/Pro; 500 contact credits to unlimited. "typically cost more than basic tender monitoring tools". https://tussell.com/plans
+- Glenigan, Barbour ABI, Tracker, BiP, Contracts Advance: UNCONFIRMED (quote only; glenigan.com says "tiered pricing model"). Barbour ABI reports store: Full Report Package GBP29,850 ex VAT (research reports, not leads) https://store.barbour-abi.com/report/full-report-package/
+- PlanWatch GBP149/m trade planning leads https://planwatch.co.uk/for-trades/architects ; Planning Signal GBP49+VAT/m https://www.planningsignal.co.uk/planning-leads ; Apify planning scrapers ~$5/1k results to $0.08/application https://apify.com/ahmed_jasarevic/uk-scraper
+- Companies House new-company lists, CQC, sponsor licence feed prices: UNCONFIRMED (not searched successfully).
+Buyers: sales teams at suppliers to public sector (Stotles/Tussell), tradespeople (PlanWatch).
+
+2 "COMPANIES THAT JUST WON CONTRACTS"/"MISSING DOC" AS LEADS
+- No evidence found of anyone selling award-winner lists as leads to third-party vendors (searched once). Closest: Stotles Growth (supplier profiles, decision-maker contacts), Tussell contact credits, Bidstats free supplier award pages https://bidstats.uk/analysis/suppliers/press-data . "Missing CE/CRP" leads: none found. UNCONFIRMED beyond one search.
+
+3 BUYER GROUPS
+- IASME: "over 350 Certification Bodies" https://iasme.co.uk/cyber-essentials/ ; CB annual licence GBP550, per-assessment payment to CB GBP110 micro/GBP195 small (search snippet, IASME fee table; UNCONFIRMED exact page)
+- CE fee to client: GBP320+VAT micro, GBP440+VAT small (IASME FAQ) https://iasme.co.uk/cyber-essentials/faq-cyber-essentials ; CE Plus GBP1,500-3,000+VAT (third party). First Step Fund 75% discount, GBP80 min, cap GBP125+VAT, announced 3 Nov 2026 https://gov.uk/government/news/new-government-backed-cyber-security-protections-could-save-uk-businesses-thousands (check terms - this will shrink fee pool)
+- NACFB: >1,400 broker firms (Feb 2026, finance-connect.com/?p=47385); individual brokers ~2,400 (capalona, undated).
+- Carbon consultancies, bid writers counts: UNCONFIRMED (not searched).
+- Broker commission: no published typical figure (iwoca page says NACFB/FCA/BBB don't publish). Azets discloses 20-25% of invoice-finance service charge https://www.azets.co.uk/about-us/policies-legal/table-of-commissions-from-preferred-partners/ . Invoice finance arrangement fee 0.5-1% facility (Spark Finance).
+
+4 INTRODUCER TERMS
+- Funding Circle UK introducer: commission up to 6%, FC fee 1.5-6%, combined <=10% (introducer guide https://static.fundingcircle.com/files/uk/information-packs/introducer_guide.pdf; rate card; dated 2022-23, may be stale). 
+- iwoca: introducer programme, commission on drawn funds, paid within 30 days of invoice, clawback; rate not published, "customise commission in portal" https://www.iwoca.co.uk/broker ; agreement https://static.iwoca.com/pdf/iwoca_broker_agreement.9d33e8778c11.pdf ; FCA-authorisation requirement UNCONFIRMED.
+- Xero: partner-referral via PartnerStack, monthly commission up to 12 months; amount UNCONFIRMED; affiliate free to join https://www.xero.com/uk/affiliate-program/ ; Sage Referral Network (Intacct etc, mid-market) https://www.sage.com/en-gb/cp/referralnetwork/ ; FreeAgent/QuickBooks, Dojo, takepayments, Capify, Funding Options, SumUp cash: UNCONFIRMED. SumUp UK refer-a-friend = terminal discount, not cash https://sumup.com/en-gb/referralterms
+
+5 REGULATION
+- FCA primary credit brokers: defines individual as "a sole trader, or a partnership of 2 or 3 people not all of whom are bodies corporate"; introducing them to finance providers needs Full Permission credit broking https://www.fca.org.uk/firms/authorisation/consumer-credit-brokers/primary-credit-brokers
+- gov.uk: no authorisation needed for credit to another business unless customer is sole trader, partnership <4 partners or unincorporated association https://www.gov.uk/offering-credit-consumers-law (via search summary). Limited-company position: loans to companies are not 'credit agreements' (FCA permissions doc). PERG 2.7 text itself NOT retrieved: UNCONFIRMED verbatim; read https://handbook.fca.org.uk/handbook/PERG/2/7.html . Note regulated if business loan <=GBP25k to sole trader/small partnership; broader for >25k exempt agreements broking.
+- ICO B2B marketing https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/business-to-business-marketing/ : "corporate subscriber covers subscribers that are a corporate body with separate legal status"; "sole traders and other types of partnerships are classed as individual subscribers"; named employee work details "will constitute personal data even if they are acting in their business capacity"; selling lists requires "a lawful basis for selling or buying the personal data" and telling people; PECR email rule "does not apply to corporate subscribers" but treat unclear as individual; sole traders need consent/soft opt-in; should honour opt-outs.
+
+6 CHANNELS
+- Datarade: Commission-only $0/30%; Bronze $6,000/yr 20%; Silver $12,000/yr 15%; must be legally registered business, no individuals/unregistered, no unanonymised PII https://providers.datarade.ai/apply
+- AWS Data Exchange: 3% listing fee https://docs.aws.amazon.com/marketplace/latest/userguide/listing-fees.html (AWS seller registration/tax requirements UNCONFIRMED)
+- Apify: Apify keeps 20% commission https://docs.apify.com/platform/actors/publishing/monetize
+- Snowflake, Clay, RapidAPI fees: UNCONFIRMED. Evidence of small-provider earnings: none found.

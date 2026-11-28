@@ -1,0 +1,42 @@
+Source notes compiled 2026-11-28 by a research agent (capped at about 25 lookups). Secondary sources unless stated; UNCONFIRMED items are marked.
+
+RECOVERY MECHANISMS - research notes, 28 Nov 2026 (search-snippet / page-summary based; quotes are as returned by tools)
+
+1 LATE PAYMENT (UK)
+- Owed: "£26 billion in late payments at any given time, on average £17,000 per business affected"; costs ~£11bn/yr; 1.5m businesses (28%). London Economics July 2025 via https://www.smallbusinesscommissioner.gov.uk/?p=64916 and https://assets.publishing.service.gov.uk/media/688a089a6478525675738ff9/late_payments_research_impact_on_uk_economy.pdf
+- SBC dispute service recovered GBP1.5m in FY2025-26 (same SBC pages). Large businesses paid 15% of invoices late in 2025 (25% in 2018).
+- Bill: introduced May 2026 (Commercial Payments Bill / reported as Small Business Protections Bill; naming UNCONFIRMED). "mandating interest on late payments at 8% above the Bank of England base rate"; 60-day max terms; SBC adjudication, investigation, fines. Not retrospective; "appropriate lead-in time". Royal Assent expected early 2027 (ICAEW/Gowling summary; UNCONFIRMED). https://www.gov.uk/government/publications/commercial-payments-bill-factsheets/commercial-payments-bill-overview
+- Existing Act 1998: 8% over base + fixed sum; claimant is the creditor business itself; needs its ledger/contract/relationship - not identifiable from public data. Established: factoring/invoice finance, debt collectors, solicitors, Good Business Pays (private data: >GBP8.75bn paid late Jun-Dec 2025). Fees of UK collectors: UNCONFIRMED.
+- Regulation: debt collection for businesses is not FCA CMC; consumer debt collection is FCA. Not checked in detail (UNCONFIRMED).
+
+2 AMAZON FBA
+- Policy: manual claim windows from Oct 23 2024: lost/damaged in FC 60 days; returns 60-120 days (US), 45-105 UK; removals 15-75 days; Amazon reimburses proactively from 1 Nov 2024; cost-basis valuation (sourcing/manufacturing cost) from 31 Mar 2025, "reduced reimbursement amounts for many sellers". Amazon says >90% of claims were filed within 60 days. Another oct 15 2025 window update reported (details UNCONFIRMED).
+ https://www.spscommerce.com/community/articles/amazon-reimbursement-policy ; https://www.helium10.com/es/uncategorized/amazons-march-10-2025-fba-inventory-reimbursement-policy-changes-how-helium-10s-managed-refund-service-can-protect-your-bottom-line/
+- Intermediaries: Helium 10 managed refund service (price not on page), GETIDA, Seller Investigators etc. (fees UNCONFIRMED; commonly cited 25-30% - UNCONFIRMED, no source opened).
+- Access: Seller Central reports access (delegated user / SP-API). Needs claimant cooperation; Amazon ToS on third-party access not checked.
+
+3 PARCEL AUDIT
+- Fees: Refund Retriever "fee is 50% of refunds obtained", paid after credit on invoice; managed audits "25 to 50 percent" of recovered dollars; typical recovery 2-5% of parcel spend (EasyPost); late-refund-eligible volume ~3.5% of shipments (ShipScience Q2 2026); windows often 15 days. https://www.refundretriever.com/questions ; https://www.easypost.com/blog/parcel-audit-software/ ; https://www.shipscience.com/parcel-refund-index-q2-2026/
+- Established: Lateshipment.com, ShipScience, Shipware, Refund Retriever. Needs carrier invoices/tracking API per merchant. UK DHL/Royal Mail/DPD audit pricing UNCONFIRMED. Many guarantees suspended/waived in contracts.
+
+4 CHARGEBACKS
+- Fees: ~20-25% of recovered; Chargeflow 25% of recovered, break-even above 17% win rate (https://www.chargeflow.io/blog/is-hiring-a-chargeback-management-firm-worth-it ; helpware). Acquirers charge $15-25 per chargeback. Win-rate claims are vendor marketing, unaudited. Dispute-volume totals: not found (UNCONFIRMED). Needs Shopify/Stripe/PayPal access; Chargeflow, Chargebacks911, Midigator etc. Evidence submission deadlines per network; Stripe/Shopify now offer built-in dispute automation (UNCONFIRMED).
+
+5 UNCLAIMED PROPERTY
+- US: ~$70bn held (some reports; UNCONFIRMED origin), >=$56bn counted by 29 states+DC; returned $4.25bn in FY25 (NAUPA https://unclaimed.org/wp-content/uploads/NAUPA-FY-25-Report.pdf). Business share not found. Free search: MissingMoney.com; state portals are public/searchable but by name, bulk download generally restricted (UNCONFIRMED per state). Heir finder rules vary: CA & WI 10% cap, NE 10%, NC $1,000 cap + $100/yr registration, IL licence ($500 app/$250 renewal) + background check, AK written contract max 6 months, MA $75/report-year data fee; NV no registration. Sources: https://sco.ca.gov/upd_investigator_about.html ; https://www.revenue.wi.gov/Pages/FAQS/ucp-heir-finders.aspx ; https://www.illinoistreasurer.gov/?p=5012 ; https://www.nccash.gov/documents/forms-and-guides/property-finder-registration-packet-2026/open ; https://unclaimedproperty.alaska.gov/app/fee-finders. Non-US resident operator + owners need signed POA; many states require owner contact before disclosure.
+- UK dormant assets: Reclaim Fund keeps ~40%, owners can reclaim in full at any time, tracing via mylostaccount.org.uk (free) https://www.gov.uk/government/publications/the-dormant-accounts-scheme . No public claimant list.
+- UK bona vacantia estates: list reinstated 12 Jan 2026 with LESS detail after July 2025 suspension over fraud allegations; can be restricted without notice https://www.gov.uk/government/news/unclaimed-estates-list-reinstated-following-review . Dataset exists https://data.gov.uk/dataset/bona-vacantia-estates-advertisements . Heir-hunter fee ~25% not confirmed. Heir hunting needs genealogy research, probate/ID verification, entitlement proof - slow (months-years) - timing UNCONFIRMED.
+- Dissolved company assets: vest in the Crown; claimant must show entitlement; no public list found; Crown disclaimer common; discretionary grants https://www.gov.uk/claiming-money-or-property-from-dissolved-company
+
+6 CLASS ACTION FILERS
+- Visa/MC interchange: third-party filers charge e.g. "20% of recovered funds"; generally 15-40%; securities 20-30%; class counsel files monthly TPF reports (latest found June 2026), court orders on third-party filing services, Epiq reports merchants "stranded". Claim directly is free. Kroll: filers file late/placeholder claims. https://www.PaymentCardSettlement.com/Content/Documents/New Docs/Order Regarding Third Party Claims Filing Services.pdf ; https://www.kroll.com/en/publications/settlement-administration/avoiding-risks-with-third-party-claims-filers ; https://www.epiqglobal.com/en-US/Services/class-action-mass-tort/epiq-expert-series/Edition-4-Third-Party-Filers
+- UK CAT opt-out actions mainly opt-out automatic, little filing role (UNCONFIRMED).
+
+7 UK TAX/DUTY REFUNDS
+- FCA CMC regime (since 1 Apr 2019) covers financial services claims (PPI, packaged accounts, etc., fee caps in CMCOB); tax, timeshare, diesel, flight delay are UNREGULATED but FCA reviewed 26 CMCs; ~70% stopped; FCA expects clear no-win-no-fee fee disclosure and Consumer Duty fair value. https://fca.org.uk/publications/multi-firm-reviews/key-findings-multi-firm-work-claims-management-companies-carrying-out-unregulated-claims ; https://www.fca.org.uk/firms/claims-management-regulation
+- Tax repayment agents: ASA enforcement notice (no win no fee misleading; HMRC can reclaim; 36% fee example); Which? and LITRG warnings; HMRC consultation on raising standards. https://www.asa.org.uk/static/a85c911b-38dc-4107-b648a5e30cdb2996/ASA-Enforcement-Notice-Tax-Repayment-Agents.pdf ; https://www.litrg.org.uk/news/have-you-used-company-claim-refund-and-hmrc-are-now-asking-you-pay-it-back . These are about individual income-tax rebates, not business.
+- Customs: importer/agent applies via CDS; HMRC decision aim 30 days; direct route free https://www.gov.uk/guidance/apply-for-a-repayment-of-import-duty-and-vat-in-the-customs-declaration-service . Needs EORI/CDS delegated access.
+- CCL: refund direct from HMRC (CCL200X), cumulative over-declarations under GBP50k correctable on return. https://www.gov.uk/guidance/correcting-climate-change-levy-errors . No found evidence of CCL claims firms or warnings (UNCONFIRMED). Business rates reliefs/VAT energy: not researched (UNCONFIRMED). Customs agents need CDS access; tax agent AML supervision (HMRC) UNCONFIRMED.
+
+8 OTHER
+- Cloud cost gainshare exists (ProsperOps, nOps, Usage.ai: fee = % of savings) - saturated; fee rates not found. Payment processor fee audit, ad credits, royalties, gift cards: NOT FOUND in searches = UNCONFIRMED.
